@@ -1,5 +1,5 @@
-** Drc report for outputs/amiga_scandoubler/hardware/amiga_scandoubler_v030wip.kicad_pcb **
-** Created on 2026-09-28 13:23:38 **
+** Drc report for /tmp/claude-0/-home-user-A1200LineDoubler/d0f14dc9-1427-5a10-9449-2ee42efc957d/scratchpad/r5/w3.kicad_pcb **
+** Created on 2026-09-28 13:34:06 **
 
 ** Found 363 DRC violations **
 [silk_overlap]: Silkscreen overlap
@@ -1219,7 +1219,7 @@
 [unconnected_items]: Missing connection between items
     Local override; Severity: error
     @(77.2750 mm, 52.5000 mm): Pad 2 [GND] of C69 on F.Cu
-    @(79.8500 mm, 55.0000 mm): Track [GND] on F.Cu, length 0.2828 mm
+    @(79.6500 mm, 54.8000 mm): Track [GND] on F.Cu, length 0.0125 mm
 [unconnected_items]: Missing connection between items
     Local override; Severity: error
     @(32.4500 mm, 28.5000 mm): Pad 2 [GND] of C66 on F.Cu
@@ -1318,7 +1318,7 @@
     @(30.5500 mm, 28.5000 mm): Pad 1 [ADC_1V9PLL] of C66 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; Severity: error
-    @(28.6750 mm, 28.5000 mm): Pad 1 [ADC_1V9PLL] of C26 on F.Cu
+    @(28.7000 mm, 28.5000 mm): Track [ADC_1V9PLL] on F.Cu, length 0.0250 mm
     @(27.7250 mm, 26.0000 mm): Pad 1 [ADC_1V9PLL] of C67 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; Severity: error
@@ -1334,7 +1334,7 @@
     @(67.5000 mm, 47.8250 mm): Pad 1 [H_OUT_RAW] of R41 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; Severity: error
-    @(65.8750 mm, 49.8000 mm): Track [V_OUT_RAW] on B.Cu, length 2.5633 mm
+    @(65.8750 mm, 49.8000 mm): Via [V_OUT_RAW] on F.Cu - B.Cu
     @(54.9500 mm, 41.0000 mm): Pad 14 [V_OUT_RAW] of U2 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; Severity: error
@@ -1486,12 +1486,12 @@
     @(57.0000 mm, 50.3250 mm): Pad 1 [DAC_CLK_RAW] of R43 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; Severity: error
-    @(74.6500 mm, 51.0500 mm): Track [DAC_3V3] on In2.Cu, length 0.7000 mm
+    @(75.3500 mm, 51.0500 mm): Track [DAC_3V3] on In2.Cu, length 3.8891 mm
     @(75.7250 mm, 52.5000 mm): Pad 1 [DAC_3V3] of C69 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; Severity: error
     @(79.0500 mm, 51.5000 mm): Pad 1 [DAC_3V3] of C68 on F.Cu
-    @(77.4000 mm, 50.4000 mm): Track [DAC_3V3] on F.Cu, length 0.0500 mm
+    @(77.2875 mm, 50.5000 mm): Track [DAC_3V3] on F.Cu, length 0.1505 mm
 [unconnected_items]: Missing connection between items
     Local override; Severity: error
     @(73.3250 mm, 50.5000 mm): Pad 2 [DAC_CLK] of R24 on F.Cu
