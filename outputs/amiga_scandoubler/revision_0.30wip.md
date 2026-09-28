@@ -178,3 +178,33 @@
 
 **未検証**
 - pin12・pin1 のデカップリングが面経由になった影響（C37 まで約 6mm、C31 まで約 2mm）。
+
+## 2026-09-28 v0.31 DAC 再ピン（FPGA のピン割当変更）
+
+**判断**
+- 利用者の判断で、U2→U3（DAC）の配線を交差なしにするため、DAC 側のピン割当を先に見直した。
+
+**割当**
+- 出力に使える28ピン（3・13–20・25–42・47）を、U3 の周回順に合わせて並べ替えた。
+- R0=47、R1–R7=42–36、G0–G7=35–28、BLANK=27、B0/B1=26/25、B2–B7=20–15、H_OUT=14、V_OUT=13、DAC_CLK=3。
+- 制約ファイル：`constraints/amiga_board_top_v031dac.cst`（`amiga_board_top.cst` も同内容に更新）。
+- 基板：U2 の28パッドのネットを書き換えた（`scripts/padset.py` + `dac_repin_v031.json`）。
+
+**FPGA の検証（実測は nextpnr の値、それ以外は推定）**
+- ツール：クラウドに YoWASP 版を導入（yosys 0.69、nextpnr-himbaechel 0.11.1、apycula）。
+- 配置配線：1816/2048 とも全クロック PASS。video は 87.94 / 89.50MHz。
+- 同じツールで旧割当を再実行（比較用）：video は 85.98 / 80.17MHz。
+- verify_phase180：PASS。DAC_CLK の ODDR は X0Y1/IOLOGICAO（pin3）。
+- ADC 取り込み（推定）：High 52% 時の残り +4.285ns。
+- DAC 出力の抽出遅延（推定、OBUF・基板を除く）：
+  - 1816：1.484–3.931ns（旧割当 1.551–3.605）。
+  - 2048：1.648–4.248ns（旧割当 1.715–3.374）。
+  - 半周期 8.811ns に対し余裕はあるが、合格判定ではない。
+- シミュレーション：未実行（RTL は変更なし）。
+
+**基板の検査（実測）**
+- KiCad 7 DRC のエラー：0件。未接続は78件で変化なし（DAC 系は未配線のため）。
+- 電源監査：電源75件・GND80件 PASS。`circuit_manifest.json` との U2 ピンネットの不一致は 33→57件（課題9で更新する）。
+
+**未対応**
+- 回路図 `02_fpga.kicad_sch` のラベル、`fpga_pin_assignment.json`、`board_port_map.json`、`circuit_manifest.json` の更新（課題9）。

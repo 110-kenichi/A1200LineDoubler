@@ -97,7 +97,23 @@
 - 出力の解除は2段同期。recovery/removal 規格が SDF にないため、最終判定はしていない。
 - 1816/1820 は暫定の検討値で、PAL/NTSC の確定値ではない。
 
-**v0.30wip の新ピン割当（`fpga/amiga_board_top_v030wip.cst`）で nextpnr を再実行した結果：** 1816／2048 とも全クロックが PASS（2048：video 89.05MHz、adc 310.75MHz、clk_ref 73.15MHz）。ただし次は未実行で、ピン変更後に必ず実行する。
+**v0.31 の DAC 再ピン（2026-09-28、`constraints/amiga_board_top_v031dac.cst`。`amiga_board_top.cst` も同じ内容で上書き済み）**
+- クラウドでは PyPI の YoWASP 版を使う：`yowasp-yosys` 0.69 と `yowasp-nextpnr-himbaechel-gowin` 0.11.1（apycula 同梱）。
+  - WASI 上で動くため、`rtl/`・`constraints/`・sdc を置いた作業ディレクトリから相対パスで実行する。
+  - 手順は `work/v031dac/fpga/commands.txt`。
+- 配置配線（実測、nextpnr）：1816/2048 とも全クロック PASS。
+  - 2048：video 89.50MHz、adc 310.75MHz、clk_ref 72.61MHz。
+  - 1816：video 87.94MHz、adc 310.75MHz。
+  - 同じツールで旧割当を再実行した値（video 80.17 / 85.98MHz）と同等以上。
+- `verify_phase180`：PASS。DAC_CLK の ODDR は pin3 の X0Y1/IOLOGICAO に置かれた。検査スクリプトの期待 BEL を更新した（`work/v031dac/fpga/verify_phase180_v031.py`）。
+- `analyze_capture_sdf --phase 180`（ADC 側。ピン不変）：必要 3.821ns、High 52% 時の残り +4.285ns（推定）。
+- `analyze_dac_sdf`（推定、OBUF・基板を含まない）：
+  - DAC 出力 25本の抽出遅延は、1816 で 1.484–3.931ns、2048 で 1.648–4.248ns。
+  - 旧割当の再実行値は 1.551–3.605 / 1.715–3.374ns。最大値は約 0.3–0.9ns 増えた（pin47＝R0 が U2 の反対側にあるため）。
+  - 半周期 8.811ns（setup 0.2 / hold 1.5ns）に対しては余裕があるが、推定値であり合格判定ではない。
+- シミュレーションは未実行。RTL は変更していない（ピン割当のみ）。
+
+**v0.30wip のピン割当（`fpga/amiga_board_top_v030wip.cst`）で nextpnr を再実行した結果：** 1816／2048 とも全クロックが PASS（2048：video 89.05MHz、adc 310.75MHz、clk_ref 73.15MHz）。ただし次は未実行で、ピン変更後に必ず実行する。
 - `analyze_capture_sdf` / `analyze_dac_sdf` / `verify_phase180`
 - シミュレーション
 
@@ -121,16 +137,24 @@ U2 を180°回転したため、**左辺（x=45.05）が U1(ADC) 側**、右辺�
 | ADC_RESET_N | 60 | 変更（旧15） |
 | ADC_PWDN | 61 | 変更（旧57） |
 | POWER_GOOD | 62 | 不変 |
-| H_OUT_RAW / V_OUT_RAW | 13 / 14（右辺） | 変更（旧60/61） |
-| DAC_BLANK_N | 15 | 変更（旧59） |
+| **DAC_R0** | **47**（左辺の最上部） | **v0.31 DAC 再ピン** |
+| **DAC_R1–R7** | **42–36**（上辺、左→右） | v0.31 |
+| **DAC_G0–G7** | **35–28**（上辺） | v0.31 |
+| **DAC_BLANK_N** | **27** | v0.31（旧15） |
+| **DAC_B0, B1** | **26, 25** | v0.31 |
+| **DAC_B2–B7** | **20–15**（右辺、上→下） | v0.31 |
+| **H_OUT_RAW / V_OUT_RAW** | **14 / 13** | v0.31（v0.30wip では 13/14） |
+| **DAC_CLK_RAW** | **3** | v0.31（旧16。ODDR は X0Y1） |
 | REF_27M | 11 | 不変 |
-| DAC_CLK_RAW | 16 | 不変 |
-| DAC_R0–R3 | 17–20 | 不変（DAC 再ピンは未検討） |
-| DAC_R4–R7, G0–G7, B0–B5 | 25–42（上辺） | 不変 |
-| DAC_B6 / B7 | 47 / 3 | 不変（47番は左上にあり配線上不利） |
 | JTAG, JTAGSEL_N, RECONFIG_N, DONE, MODE0/1 | 4–10, 87, 88 | 固定 |
 
 制御線の並びは、U1 側の上下順（SDA 36.0 → SCL 36.5 → RESET 38.0 → PWDN 38.5）と一致させた。こうすると交差なしで配線できる。
+
+**v0.31 DAC 再ピンの考え方**：
+- 出力に使える I/O は 3・13–20・25–42・47 の28本で、必要な信号（DAC 24本＋BLANK＋CLK＋H/V_OUT）と同数。
+- U2 の時計回り（47 → 上辺 42→25 → 右辺 20→13 → 3）に、U3 の反時計回り（上辺 R0→R7 → 左辺 G0→G7 → BLANK → 下辺 B0→B7）を順に割り当てた。これで U2→U3 が交差なしの扇形になる。
+- 残りの H/V_OUT と DAC_CLK は、南東の R41/R42・U6 の並び（CLK が西、V、H が東）に合わせた。
+- 基板の U2 パッドネットは `scripts/padset.py` + `scripts/dac_repin_v031.json` で書き換え済み。
 
 ---
 
@@ -243,13 +267,16 @@ U2 を180°回転したため、**左辺（x=45.05）が U1(ADC) 側**、右辺�
        - DRC エラー0、未接続 95→78（JTAG 系7ネット、3V3 −4、GND −2）。
        - 導通24組を確認（U2 各ピン ↔ J4／プルアップ、1V2・3V3・GND）。
      - DAC_B7（pin3）用に、階段状ビアの南の y≈46 を東へ抜ける F.Cu の通路を空けてある（課題6）。
-   - **課題5の残り**：H/V_OUT_RAW（13/14）→ R41/R42、DAC_BLANK_N（15）→ R14/U3.11、DAC_CLK_RAW（16）→ U6/R43。
-6. **DAC バス24本**（U2 上辺・右辺 → U3）は未配線。必要なら DAC 再ピンを同じ FPGA フローで評価する。
+   - **課題5の残り（v0.31 再ピン後）**：H_OUT_RAW（14）→ R41、V_OUT_RAW（13）→ R42、DAC_CLK_RAW（3）→ U6/R43。DAC_BLANK_N（27）→ R14/U3.11 は DAC バス（課題6）と一緒に配線する。
+6. **DAC バス24本＋BLANK**（U2 上辺・右辺 → U3）は未配線。
+   - v0.31 で交差なしのピン割当にした（4章）。F.Cu のリバー配線で引く計画。
+   - DAC_CLK（pin3）は階段状ビアの南の y≈46 の通路を東へ抜ける。
+   - R44（PSAVE のプルダウン）と U2 上辺のパスコン（C36/C40/C35）は、扇形の通り道にあるので移動を検討する。
 7. 電源の未接続：GND 約29件、3V3 約10件（C53、C61、R6–R9、Y1、J4、U6 ほか）、ADC_3V3A、ADC_1V9PLL、DAC_3V3。
 8. アナログ入力の残り：RIN_1–3、BIN_1–2、GIN_3、SOGIN_2（各1件。v0.29 以前から残っている）。
 9. ドキュメントの更新（新ピン割当）：
-   - `constraints/amiga_board_top.cst`：2026-09-28 に v030wip 版で上書き済み（旧版は work\backup_before_v030wip\）
-   - `board_port_map.json`、`fpga_pin_assignment.json`、`circuit_manifest.json`（U2 のピン）
+   - `constraints/amiga_board_top.cst`：2026-09-28 に v031dac 版で上書き済み（v030wip 版は `work/v030wip/w30/fpga/`、それ以前は work\backup_before_v030wip\）
+   - `board_port_map.json`、`fpga_pin_assignment.json`、`circuit_manifest.json`（U2 のピン）。v0.31 DAC 再ピンで不一致は57件（監査の padnet）。
    - **`02_fpga.kicad_sch` のグローバルラベル**（ピン対応に合わせて同時に改名する）
    - `rtl/amiga_board_top.sv` のポートは名前のままで変更不要の見込み
 10. 仕上げ：シルク整理、最終 DRC/ERC、Gerber/ドリル、JLC BOM/CPL、ビットストリーム。
@@ -311,7 +338,7 @@ Claude プロジェクト（claude.ai）に保存してあるもの：
 **移行後の最初の作業：**
 1. ~~v030wip の基板を KiCad 7 で開けることを確認する~~ 済（KiCad 7.0.11）。
 2. ~~KiCad 7 で DRC を実行し、ゾーンを再充填して保存する~~ 済。
-3. ~~6章の課題1（C34）~~、~~課題2（制御線とプルアップ）~~ 済。~~課題3（POWER_GOOD）~~ 済。~~課題4（DAC_PSAVE_N）~~ 済。課題5は JTAG 系まで済み。次は 13–16番。
+3. ~~6章の課題1（C34）~~、~~課題2（制御線とプルアップ）~~ 済。~~課題3（POWER_GOOD）~~ 済。~~課題4（DAC_PSAVE_N）~~ 済。課題5は JTAG 系まで済み。DAC 再ピン（v0.31）済み。次は H/V_OUT・DAC_CLK（課題5の残り）と DAC バス（課題6）。
 4. 区切りのよいところで v0.30 として revision を記録する。
 
 ---
