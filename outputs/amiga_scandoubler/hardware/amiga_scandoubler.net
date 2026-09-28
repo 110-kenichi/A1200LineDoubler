@@ -1649,7 +1649,7 @@
       (tstamps "3ae81705-2b6e-5f54-8da2-747c927bb610"))
     (comp (ref "R37")
       (value "2.2k")
-      (footprint "Resistor_SMD:R_0603_1608Metric")
+      (footprint "Resistor_SMD:R_0402_1005Metric")
       (fields
         (field (name "MPN") "2.2k"))
       (libsource (lib "Amiga") (part "R") (description ""))
@@ -1661,7 +1661,7 @@
       (tstamps "19afe537-a6d6-5fe3-a559-90d2fa10deb2"))
     (comp (ref "R38")
       (value "2.2k")
-      (footprint "Resistor_SMD:R_0603_1608Metric")
+      (footprint "Resistor_SMD:R_0402_1005Metric")
       (fields
         (field (name "MPN") "2.2k"))
       (libsource (lib "Amiga") (part "R") (description ""))
@@ -1673,7 +1673,7 @@
       (tstamps "0b53f7f2-1b15-5eb0-a4f2-25c1fe4dc3b2"))
     (comp (ref "R39")
       (value "10k")
-      (footprint "Resistor_SMD:R_0603_1608Metric")
+      (footprint "Resistor_SMD:R_0402_1005Metric")
       (fields
         (field (name "MPN") "10k"))
       (libsource (lib "Amiga") (part "R") (description ""))
@@ -1685,7 +1685,7 @@
       (tstamps "1f6b4e55-3208-511e-bd65-aee29525e886"))
     (comp (ref "R40")
       (value "10k")
-      (footprint "Resistor_SMD:R_0603_1608Metric")
+      (footprint "Resistor_SMD:R_0402_1005Metric")
       (fields
         (field (name "MPN") "10k"))
       (libsource (lib "Amiga") (part "R") (description ""))
