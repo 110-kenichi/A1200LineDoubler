@@ -11,6 +11,8 @@
 2. **KiCad 7 形式（`(version 20221018)`）を維持する。** 利用者は KiCad 7 を使う。KiCad 8 以降で保存しない。
    - クラウドでは KiCad 10 の CLI を DRC 専用に使い、基板は行単位のテキスト編集（`tools/pcbedit.py`）で変更した。
    - 利用者PCの KiCad 7 の pcbnew（Python を含む）なら、ゾーン再充填も保存も直接できる。この場合 `refill_v7.py` は不要。
+   - **Claude Code クラウドセッション（2026-09-28〜）**：`apt-get install --no-install-recommends kicad` で KiCad 7.0.11 が入る。pcbnew Python で編集・再充填・保存し、DRC は `pcbnew.WriteDRCReport()` で出す（KiCad 7 の kicad-cli には `pcb drc` がない）。
+   - 監査は KiCad 7 用の `work/v030wip/w30/tools/audit_sync_in_k7.py` を使う（`BOARD=... REPO_ROOT=<repo>`）。
 3. **承認済みの方針は変えない。**
    - DE-15 メスの入出力、USB 給電。
    - 95×95mm の 4層基板。
@@ -131,12 +133,13 @@ U2 を180°回転したため、**左辺（x=45.05）が U1(ADC) 側**、右辺�
 
 ## 5. 基板の現状（v0.30wip）
 
-- 基板：`board/amiga_scandoubler_v030wip.kicad_pcb`（KiCad 7 形式。DRC 結果は `v030wip_drc.txt`）
+- 基板：`outputs/amiga_scandoubler/hardware/amiga_scandoubler_v030wip.kicad_pcb`（KiCad 7 形式。KiCad 7 の DRC 結果は `v030wip_drc_k7.txt`）
 - DRC 結果：
   - エラー（短絡、クリアランス、穴間隔、配線端・ビアの未接続）0件。
-  - 未接続112件（v0.29 は143件）。
+  - 未接続110件（C34 修正後。修正前112件、v0.29 は143件）。
   - シルクと `lib_footprint_mismatch` の警告は既知。
-- 注意：電源監査（`audit_sync_in.py`）は **C34 が原因で FAIL**（後述の課題1）。
+- 電源監査：電源75件・GND80件の検査はすべて PASS（C34 修正後）。
+  - 残りの FAIL は U2 の再ピン割当によるものだけ。`circuit_manifest.json` の U2 のピンネット33件（課題9）と、`sync_out_progress.json` の旧ピン60/61の接続2件（課題5）。
 
 ### v0.29 からの変更（v0.30wip）
 
@@ -159,9 +162,13 @@ U2 を180°回転したため、**左辺（x=45.05）が U1(ADC) 側**、右辺�
 
 ## 6. 未解決の課題（優先順）
 
-1. **C34（U2.58 の 3V3 パスコン）が孤立している。** 配置移動で (37,30) へ飛ばしてしまった。
-   - 3V3・GND とも未接続で、監査は FAIL。
-   - U2.58/64 の近くへ戻し、面へのビアを付けること。
+1. ~~C34 の孤立~~ → **解決（2026-09-28）**。
+   - U2 の左下角 (45.4,49.15) に縦置きした（270°、pad1＝3V3 が上）。
+   - pad1 は 0.25mm の配線で、U2.67 の既存 3V3 ビア (45.6,47.6) へつないだ。
+   - pad2 には GND ビア (45.4,50.875)（0.6/0.3）を付け、In1 に落とした。
+   - U2.58 は内周ビア (46.05,43) で In2 の 3V3 面につながる。C34 はその面経由で約4.6mm の位置。
+   - U2 左の制御線の予約領域（x 41.2–45.5、y 42.1–44.1）と B.Cu の通路は避けた。
+   - スクリプト：`scripts/c34.py`、探索用 `tools/placesearch_c34.py`。
 2. **U2 左の制御線**（SDA/SCL/RESET/PWDN → U1.75/74/71/70 とプルアップ R38/R37/R39/R40）
    - 試作案（スクリプト `ctl.py`、`ctl2.py`、`left.py`）：
      - U2 前面ビア：SDA(44.05,42.6)、SCL(43.3,43.15)、RESET(42.55,43.5)、PWDN(41.8,43.6)。
@@ -240,9 +247,9 @@ Claude プロジェクト（claude.ai）に保存してあるもの：
   - sha256(tgz) = `4ca79e952e21502aed365bb7cfa9259c09d2e1c9c5f280485fdee521e345e03f`
 
 **移行後の最初の作業：**
-1. v030wip の基板を `hardware\amiga_scandoubler_v030wip.kicad_pcb` として配置し、KiCad 7 で開けることを確認する。
-2. KiCad 7 で DRC を実行し、ゾーンを再充填して保存する。
-3. 6章の課題1（C34）から再開する。
+1. ~~v030wip の基板を KiCad 7 で開けることを確認する~~ 済（KiCad 7.0.11）。
+2. ~~KiCad 7 で DRC を実行し、ゾーンを再充填して保存する~~ 済。
+3. ~~6章の課題1（C34）~~ 済。次は課題2（U2 左の制御線）。
 4. 区切りのよいところで v0.30 として revision を記録する。
 
 ---
