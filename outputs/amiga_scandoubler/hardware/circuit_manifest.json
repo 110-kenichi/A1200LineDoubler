@@ -2393,7 +2393,7 @@
       "reference": "C42",
       "value": "100nF",
       "symbol": "C",
-      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
       "mpn": "100nF",
       "lcsc": "",
       "notes": "",

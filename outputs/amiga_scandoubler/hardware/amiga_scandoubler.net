@@ -479,7 +479,7 @@
       (tstamps "8e98104d-4b59-5aa4-91f8-0507e97f6571" "7f16dce0-36f5-5ebe-adf9-9c0a356e383d" "61a66758-ebe8-5d55-b5e0-f37b553e103e" "56a5265d-88dd-5190-9b0e-b3dd7092b628"))
     (comp (ref "C42")
       (value "100nF")
-      (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (footprint "Capacitor_SMD:C_0402_1005Metric")
       (fields
         (field (name "MPN") "100nF"))
       (libsource (lib "Amiga") (part "C") (description ""))
