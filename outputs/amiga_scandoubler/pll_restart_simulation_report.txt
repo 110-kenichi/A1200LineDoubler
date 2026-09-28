@@ -1,0 +1,6 @@
+PASS pll_restart_control HOLD=10 TIMEOUT=60: 6 acquisition/recovery sequences; ADC stop, frequency step, video-clock loss, timeout, stuck LOCK and reset
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_pll_restart_control.sv:47: $finish called at 138659500 (1ps)
+PASS pll_restart_control HOLD=270 TIMEOUT=270000: 6 acquisition/recovery sequences; ADC stop, frequency step, video-clock loss, timeout, stuck LOCK and reset
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_pll_restart_control.sv:47: $finish called at 20168165500 (1ps)
+PASS clock_recovery_system: 10 checks; real watchdog/lifecycle feedback, startup, stopped ADC/video clocks, lock timeout, requalification
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_clock_recovery_system.sv:44: $finish called at 155789500 (1ps)

@@ -1,0 +1,6 @@
+# Yosys 0.69+24 (d0e71cfb7-dirty); run from amiga_scandoubler directory.
+# Synthetic profile: NOT validated PAL/NTSC settings.
+read_verilog -defer -sv rtl/line_double.sv rtl/field_sync.sv rtl/video_core.sv rtl/i2c_register_write.sv rtl/adc_power_sequence.sv rtl/tvp7002_boot.sv rtl/video_clock_guard.sv rtl/pll_restart_control.sv rtl/clock_recovery_system.sv rtl/adc_rgb_capture.sv rtl/stream_sync_frontend.sv rtl/stream_input_video.sv rtl/dac_output_stage.sv rtl/amiga_logic_core.sv rtl/configuration_reset.sv rtl/gowin_video_pll.sv rtl/amiga_board_top.sv
+chparam -set H_SAMPLES 2048 -set VS_ALIGN_CYCLES 31 -set HS_WIDTH 4 -set X_START 6 -set X_END 2044 -set Y_START 8 -set Y_END 617 amiga_board_top
+synth_gowin -top amiga_board_top -json implementation/output_stage/board_2048.json
+stat

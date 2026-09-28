@@ -1,0 +1,48 @@
+PASS adc_rgb_capture PERIOD_PS=41667 DATA_DELAY_PS=0 DUTY=48 PHASE=90: 228 coherent RGB/HS samples, every-other-cycle cadence, asynchronous reset/restart
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_adc_rgb_capture.sv:52: $finish called at 10145081 (1ps)
+PASS adc_rgb_capture PERIOD_PS=41667 DATA_DELAY_PS=1500 DUTY=48 PHASE=90: 228 coherent RGB/HS samples, every-other-cycle cadence, asynchronous reset/restart
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_adc_rgb_capture.sv:52: $finish called at 10145081 (1ps)
+PASS adc_rgb_capture PERIOD_PS=41667 DATA_DELAY_PS=0 DUTY=50 PHASE=90: 228 coherent RGB/HS samples, every-other-cycle cadence, asynchronous reset/restart
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_adc_rgb_capture.sv:52: $finish called at 10146158 (1ps)
+PASS adc_rgb_capture PERIOD_PS=41667 DATA_DELAY_PS=1500 DUTY=50 PHASE=90: 228 coherent RGB/HS samples, every-other-cycle cadence, asynchronous reset/restart
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_adc_rgb_capture.sv:52: $finish called at 10146158 (1ps)
+PASS adc_rgb_capture PERIOD_PS=41667 DATA_DELAY_PS=0 DUTY=52 PHASE=90: 228 coherent RGB/HS samples, every-other-cycle cadence, asynchronous reset/restart
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_adc_rgb_capture.sv:52: $finish called at 10146748 (1ps)
+PASS adc_rgb_capture PERIOD_PS=41667 DATA_DELAY_PS=1500 DUTY=52 PHASE=90: 228 coherent RGB/HS samples, every-other-cycle cadence, asynchronous reset/restart
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_adc_rgb_capture.sv:52: $finish called at 10146748 (1ps)
+PASS adc_rgb_capture PERIOD_PS=35242 DATA_DELAY_PS=0 DUTY=48 PHASE=90: 228 coherent RGB/HS samples, every-other-cycle cadence, asynchronous reset/restart
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_adc_rgb_capture.sv:52: $finish called at 8615964 (1ps)
+PASS adc_rgb_capture PERIOD_PS=35242 DATA_DELAY_PS=1500 DUTY=48 PHASE=90: 228 coherent RGB/HS samples, every-other-cycle cadence, asynchronous reset/restart
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_adc_rgb_capture.sv:52: $finish called at 8615964 (1ps)
+PASS adc_rgb_capture PERIOD_PS=35242 DATA_DELAY_PS=0 DUTY=50 PHASE=90: 228 coherent RGB/HS samples, every-other-cycle cadence, asynchronous reset/restart
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_adc_rgb_capture.sv:52: $finish called at 8616669 (1ps)
+PASS adc_rgb_capture PERIOD_PS=35242 DATA_DELAY_PS=1500 DUTY=50 PHASE=90: 228 coherent RGB/HS samples, every-other-cycle cadence, asynchronous reset/restart
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_adc_rgb_capture.sv:52: $finish called at 8616669 (1ps)
+PASS adc_rgb_capture PERIOD_PS=35242 DATA_DELAY_PS=0 DUTY=52 PHASE=90: 228 coherent RGB/HS samples, every-other-cycle cadence, asynchronous reset/restart
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_adc_rgb_capture.sv:52: $finish called at 8617374 (1ps)
+PASS adc_rgb_capture PERIOD_PS=35242 DATA_DELAY_PS=1500 DUTY=52 PHASE=90: 228 coherent RGB/HS samples, every-other-cycle cadence, asynchronous reset/restart
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_adc_rgb_capture.sv:52: $finish called at 8617374 (1ps)
+PASS adc_rgb_capture PERIOD_PS=34921 DATA_DELAY_PS=0 DUTY=48 PHASE=90: 228 coherent RGB/HS samples, every-other-cycle cadence, asynchronous reset/restart
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_adc_rgb_capture.sv:52: $finish called at 8537486 (1ps)
+PASS adc_rgb_capture PERIOD_PS=34921 DATA_DELAY_PS=1500 DUTY=48 PHASE=90: 228 coherent RGB/HS samples, every-other-cycle cadence, asynchronous reset/restart
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_adc_rgb_capture.sv:52: $finish called at 8537486 (1ps)
+PASS adc_rgb_capture PERIOD_PS=34921 DATA_DELAY_PS=0 DUTY=50 PHASE=90: 228 coherent RGB/HS samples, every-other-cycle cadence, asynchronous reset/restart
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_adc_rgb_capture.sv:52: $finish called at 8538429 (1ps)
+PASS adc_rgb_capture PERIOD_PS=34921 DATA_DELAY_PS=1500 DUTY=50 PHASE=90: 228 coherent RGB/HS samples, every-other-cycle cadence, asynchronous reset/restart
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_adc_rgb_capture.sv:52: $finish called at 8538429 (1ps)
+PASS adc_rgb_capture PERIOD_PS=34921 DATA_DELAY_PS=0 DUTY=52 PHASE=90: 228 coherent RGB/HS samples, every-other-cycle cadence, asynchronous reset/restart
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_adc_rgb_capture.sv:52: $finish called at 8538883 (1ps)
+PASS adc_rgb_capture PERIOD_PS=34921 DATA_DELAY_PS=1500 DUTY=52 PHASE=90: 228 coherent RGB/HS samples, every-other-cycle cadence, asynchronous reset/restart
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_adc_rgb_capture.sv:52: $finish called at 8538883 (1ps)
+PASS adc_rgb_capture PERIOD_PS=31000 DATA_DELAY_PS=0 DUTY=48 PHASE=90: 228 coherent RGB/HS samples, every-other-cycle cadence, asynchronous reset/restart
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_adc_rgb_capture.sv:52: $finish called at 7578880 (1ps)
+PASS adc_rgb_capture PERIOD_PS=31000 DATA_DELAY_PS=1500 DUTY=48 PHASE=90: 228 coherent RGB/HS samples, every-other-cycle cadence, asynchronous reset/restart
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_adc_rgb_capture.sv:52: $finish called at 7578880 (1ps)
+PASS adc_rgb_capture PERIOD_PS=31000 DATA_DELAY_PS=0 DUTY=50 PHASE=90: 228 coherent RGB/HS samples, every-other-cycle cadence, asynchronous reset/restart
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_adc_rgb_capture.sv:52: $finish called at 7579500 (1ps)
+PASS adc_rgb_capture PERIOD_PS=31000 DATA_DELAY_PS=1500 DUTY=50 PHASE=90: 228 coherent RGB/HS samples, every-other-cycle cadence, asynchronous reset/restart
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_adc_rgb_capture.sv:52: $finish called at 7579500 (1ps)
+PASS adc_rgb_capture PERIOD_PS=31000 DATA_DELAY_PS=0 DUTY=52 PHASE=90: 228 coherent RGB/HS samples, every-other-cycle cadence, asynchronous reset/restart
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_adc_rgb_capture.sv:52: $finish called at 7580120 (1ps)
+PASS adc_rgb_capture PERIOD_PS=31000 DATA_DELAY_PS=1500 DUTY=52 PHASE=90: 228 coherent RGB/HS samples, every-other-cycle cadence, asynchronous reset/restart
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_adc_rgb_capture.sv:52: $finish called at 7580120 (1ps)

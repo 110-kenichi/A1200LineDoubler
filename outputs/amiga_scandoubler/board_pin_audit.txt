@@ -1,0 +1,4 @@
+PASS 62 unique signal pads mapped to top-level port names
+PASS DAC_CLK_RAW pin 16 / IOL17B avoids unsupported IOL10/IOR10 group
+PASS ADC_PWDN pin 57 matches regenerated hardware
+Scope: pin consistency only, not vendor constraint parsing, IO packing or timing validation.

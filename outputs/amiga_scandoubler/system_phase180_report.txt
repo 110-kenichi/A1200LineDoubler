@@ -1,0 +1,2 @@
+PASS amiga_logic_core: 12258 visible RGB checks; 36-write ADC start, input capture, clock/sync acquisition, stopped ADC recovery with new color, power loss and startup NACK
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_amiga_logic_core.sv:106: $finish called at 70529420500 (1ps)

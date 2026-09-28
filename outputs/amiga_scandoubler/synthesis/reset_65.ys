@@ -1,0 +1,5 @@
+# Mapped reset initialization verification, Yosys 0.69.
+read_verilog -defer -sv rtl/configuration_reset.sv
+chparam -set CYCLES 65 configuration_reset
+synth_gowin -top configuration_reset -noiopads -json synthesis/reset_65.json
+write_verilog -noattr synthesis/reset_65.v

@@ -1,0 +1,3 @@
+https://github.com/YosysHQ/oss-cad-suite-build/releases/download/2026-09-12/oss-cad-suite-windows-x64-20260912.tgz
+595829029 bytes
+sha256:2e41548bee9c6ea875019f4d1e0c636da92e6ab5bf9c97698a78ab9048ab1c06

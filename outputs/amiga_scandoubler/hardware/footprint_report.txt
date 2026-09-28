@@ -1,0 +1,7 @@
+Footprint geometry check / 2026-09-09
+
+PASS QFN-88_GW1N4_10x10_P0.4_EP6.8: 89 numbered pads, pitch 0.4 mm, EP 6.8 mm, pin 1 at left upper side
+PASS TQFP-100_TVP7002_14x14_P0.5_EP6.2: 101 numbered pads, pitch 0.5 mm, EP 6.2 mm, pin 1 at left upper side
+PASS TPS62160 DSG0008A: 9 numbered pads; land 0.5 x 0.25 mm; row centers 1.9 mm; EP 0.9 x 1.6 mm
+
+Not board DRC. Stencil, thermal-via design and assembly acceptance remain open.

@@ -1,0 +1,3 @@
+nextpnr-himbaechel --device GW1N-LV4QN88C6/I5 --vopt family=GW1N-4 --json synthesis/board_1816.json --vopt cst=constraints/amiga_board_top.cst --vopt sspi_as_gpio --sdc implementation/exploratory_periods.sdc --freq 56.75 --write implementation/board_1816_routed.json --report implementation/board_1816_timing.json --log implementation/board_1816_route.log
+
+nextpnr-himbaechel --device GW1N-LV4QN88C6/I5 --vopt family=GW1N-4 --json synthesis/board_2048.json --vopt cst=constraints/amiga_board_top.cst --vopt sspi_as_gpio --sdc implementation/exploratory_periods.sdc --freq 56.75 --write implementation/board_2048_routed.json --report implementation/board_2048_timing.json --log implementation/board_2048_route.log

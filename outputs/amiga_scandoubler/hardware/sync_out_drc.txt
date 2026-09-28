@@ -1,0 +1,1373 @@
+** Drc report for C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\hardware\amiga_scandoubler_sync_out.kicad_pcb **
+** Created on 2026-09-27 14:27:40 **
+
+** Found 232 DRC violations **
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; Severity: warning
+    @(95.0000 mm, 95.0000 mm): Line on Edge.Cuts
+    @(42.8000 mm, 93.3500 mm): Line on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; Severity: warning
+    @(95.0000 mm, 95.0000 mm): Line on Edge.Cuts
+    @(52.2000 mm, 93.3500 mm): Line on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(40.0000 mm, 24.6250 mm): Reference 'Y1'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(17.5000 mm, 26.1450 mm): Reference 'C12'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(47.5000 mm, 26.6450 mm): Reference 'R7'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(16.0000 mm, 31.8950 mm): Reference 'C3'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(39.5000 mm, 34.6450 mm): Reference 'R38'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(31.5000 mm, 26.8950 mm): Reference 'C66'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(70.0000 mm, 74.2000 mm): Reference 'R32'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(50.0000 mm, 30.8950 mm): Reference 'C41'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(38.5000 mm, 32.6450 mm): Reference 'R36'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(67.0000 mm, 51.6750 mm): Reference 'U6'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(38.0000 mm, 82.2000 mm): Reference 'R35'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(33.0000 mm, 29.3950 mm): Reference 'FB3'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(50.0000 mm, 35.7500 mm): Reference 'U2'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(43.0000 mm, 43.8950 mm): Reference 'C29'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(13.0000 mm, 27.8950 mm): Reference 'FB1'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(39.0000 mm, 22.6450 mm): Reference 'C61'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(36.0000 mm, 44.8950 mm): Reference 'C22'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(12.0000 mm, 31.3950 mm): Reference 'C48'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(57.0000 mm, 43.8950 mm): Reference 'C32'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(47.5000 mm, 85.4550 mm): Reference 'J3'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(53.0000 mm, 80.2000 mm): Reference 'C54'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(46.0000 mm, 47.6450 mm): Reference 'C35'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(73.0000 mm, 74.2000 mm): Reference 'R31'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(15.5000 mm, 50.1450 mm): Reference 'C50'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(14.5000 mm, 54.6450 mm): Reference 'R19'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(15.5000 mm, 46.1450 mm): Reference 'C18'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(70.0000 mm, 71.2000 mm): Reference 'U9'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(15.5000 mm, 52.1450 mm): Reference 'FB2'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(18.5000 mm, 53.3950 mm): Reference 'C53'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(30.0000 mm, 50.6450 mm): Reference 'C21'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(41.0000 mm, 83.0000 mm): Reference 'R25'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(20.0000 mm, 50.6450 mm): Reference 'C19'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(21.0000 mm, 24.6450 mm): Reference 'C63'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(15.0000 mm, 28.3950 mm): Reference 'C11'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(80.0000 mm, 49.8950 mm): Reference 'C68'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(12.0000 mm, 38.3950 mm): Reference 'C5'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(79.0000 mm, 70.9500 mm): Reference 'C60'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(74.5000 mm, 70.9500 mm): Reference 'L3'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(72.5000 mm, 49.1450 mm): Reference 'R24'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(22.0000 mm, 30.6450 mm): Reference 'C27'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(59.0000 mm, 36.3950 mm): Reference 'C38'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(16.0000 mm, 42.3950 mm): Reference 'C16'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(5.0000 mm, 25.3750 mm): Reference 'J1'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(17.0000 mm, 56.6750 mm): Reference 'U4'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(54.0000 mm, 47.6450 mm): Reference 'C36'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(23.9450 mm, 29.7000 mm): Reference 'C2'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(43.0000 mm, 32.3950 mm): Reference 'R40'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(25.0000 mm, 71.2000 mm): Reference 'U7'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(81.0000 mm, 38.1450 mm): Reference 'C46'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(28.1450 mm, 31.5000 mm): Reference 'C25'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(50.0000 mm, 33.6450 mm): Reference 'C39'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(83.5000 mm, 49.3950 mm): Reference 'R23'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(62.5000 mm, 41.1450 mm): Reference 'R14'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(21.0000 mm, 26.6450 mm): Reference 'C10'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(26.0000 mm, 52.6450 mm): Reference 'C65'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(25.7950 mm, 28.5000 mm): Reference 'C26'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(81.0000 mm, 36.1450 mm): Reference 'R11'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(28.5000 mm, 24.6450 mm): Reference 'C67'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(26.5000 mm, 50.6450 mm): Reference 'C20'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(57.0000 mm, 35.8950 mm): Reference 'C30'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(57.0000 mm, 39.3950 mm): Reference 'C34'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(56.5000 mm, 70.9500 mm): Reference 'C58'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(14.0000 mm, 25.3950 mm): Reference 'C62'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(83.5000 mm, 45.8950 mm): Reference 'R22'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(36.0000 mm, 34.8950 mm): Reference 'C24'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(11.5000 mm, 54.3950 mm): Reference 'R20'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(46.5000 mm, 24.6450 mm): Reference 'R5'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(26.0000 mm, 32.7250 mm): Reference 'U1'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(46.0000 mm, 31.6450 mm): Reference 'R3'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(90.0000 mm, 25.3750 mm): Reference 'J2'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(47.5000 mm, 3.4750 mm): Reference 'J4'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(41.0000 mm, 36.8950 mm): Reference 'R4'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(47.5000 mm, 80.2000 mm): Reference 'F1'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(43.0000 mm, 35.8950 mm): Reference 'C31'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(28.0000 mm, 74.2000 mm): Reference 'R27'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(67.5000 mm, 48.6450 mm): Reference 'R42'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(65.5000 mm, 38.6450 mm): Reference 'R44'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(12.0000 mm, 52.1450 mm): Reference 'R18'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(14.0000 mm, 40.3950 mm): Reference 'C17'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(36.0000 mm, 38.3950 mm): Reference 'C23'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(12.0000 mm, 46.1450 mm): Reference 'R16'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(21.5000 mm, 70.9500 mm): Reference 'C55'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(17.0000 mm, 28.3950 mm): Reference 'C9'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(76.5000 mm, 49.1450 mm): Reference 'FB4'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(80.0000 mm, 47.3950 mm): Reference 'C47'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(22.0000 mm, 28.6450 mm): Reference 'C28'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(43.0000 mm, 39.8950 mm): Reference 'C37'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(23.1950 mm, 26.0000 mm): Reference 'R1'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(14.0000 mm, 33.3950 mm): Reference 'C4'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(82.5000 mm, 40.3950 mm): Reference 'R12'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(19.0000 mm, 29.3950 mm): Reference 'C8'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(76.5000 mm, 47.1450 mm): Reference 'C42'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(82.2950 mm, 59.0000 mm): Reference 'C52'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(23.0000 mm, 50.6750 mm): Reference 'C64'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(71.0000 mm, 47.1450 mm): Reference 'C44'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(74.0000 mm, 36.2250 mm): Reference 'U3'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(25.9450 mm, 31.0000 mm): Reference 'C1'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(61.0000 mm, 62.7000 mm): Reference 'R34'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(54.5000 mm, 83.0000 mm): Reference 'R26'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(39.0000 mm, 40.8950 mm): Reference 'R39'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(14.0000 mm, 36.8950 mm): Reference 'C15'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(38.0000 mm, 76.0000 mm): Reference 'R33'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(47.5000 mm, 74.2000 mm): Reference 'R30'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(29.5000 mm, 70.9500 mm): Reference 'L1'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(76.5000 mm, 51.1450 mm): Reference 'C69'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(43.5000 mm, 23.8950 mm): Reference 'R6'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(50.5000 mm, 74.2000 mm): Reference 'R29'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(80.5000 mm, 43.8950 mm): Reference 'R13'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(11.5000 mm, 34.8950 mm): Reference 'R15'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(52.0000 mm, 70.9500 mm): Reference 'L2'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(39.0000 mm, 37.3950 mm): Reference 'R37'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(78.0000 mm, 34.1450 mm): Reference 'C43'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(67.5000 mm, 44.8950 mm): Reference 'R41'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(82.0000 mm, 52.6750 mm): Reference 'U5'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(41.0000 mm, 40.3950 mm): Reference 'R9'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(44.0000 mm, 70.9500 mm): Reference 'C57'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(12.0000 mm, 50.1450 mm): Reference 'R17'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(49.0000 mm, 22.6450 mm): Reference 'R8'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(16.0000 mm, 35.3950 mm): Reference 'C13'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(47.5000 mm, 71.2000 mm): Reference 'U8'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(13.0000 mm, 44.1450 mm): Reference 'C6'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(13.5000 mm, 56.8950 mm): Reference 'R21'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(34.0000 mm, 70.9500 mm): Reference 'C56'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(25.0000 mm, 74.2000 mm): Reference 'R28'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(12.0000 mm, 48.1450 mm): Reference 'C49'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(46.0000 mm, 33.6450 mm): Reference 'R2'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(20.5000 mm, 55.8950 mm): Reference 'C51'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(66.0000 mm, 70.9500 mm): Reference 'C59'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(16.0000 mm, 38.8950 mm): Reference 'C14'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(50.0000 mm, 47.3950 mm): Reference 'C40'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(15.5000 mm, 48.1450 mm): Reference 'C7'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(74.5000 mm, 34.1450 mm): Reference 'R10'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(57.0000 mm, 47.3950 mm): Reference 'R43'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(54.0000 mm, 33.6450 mm): Reference 'C33'
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(80.5000 mm, 40.3950 mm): Reference 'C45'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(40.0000 mm, 24.6250 mm): Reference 'Y1'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(47.5000 mm, 26.6450 mm): Reference 'R7'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(39.5000 mm, 34.6450 mm): Reference 'R38'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(70.0000 mm, 74.2000 mm): Reference 'R32'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(33.0000 mm, 29.3950 mm): Reference 'FB3'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(50.0000 mm, 35.7500 mm): Reference 'U2'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(44.5500 mm, 37.5000 mm): Circle on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(43.0000 mm, 43.8950 mm): Reference 'C29'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(13.0000 mm, 27.8950 mm): Reference 'FB1'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(46.0000 mm, 47.6450 mm): Reference 'C35'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(73.0000 mm, 74.2000 mm): Reference 'R31'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(15.5000 mm, 50.1450 mm): Reference 'C50'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(15.5000 mm, 52.1450 mm): Reference 'FB2'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(30.0000 mm, 50.6450 mm): Reference 'C21'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(20.0000 mm, 50.6450 mm): Reference 'C19'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(15.0000 mm, 28.3950 mm): Reference 'C11'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(80.0000 mm, 49.8950 mm): Reference 'C68'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(12.0000 mm, 38.3950 mm): Reference 'C5'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(72.5000 mm, 49.1450 mm): Reference 'R24'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(22.0000 mm, 30.6450 mm): Reference 'C27'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(16.0000 mm, 42.3950 mm): Reference 'C16'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(54.0000 mm, 47.6450 mm): Reference 'C36'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(81.0000 mm, 38.1450 mm): Reference 'C46'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(28.1450 mm, 31.5000 mm): Reference 'C25'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(83.5000 mm, 49.3950 mm): Reference 'R23'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(21.0000 mm, 26.6450 mm): Reference 'C10'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(26.0000 mm, 52.6450 mm): Reference 'C65'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(25.7950 mm, 28.5000 mm): Reference 'C26'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(26.5000 mm, 50.6450 mm): Reference 'C20'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(57.0000 mm, 39.3950 mm): Reference 'C34'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(11.5000 mm, 54.3950 mm): Reference 'R20'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(17.8500 mm, 35.7000 mm): Circle on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(43.0000 mm, 35.8950 mm): Reference 'C31'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(28.0000 mm, 74.2000 mm): Reference 'R27'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(67.5000 mm, 48.6450 mm): Reference 'R42'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(12.0000 mm, 52.1450 mm): Reference 'R18'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(14.0000 mm, 40.3950 mm): Reference 'C17'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(36.0000 mm, 38.3950 mm): Reference 'C23'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(12.0000 mm, 46.1450 mm): Reference 'R16'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(17.0000 mm, 28.3950 mm): Reference 'C9'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(76.5000 mm, 49.1450 mm): Reference 'FB4'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(80.0000 mm, 47.3950 mm): Reference 'C47'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(22.0000 mm, 28.6450 mm): Reference 'C28'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(43.0000 mm, 39.8950 mm): Reference 'C37'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(82.5000 mm, 40.3950 mm): Reference 'R12'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(76.5000 mm, 47.1450 mm): Reference 'C42'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(23.0000 mm, 50.6750 mm): Reference 'C64'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(71.0000 mm, 47.1450 mm): Reference 'C44'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(74.0000 mm, 36.2250 mm): Reference 'U3'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(25.9450 mm, 31.0000 mm): Reference 'C1'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(54.5000 mm, 83.0000 mm): Reference 'R26'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(39.0000 mm, 40.8950 mm): Reference 'R39'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(14.0000 mm, 36.8950 mm): Reference 'C15'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(47.5000 mm, 74.2000 mm): Reference 'R30'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(76.5000 mm, 51.1450 mm): Reference 'C69'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(50.5000 mm, 74.2000 mm): Reference 'R29'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(80.5000 mm, 43.8950 mm): Reference 'R13'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(11.5000 mm, 34.8950 mm): Reference 'R15'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(41.0000 mm, 40.3950 mm): Reference 'R9'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(12.0000 mm, 50.1450 mm): Reference 'R17'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(16.0000 mm, 35.3950 mm): Reference 'C13'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(13.5000 mm, 56.8950 mm): Reference 'R21'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(25.0000 mm, 74.2000 mm): Reference 'R28'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(12.0000 mm, 48.1450 mm): Reference 'C49'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(46.0000 mm, 33.6450 mm): Reference 'R2'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(16.0000 mm, 38.8950 mm): Reference 'C14'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(50.0000 mm, 47.3950 mm): Reference 'C40'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(15.5000 mm, 48.1450 mm): Reference 'C7'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(57.0000 mm, 47.3950 mm): Reference 'R43'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(80.5000 mm, 40.3950 mm): Reference 'C45'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(47.5000 mm, 22.0000 mm): PCB Text 'PARTIAL ANALOG ROUTING - REVIEW ONLY' on F.Silkscreen
+    @(39.0000 mm, 22.6450 mm): Reference 'C61'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(49.0000 mm, 22.6450 mm): Reference 'R8'
+    @(47.5000 mm, 22.0000 mm): PCB Text 'PARTIAL ANALOG ROUTING - REVIEW ONLY' on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(38.2627 mm, 34.5225 mm): Line on F.Silkscreen
+    @(39.5000 mm, 34.6450 mm): Reference 'R38'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(49.7387 mm, 33.2350 mm): Line on F.Silkscreen
+    @(50.0000 mm, 33.6450 mm): Reference 'C39'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(50.0000 mm, 35.7500 mm): Reference 'U2'
+    @(49.8594 mm, 35.5100 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(46.0000 mm, 33.6450 mm): Reference 'R2'
+    @(45.7627 mm, 33.5225 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(81.0000 mm, 38.1450 mm): Reference 'C46'
+    @(80.7627 mm, 38.0225 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(74.0000 mm, 36.2250 mm): Reference 'U3'
+    @(74.2627 mm, 36.0225 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(76.5000 mm, 51.1450 mm): Reference 'C69'
+    @(76.3372 mm, 51.0100 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(47.5000 mm, 74.2000 mm): Reference 'R30'
+    @(48.0000 mm, 74.1200 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(25.0000 mm, 74.2000 mm): Reference 'R28'
+    @(25.5000 mm, 74.1200 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(28.1450 mm, 31.5000 mm): Reference 'C25'
+    @(27.8100 mm, 31.1406 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(20.8594 mm, 26.5100 mm): Line on F.Silkscreen
+    @(21.0000 mm, 26.6450 mm): Reference 'C10'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(20.8594 mm, 28.5100 mm): Line on F.Silkscreen
+    @(22.0000 mm, 28.6450 mm): Reference 'C28'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(22.0000 mm, 30.6450 mm): Reference 'C27'
+    @(21.8594 mm, 30.5100 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(17.3594 mm, 28.0100 mm): Line on F.Silkscreen
+    @(17.0000 mm, 28.3950 mm): Reference 'C9'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(70.0000 mm, 74.2000 mm): Reference 'R32'
+    @(70.5000 mm, 74.1200 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(80.0000 mm, 49.8950 mm): Reference 'C68'
+    @(79.7387 mm, 49.7350 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(76.5000 mm, 49.1450 mm): Reference 'FB4'
+    @(76.3594 mm, 49.0100 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(26.0000 mm, 52.6450 mm): Reference 'C65'
+    @(26.3594 mm, 52.5100 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(15.5000 mm, 52.1450 mm): Reference 'FB2'
+    @(15.3594 mm, 52.0100 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(11.7627 mm, 52.0225 mm): Line on F.Silkscreen
+    @(12.0000 mm, 52.1450 mm): Reference 'R18'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(15.5000 mm, 50.1450 mm): Reference 'C50'
+    @(15.3594 mm, 50.0100 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(12.0000 mm, 50.1450 mm): Reference 'R17'
+    @(11.8594 mm, 50.0100 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(11.7627 mm, 48.0225 mm): Line on F.Silkscreen
+    @(12.0000 mm, 48.1450 mm): Reference 'C49'
+
+** Found 160 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(14.0000 mm, 36.2750 mm): Pad 1 [RIN_3] of C4 on F.Cu
+    @(18.3500 mm, 40.0000 mm): Pad 9 [RIN_3] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(12.0000 mm, 41.2750 mm): Pad 1 [RIN_2] of C5 on F.Cu
+    @(18.3500 mm, 40.5000 mm): Pad 10 [RIN_2] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(12.0000 mm, 32.7250 mm): Pad 2 [RIN_1] of C48 on F.Cu
+    @(18.3500 mm, 41.0000 mm): Pad 11 [RIN_1] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(14.7250 mm, 49.5000 mm): Pad 1 [BIN_2] of C7 on F.Cu
+    @(18.3500 mm, 44.0000 mm): Pad 17 [BIN_2] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(16.2750 mm, 51.5000 mm): Pad 2 [BIN_1] of C50 on F.Cu
+    @(18.3500 mm, 44.5000 mm): Pad 18 [BIN_1] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(20.2250 mm, 28.0000 mm): Pad 1 [GIN_3] of C10 on F.Cu
+    @(21.0000 mm, 34.3500 mm): Pad 98 [GIN_3] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(15.0000 mm, 31.2750 mm): Pad 1 [SOGIN_2] of C11 on F.Cu
+    @(20.5000 mm, 34.3500 mm): Pad 99 [SOGIN_2] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(18.3500 mm, 47.0000 mm): Pad 23 [ADC_VS] of U1 on F.Cu
+    @(54.9500 mm, 42.2000 mm): Pad 55 [ADC_VS] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(18.3500 mm, 47.5000 mm): Pad 24 [ADC_HS] of U1 on F.Cu
+    @(54.9500 mm, 42.6000 mm): Pad 54 [ADC_HS] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(21.0000 mm, 49.6500 mm): Pad 28 [ADC_CLK] of U1 on F.Cu
+    @(54.9500 mm, 39.0000 mm): Pad 63 [ADC_CLK] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(21.5000 mm, 49.6500 mm): Pad 29 [ADC_B7] of U1 on F.Cu
+    @(54.9500 mm, 43.0000 mm): Pad 53 [ADC_B7] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(22.0000 mm, 49.6500 mm): Pad 30 [ADC_B6] of U1 on F.Cu
+    @(54.9500 mm, 43.4000 mm): Pad 52 [ADC_B6] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(22.5000 mm, 49.6500 mm): Pad 31 [ADC_B5] of U1 on F.Cu
+    @(54.9500 mm, 43.8000 mm): Pad 51 [ADC_B5] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(23.0000 mm, 49.6500 mm): Pad 32 [ADC_B4] of U1 on F.Cu
+    @(54.9500 mm, 44.2000 mm): Pad 50 [ADC_B4] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(23.5000 mm, 49.6500 mm): Pad 33 [ADC_B3] of U1 on F.Cu
+    @(54.9500 mm, 44.6000 mm): Pad 49 [ADC_B3] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(24.0000 mm, 49.6500 mm): Pad 34 [ADC_B2] of U1 on F.Cu
+    @(54.9500 mm, 45.0000 mm): Pad 48 [ADC_B2] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(24.5000 mm, 49.6500 mm): Pad 35 [ADC_B1] of U1 on F.Cu
+    @(46.6000 mm, 37.0500 mm): Pad 86 [ADC_B1] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(25.0000 mm, 49.6500 mm): Pad 36 [ADC_B0] of U1 on F.Cu
+    @(47.0000 mm, 37.0500 mm): Pad 85 [ADC_B0] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(28.5000 mm, 49.6500 mm): Pad 43 [ADC_G7] of U1 on F.Cu
+    @(47.4000 mm, 37.0500 mm): Pad 84 [ADC_G7] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(29.0000 mm, 49.6500 mm): Pad 44 [ADC_G6] of U1 on F.Cu
+    @(47.8000 mm, 37.0500 mm): Pad 83 [ADC_G6] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(29.5000 mm, 49.6500 mm): Pad 45 [ADC_G5] of U1 on F.Cu
+    @(48.2000 mm, 37.0500 mm): Pad 82 [ADC_G5] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(30.0000 mm, 49.6500 mm): Pad 46 [ADC_G4] of U1 on F.Cu
+    @(48.6000 mm, 37.0500 mm): Pad 81 [ADC_G4] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(30.5000 mm, 49.6500 mm): Pad 47 [ADC_G3] of U1 on F.Cu
+    @(49.0000 mm, 37.0500 mm): Pad 80 [ADC_G3] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(31.0000 mm, 49.6500 mm): Pad 48 [ADC_G2] of U1 on F.Cu
+    @(49.4000 mm, 37.0500 mm): Pad 79 [ADC_G2] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(31.5000 mm, 49.6500 mm): Pad 49 [ADC_G1] of U1 on F.Cu
+    @(50.2000 mm, 37.0500 mm): Pad 77 [ADC_G1] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(32.0000 mm, 49.6500 mm): Pad 50 [ADC_G0] of U1 on F.Cu
+    @(50.6000 mm, 37.0500 mm): Pad 76 [ADC_G0] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(33.6500 mm, 46.0000 mm): Pad 55 [ADC_R7] of U1 on F.Cu
+    @(51.0000 mm, 37.0500 mm): Pad 75 [ADC_R7] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(33.6500 mm, 45.5000 mm): Pad 56 [ADC_R6] of U1 on F.Cu
+    @(51.4000 mm, 37.0500 mm): Pad 74 [ADC_R6] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(33.6500 mm, 45.0000 mm): Pad 57 [ADC_R5] of U1 on F.Cu
+    @(51.8000 mm, 37.0500 mm): Pad 73 [ADC_R5] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(33.6500 mm, 44.5000 mm): Pad 58 [ADC_R4] of U1 on F.Cu
+    @(52.2000 mm, 37.0500 mm): Pad 72 [ADC_R4] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(33.6500 mm, 44.0000 mm): Pad 59 [ADC_R3] of U1 on F.Cu
+    @(52.6000 mm, 37.0500 mm): Pad 71 [ADC_R3] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(33.6500 mm, 43.0000 mm): Pad 61 [ADC_R2] of U1 on F.Cu
+    @(53.0000 mm, 37.0500 mm): Pad 70 [ADC_R2] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(33.6500 mm, 42.5000 mm): Pad 62 [ADC_R1] of U1 on F.Cu
+    @(53.4000 mm, 37.0500 mm): Pad 69 [ADC_R1] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(33.6500 mm, 42.0000 mm): Pad 63 [ADC_R0] of U1 on F.Cu
+    @(53.8000 mm, 37.0500 mm): Pad 68 [ADC_R0] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(43.0000 mm, 35.3250 mm): Pad 1 [ADC_PWDN] of R40 on F.Cu
+    @(33.6500 mm, 38.5000 mm): Pad 70 [ADC_PWDN] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(54.9500 mm, 41.4000 mm): Pad 57 [ADC_PWDN] of U2 on F.Cu
+    @(43.0000 mm, 35.3250 mm): Pad 1 [ADC_PWDN] of R40 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(39.0000 mm, 43.8250 mm): Pad 1 [ADC_RESET_N] of R39 on F.Cu
+    @(45.0500 mm, 43.4000 mm): Pad 15 [ADC_RESET_N] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(33.6500 mm, 38.0000 mm): Pad 71 [ADC_RESET_N] of U1 on F.Cu
+    @(39.0000 mm, 43.8250 mm): Pad 1 [ADC_RESET_N] of R39 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(21.7750 mm, 27.0000 mm): Via [GND] on F.Cu - B.Cu
+    @(21.7750 mm, 26.0000 mm): Pad 2 [GND] of C63 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(14.9500 mm, 27.0000 mm): Pad 2 [GND] of C62 on F.Cu
+    @(15.9500 mm, 26.7000 mm): Track [GND] on F.Cu, length 1.5500 mm
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(26.7750 mm, 54.0000 mm): Pad 2 [GND] of C65 on F.Cu
+    @(27.2500 mm, 53.0000 mm): Track [GND] on F.Cu, length 0.0250 mm
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(41.0000 mm, 38.1750 mm): Pad 2 [GND] of R4 on F.Cu
+    @(42.0000 mm, 37.2250 mm): Via [GND] on F.Cu - B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(89.3500 mm, 38.2000 mm): Pad 10 [GND] of J2 on F.Cu
+    @(89.3500 mm, 36.6800 mm): Pad 5 [GND] of J2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(5.6500 mm, 47.3200 mm): Pad 5 [GND] of J1 on F.Cu
+    @(5.6500 mm, 45.8000 mm): Pad 10 [GND] of J1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(46.8250 mm, 33.0000 mm): Pad 2 [GND] of R3 on F.Cu
+    @(46.8250 mm, 35.0000 mm): Pad 2 [GND] of R2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(23.0000 mm, 52.0500 mm): Pad 2 [GND] of C64 on F.Cu
+    @(20.7750 mm, 52.0000 mm): Track [GND] on F.Cu, length 1.0003 mm
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(57.0000 mm, 48.6750 mm): Pad 2 [GND] of R43 on F.Cu
+    @(54.7750 mm, 49.0000 mm): Track [GND] on F.Cu, length 1.0003 mm
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(5.6500 mm, 38.9600 mm): Pad 7 [GND] of J1 on F.Cu
+    @(5.6500 mm, 41.2400 mm): Pad 8 [GND] of J1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(5.6500 mm, 36.6800 mm): Pad 6 [GND] of J1 on F.Cu
+    @(5.6500 mm, 38.9600 mm): Pad 7 [GND] of J1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(89.3500 mm, 42.7600 mm): Pad 8 [GND] of J2 on F.Cu
+    @(89.3500 mm, 45.0400 mm): Pad 7 [GND] of J2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(89.3500 mm, 47.3200 mm): Pad 6 [GND] of J2 on F.Cu
+    @(89.3500 mm, 45.0400 mm): Pad 7 [GND] of J2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(66.3250 mm, 40.0000 mm): Pad 2 [GND] of R44 on F.Cu
+    @(68.6375 mm, 39.2500 mm): Via [GND] on F.Cu - B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(80.9500 mm, 49.0000 mm): Track [GND] on F.Cu, length 1.0000 mm
+    @(80.9500 mm, 51.5000 mm): Pad 2 [GND] of C68 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(47.5000 mm, 7.4750 mm): Pad 6 [GND] of J4 on F.Cu
+    @(44.9600 mm, 7.4750 mm): Pad 4 [GND] of J4 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(50.0400 mm, 7.4750 mm): Pad 8 [GND] of J4 on F.Cu
+    @(47.5000 mm, 7.4750 mm): Pad 6 [GND] of J4 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(44.9600 mm, 7.4750 mm): Pad 4 [GND] of J4 on F.Cu
+    @(42.4200 mm, 7.4750 mm): Pad 2 [GND] of J4 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(42.0000 mm, 41.2250 mm): Via [GND] on F.Cu - B.Cu
+    @(39.0000 mm, 42.1750 mm): Pad 2 [GND] of R39 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(18.5000 mm, 54.7250 mm): Pad 2 [GND] of C53 on F.Cu
+    @(20.5000 mm, 57.2250 mm): Pad 2 [GND] of C51 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(46.1000 mm, 38.2000 mm): Track [GND] on F.Cu, length 1.0500 mm
+    @(46.8250 mm, 35.0000 mm): Pad 2 [GND] of R2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(29.2750 mm, 26.0000 mm): Pad 2 [GND] of C67 on F.Cu
+    @(27.1250 mm, 28.5000 mm): Track [GND] on F.Cu, length 1.1138 mm
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(79.8500 mm, 55.0000 mm): Track [GND] on F.Cu, length 0.2828 mm
+    @(77.2750 mm, 52.5000 mm): Pad 2 [GND] of C69 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(18.5000 mm, 54.7250 mm): Pad 2 [GND] of C53 on F.Cu
+    @(20.7750 mm, 52.0000 mm): Track [GND] on F.Cu, length 1.0003 mm
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(32.4500 mm, 28.5000 mm): Pad 2 [GND] of C66 on F.Cu
+    @(29.5000 mm, 30.7250 mm): Pad 2 [GND] of C25 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(63.3250 mm, 42.5000 mm): Pad 2 [GND] of R14 on F.Cu
+    @(66.3250 mm, 40.0000 mm): Pad 2 [GND] of R44 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(41.1500 mm, 27.9500 mm): Pad 2 [GND] of Y1 on F.Cu
+    @(39.7750 mm, 24.0000 mm): Pad 2 [GND] of C61 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(89.3500 mm, 42.7600 mm): Pad 8 [GND] of J2 on F.Cu
+    @(89.3500 mm, 38.2000 mm): Pad 10 [GND] of J2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(5.6500 mm, 45.8000 mm): Pad 10 [GND] of J1 on F.Cu
+    @(5.6500 mm, 41.2400 mm): Pad 8 [GND] of J1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(15.8625 mm, 59.0000 mm): Pad 2 [GND] of U4 on F.Cu
+    @(20.5000 mm, 57.2250 mm): Pad 2 [GND] of C51 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(5.6500 mm, 38.9600 mm): Pad 7 [GND] of J1 on F.Cu
+    @(11.0000 mm, 39.7000 mm): Track [GND] on F.Cu, length 0.0250 mm
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(41.1500 mm, 27.9500 mm): Pad 2 [GND] of Y1 on F.Cu
+    @(47.3250 mm, 26.0000 mm): Pad 2 [GND] of R5 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(89.3500 mm, 36.6800 mm): Pad 5 [GND] of J2 on F.Cu
+    @(82.6250 mm, 37.3000 mm): Via [GND] on F.Cu - B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(46.8250 mm, 33.0000 mm): Pad 2 [GND] of R3 on F.Cu
+    @(47.3250 mm, 26.0000 mm): Pad 2 [GND] of R5 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(71.7750 mm, 48.5000 mm): Track [GND] on F.Cu, length 0.6250 mm
+    @(65.8625 mm, 54.9500 mm): Pad 3 [GND] of U6 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(42.4200 mm, 7.4750 mm): Pad 2 [GND] of J4 on F.Cu
+    @(39.7750 mm, 24.0000 mm): Pad 2 [GND] of C61 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(39.0000 mm, 40.3250 mm): Pad 1 [I2C_SCL] of R37 on F.Cu
+    @(45.0500 mm, 42.6000 mm): Pad 13 [I2C_SCL] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(33.6500 mm, 36.5000 mm): Pad 74 [I2C_SCL] of U1 on F.Cu
+    @(39.0000 mm, 40.3250 mm): Pad 1 [I2C_SCL] of R37 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(38.6750 mm, 36.0000 mm): Pad 1 [I2C_SDA] of R38 on F.Cu
+    @(33.6500 mm, 36.0000 mm): Pad 75 [I2C_SDA] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(45.0500 mm, 43.0000 mm): Pad 14 [I2C_SDA] of U2 on F.Cu
+    @(38.6750 mm, 36.0000 mm): Pad 1 [I2C_SDA] of R38 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(18.1375 mm, 59.9500 mm): Pad 4 [V_IN_3V3] of U4 on F.Cu
+    @(31.0000 mm, 34.3500 mm): Pad 78 [V_IN_3V3] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(39.3250 mm, 34.0000 mm): Pad 2 [REF_27M] of R36 on F.Cu
+    @(30.0000 mm, 34.3500 mm): Pad 80 [REF_27M] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(45.0500 mm, 41.8000 mm): Pad 11 [REF_27M] of U2 on F.Cu
+    @(39.3250 mm, 34.0000 mm): Pad 2 [REF_27M] of R36 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(18.1375 mm, 58.0500 mm): Pad 6 [H_IN_3V3] of U4 on F.Cu
+    @(29.5000 mm, 34.3500 mm): Pad 81 [H_IN_3V3] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(23.0000 mm, 53.9500 mm): Pad 1 [ADC_1V9A] of C64 on F.Cu
+    @(25.2250 mm, 54.0000 mm): Pad 1 [ADC_1V9A] of C65 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(23.0000 mm, 53.9500 mm): Pad 1 [ADC_1V9A] of C64 on F.Cu
+    @(16.2875 mm, 53.5000 mm): Track [ADC_1V9A] on F.Cu, length 0.8125 mm
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(13.0500 mm, 27.0000 mm): Pad 1 [ADC_3V3A] of C62 on F.Cu
+    @(13.9500 mm, 29.3500 mm): Track [ADC_3V3A] on In2.Cu, length 1.3435 mm
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(21.2000 mm, 30.0000 mm): Track [ADC_3V3A] on F.Cu, length 0.0250 mm
+    @(20.2250 mm, 26.0000 mm): Pad 1 [ADC_3V3A] of C63 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(39.2000 mm, 42.6500 mm): Track [3V3] on In2.Cu, length 1.5000 mm
+    @(41.0000 mm, 41.6750 mm): Pad 2 [3V3] of R9 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(38.8500 mm, 26.0500 mm): Pad 4 [3V3] of Y1 on F.Cu
+    @(38.8500 mm, 27.9500 mm): Pad 1 [3V3] of Y1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(38.2250 mm, 24.0000 mm): Pad 1 [3V3] of C61 on F.Cu
+    @(38.8500 mm, 26.0500 mm): Pad 4 [3V3] of Y1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(20.5000 mm, 58.7750 mm): Pad 1 [3V3] of C51 on F.Cu
+    @(18.1375 mm, 59.0000 mm): Pad 5 [3V3] of U4 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(18.5000 mm, 56.2750 mm): Pad 1 [3V3] of C53 on F.Cu
+    @(18.1375 mm, 59.0000 mm): Pad 5 [3V3] of U4 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(15.3250 mm, 56.0000 mm): Pad 2 [3V3] of R19 on F.Cu
+    @(13.5000 mm, 58.1750 mm): Pad 2 [3V3] of R21 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(39.0000 mm, 38.6750 mm): Pad 2 [3V3] of R37 on F.Cu
+    @(38.0500 mm, 41.5000 mm): Track [3V3] on In2.Cu, length 1.6263 mm
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(39.0000 mm, 38.6750 mm): Pad 2 [3V3] of R37 on F.Cu
+    @(40.3250 mm, 36.0000 mm): Pad 2 [3V3] of R38 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(68.1375 mm, 53.0500 mm): Pad 5 [3V3] of U6 on F.Cu
+    @(68.3250 mm, 50.0000 mm): Track [3V3] on F.Cu, length 0.5750 mm
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(18.5000 mm, 56.2750 mm): Pad 1 [3V3] of C53 on F.Cu
+    @(15.3250 mm, 56.0000 mm): Pad 2 [3V3] of R19 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(40.3250 mm, 36.0000 mm): Pad 2 [3V3] of R38 on F.Cu
+    @(43.0000 mm, 33.6750 mm): Pad 2 [3V3] of R40 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(49.8250 mm, 24.0000 mm): Pad 2 [3V3] of R8 on F.Cu
+    @(48.3250 mm, 28.0000 mm): Pad 2 [3V3] of R7 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(18.2250 mm, 52.0000 mm): Via [3V3] on F.Cu - B.Cu
+    @(18.5000 mm, 56.2750 mm): Pad 1 [3V3] of C53 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(43.5000 mm, 25.1750 mm): Pad 2 [3V3] of R6 on F.Cu
+    @(38.8500 mm, 26.0500 mm): Pad 4 [3V3] of Y1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(43.5000 mm, 25.1750 mm): Pad 2 [3V3] of R6 on F.Cu
+    @(48.3250 mm, 28.0000 mm): Pad 2 [3V3] of R7 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(48.3250 mm, 28.0000 mm): Pad 2 [3V3] of R7 on F.Cu
+    @(48.2250 mm, 35.0000 mm): Via [3V3] on F.Cu - B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(42.4200 mm, 12.5250 mm): Pad 1 [3V3] of J4 on F.Cu
+    @(38.2250 mm, 24.0000 mm): Pad 1 [3V3] of C61 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(30.5500 mm, 28.5000 mm): Pad 1 [ADC_1V9PLL] of C66 on F.Cu
+    @(31.9000 mm, 31.5500 mm): Track [ADC_1V9PLL] on F.Cu, length 2.2627 mm
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(28.7000 mm, 28.5000 mm): Track [ADC_1V9PLL] on F.Cu, length 0.0250 mm
+    @(27.7250 mm, 26.0000 mm): Pad 1 [ADC_1V9PLL] of C67 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(45.1750 mm, 33.0000 mm): Pad 1 [MODE1] of R3 on F.Cu
+    @(46.2000 mm, 37.0500 mm): Pad 87 [MODE1] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(45.1750 mm, 35.0000 mm): Pad 1 [MODE0] of R2 on F.Cu
+    @(45.8000 mm, 37.0500 mm): Pad 88 [MODE0] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(54.9500 mm, 41.8000 mm): Pad 56 [DAC_PSAVE_N] of U2 on F.Cu
+    @(64.6750 mm, 40.0000 mm): Pad 1 [DAC_PSAVE_N] of R44 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(64.6750 mm, 40.0000 mm): Pad 1 [DAC_PSAVE_N] of R44 on F.Cu
+    @(76.2500 mm, 37.8375 mm): Pad 38 [DAC_PSAVE_N] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(54.9500 mm, 40.6000 mm): Pad 59 [DAC_BLANK_N] of U2 on F.Cu
+    @(61.6750 mm, 42.5000 mm): Pad 1 [DAC_BLANK_N] of R14 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(61.6750 mm, 42.5000 mm): Pad 1 [DAC_BLANK_N] of R14 on F.Cu
+    @(69.8375 mm, 44.2500 mm): Pad 11 [DAC_BLANK_N] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(60.1750 mm, 65.7000 mm): Track [POWER_GOOD] on F.Cu, length 1.2000 mm
+    @(54.9500 mm, 39.4000 mm): Pad 62 [POWER_GOOD] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(45.0500 mm, 44.2000 mm): Pad 17 [DAC_R0] of U2 on F.Cu
+    @(74.7500 mm, 37.8375 mm): Pad 41 [DAC_R0] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(45.0500 mm, 44.6000 mm): Pad 18 [DAC_R1] of U2 on F.Cu
+    @(74.2500 mm, 37.8375 mm): Pad 42 [DAC_R1] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(45.0500 mm, 45.0000 mm): Pad 19 [DAC_R2] of U2 on F.Cu
+    @(73.7500 mm, 37.8375 mm): Pad 43 [DAC_R2] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(45.0500 mm, 45.4000 mm): Pad 20 [DAC_R3] of U2 on F.Cu
+    @(73.2500 mm, 37.8375 mm): Pad 44 [DAC_R3] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(46.6000 mm, 46.9500 mm): Pad 25 [DAC_R4] of U2 on F.Cu
+    @(72.7500 mm, 37.8375 mm): Pad 45 [DAC_R4] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(47.0000 mm, 46.9500 mm): Pad 26 [DAC_R5] of U2 on F.Cu
+    @(72.2500 mm, 37.8375 mm): Pad 46 [DAC_R5] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(47.4000 mm, 46.9500 mm): Pad 27 [DAC_R6] of U2 on F.Cu
+    @(71.7500 mm, 37.8375 mm): Pad 47 [DAC_R6] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(47.8000 mm, 46.9500 mm): Pad 28 [DAC_R7] of U2 on F.Cu
+    @(71.2500 mm, 37.8375 mm): Pad 48 [DAC_R7] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(48.2000 mm, 46.9500 mm): Pad 29 [DAC_G0] of U2 on F.Cu
+    @(69.8375 mm, 40.2500 mm): Pad 3 [DAC_G0] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(48.6000 mm, 46.9500 mm): Pad 30 [DAC_G1] of U2 on F.Cu
+    @(69.8375 mm, 40.7500 mm): Pad 4 [DAC_G1] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(49.0000 mm, 46.9500 mm): Pad 31 [DAC_G2] of U2 on F.Cu
+    @(69.8375 mm, 41.2500 mm): Pad 5 [DAC_G2] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(49.4000 mm, 46.9500 mm): Pad 32 [DAC_G3] of U2 on F.Cu
+    @(69.8375 mm, 41.7500 mm): Pad 6 [DAC_G3] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(49.8000 mm, 46.9500 mm): Pad 33 [DAC_G4] of U2 on F.Cu
+    @(69.8375 mm, 42.2500 mm): Pad 7 [DAC_G4] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(50.2000 mm, 46.9500 mm): Pad 34 [DAC_G5] of U2 on F.Cu
+    @(69.8375 mm, 42.7500 mm): Pad 8 [DAC_G5] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(50.6000 mm, 46.9500 mm): Pad 35 [DAC_G6] of U2 on F.Cu
+    @(69.8375 mm, 43.2500 mm): Pad 9 [DAC_G6] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(51.0000 mm, 46.9500 mm): Pad 36 [DAC_G7] of U2 on F.Cu
+    @(69.8375 mm, 43.7500 mm): Pad 10 [DAC_G7] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(51.4000 mm, 46.9500 mm): Pad 37 [DAC_B0] of U2 on F.Cu
+    @(72.7500 mm, 46.1625 mm): Pad 16 [DAC_B0] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(51.8000 mm, 46.9500 mm): Pad 38 [DAC_B1] of U2 on F.Cu
+    @(73.2500 mm, 46.1625 mm): Pad 17 [DAC_B1] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(52.2000 mm, 46.9500 mm): Pad 39 [DAC_B2] of U2 on F.Cu
+    @(73.7500 mm, 46.1625 mm): Pad 18 [DAC_B2] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(52.6000 mm, 46.9500 mm): Pad 40 [DAC_B3] of U2 on F.Cu
+    @(74.2500 mm, 46.1625 mm): Pad 19 [DAC_B3] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(53.0000 mm, 46.9500 mm): Pad 41 [DAC_B4] of U2 on F.Cu
+    @(74.7500 mm, 46.1625 mm): Pad 20 [DAC_B4] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(53.4000 mm, 46.9500 mm): Pad 42 [DAC_B5] of U2 on F.Cu
+    @(75.2500 mm, 46.1625 mm): Pad 21 [DAC_B5] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(54.9500 mm, 45.4000 mm): Pad 47 [DAC_B6] of U2 on F.Cu
+    @(75.7500 mm, 46.1625 mm): Pad 22 [DAC_B6] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(45.0500 mm, 38.6000 mm): Pad 3 [DAC_B7] of U2 on F.Cu
+    @(76.2500 mm, 46.1625 mm): Pad 23 [DAC_B7] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(41.0000 mm, 39.8250 mm): Pad 1 [JTAGSEL_N] of R4 on F.Cu
+    @(45.0500 mm, 39.0000 mm): Pad 4 [JTAGSEL_N] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(43.5000 mm, 26.8250 mm): Pad 1 [JTAG_TMS] of R6 on F.Cu
+    @(45.0500 mm, 39.4000 mm): Pad 5 [JTAG_TMS] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(44.9600 mm, 12.5250 mm): Pad 3 [JTAG_TMS] of J4 on F.Cu
+    @(43.5000 mm, 26.8250 mm): Pad 1 [JTAG_TMS] of R6 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(47.5000 mm, 12.5250 mm): Pad 5 [JTAG_TCK] of J4 on F.Cu
+    @(45.6750 mm, 26.0000 mm): Pad 1 [JTAG_TCK] of R5 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(45.6750 mm, 26.0000 mm): Pad 1 [JTAG_TCK] of R5 on F.Cu
+    @(45.0500 mm, 39.8000 mm): Pad 6 [JTAG_TCK] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(46.6750 mm, 28.0000 mm): Pad 1 [JTAG_TDI] of R7 on F.Cu
+    @(45.0500 mm, 40.2000 mm): Pad 7 [JTAG_TDI] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(50.0400 mm, 12.5250 mm): Pad 7 [JTAG_TDI] of J4 on F.Cu
+    @(46.6750 mm, 28.0000 mm): Pad 1 [JTAG_TDI] of R7 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(45.0500 mm, 40.6000 mm): Pad 8 [JTAG_TDO] of U2 on F.Cu
+    @(52.5800 mm, 12.5250 mm): Pad 9 [JTAG_TDO] of J4 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(52.5800 mm, 7.4750 mm): Pad 10 [FPGA_RECONFIG_N] of J4 on F.Cu
+    @(48.1750 mm, 24.0000 mm): Pad 1 [FPGA_RECONFIG_N] of R8 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(48.1750 mm, 24.0000 mm): Pad 1 [FPGA_RECONFIG_N] of R8 on F.Cu
+    @(45.0500 mm, 41.0000 mm): Pad 9 [FPGA_RECONFIG_N] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(41.0000 mm, 43.3250 mm): Pad 1 [FPGA_DONE] of R9 on F.Cu
+    @(45.0500 mm, 41.4000 mm): Pad 10 [FPGA_DONE] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(57.0000 mm, 50.3250 mm): Pad 1 [DAC_CLK_RAW] of R43 on F.Cu
+    @(65.8625 mm, 54.0000 mm): Pad 2 [DAC_CLK_RAW] of U6 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(45.0500 mm, 43.8000 mm): Pad 16 [DAC_CLK_RAW] of U2 on F.Cu
+    @(57.0000 mm, 50.3250 mm): Pad 1 [DAC_CLK_RAW] of R43 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(75.7250 mm, 52.5000 mm): Pad 1 [DAC_3V3] of C69 on F.Cu
+    @(75.3500 mm, 51.0500 mm): Track [DAC_3V3] on In2.Cu, length 3.8891 mm
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(77.2875 mm, 50.5000 mm): Track [DAC_3V3] on F.Cu, length 0.1505 mm
+    @(79.0500 mm, 51.5000 mm): Pad 1 [DAC_3V3] of C68 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(73.3250 mm, 50.5000 mm): Pad 2 [DAC_CLK] of R24 on F.Cu
+    @(76.7500 mm, 46.1625 mm): Pad 24 [DAC_CLK] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(5.6500 mm, 42.0000 mm): Pad 13 [H_IN] of J1 on F.Cu
+    @(11.1750 mm, 53.5000 mm): Pad 1 [H_IN] of R18 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(5.6500 mm, 44.2800 mm): Pad 14 [V_IN] of J1 on F.Cu
+    @(11.5000 mm, 57.3250 mm): Pad 1 [V_IN] of R20 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(12.8250 mm, 53.5000 mm): Pad 2 [H_IN_BUF] of R18 on F.Cu
+    @(13.6750 mm, 56.0000 mm): Pad 1 [H_IN_BUF] of R19 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(13.6750 mm, 56.0000 mm): Pad 1 [H_IN_BUF] of R19 on F.Cu
+    @(15.8625 mm, 58.0500 mm): Pad 1 [H_IN_BUF] of U4 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(13.5000 mm, 59.8250 mm): Pad 1 [V_IN_BUF] of R21 on F.Cu
+    @(15.8625 mm, 59.9500 mm): Pad 3 [V_IN_BUF] of U4 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(11.5000 mm, 55.6750 mm): Pad 2 [V_IN_BUF] of R20 on F.Cu
+    @(13.5000 mm, 59.8250 mm): Pad 1 [V_IN_BUF] of R21 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(68.1375 mm, 54.9500 mm): Pad 4 [DAC_CLK_BUF] of U6 on F.Cu
+    @(71.6750 mm, 50.5000 mm): Pad 1 [DAC_CLK_BUF] of R24 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(37.6750 mm, 34.0000 mm): Pad 1 [REF_27M_RAW] of R36 on F.Cu
+    @(41.1500 mm, 26.0500 mm): Pad 3 [REF_27M_RAW] of Y1 on F.Cu
+
+** Found 0 Footprint errors **
+
+** End of Report **

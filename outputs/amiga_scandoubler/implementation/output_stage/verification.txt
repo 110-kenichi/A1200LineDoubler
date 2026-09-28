@@ -1,0 +1,2 @@
+PASS 1816/2048: 27 output FFs directly drive OBUF inputs; RGB/BLANK DFFC INIT=0, H/V DFFP INIT=1 (Yosys primitive defaults); PSDA_SEL=1000; 62 ports; RAM6; ODDR pin16; source periods; single-domain timing
+NOT validated: actual device GSR/PLL phase/jitter, full IO/CDC setup and hold, asynchronous clear recovery/removal and board trace timing.

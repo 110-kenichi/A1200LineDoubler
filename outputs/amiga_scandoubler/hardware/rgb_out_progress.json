@@ -1,0 +1,26 @@
+[
+  {
+    "net": "G_OUT",
+    "layer": "B.Cu",
+    "IC_via_mm": [
+      76.3625,
+      41.65
+    ],
+    "resistor_via_mm": [
+      82.3,
+      44.125
+    ]
+  },
+  {
+    "net": "B_OUT",
+    "layer": "B.Cu",
+    "IC_via_mm": [
+      76.76249999999999,
+      43.25
+    ],
+    "resistor_via_mm": [
+      80.3,
+      47.625
+    ]
+  }
+]

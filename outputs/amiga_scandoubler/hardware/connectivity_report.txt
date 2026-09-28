@@ -1,0 +1,32 @@
+Schematic connectivity audit / 2026-09-12
+KiCad 7.0.6 XML export; review revision 0.13
+
+PASS All 135 component references survive KiCad export
+PASS All 129 named nets match explicit schematic intent
+PASS Only intentional no-connect nets are additional
+PASS R ADC physical bits [9:2] map to [7:0]
+PASS R DAC physical bits [7:0]
+PASS G ADC physical bits [9:2] map to [7:0]
+PASS G DAC physical bits [7:0]
+PASS B ADC physical bits [9:2] map to [7:0]
+PASS B DAC physical bits [7:0]
+PASS FPGA VCC pins on 1.2V
+PASS FPGA VCCIO/VCCX pins on 3.3V
+PASS FPGA grounds and exposed pad connected
+PASS ADC clock on FPGA RPLL input pin 63
+PASS No direct 5V connection to FPGA
+PASS Core regulator enable follows 3.3V power-good
+PASS DAC SYNC and complementary outputs grounded
+PASS DAC COMP capacitor returns to VAA
+PASS Input DDC supply and data isolated
+PASS Input standard VGA RGB/H/V pinout
+PASS Output standard VGA RGB/H/V pinout
+PASS FPGA pin 56 drives DAC PSAVE_N pin 38
+PASS ADC FID output intentionally unused for Bob
+PASS DAC PSAVE_N has 4.7k default-off pulldown
+PASS DAC clock moved to FPGA IOL17B pin 16
+PASS ADC power-down moved to FPGA pin 57
+
+Failures: 0
+
+Scope: connectivity and selected physical pin checks only. Not ERC, PCB DRC, FPGA fitting, electrical compliance, analog performance or hardware validation.

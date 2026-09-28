@@ -1,0 +1,323 @@
+{
+  "status": "EXPLORATORY_ROUTED_NOT_TIMING_SIGNOFF",
+  "tool": "nextpnr-0.11.1-26-ga601751d",
+  "suite": "OSS CAD Suite 2026-09-12",
+  "profiles": [
+    {
+      "H_SAMPLES": 1816,
+      "command": "nextpnr-himbaechel --device GW1N-LV4QN88C6/I5 --vopt family=GW1N-4 --json synthesis/board_1816.json --vopt cst=constraints/amiga_board_top.cst --vopt sspi_as_gpio --sdc implementation/exploratory_periods.sdc --freq 56.75 --write implementation/board_1816_routed.json --report implementation/board_1816_timing.json --log implementation/board_1816_route.log",
+      "fmax": {
+        "clocks.adc_clock": {
+          "achieved": 316.3555908203125,
+          "constraint": 28.375232696533203
+        },
+        "logic_core.clk_ref": {
+          "achieved": 72.01498413085938,
+          "constraint": 27.000028610229492
+        },
+        "video_clock": {
+          "achieved": 80.36647033691406,
+          "constraint": 56.750465393066406
+        }
+      },
+      "utilization": {
+        "ALU": {
+          "available": 3456,
+          "used": 564
+        },
+        "ALU54D": {
+          "available": 8,
+          "used": 0
+        },
+        "BSRAM": {
+          "available": 10,
+          "used": 6
+        },
+        "BUFG": {
+          "available": 17,
+          "used": 1
+        },
+        "CLKDIV": {
+          "available": 6,
+          "used": 0
+        },
+        "CLKDIV2": {
+          "available": 12,
+          "used": 0
+        },
+        "DCS": {
+          "available": 4,
+          "used": 0
+        },
+        "DFF": {
+          "available": 3456,
+          "used": 672
+        },
+        "DHCEN": {
+          "available": 18,
+          "used": 0
+        },
+        "DQCE": {
+          "available": 12,
+          "used": 0
+        },
+        "FLASH256K": {
+          "available": 1,
+          "used": 0
+        },
+        "GND": {
+          "available": 1,
+          "used": 1
+        },
+        "GSR": {
+          "available": 1,
+          "used": 1
+        },
+        "IOB": {
+          "available": 218,
+          "used": 60
+        },
+        "IOBUF": {
+          "available": 0,
+          "used": 2
+        },
+        "IOLOGICI": {
+          "available": 198,
+          "used": 0
+        },
+        "IOLOGICO": {
+          "available": 198,
+          "used": 1
+        },
+        "LUT4": {
+          "available": 4608,
+          "used": 1106
+        },
+        "MULT18X18": {
+          "available": 16,
+          "used": 0
+        },
+        "MULT36X36": {
+          "available": 4,
+          "used": 0
+        },
+        "MULT9X9": {
+          "available": 32,
+          "used": 0
+        },
+        "MULTADDALU18X18": {
+          "available": 8,
+          "used": 0
+        },
+        "MULTALU18X18": {
+          "available": 8,
+          "used": 0
+        },
+        "MULTALU36X18": {
+          "available": 8,
+          "used": 0
+        },
+        "MUX2_LUT5": {
+          "available": 2304,
+          "used": 98
+        },
+        "MUX2_LUT6": {
+          "available": 1152,
+          "used": 14
+        },
+        "MUX2_LUT7": {
+          "available": 576,
+          "used": 5
+        },
+        "MUX2_LUT8": {
+          "available": 576,
+          "used": 2
+        },
+        "OSC": {
+          "available": 1,
+          "used": 0
+        },
+        "PADD18": {
+          "available": 16,
+          "used": 0
+        },
+        "PADD9": {
+          "available": 32,
+          "used": 0
+        },
+        "VCC": {
+          "available": 1,
+          "used": 1
+        },
+        "rPLL": {
+          "available": 2,
+          "used": 1
+        }
+      },
+      "ODDR_BEL": "X0Y16/IOLOGICBO",
+      "PLL_BEL": "X27Y0/PLL",
+      "warnings": [
+        "Warning: Failed to route net 'logic_core.adc_rgb[6]' from X37Y10/F6 to X28Y10/D3 using dedicated routing."
+      ],
+      "source_sha256": "3dbbd936bb59eb791053c26e23225c5158a76ac282ce555b792c328ea55ed03b"
+    },
+    {
+      "H_SAMPLES": 2048,
+      "command": "nextpnr-himbaechel --device GW1N-LV4QN88C6/I5 --vopt family=GW1N-4 --json synthesis/board_2048.json --vopt cst=constraints/amiga_board_top.cst --vopt sspi_as_gpio --sdc implementation/exploratory_periods.sdc --freq 56.75 --write implementation/board_2048_routed.json --report implementation/board_2048_timing.json --log implementation/board_2048_route.log",
+      "fmax": {
+        "clocks.adc_clock": {
+          "achieved": 310.75201416015625,
+          "constraint": 28.375232696533203
+        },
+        "logic_core.clk_ref": {
+          "achieved": 72.35890197753906,
+          "constraint": 27.000028610229492
+        },
+        "video_clock": {
+          "achieved": 92.29349517822266,
+          "constraint": 56.750465393066406
+        }
+      },
+      "utilization": {
+        "ALU": {
+          "available": 3456,
+          "used": 534
+        },
+        "ALU54D": {
+          "available": 8,
+          "used": 0
+        },
+        "BSRAM": {
+          "available": 10,
+          "used": 6
+        },
+        "BUFG": {
+          "available": 17,
+          "used": 1
+        },
+        "CLKDIV": {
+          "available": 6,
+          "used": 0
+        },
+        "CLKDIV2": {
+          "available": 12,
+          "used": 0
+        },
+        "DCS": {
+          "available": 4,
+          "used": 0
+        },
+        "DFF": {
+          "available": 3456,
+          "used": 674
+        },
+        "DHCEN": {
+          "available": 18,
+          "used": 0
+        },
+        "DQCE": {
+          "available": 12,
+          "used": 0
+        },
+        "FLASH256K": {
+          "available": 1,
+          "used": 0
+        },
+        "GND": {
+          "available": 1,
+          "used": 1
+        },
+        "GSR": {
+          "available": 1,
+          "used": 1
+        },
+        "IOB": {
+          "available": 218,
+          "used": 60
+        },
+        "IOBUF": {
+          "available": 0,
+          "used": 2
+        },
+        "IOLOGICI": {
+          "available": 198,
+          "used": 0
+        },
+        "IOLOGICO": {
+          "available": 198,
+          "used": 1
+        },
+        "LUT4": {
+          "available": 4608,
+          "used": 1120
+        },
+        "MULT18X18": {
+          "available": 16,
+          "used": 0
+        },
+        "MULT36X36": {
+          "available": 4,
+          "used": 0
+        },
+        "MULT9X9": {
+          "available": 32,
+          "used": 0
+        },
+        "MULTADDALU18X18": {
+          "available": 8,
+          "used": 0
+        },
+        "MULTALU18X18": {
+          "available": 8,
+          "used": 0
+        },
+        "MULTALU36X18": {
+          "available": 8,
+          "used": 0
+        },
+        "MUX2_LUT5": {
+          "available": 2304,
+          "used": 108
+        },
+        "MUX2_LUT6": {
+          "available": 1152,
+          "used": 19
+        },
+        "MUX2_LUT7": {
+          "available": 576,
+          "used": 8
+        },
+        "MUX2_LUT8": {
+          "available": 576,
+          "used": 3
+        },
+        "OSC": {
+          "available": 1,
+          "used": 0
+        },
+        "PADD18": {
+          "available": 16,
+          "used": 0
+        },
+        "PADD9": {
+          "available": 32,
+          "used": 0
+        },
+        "VCC": {
+          "available": 1,
+          "used": 1
+        },
+        "rPLL": {
+          "available": 2,
+          "used": 1
+        }
+      },
+      "ODDR_BEL": "X0Y16/IOLOGICBO",
+      "PLL_BEL": "X27Y0/PLL",
+      "warnings": [
+        "Warning: Failed to route net 'logic_core.adc_rgb[6]' from X37Y10/F6 to X30Y10/D1 using dedicated routing."
+      ],
+      "source_sha256": "8c1cda48d12ce9d0b9a267b978934feaf28f5fcaf3f4ec8ce59c5679228299ab"
+    }
+  ]
+}

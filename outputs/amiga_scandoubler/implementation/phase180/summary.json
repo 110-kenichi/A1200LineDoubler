@@ -1,0 +1,396 @@
+{
+  "status": "PHASE180_ROUTED_NOT_SIGNOFF",
+  "profiles": [
+    {
+      "H_SAMPLES": 1816,
+      "tool": "Yosys 0.69+24 (git sha1 d0e71cfb7-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)",
+      "cells": {
+        "$scopeinfo": 15,
+        "ALU": 476,
+        "DFF": 115,
+        "DFFC": 81,
+        "DFFCE": 6,
+        "DFFNCE": 25,
+        "DFFNP": 3,
+        "DFFNPE": 1,
+        "DFFP": 5,
+        "DFFR": 159,
+        "DFFRE": 262,
+        "DFFS": 8,
+        "DFFSE": 7,
+        "DPX9B": 6,
+        "GND": 1,
+        "IBUF": 29,
+        "IOBUF": 2,
+        "LUT1": 90,
+        "LUT2": 283,
+        "LUT3": 125,
+        "LUT4": 279,
+        "MUX2_LUT5": 101,
+        "MUX2_LUT6": 19,
+        "MUX2_LUT7": 6,
+        "MUX2_LUT8": 2,
+        "OBUF": 31,
+        "ODDR": 1,
+        "VCC": 1,
+        "rPLL": 1
+      },
+      "fmax": {
+        "clocks.adc_clock": {
+          "achieved": 310.75201416015625,
+          "constraint": 28.375232696533203
+        },
+        "logic_core.clk_ref": {
+          "achieved": 68.4697036743164,
+          "constraint": 27.000028610229492
+        },
+        "video_clock": {
+          "achieved": 85.06295013427734,
+          "constraint": 56.750465393066406
+        }
+      },
+      "utilization": {
+        "ALU": {
+          "available": 3456,
+          "used": 564
+        },
+        "ALU54D": {
+          "available": 8,
+          "used": 0
+        },
+        "BSRAM": {
+          "available": 10,
+          "used": 6
+        },
+        "BUFG": {
+          "available": 17,
+          "used": 1
+        },
+        "CLKDIV": {
+          "available": 6,
+          "used": 0
+        },
+        "CLKDIV2": {
+          "available": 12,
+          "used": 0
+        },
+        "DCS": {
+          "available": 4,
+          "used": 0
+        },
+        "DFF": {
+          "available": 3456,
+          "used": 672
+        },
+        "DHCEN": {
+          "available": 18,
+          "used": 0
+        },
+        "DQCE": {
+          "available": 12,
+          "used": 0
+        },
+        "FLASH256K": {
+          "available": 1,
+          "used": 0
+        },
+        "GND": {
+          "available": 1,
+          "used": 1
+        },
+        "GSR": {
+          "available": 1,
+          "used": 1
+        },
+        "IOB": {
+          "available": 218,
+          "used": 60
+        },
+        "IOBUF": {
+          "available": 0,
+          "used": 2
+        },
+        "IOLOGICI": {
+          "available": 198,
+          "used": 0
+        },
+        "IOLOGICO": {
+          "available": 198,
+          "used": 1
+        },
+        "LUT4": {
+          "available": 4608,
+          "used": 1130
+        },
+        "MULT18X18": {
+          "available": 16,
+          "used": 0
+        },
+        "MULT36X36": {
+          "available": 4,
+          "used": 0
+        },
+        "MULT9X9": {
+          "available": 32,
+          "used": 0
+        },
+        "MULTADDALU18X18": {
+          "available": 8,
+          "used": 0
+        },
+        "MULTALU18X18": {
+          "available": 8,
+          "used": 0
+        },
+        "MULTALU36X18": {
+          "available": 8,
+          "used": 0
+        },
+        "MUX2_LUT5": {
+          "available": 2304,
+          "used": 101
+        },
+        "MUX2_LUT6": {
+          "available": 1152,
+          "used": 19
+        },
+        "MUX2_LUT7": {
+          "available": 576,
+          "used": 6
+        },
+        "MUX2_LUT8": {
+          "available": 576,
+          "used": 2
+        },
+        "OSC": {
+          "available": 1,
+          "used": 0
+        },
+        "PADD18": {
+          "available": 16,
+          "used": 0
+        },
+        "PADD9": {
+          "available": 32,
+          "used": 0
+        },
+        "VCC": {
+          "available": 1,
+          "used": 1
+        },
+        "rPLL": {
+          "available": 2,
+          "used": 1
+        }
+      },
+      "warnings": [
+        "Warning: Failed to route net 'logic_core.adc_rgb[6]' from X37Y10/F6 to X28Y10/D2 using dedicated routing."
+      ]
+    },
+    {
+      "H_SAMPLES": 2048,
+      "tool": "Yosys 0.69+24 (git sha1 d0e71cfb7-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)",
+      "cells": {
+        "$scopeinfo": 15,
+        "ALU": 453,
+        "DFF": 115,
+        "DFFC": 81,
+        "DFFCE": 6,
+        "DFFNCE": 25,
+        "DFFNP": 3,
+        "DFFNPE": 1,
+        "DFFP": 5,
+        "DFFR": 159,
+        "DFFRE": 264,
+        "DFFS": 8,
+        "DFFSE": 7,
+        "DPX9B": 6,
+        "GND": 1,
+        "IBUF": 29,
+        "IOBUF": 2,
+        "LUT1": 80,
+        "LUT2": 289,
+        "LUT3": 121,
+        "LUT4": 268,
+        "MUX2_LUT5": 95,
+        "MUX2_LUT6": 14,
+        "MUX2_LUT7": 5,
+        "MUX2_LUT8": 2,
+        "OBUF": 31,
+        "ODDR": 1,
+        "VCC": 1,
+        "rPLL": 1
+      },
+      "fmax": {
+        "clocks.adc_clock": {
+          "achieved": 310.75201416015625,
+          "constraint": 28.375232696533203
+        },
+        "logic_core.clk_ref": {
+          "achieved": 69.18978881835938,
+          "constraint": 27.000028610229492
+        },
+        "video_clock": {
+          "achieved": 79.08889770507812,
+          "constraint": 56.750465393066406
+        }
+      },
+      "utilization": {
+        "ALU": {
+          "available": 3456,
+          "used": 534
+        },
+        "ALU54D": {
+          "available": 8,
+          "used": 0
+        },
+        "BSRAM": {
+          "available": 10,
+          "used": 6
+        },
+        "BUFG": {
+          "available": 17,
+          "used": 1
+        },
+        "CLKDIV": {
+          "available": 6,
+          "used": 0
+        },
+        "CLKDIV2": {
+          "available": 12,
+          "used": 0
+        },
+        "DCS": {
+          "available": 4,
+          "used": 0
+        },
+        "DFF": {
+          "available": 3456,
+          "used": 674
+        },
+        "DHCEN": {
+          "available": 18,
+          "used": 0
+        },
+        "DQCE": {
+          "available": 12,
+          "used": 0
+        },
+        "FLASH256K": {
+          "available": 1,
+          "used": 0
+        },
+        "GND": {
+          "available": 1,
+          "used": 1
+        },
+        "GSR": {
+          "available": 1,
+          "used": 1
+        },
+        "IOB": {
+          "available": 218,
+          "used": 60
+        },
+        "IOBUF": {
+          "available": 0,
+          "used": 2
+        },
+        "IOLOGICI": {
+          "available": 198,
+          "used": 0
+        },
+        "IOLOGICO": {
+          "available": 198,
+          "used": 1
+        },
+        "LUT4": {
+          "available": 4608,
+          "used": 1109
+        },
+        "MULT18X18": {
+          "available": 16,
+          "used": 0
+        },
+        "MULT36X36": {
+          "available": 4,
+          "used": 0
+        },
+        "MULT9X9": {
+          "available": 32,
+          "used": 0
+        },
+        "MULTADDALU18X18": {
+          "available": 8,
+          "used": 0
+        },
+        "MULTALU18X18": {
+          "available": 8,
+          "used": 0
+        },
+        "MULTALU36X18": {
+          "available": 8,
+          "used": 0
+        },
+        "MUX2_LUT5": {
+          "available": 2304,
+          "used": 95
+        },
+        "MUX2_LUT6": {
+          "available": 1152,
+          "used": 14
+        },
+        "MUX2_LUT7": {
+          "available": 576,
+          "used": 5
+        },
+        "MUX2_LUT8": {
+          "available": 576,
+          "used": 2
+        },
+        "OSC": {
+          "available": 1,
+          "used": 0
+        },
+        "PADD18": {
+          "available": 16,
+          "used": 0
+        },
+        "PADD9": {
+          "available": 32,
+          "used": 0
+        },
+        "VCC": {
+          "available": 1,
+          "used": 1
+        },
+        "rPLL": {
+          "available": 2,
+          "used": 1
+        }
+      },
+      "warnings": [
+        "Warning: Failed to route net 'logic_core.adc_rgb[6]' from X37Y10/F6 to X30Y10/D2 using dedicated routing."
+      ]
+    }
+  ],
+  "rtl_sha256": {
+    "adc_power_sequence.sv": "6091e67024fc6c18df46006f04475115c699abc9b4e53cfb47bf6177049319e4",
+    "adc_rgb_capture.sv": "502c80ae154974b680af631236473c7dae8d55ef233527614140eba68785e9d9",
+    "amiga_board_top.sv": "44d65438d1d1a158c6f0c7325b020bd255fb3ca5adfe7a931348f815b8e1f04d",
+    "amiga_logic_core.sv": "9e0eae31d3d6c4497e557d1efb780270d5776a3320c1f4af00d5aec597599c4e",
+    "clock_recovery_system.sv": "97e6f74615bfabd8b870b93e618cdfc6395b774635a10d905b54bbeed16dc42f",
+    "configuration_reset.sv": "6b7a874eda7de9d7f4828a98724fba99a0479a5563b4dd0dacd9b61608efe3c4",
+    "field_sync.sv": "a711272897f9c98f2fbdb3da6ee6cd33e27c1769f834e142b19a578ce1b55d1c",
+    "gowin_video_pll.sv": "5e1a140fe6370b0964c3d4481edd205adecb20b9d52b970c5e91f60f58a0273e",
+    "i2c_register_write.sv": "671da1a1028274b153badff1fb8c65b8e8f0695ee1b9737d32adc5bd24ad6f7c",
+    "line_double.sv": "96c5788dab3493525dc74686e4fe2fc19962a0925c813d5356de5a0769a7d988",
+    "pll_restart_control.sv": "7ff7de38ecc4088a71d3ab7390d0a53a7f185be173a3eb49c606a2a3a463f90d",
+    "stream_input_video.sv": "1e8e54aa22f28aac8b2498620dd900b2677dba0ae956bf62f45b1a23593629b1",
+    "stream_sync_frontend.sv": "9ac0e0a1590ca6600c63b9c29684e87db5dffa7dfd3329b1f19a43526134f2d5",
+    "supervised_video_core.sv": "1a889b63009c473a69c7691fb9dcde424d08a2298b4c6810468bc24535381bac",
+    "tvp7002_boot.sv": "96cc3f07a468693ef8fb076056b893101eb9583227242539ff0b436eac90524b",
+    "video_clock_guard.sv": "16b00354c311f81168cbe56645000ab03c4b866f4f177d148723c96ac6cc5161",
+    "video_core.sv": "5466b20fe0748ff5eec6fa1596b42fc59cf7a8fc4665da762cd7415a9b979901"
+  }
+}

@@ -1,0 +1,3 @@
+PASS board_1816: 62 mapped ports; I2C low/open and readback; ODDR direct output; PLL clock; 32 initialized reset stages; RAM6; final CHECK0
+PASS board_2048: 62 mapped ports; I2C low/open and readback; ODDR direct output; PLL clock; 32 initialized reset stages; RAM6; final CHECK0
+Scope: synthesis connectivity/initialization only; no placement or timing proof.

@@ -1,0 +1,23 @@
+yosys -l implementation/output_release/board_1816_synthesis.log implementation/output_release/board_1816.ys
+
+nextpnr-himbaechel --device GW1N-LV4QN88C6/I5 --vopt family=GW1N-4 --json implementation/output_release/board_1816.json --vopt cst=constraints/amiga_board_top.cst --vopt sspi_as_gpio --sdc implementation/exploratory_periods.sdc --freq 56.75 --write implementation/output_release/board_1816_routed.json --report implementation/output_release/board_1816_timing.json --sdf implementation/output_release/capture_1816.sdf --log implementation/output_release/board_1816_route.log
+
+yosys -l implementation/output_release/board_2048_synthesis.log implementation/output_release/board_2048.ys
+
+nextpnr-himbaechel --device GW1N-LV4QN88C6/I5 --vopt family=GW1N-4 --json implementation/output_release/board_2048.json --vopt cst=constraints/amiga_board_top.cst --vopt sspi_as_gpio --sdc implementation/exploratory_periods.sdc --freq 56.75 --write implementation/output_release/board_2048_routed.json --report implementation/output_release/board_2048_timing.json --sdf implementation/output_release/capture_2048.sdf --log implementation/output_release/board_2048_route.log
+
+python implementation/output_release/verify_phase180.py
+
+python implementation/analyze_dac_sdf.py --implementation output_release
+
+python implementation/analyze_capture_sdf.py --phase 180 --implementation output_release
+
+yosys implementation/output_release/stage.ys
+
+python sim/run_output_stage_tests.py --bin-dir <Icarus-bin> --report output_release_test.txt
+
+python sim/run_output_stage_tests.py --bin-dir <Icarus-bin> --gowin-library <Yosys-gowin-cells_sim.v> --report output_release_mapped_test.txt
+
+python sim/run_system_tests.py --bin-dir <Icarus-bin> --report system_output_release_report.txt
+
+python implementation/output_release/analyze_release.py

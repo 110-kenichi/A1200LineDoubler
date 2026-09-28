@@ -1,0 +1,2 @@
+PASS 1816/2048: PSDA_SEL=1000 in synthesized and routed PLL; other PLL settings preserved; 62 ports; RAM6; ODDR pin16; source periods; single-domain timing
+NOT validated: actual PLL phase/jitter, missing SDF LUT arcs, full IO/CDC setup and hold.

@@ -1,0 +1,4 @@
+Yosys cells_sim.v SHA256 0af82c7c45d64bbdfca798b951c3cd5ba4b6a6f85336f8aaa518725a5a5f7222
+
+PASS dac_output_stage: 593 alignment, stability, stopped-clock clear and restart checks
+C:\Users\zanac2\Documents\Codex\2026-09-08\m\outputs\amiga_scandoubler\sim\tb_dac_output_stage.sv:52: $finish called at 6220000 (1ps)

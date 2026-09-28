@@ -1,0 +1,399 @@
+{
+  "status": "ROUTE_INTERVAL_ONLY_NOT_RECOVERY_REMOVAL_SIGNOFF",
+  "profiles": [
+    {
+      "H_SAMPLES": 1816,
+      "sdf_sha256": "7c1f0aef24874a875e92eed64cc2c5658cfa5ac58f635138d38d6ca5ef117617",
+      "source": "logic_core.output_stage.clear_DFFP_Q",
+      "missing_recovery_removal_models": 27,
+      "paths": [
+        {
+          "destination": "logic_core.output_stage.blank_n_DFFC_Q/CLEAR",
+          "release_after_same_edge_min_ps": 2452.0,
+          "release_after_same_edge_max_ps": 2577.0,
+          "time_before_next_edge_min_ps": 15044.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.hs_n_DFFP_Q/PRESET",
+          "release_after_same_edge_min_ps": 2452.0,
+          "release_after_same_edge_max_ps": 2577.0,
+          "time_before_next_edge_min_ps": 15044.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q/CLEAR",
+          "release_after_same_edge_min_ps": 1803.0,
+          "release_after_same_edge_max_ps": 1928.0,
+          "time_before_next_edge_min_ps": 15693.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_1/CLEAR",
+          "release_after_same_edge_min_ps": 1476.0,
+          "release_after_same_edge_max_ps": 1601.0,
+          "time_before_next_edge_min_ps": 16020.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_10/CLEAR",
+          "release_after_same_edge_min_ps": 1476.0,
+          "release_after_same_edge_max_ps": 1601.0,
+          "time_before_next_edge_min_ps": 16020.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_11/CLEAR",
+          "release_after_same_edge_min_ps": 3017.0,
+          "release_after_same_edge_max_ps": 3142.0,
+          "time_before_next_edge_min_ps": 14479.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_12/CLEAR",
+          "release_after_same_edge_min_ps": 3017.0,
+          "release_after_same_edge_max_ps": 3142.0,
+          "time_before_next_edge_min_ps": 14479.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_13/CLEAR",
+          "release_after_same_edge_min_ps": 1476.0,
+          "release_after_same_edge_max_ps": 1601.0,
+          "time_before_next_edge_min_ps": 16020.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_14/CLEAR",
+          "release_after_same_edge_min_ps": 3017.0,
+          "release_after_same_edge_max_ps": 3142.0,
+          "time_before_next_edge_min_ps": 14479.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_15/CLEAR",
+          "release_after_same_edge_min_ps": 3017.0,
+          "release_after_same_edge_max_ps": 3142.0,
+          "time_before_next_edge_min_ps": 14479.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_16/CLEAR",
+          "release_after_same_edge_min_ps": 1803.0,
+          "release_after_same_edge_max_ps": 1928.0,
+          "time_before_next_edge_min_ps": 15693.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_17/CLEAR",
+          "release_after_same_edge_min_ps": 1803.0,
+          "release_after_same_edge_max_ps": 1928.0,
+          "time_before_next_edge_min_ps": 15693.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_18/CLEAR",
+          "release_after_same_edge_min_ps": 1803.0,
+          "release_after_same_edge_max_ps": 1928.0,
+          "time_before_next_edge_min_ps": 15693.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_19/CLEAR",
+          "release_after_same_edge_min_ps": 1803.0,
+          "release_after_same_edge_max_ps": 1928.0,
+          "time_before_next_edge_min_ps": 15693.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_2/CLEAR",
+          "release_after_same_edge_min_ps": 1803.0,
+          "release_after_same_edge_max_ps": 1928.0,
+          "time_before_next_edge_min_ps": 15693.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_20/CLEAR",
+          "release_after_same_edge_min_ps": 1803.0,
+          "release_after_same_edge_max_ps": 1928.0,
+          "time_before_next_edge_min_ps": 15693.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_21/CLEAR",
+          "release_after_same_edge_min_ps": 1803.0,
+          "release_after_same_edge_max_ps": 1928.0,
+          "time_before_next_edge_min_ps": 15693.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_22/CLEAR",
+          "release_after_same_edge_min_ps": 3017.0,
+          "release_after_same_edge_max_ps": 3142.0,
+          "time_before_next_edge_min_ps": 14479.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_23/CLEAR",
+          "release_after_same_edge_min_ps": 1476.0,
+          "release_after_same_edge_max_ps": 1601.0,
+          "time_before_next_edge_min_ps": 16020.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_3/CLEAR",
+          "release_after_same_edge_min_ps": 1476.0,
+          "release_after_same_edge_max_ps": 1601.0,
+          "time_before_next_edge_min_ps": 16020.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_4/CLEAR",
+          "release_after_same_edge_min_ps": 3017.0,
+          "release_after_same_edge_max_ps": 3142.0,
+          "time_before_next_edge_min_ps": 14479.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_5/CLEAR",
+          "release_after_same_edge_min_ps": 3017.0,
+          "release_after_same_edge_max_ps": 3142.0,
+          "time_before_next_edge_min_ps": 14479.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_6/CLEAR",
+          "release_after_same_edge_min_ps": 3017.0,
+          "release_after_same_edge_max_ps": 3142.0,
+          "time_before_next_edge_min_ps": 14479.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_7/CLEAR",
+          "release_after_same_edge_min_ps": 1476.0,
+          "release_after_same_edge_max_ps": 1601.0,
+          "time_before_next_edge_min_ps": 16020.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_8/CLEAR",
+          "release_after_same_edge_min_ps": 1476.0,
+          "release_after_same_edge_max_ps": 1601.0,
+          "time_before_next_edge_min_ps": 16020.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_9/CLEAR",
+          "release_after_same_edge_min_ps": 1803.0,
+          "release_after_same_edge_max_ps": 1928.0,
+          "time_before_next_edge_min_ps": 15693.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.vs_n_DFFP_Q/PRESET",
+          "release_after_same_edge_min_ps": 2452.0,
+          "release_after_same_edge_max_ps": 2577.0,
+          "time_before_next_edge_min_ps": 15044.145374449337,
+          "async_timing_checks": []
+        }
+      ]
+    },
+    {
+      "H_SAMPLES": 2048,
+      "sdf_sha256": "5de2be1e94501be34c8bc757e85b3c72a2223085b5869032d8c9e169e122a5f0",
+      "source": "logic_core.output_stage.clear_DFFP_Q",
+      "missing_recovery_removal_models": 27,
+      "paths": [
+        {
+          "destination": "logic_core.output_stage.blank_n_DFFC_Q/CLEAR",
+          "release_after_same_edge_min_ps": 2465.0,
+          "release_after_same_edge_max_ps": 2590.0,
+          "time_before_next_edge_min_ps": 15031.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.hs_n_DFFP_Q/PRESET",
+          "release_after_same_edge_min_ps": 2465.0,
+          "release_after_same_edge_max_ps": 2590.0,
+          "time_before_next_edge_min_ps": 15031.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q/CLEAR",
+          "release_after_same_edge_min_ps": 1650.0,
+          "release_after_same_edge_max_ps": 1775.0,
+          "time_before_next_edge_min_ps": 15846.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_1/CLEAR",
+          "release_after_same_edge_min_ps": 1162.0,
+          "release_after_same_edge_max_ps": 1287.0,
+          "time_before_next_edge_min_ps": 16334.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_10/CLEAR",
+          "release_after_same_edge_min_ps": 1150.0,
+          "release_after_same_edge_max_ps": 1275.0,
+          "time_before_next_edge_min_ps": 16346.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_11/CLEAR",
+          "release_after_same_edge_min_ps": 1150.0,
+          "release_after_same_edge_max_ps": 1275.0,
+          "time_before_next_edge_min_ps": 16346.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_12/CLEAR",
+          "release_after_same_edge_min_ps": 1162.0,
+          "release_after_same_edge_max_ps": 1287.0,
+          "time_before_next_edge_min_ps": 16334.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_13/CLEAR",
+          "release_after_same_edge_min_ps": 1162.0,
+          "release_after_same_edge_max_ps": 1287.0,
+          "time_before_next_edge_min_ps": 16334.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_14/CLEAR",
+          "release_after_same_edge_min_ps": 1650.0,
+          "release_after_same_edge_max_ps": 1775.0,
+          "time_before_next_edge_min_ps": 15846.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_15/CLEAR",
+          "release_after_same_edge_min_ps": 1150.0,
+          "release_after_same_edge_max_ps": 1275.0,
+          "time_before_next_edge_min_ps": 16346.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_16/CLEAR",
+          "release_after_same_edge_min_ps": 2458.0,
+          "release_after_same_edge_max_ps": 2583.0,
+          "time_before_next_edge_min_ps": 15038.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_17/CLEAR",
+          "release_after_same_edge_min_ps": 2311.0,
+          "release_after_same_edge_max_ps": 2436.0,
+          "time_before_next_edge_min_ps": 15185.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_18/CLEAR",
+          "release_after_same_edge_min_ps": 2311.0,
+          "release_after_same_edge_max_ps": 2436.0,
+          "time_before_next_edge_min_ps": 15185.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_19/CLEAR",
+          "release_after_same_edge_min_ps": 1816.0,
+          "release_after_same_edge_max_ps": 1941.0,
+          "time_before_next_edge_min_ps": 15680.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_2/CLEAR",
+          "release_after_same_edge_min_ps": 2299.0,
+          "release_after_same_edge_max_ps": 2424.0,
+          "time_before_next_edge_min_ps": 15197.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_20/CLEAR",
+          "release_after_same_edge_min_ps": 2311.0,
+          "release_after_same_edge_max_ps": 2436.0,
+          "time_before_next_edge_min_ps": 15185.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_21/CLEAR",
+          "release_after_same_edge_min_ps": 2304.0,
+          "release_after_same_edge_max_ps": 2429.0,
+          "time_before_next_edge_min_ps": 15192.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_22/CLEAR",
+          "release_after_same_edge_min_ps": 2304.0,
+          "release_after_same_edge_max_ps": 2429.0,
+          "time_before_next_edge_min_ps": 15192.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_23/CLEAR",
+          "release_after_same_edge_min_ps": 1809.0,
+          "release_after_same_edge_max_ps": 1934.0,
+          "time_before_next_edge_min_ps": 15687.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_3/CLEAR",
+          "release_after_same_edge_min_ps": 1162.0,
+          "release_after_same_edge_max_ps": 1287.0,
+          "time_before_next_edge_min_ps": 16334.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_4/CLEAR",
+          "release_after_same_edge_min_ps": 1650.0,
+          "release_after_same_edge_max_ps": 1775.0,
+          "time_before_next_edge_min_ps": 15846.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_5/CLEAR",
+          "release_after_same_edge_min_ps": 1816.0,
+          "release_after_same_edge_max_ps": 1941.0,
+          "time_before_next_edge_min_ps": 15680.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_6/CLEAR",
+          "release_after_same_edge_min_ps": 1809.0,
+          "release_after_same_edge_max_ps": 1934.0,
+          "time_before_next_edge_min_ps": 15687.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_7/CLEAR",
+          "release_after_same_edge_min_ps": 1150.0,
+          "release_after_same_edge_max_ps": 1275.0,
+          "time_before_next_edge_min_ps": 16346.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_8/CLEAR",
+          "release_after_same_edge_min_ps": 667.0,
+          "release_after_same_edge_max_ps": 792.0,
+          "time_before_next_edge_min_ps": 16829.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.rgb_DFFC_Q_9/CLEAR",
+          "release_after_same_edge_min_ps": 667.0,
+          "release_after_same_edge_max_ps": 792.0,
+          "time_before_next_edge_min_ps": 16829.145374449337,
+          "async_timing_checks": []
+        },
+        {
+          "destination": "logic_core.output_stage.vs_n_DFFP_Q/PRESET",
+          "release_after_same_edge_min_ps": 2948.0,
+          "release_after_same_edge_max_ps": 3073.0,
+          "time_before_next_edge_min_ps": 14548.145374449337,
+          "async_timing_checks": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "connections": [
+    {
+      "net": "H_OUT",
+      "from": [
+        "R22",
+        "2"
+      ],
+      "to": [
+        "J2",
+        "13"
+      ],
+      "layer": "B.Cu"
+    },
+    {
+      "net": "V_OUT",
+      "from": [
+        "R23",
+        "2"
+      ],
+      "to": [
+        "J2",
+        "14"
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "net": "H_OUT_BUF",
+      "from": [
+        "R22",
+        "1"
+      ],
+      "to": [
+        "U5",
+        "6"
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "net": "V_OUT_BUF",
+      "from": [
+        "R23",
+        "1"
+      ],
+      "to": [
+        "U5",
+        "4"
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "net": "V_OUT_RAW",
+      "from": [
+        "U2",
+        "61"
+      ],
+      "to": [
+        "R42",
+        "1"
+      ],
+      "layer": "B.Cu"
+    },
+    {
+      "net": "V_OUT_RAW",
+      "from": [
+        "R42",
+        "1"
+      ],
+      "to": [
+        "U5",
+        "3"
+      ],
+      "layer": "B.Cu"
+    },
+    {
+      "net": "H_OUT_RAW",
+      "from": [
+        "U2",
+        "60"
+      ],
+      "to": [
+        "R41",
+        "1"
+      ],
+      "layer": "B.Cu"
+    },
+    {
+      "net": "H_OUT_RAW",
+      "from": [
+        "R41",
+        "1"
+      ],
+      "to": [
+        "U5",
+        "1"
+      ],
+      "layer": "B.Cu"
+    }
+  ],
+  "deferred": [],
+  "C52_position_mm": [
+    84.4,
+    59.0
+  ],
+  "U5_to_C52_mm": 6.40534248127894
+}

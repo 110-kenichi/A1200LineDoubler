@@ -1,0 +1,6 @@
+# Run from the extracted amiga_scandoubler directory with Yosys 0.69.
+# Synthetic verification profile, NOT validated PAL/NTSC capture settings.
+read_verilog -defer -sv rtl/line_double.sv rtl/field_sync.sv rtl/video_core.sv
+chparam -set H_SAMPLES 1816 -set HS_WIDTH 4 -set X_START 6 -set X_END 1812 -set Y_START 8 -set Y_END 617 video_core
+synth_gowin -top video_core -noiopads -json synthesis/video_1816.json
+stat

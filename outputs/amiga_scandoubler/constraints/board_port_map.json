@@ -1,0 +1,315 @@
+{
+  "status": "CANDIDATE_NOT_FITTED",
+  "ports": {
+    "REF_27M": {
+      "pin": 11,
+      "net": "REF_27M",
+      "io_name": "IOL11A/GCLKT_6"
+    },
+    "I2C_SCL": {
+      "pin": 13,
+      "net": "I2C_SCL",
+      "io_name": "IOL15A"
+    },
+    "I2C_SDA": {
+      "pin": 14,
+      "net": "I2C_SDA",
+      "io_name": "IOL15B"
+    },
+    "ADC_RESET_N": {
+      "pin": 15,
+      "net": "ADC_RESET_N",
+      "io_name": "IOL17A"
+    },
+    "DAC_CLK_RAW": {
+      "pin": 16,
+      "net": "DAC_CLK_RAW",
+      "io_name": "IOL17B"
+    },
+    "ADC_HS": {
+      "pin": 54,
+      "net": "ADC_HS",
+      "io_name": "IOR10I/DIN/CLKHOLD_N"
+    },
+    "ADC_VS": {
+      "pin": 55,
+      "net": "ADC_VS",
+      "io_name": "IOR10H/SSPI_CS_N/D0"
+    },
+    "DAC_PSAVE_N": {
+      "pin": 56,
+      "net": "DAC_PSAVE_N",
+      "io_name": "IOR10G/SO/D1"
+    },
+    "ADC_PWDN": {
+      "pin": 57,
+      "net": "ADC_PWDN",
+      "io_name": "IOR10E/FASTRD_N/D3"
+    },
+    "DAC_BLANK_N": {
+      "pin": 59,
+      "net": "DAC_BLANK_N",
+      "io_name": "IOR10D/MCLK/D4"
+    },
+    "H_OUT_RAW": {
+      "pin": 60,
+      "net": "H_OUT_RAW",
+      "io_name": "IOR10C/MCS_N/D5"
+    },
+    "V_OUT_RAW": {
+      "pin": 61,
+      "net": "V_OUT_RAW",
+      "io_name": "IOR10B/MO/D6"
+    },
+    "POWER_GOOD": {
+      "pin": 62,
+      "net": "POWER_GOOD",
+      "io_name": "IOR10A/MI/D7"
+    },
+    "ADC_CLK": {
+      "pin": 63,
+      "net": "ADC_CLK",
+      "io_name": "IOR3A/RPLL_T_in"
+    },
+    "ADC_R[0]": {
+      "pin": 68,
+      "net": "ADC_R0",
+      "io_name": "IOT37B"
+    },
+    "ADC_R[1]": {
+      "pin": 69,
+      "net": "ADC_R1",
+      "io_name": "IOT37A"
+    },
+    "ADC_R[2]": {
+      "pin": 70,
+      "net": "ADC_R2",
+      "io_name": "IOT36B"
+    },
+    "ADC_R[3]": {
+      "pin": 71,
+      "net": "ADC_R3",
+      "io_name": "IOT36A"
+    },
+    "ADC_R[4]": {
+      "pin": 72,
+      "net": "ADC_R4",
+      "io_name": "IOT35B"
+    },
+    "ADC_R[5]": {
+      "pin": 73,
+      "net": "ADC_R5",
+      "io_name": "IOT35A"
+    },
+    "ADC_R[6]": {
+      "pin": 74,
+      "net": "ADC_R6",
+      "io_name": "IOT33B"
+    },
+    "ADC_R[7]": {
+      "pin": 75,
+      "net": "ADC_R7",
+      "io_name": "IOT32B"
+    },
+    "ADC_G[0]": {
+      "pin": 76,
+      "net": "ADC_G0",
+      "io_name": "IOT31B"
+    },
+    "ADC_G[1]": {
+      "pin": 77,
+      "net": "ADC_G1",
+      "io_name": "IOT30B"
+    },
+    "ADC_G[2]": {
+      "pin": 79,
+      "net": "ADC_G2",
+      "io_name": "IOT12A"
+    },
+    "ADC_G[3]": {
+      "pin": 80,
+      "net": "ADC_G3",
+      "io_name": "IOT9A"
+    },
+    "ADC_G[4]": {
+      "pin": 81,
+      "net": "ADC_G4",
+      "io_name": "IOT6B"
+    },
+    "ADC_G[5]": {
+      "pin": 82,
+      "net": "ADC_G5",
+      "io_name": "IOT6A"
+    },
+    "ADC_G[6]": {
+      "pin": 83,
+      "net": "ADC_G6",
+      "io_name": "IOT5B"
+    },
+    "ADC_G[7]": {
+      "pin": 84,
+      "net": "ADC_G7",
+      "io_name": "IOT5A"
+    },
+    "ADC_B[0]": {
+      "pin": 85,
+      "net": "ADC_B0",
+      "io_name": "IOT4B"
+    },
+    "ADC_B[1]": {
+      "pin": 86,
+      "net": "ADC_B1",
+      "io_name": "IOT4A"
+    },
+    "ADC_B[2]": {
+      "pin": 48,
+      "net": "ADC_B2",
+      "io_name": "IOR17B"
+    },
+    "ADC_B[3]": {
+      "pin": 49,
+      "net": "ADC_B3",
+      "io_name": "IOR17A"
+    },
+    "ADC_B[4]": {
+      "pin": 50,
+      "net": "ADC_B4",
+      "io_name": "IOR15B"
+    },
+    "ADC_B[5]": {
+      "pin": 51,
+      "net": "ADC_B5",
+      "io_name": "IOR11B/GCLKC_3"
+    },
+    "ADC_B[6]": {
+      "pin": 52,
+      "net": "ADC_B6",
+      "io_name": "IOR11A/GCLKT_3"
+    },
+    "ADC_B[7]": {
+      "pin": 53,
+      "net": "ADC_B7",
+      "io_name": "IOR10J/DOUT/WE_N"
+    },
+    "DAC_R[0]": {
+      "pin": 17,
+      "net": "DAC_R0",
+      "io_name": "IOB2A"
+    },
+    "DAC_R[1]": {
+      "pin": 18,
+      "net": "DAC_R1",
+      "io_name": "IOB2B"
+    },
+    "DAC_R[2]": {
+      "pin": 19,
+      "net": "DAC_R2",
+      "io_name": "IOB4A"
+    },
+    "DAC_R[3]": {
+      "pin": 20,
+      "net": "DAC_R3",
+      "io_name": "IOB4B"
+    },
+    "DAC_R[4]": {
+      "pin": 25,
+      "net": "DAC_R4",
+      "io_name": "IOB6A"
+    },
+    "DAC_R[5]": {
+      "pin": 26,
+      "net": "DAC_R5",
+      "io_name": "IOB6B"
+    },
+    "DAC_R[6]": {
+      "pin": 27,
+      "net": "DAC_R6",
+      "io_name": "IOB8A"
+    },
+    "DAC_R[7]": {
+      "pin": 28,
+      "net": "DAC_R7",
+      "io_name": "IOB8B"
+    },
+    "DAC_G[0]": {
+      "pin": 29,
+      "net": "DAC_G0",
+      "io_name": "IOB10A"
+    },
+    "DAC_G[1]": {
+      "pin": 30,
+      "net": "DAC_G1",
+      "io_name": "IOB10B"
+    },
+    "DAC_G[2]": {
+      "pin": 31,
+      "net": "DAC_G2",
+      "io_name": "IOB12A"
+    },
+    "DAC_G[3]": {
+      "pin": 32,
+      "net": "DAC_G3",
+      "io_name": "IOB12B"
+    },
+    "DAC_G[4]": {
+      "pin": 33,
+      "net": "DAC_G4",
+      "io_name": "IOB14A"
+    },
+    "DAC_G[5]": {
+      "pin": 34,
+      "net": "DAC_G5",
+      "io_name": "IOB15A"
+    },
+    "DAC_G[6]": {
+      "pin": 35,
+      "net": "DAC_G6",
+      "io_name": "IOB20A/GCLKT_4"
+    },
+    "DAC_G[7]": {
+      "pin": 36,
+      "net": "DAC_G7",
+      "io_name": "IOB20B/GCLKC_4"
+    },
+    "DAC_B[0]": {
+      "pin": 37,
+      "net": "DAC_B0",
+      "io_name": "IOB26B"
+    },
+    "DAC_B[1]": {
+      "pin": 38,
+      "net": "DAC_B1",
+      "io_name": "IOB27B"
+    },
+    "DAC_B[2]": {
+      "pin": 39,
+      "net": "DAC_B2",
+      "io_name": "IOB28A"
+    },
+    "DAC_B[3]": {
+      "pin": 40,
+      "net": "DAC_B3",
+      "io_name": "IOB28B"
+    },
+    "DAC_B[4]": {
+      "pin": 41,
+      "net": "DAC_B4",
+      "io_name": "IOB30A"
+    },
+    "DAC_B[5]": {
+      "pin": 42,
+      "net": "DAC_B5",
+      "io_name": "IOB30B"
+    },
+    "DAC_B[6]": {
+      "pin": 47,
+      "net": "DAC_B6",
+      "io_name": "IOB36B"
+    },
+    "DAC_B[7]": {
+      "pin": 3,
+      "net": "DAC_B7",
+      "io_name": "IOL2A"
+    }
+  }
+}

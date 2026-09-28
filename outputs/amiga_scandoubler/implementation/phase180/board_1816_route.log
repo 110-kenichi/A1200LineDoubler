@@ -1,0 +1,551 @@
+Info: Using uarch 'gowin' for device 'GW1N-LV4QN88C6/I5'
+Info: constraining clock net 'logic_core.clk_ref' to 27.00 MHz
+Info: constraining clock net 'clocks.adc_clock' to 28.38 MHz
+Info: constraining clock net 'video_clock' to 56.75 MHz
+
+Info: Reading constraints...
+Info: Create constant nets...
+Info: Modify LUTs...
+Info: Pack IOBs...
+Info: Pack I3C IOs...
+Info: Pack MIPI IOs...
+Info: Pack diff IOBs...
+Info: Pack FFs into IO cells...
+Info: Pack IODELAY...
+Info: Pack Input Edge Monitors...
+Info: Pack IO logic...
+Info: Pack DESER16 logic...
+Info: Pack GSR...
+Info: Pack HCLK cells...
+Info: Pack DLLDLYs...
+Info: Pack wide LUTs...
+Info: Packed MUX2_LUT8:2, MUX2_LU7:2, MUX2_LUT6:7, MUX2_LUT5:63
+Info: Pack ALUs...
+Info: Pack SSRAMs...
+Info: Constrained 267 LUTFF pairs.
+Info: Pack PLL...
+Info: Pack ADC...
+Info: Pack GW JTAG...
+Info: Pack BSRAMs...
+Info: Pack DSP...
+Info: Pack INV...
+Info: Pack buffered nets...
+Info: Pack EMCU and UserFlash cells...
+Info: Pack UserFlash cells...
+Info: Pack DQCE cells...
+Info: Pack DCS cells...
+Info: Checksum: 0x58319248
+
+Info: Device utilisation:
+Info: 	                 VCC:       1/      1   100%
+Info: 	                 IOB:      60/    218    27%
+Info: 	                LUT4:    1341/   4608    29%
+Info: 	            IOLOGICI:       0/    198     0%
+Info: 	            IOLOGICO:       1/    198     0%
+Info: 	           MUX2_LUT5:     101/   2304     4%
+Info: 	           MUX2_LUT6:      19/   1152     1%
+Info: 	           MUX2_LUT7:       6/    576     1%
+Info: 	           MUX2_LUT8:       2/    576     0%
+Info: 	                 ALU:     564/   3456    16%
+Info: 	                 GND:       1/      1   100%
+Info: 	                 DFF:     672/   3456    19%
+Info: 	               BSRAM:       6/     10    60%
+Info: 	              ALU54D:       0/      8     0%
+Info: 	     MULTADDALU18X18:       0/      8     0%
+Info: 	        MULTALU18X18:       0/      8     0%
+Info: 	        MULTALU36X18:       0/      8     0%
+Info: 	           MULT36X36:       0/      4     0%
+Info: 	           MULT18X18:       0/     16     0%
+Info: 	             MULT9X9:       0/     32     0%
+Info: 	              PADD18:       0/     16     0%
+Info: 	               PADD9:       0/     32     0%
+Info: 	                 GSR:       1/      1   100%
+Info: 	                 OSC:       0/      1     0%
+Info: 	                rPLL:       1/      2    50%
+Info: 	           FLASH256K:       0/      1     0%
+Info: 	                BUFG:       1/     17     5%
+Info: 	                DQCE:       0/     12     0%
+Info: 	                 DCS:       0/      4     0%
+Info: 	               DHCEN:       0/     18     0%
+Info: 	              CLKDIV:       0/      6     0%
+Info: 	             CLKDIV2:       0/     12     0%
+
+Info: Running custom HCLK placer...
+Info: Placed 0 cells based on constraints.
+Info: Creating initial analytic placement for 1106 cells, random placement wirelen = 36103.
+Info:     at initial placer iter 0, wirelen = 2344
+Info:     at initial placer iter 1, wirelen = 2145
+Info:     at initial placer iter 2, wirelen = 2097
+Info:     at initial placer iter 3, wirelen = 2008
+Info: Running main analytical placer, max placement attempts per cell = 965355.
+Info:     at iteration #1, type ALL: wirelen solved = 2009, spread = 7153, legal = 10818; time = 0.04s
+Info:     at iteration #2, type ALL: wirelen solved = 2165, spread = 7310, legal = 9979; time = 0.03s
+Info:     at iteration #3, type ALL: wirelen solved = 2375, spread = 6817, legal = 8902; time = 0.02s
+Info:     at iteration #4, type ALL: wirelen solved = 2555, spread = 6250, legal = 8185; time = 0.03s
+Info:     at iteration #5, type ALL: wirelen solved = 2645, spread = 6546, legal = 8257; time = 0.02s
+Info:     at iteration #6, type ALL: wirelen solved = 2715, spread = 5909, legal = 8240; time = 0.04s
+Info:     at iteration #7, type ALL: wirelen solved = 2809, spread = 6278, legal = 8690; time = 0.03s
+Info:     at iteration #8, type ALL: wirelen solved = 2884, spread = 6030, legal = 8781; time = 0.04s
+Info:     at iteration #9, type ALL: wirelen solved = 2832, spread = 7359, legal = 9415; time = 0.04s
+Info: HeAP Placer Time: 0.44s
+Info:   of which solving equations: 0.18s
+Info:   of which spreading cells: 0.02s
+Info:   of which strict legalisation: 0.16s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 38, wirelen = 8185
+Info:   at iteration #5: temp = 0.000000, timing cost = 27, wirelen = 6607
+Info:   at iteration #10: temp = 0.000000, timing cost = 22, wirelen = 6149
+Info:   at iteration #15: temp = 0.000000, timing cost = 21, wirelen = 5943
+Info:   at iteration #20: temp = 0.000000, timing cost = 21, wirelen = 5773
+Info:   at iteration #25: temp = 0.000000, timing cost = 21, wirelen = 5735
+Info:   at iteration #30: temp = 0.000000, timing cost = 21, wirelen = 5709
+Info:   at iteration #31: temp = 0.000000, timing cost = 21, wirelen = 5709 
+Info: SA placement time 2.31s
+
+Info: Max frequency for clock   'clocks.adc_clock': 311.92 MHz (PASS at 28.38 MHz)
+Info: Max frequency for clock        'video_clock': 126.79 MHz (PASS at 56.75 MHz)
+Info: Max frequency for clock 'logic_core.clk_ref': 93.62 MHz (PASS at 27.00 MHz)
+
+Info: Max delay posedge clocks.adc_clock -> posedge logic_core.clk_ref: 0.96 ns
+Info: Max delay negedge clocks.adc_clock -> posedge video_clock       : 0.86 ns
+Info: Max delay posedge video_clock      -> posedge logic_core.clk_ref: 0.86 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 4 endpoint(s)
+Info:          + represents [1,4) endpoint(s)
+Info: [  9734,  11057) |**+
+Info: [ 11057,  12380) |*********+
+Info: [ 12380,  13703) |*****+
+Info: [ 13703,  15026) |******************+
+Info: [ 15026,  16349) |*********************+
+Info: [ 16349,  17672) |************************************************************ 
+Info: [ 17672,  18995) | 
+Info: [ 18995,  20318) | 
+Info: [ 20318,  21641) | 
+Info: [ 21641,  22964) | 
+Info: [ 22964,  24287) | 
+Info: [ 24287,  25610) | 
+Info: [ 25610,  26933) |*+
+Info: [ 26933,  28256) |+
+Info: [ 28256,  29579) | 
+Info: [ 29579,  30902) |*+
+Info: [ 30902,  32225) |*+
+Info: [ 32225,  33548) |*************+
+Info: [ 33548,  34871) |*********+
+Info: [ 34871,  36194) |**********+
+Info: Checksum: 0x99214aaf
+Info: Routing globals...
+Info:     'clocks.adc_clock' net was routed.
+Warning: Failed to route net 'logic_core.adc_rgb[6]' from X37Y10/F6 to X28Y10/D2 using dedicated routing.
+Info:     'video_clock' net was routed using global resources only.
+Info:     'logic_core.clk_ref' net was routed using global resources only.
+Info:     'logic_core.dac_blank_n' is routed using segments.
+Info:     'logic_core.video.core.valid2_LUT3_I1_F_LUT2_I1_F[4]' is routed using segments.
+Info:     'logic_core.capture.adc_release_DFFNP_D_Q_LUT3_I0_F' is routed using segments.
+Info:     'logic_core.video.core.line_sol' is routed using segments.
+Info:     'logic_core.video.core.lines.bank1.0.0_DOB[2]' is routed using segments.
+Info:     'logic_core.video.core.lines.pixel_valid_LUT2_I0_F' is routed using segments.
+Info:     'logic_core.video.line_event' is routed using segments.
+Info:     'logic_core.clocks.restart.stable_LUT2_I0_F[2]' is routed using segments.
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 5875 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:       1000 |       50        757 |   50   757 |      4928|       0.27       0.27|
+Info:       2000 |       50       1615 |    0   858 |      3928|       0.16       0.43|
+Info:       3000 |       60       2507 |   10   892 |      2939|       0.23       0.67|
+Info:       4000 |       67       3396 |    7   889 |      1948|       0.41       1.08|
+Info:       5000 |       81       4273 |   14   877 |       993|       0.53       1.61|
+Info:       6000 |      120       5141 |   39   868 |        70|       0.49       2.09|
+Info:       6072 |      123       5203 |    3    62 |         0|       0.06       2.16|
+Info: Routing complete.
+Info: Router1 time 2.16s
+Info: Checksum: 0x951246a8
+
+Info: Critical path report for clock 'clocks.adc_clock' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  0.46  0.46 Source logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_LUT1_F_I0_DFFC_Q.Q
+Info:    routing  0.41  0.87 Net logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_LUT1_F_I0 (9,11) -> (10,11)
+Info:                          Sink logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_2_CIN_ALU_COUT.I1
+Info:                          Defined in:
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:      logic  1.04  1.91 Source logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_2_CIN_ALU_COUT.COUT
+Info:    routing  0.00  1.91 Net logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_2_CIN (10,11) -> (10,11)
+Info:                          Sink logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_2.CIN
+Info:                          Defined in:
+Info:                               rtl/pll_restart_control.sv:37.47-37.61
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  1.97 Source logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_2.COUT
+Info:    routing  0.00  1.97 Net logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_2_COUT (10,11) -> (10,11)
+Info:                          Sink logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_3.CIN
+Info:                          Defined in:
+Info:                               rtl/pll_restart_control.sv:37.47-37.61
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  2.03 Source logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_3.COUT
+Info:    routing  0.00  2.03 Net logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_3_COUT (10,11) -> (10,11)
+Info:                          Sink logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM.CIN
+Info:                          Defined in:
+Info:                               rtl/pll_restart_control.sv:37.47-37.61
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  2.09 Source logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM.COUT
+Info:    routing  0.00  2.09 Net logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_COUT (10,11) -> (10,11)
+Info:                          Sink logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_4.CIN
+Info:                          Defined in:
+Info:                               rtl/pll_restart_control.sv:37.47-37.61
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  2.14 Source logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_4.COUT
+Info:    routing  0.00  2.14 Net logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_4_COUT (10,11) -> (11,11)
+Info:                          Sink logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_1.CIN
+Info:                          Defined in:
+Info:                               rtl/pll_restart_control.sv:37.47-37.61
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  2.20 Source logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_1.COUT
+Info:    routing  0.00  2.20 Net logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_1_COUT (11,11) -> (11,11)
+Info:                          Sink logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_5.CIN
+Info:                          Defined in:
+Info:                               rtl/pll_restart_control.sv:37.47-37.61
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  2.26 Source logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_5.COUT
+Info:    routing  0.00  2.26 Net logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_5_COUT (11,11) -> (11,11)
+Info:                          Sink logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1.CIN
+Info:                          Defined in:
+Info:                               rtl/pll_restart_control.sv:37.47-37.61
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.56  2.82 Source logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1.SUM
+Info:    routing  0.00  2.82 Net logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM[7] (11,11) -> (11,11)
+Info:                          Sink logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_DFFC_Q.D
+Info:                          Defined in:
+Info:                               rtl/pll_restart_control.sv:37.47-37.61
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:34.28-34.29
+Info:      setup  0.40  3.22 Source logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_DFFC_Q.D
+Info: 2.81 ns logic, 0.41 ns routing
+
+Info: Critical path report for clock 'video_clock' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  0.46  0.46 Source logic_core.video.front.v_age_DFFRE_Q_5.Q
+Info:    routing  1.44  1.89 Net logic_core.video.front.v_age[2] (23,5) -> (18,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.I1
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:33.18-33.23
+Info:      logic  1.04  2.94 Source logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  2.94 Net logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (18,5) -> (18,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.00 Source logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.00 Net logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (18,5) -> (18,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.05 Source logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.05 Net logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (18,5) -> (19,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.11 Source logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.11 Net logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (19,5) -> (19,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.17 Source logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.17 Net logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (19,5) -> (19,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.22 Source logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.22 Net logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (19,5) -> (19,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.28 Source logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.28 Net logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (19,5) -> (19,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.34 Source logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.34 Net logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (19,5) -> (19,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.39 Source logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.39 Net logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (19,5) -> (20,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.45 Source logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.45 Net logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (20,5) -> (20,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.51 Source logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.51 Net logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (20,5) -> (20,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.57 Source logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.57 Net logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (20,5) -> (20,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.62 Source logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.62 Net logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (20,5) -> (20,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.68 Source logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.68 Net logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (20,5) -> (20,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.74 Source logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.74 Net logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (20,5) -> (21,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.79 Source logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.79 Net logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (21,5) -> (21,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.85 Source logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.85 Net logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN (21,5) -> (21,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.56  4.41 Source logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT.SUM
+Info:    routing  0.89  5.30 Net logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_SUM (21,5) -> (21,4)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.I0
+Info:      logic  0.96  6.26 Source logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  6.26 Net logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN (21,4) -> (21,4)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.56
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  6.32 Source logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  6.32 Net logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_CIN (21,4) -> (21,4)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.56
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  6.38 Source logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT.COUT
+Info:    routing  0.00  6.38 Net logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN (21,4) -> (22,4)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.56
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.56  6.94 Source logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM.SUM
+Info:    routing  0.81  7.74 Net logic_core.video.front.v_age_DFFRE_Q_3_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT[4] (22,4) -> (22,3)
+Info:                          Sink logic_core.video.front.have_vs_LUT4_I0_F_MUX2_LUT5_I0.S0
+Info:                          Defined in:
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:      logic  0.18  7.92 Source logic_core.video.front.have_vs_LUT4_I0_F_MUX2_LUT5_I0.O
+Info:    routing  0.81  8.73 Net logic_core.video.front.have_vs_LUT4_I0_F_MUX2_LUT5_I0_O[3] (22,3) -> (22,5)
+Info:                          Sink logic_core.video.front.vs_delay_DFFRE_Q_CE_MUX2_LUT5_O_I1_LUT4_F.I3
+Info:                          Defined in:
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:      logic  0.62  9.35 Source logic_core.video.front.vs_delay_DFFRE_Q_CE_MUX2_LUT5_O_I1_LUT4_F.F
+Info:    routing  0.00  9.35 Net logic_core.video.front.vs_delay_DFFRE_Q_CE_MUX2_LUT5_O_I1 (22,5) -> (22,5)
+Info:                          Sink logic_core.video.front.vs_delay_DFFRE_Q_CE_MUX2_LUT5_O.I1
+Info:                          Defined in:
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:      logic  0.50  9.85 Source logic_core.video.front.vs_delay_DFFRE_Q_CE_MUX2_LUT5_O.O
+Info:    routing  1.86  11.71 Net logic_core.video.front.vs_delay_DFFRE_Q_CE (22,5) -> (22,5)
+Info:                          Sink logic_core.video.front.vs_delay_DFFRE_Q_4.CE
+Info:      setup  0.04  11.76 Source logic_core.video.front.vs_delay_DFFRE_Q_4.CE
+Info: 5.96 ns logic, 5.80 ns routing
+
+Info: Critical path report for clock 'logic_core.clk_ref' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  0.46  0.46 Source startup.released_DFF_Q_3.Q
+Info:    routing  0.81  1.26 Net startup.released[31] (7,8) -> (7,10)
+Info:                          Sink clocks.locked_LUT4_I0.I1
+Info:                          Defined in:
+Info:                               rtl/configuration_reset.sv:7.22-7.30
+Info:      logic  1.10  2.36 Source clocks.locked_LUT4_I0.F
+Info:    routing  0.00  2.36 Net clocks.locked_LUT4_I0_F (7,10) -> (7,10)
+Info:                          Sink clocks.locked_LUT4_I0_F_MUX2_LUT5_I1.I1
+Info:                          Defined in:
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:159.41-159.66
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:151.13-151.15
+Info:      logic  0.50  2.86 Source clocks.locked_LUT4_I0_F_MUX2_LUT5_I1.O
+Info:    routing  0.00  2.86 Net clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O (7,10) -> (7,10)
+Info:                          Sink clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1.I1
+Info:                          Defined in:
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:164.41-164.66
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:157.13-157.15
+Info:      logic  0.50  3.36 Source clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1.O
+Info:    routing  0.00  3.36 Net clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O (7,10) -> (7,10)
+Info:                          Sink clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0.I0
+Info:                          Defined in:
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:171.43-171.68
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:163.9-163.11
+Info:      logic  0.47  3.84 Source clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0.O
+Info:    routing  0.00  3.84 Net clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O (7,10) -> (7,10)
+Info:                          Sink clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1.I1
+Info:                          Defined in:
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:169.13-169.15
+Info:      logic  0.50  4.34 Source clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1.O
+Info:    routing  0.81  5.14 Net clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O[0] (7,10) -> (6,10)
+Info:                          Sink clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_SUM_LUT2_I0_F_LUT2_F_2_I0_DFFC_Q.CLEAR
+Info:                          Defined in:
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:      logic  1.86  7.00 Source clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_SUM_LUT2_I0_F_LUT2_F_2_I0_DFFC_Q.Q
+Info:    routing  1.22  8.22 Net clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_SUM_LUT2_I0_F_LUT2_F_2_I0[0] (6,10) -> (6,7)
+Info:                          Sink clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.I0
+Info:                          Defined in:
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:      logic  0.96  9.18 Source clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  9.18 Net clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (6,7) -> (6,7)
+Info:                          Sink clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/video_clock_guard.sv:59.25-59.47
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  9.23 Source clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  9.23 Net clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (6,7) -> (6,7)
+Info:                          Sink clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/video_clock_guard.sv:59.25-59.47
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  9.29 Source clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  9.29 Net clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (6,7) -> (6,7)
+Info:                          Sink clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/video_clock_guard.sv:59.25-59.47
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.56  9.85 Source clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.SUM
+Info:    routing  1.37  11.22 Net clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_SUM[0] (6,7) -> (9,6)
+Info:                          Sink clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_I0_ALU_I1_COUT_ALU_CIN_SUM_ALU_I0_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.I0
+Info:                          Defined in:
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:      logic  0.96  12.18 Source clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_I0_ALU_I1_COUT_ALU_CIN_SUM_ALU_I0_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  12.18 Net clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_I0_ALU_I1_COUT_ALU_CIN_SUM_ALU_I0_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (9,6) -> (9,6)
+Info:                          Sink clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_I0_ALU_I1_COUT_ALU_CIN_SUM_ALU_I0_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/video_clock_guard.sv:55.33-55.55
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  12.24 Source clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_I0_ALU_I1_COUT_ALU_CIN_SUM_ALU_I0_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  12.24 Net clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_I0_ALU_I1_COUT_ALU_CIN_SUM_ALU_I0_CIN_ALU_COUT_CIN_ALU_COUT_CIN (9,6) -> (9,6)
+Info:                          Sink clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_I0_ALU_I1_COUT_ALU_CIN_SUM_ALU_I0_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/video_clock_guard.sv:55.33-55.55
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  12.30 Source clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_I0_ALU_I1_COUT_ALU_CIN_SUM_ALU_I0_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  12.30 Net clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_I0_ALU_I1_COUT_ALU_CIN_SUM_ALU_I0_CIN_ALU_COUT_CIN (9,6) -> (9,6)
+Info:                          Sink clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_I0_ALU_I1_COUT_ALU_CIN_SUM_ALU_I0_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/video_clock_guard.sv:55.33-55.55
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  12.35 Source clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_I0_ALU_I1_COUT_ALU_CIN_SUM_ALU_I0_CIN_ALU_COUT.COUT
+Info:    routing  0.00  12.35 Net clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_I0_ALU_I1_COUT_ALU_CIN_SUM_ALU_I0_CIN (9,6) -> (9,6)
+Info:                          Sink clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_I0_ALU_I1_COUT_ALU_CIN_SUM_ALU_I0.CIN
+Info:                          Defined in:
+Info:                               rtl/video_clock_guard.sv:55.33-55.55
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  12.41 Source clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_I0_ALU_I1_COUT_ALU_CIN_SUM_ALU_I0.COUT
+Info:    routing  0.00  12.41 Net clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_I0_ALU_I1_COUT_ALU_CIN_SUM_ALU_I0_COUT (9,6) -> (10,6)
+Info:                          Sink clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_I0_ALU_I1_COUT_ALU_CIN_SUM_ALU_I0_COUT_ALU_CIN.CIN
+Info:                          Defined in:
+Info:                               rtl/video_clock_guard.sv:55.33-55.55
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/arith_map.v:57.7-63.5
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.56  12.97 Source clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_I0_ALU_I1_COUT_ALU_CIN_SUM_ALU_I0_COUT_ALU_CIN.SUM
+Info:    routing  0.41  13.38 Net clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_Q_LUT2_F_I1_ALU_COUT_I0_ALU_I1_COUT_ALU_CIN_SUM_ALU_I0_COUT_ALU_CIN_SUM[2] (10,6) -> (10,6)
+Info:                          Sink clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_1_Q_LUT4_F.I2
+Info:                          Defined in:
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:      logic  0.82  14.21 Source clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_1_Q_LUT4_F.F
+Info:    routing  0.00  14.21 Net clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_I0_DFFCE_Q_CE_DFFCE_CE_1_Q[1] (10,6) -> (10,6)
+Info:                          Sink clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q.D
+Info:                          Defined in:
+Info:                               C:\Users\zanac2\Documents\Codex\2026-09-08\m\work\tools\pnr_v015\oss-cad-suite\bin\../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:      setup  0.40  14.60 Source clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I1_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q.D
+Info: 10.00 ns logic, 4.61 ns routing
+
+Info: Max frequency for clock   'clocks.adc_clock': 310.75 MHz (PASS at 28.38 MHz)
+Info: Max frequency for clock        'video_clock': 85.06 MHz (PASS at 56.75 MHz)
+Info: Max frequency for clock 'logic_core.clk_ref': 68.47 MHz (PASS at 27.00 MHz)
+
+Info: Slack histogram:
+Info:  legend: * represents 2 endpoint(s)
+Info:          + represents [1,2) endpoint(s)
+Info: [  5865,   7285) |**+
+Info: [  7285,   8705) |**************+
+Info: [  8705,  10125) |*+
+Info: [ 10125,  11545) |****+
+Info: [ 11545,  12965) |******+
+Info: [ 12965,  14385) |*****************+
+Info: [ 14385,  15805) |************************************************************ 
+Info: [ 15805,  17225) |******+
+Info: [ 17225,  18645) | 
+Info: [ 18645,  20065) | 
+Info: [ 20065,  21485) | 
+Info: [ 21485,  22905) |+
+Info: [ 22905,  24325) |**+
+Info: [ 24325,  25745) |+
+Info: [ 25745,  27165) |+
+Info: [ 27165,  28585) |+
+Info: [ 28585,  30005) |****+
+Info: [ 30005,  31425) |***************+
+Info: [ 31425,  32845) |********+
+Info: [ 32845,  34265) |****+
+
+1 warning, 0 errors
+
+Info: Program finished normally.

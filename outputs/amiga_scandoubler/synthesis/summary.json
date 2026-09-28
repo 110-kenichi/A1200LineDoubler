@@ -1,0 +1,57 @@
+{
+  "date": "2026-09-10",
+  "status": "SYNTHESIS_ONLY_NOT_FITTED",
+  "profiles": [
+    {
+      "H_SAMPLES": 1816,
+      "cells": {
+        "$scopeinfo": 2,
+        "ALU": 163,
+        "DFF": 52,
+        "DFFR": 96,
+        "DFFRE": 106,
+        "DFFS": 2,
+        "DFFSE": 1,
+        "DPX9B": 6,
+        "GND": 1,
+        "LUT1": 11,
+        "LUT2": 92,
+        "LUT3": 36,
+        "LUT4": 129,
+        "MUX2_LUT5": 34,
+        "MUX2_LUT6": 1,
+        "VCC": 1
+      },
+      "tool": "Yosys 0.69 (git sha1 9f75ca1f9, Release, Clang /workspace/YoWASP/yosys/wasi-sdk-33.0-x86_64-linux/share/cmake/../..//bin/clang++ 22.1.0)"
+    },
+    {
+      "H_SAMPLES": 2048,
+      "cells": {
+        "$scopeinfo": 2,
+        "ALU": 155,
+        "DFF": 52,
+        "DFFR": 96,
+        "DFFRE": 107,
+        "DFFS": 2,
+        "DFFSE": 1,
+        "DPX9B": 6,
+        "GND": 1,
+        "LUT1": 38,
+        "LUT2": 96,
+        "LUT3": 37,
+        "LUT4": 126,
+        "MUX2_LUT5": 60,
+        "MUX2_LUT6": 5,
+        "VCC": 1
+      },
+      "tool": "Yosys 0.69 (git sha1 9f75ca1f9, Release, Clang /workspace/YoWASP/yosys/wasi-sdk-33.0-x86_64-linux/share/cmake/../..//bin/clang++ 22.1.0)"
+    }
+  ],
+  "rtl_sha256": {
+    "rtl\\adc_power_sequence.sv": "6091e67024fc6c18df46006f04475115c699abc9b4e53cfb47bf6177049319e4",
+    "rtl\\field_sync.sv": "a711272897f9c98f2fbdb3da6ee6cd33e27c1769f834e142b19a578ce1b55d1c",
+    "rtl\\i2c_register_write.sv": "671da1a1028274b153badff1fb8c65b8e8f0695ee1b9737d32adc5bd24ad6f7c",
+    "rtl\\line_double.sv": "96c5788dab3493525dc74686e4fe2fc19962a0925c813d5356de5a0769a7d988",
+    "rtl\\video_core.sv": "5466b20fe0748ff5eec6fa1596b42fc59cf7a8fc4665da762cd7415a9b979901"
+  }
+}

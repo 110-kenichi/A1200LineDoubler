@@ -1,0 +1,12 @@
+import sys;sys.path.insert(0,'/home/claude/tools')
+from pcbedit import Board
+b=Board('/home/claude/w/work/handoff_pending/amiga_scandoubler_sync_in.kicad_pcb')
+b.remove_segment('B_IN',(7.8,43.05),(7.8,46.45))
+b.remove_segment('B_IN',(7.8,46.45),(10.15,48.8))
+b.add_path('B_IN',[(7.8,43.05),(8.6,43.85),(8.6,47.25),(10.15,48.8)])
+b.add_path('V_IN',[(5.65,44.28),(8.0,44.28)])
+b.add_via('V_IN',(8.0,44.28))
+b.add_path('V_IN',[(8.0,44.28),(8.0,54.9),(11.5,58.4)],layer='B.Cu')
+b.add_via('V_IN',(11.5,58.4))
+b.add_path('V_IN',[(11.5,58.4),(11.5,57.325)])
+b.save('/tmp/s/s1.kicad_pcb')

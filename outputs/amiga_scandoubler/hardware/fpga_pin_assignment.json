@@ -1,0 +1,629 @@
+{
+  "device": "GW1N-LV4QN88C6/I5",
+  "status": "PROPOSED_NOT_FITTED",
+  "pins": {
+    "22": {
+      "name": "VCC",
+      "function": "Power",
+      "bank": "N/A",
+      "config": "",
+      "net": "1V2"
+    },
+    "66": {
+      "name": "VCC",
+      "function": "Power",
+      "bank": "N/A",
+      "config": "",
+      "net": "1V2"
+    },
+    "1": {
+      "name": "VCC",
+      "function": "Power",
+      "bank": "N/A",
+      "config": "",
+      "net": "1V2"
+    },
+    "45": {
+      "name": "VCC",
+      "function": "Power",
+      "bank": "N/A",
+      "config": "",
+      "net": "1V2"
+    },
+    "67": {
+      "name": "VCCIO0",
+      "function": "Power",
+      "bank": "N/A",
+      "config": "",
+      "net": "3V3"
+    },
+    "58": {
+      "name": "VCCIO1",
+      "function": "Power",
+      "bank": "N/A",
+      "config": "",
+      "net": "3V3"
+    },
+    "23": {
+      "name": "VCCIO2",
+      "function": "Power",
+      "bank": "N/A",
+      "config": "",
+      "net": "3V3"
+    },
+    "44": {
+      "name": "VCCIO2",
+      "function": "Power",
+      "bank": "N/A",
+      "config": "",
+      "net": "3V3"
+    },
+    "12": {
+      "name": "VCCIO3",
+      "function": "Power",
+      "bank": "N/A",
+      "config": "",
+      "net": "3V3"
+    },
+    "64": {
+      "name": "VCCX",
+      "function": "Power",
+      "bank": "N/A",
+      "config": "",
+      "net": "3V3"
+    },
+    "78": {
+      "name": "VCCX",
+      "function": "Power",
+      "bank": "N/A",
+      "config": "",
+      "net": "3V3"
+    },
+    "21": {
+      "name": "VSS",
+      "function": "Ground",
+      "bank": "N/A",
+      "config": "",
+      "net": "GND"
+    },
+    "2": {
+      "name": "VSS",
+      "function": "Ground",
+      "bank": "N/A",
+      "config": "",
+      "net": "GND"
+    },
+    "46": {
+      "name": "VSS",
+      "function": "Ground",
+      "bank": "N/A",
+      "config": "",
+      "net": "GND"
+    },
+    "65": {
+      "name": "VSS",
+      "function": "Ground",
+      "bank": "N/A",
+      "config": "",
+      "net": "GND"
+    },
+    "24": {
+      "name": "VSS",
+      "function": "Ground",
+      "bank": "N/A",
+      "config": "",
+      "net": "GND"
+    },
+    "43": {
+      "name": "VSS",
+      "function": "Ground",
+      "bank": "N/A",
+      "config": "",
+      "net": "GND"
+    },
+    "89": {
+      "name": "EPAD",
+      "function": "Ground",
+      "bank": "N/A",
+      "config": "",
+      "net": "GND"
+    },
+    "4": {
+      "name": "IOL3A/JTAGSEL_N/LPLL_T_in",
+      "function": "I/O",
+      "bank": "3",
+      "config": "JTAGSEL_N/LPLL_T_in",
+      "net": "JTAGSEL_N"
+    },
+    "5": {
+      "name": "IOL10A/TMS",
+      "function": "I/O",
+      "bank": "3",
+      "config": "TMS",
+      "net": "JTAG_TMS"
+    },
+    "6": {
+      "name": "IOL10B/TCK",
+      "function": "I/O",
+      "bank": "3",
+      "config": "TCK",
+      "net": "JTAG_TCK"
+    },
+    "7": {
+      "name": "IOL10D/TDI",
+      "function": "I/O",
+      "bank": "3",
+      "config": "TDI",
+      "net": "JTAG_TDI"
+    },
+    "8": {
+      "name": "IOL10E/TDO",
+      "function": "I/O",
+      "bank": "3",
+      "config": "TDO",
+      "net": "JTAG_TDO"
+    },
+    "9": {
+      "name": "IOL10F/RECONFIG_N",
+      "function": "I/O",
+      "bank": "3",
+      "config": "RECONFIG_N",
+      "net": "FPGA_RECONFIG_N"
+    },
+    "10": {
+      "name": "IOL10G/DONE",
+      "function": "I/O",
+      "bank": "3",
+      "config": "DONE",
+      "net": "FPGA_DONE"
+    },
+    "11": {
+      "name": "IOL11A/GCLKT_6",
+      "function": "I/O",
+      "bank": "3",
+      "config": "GCLKT_6",
+      "net": "REF_27M"
+    },
+    "13": {
+      "name": "IOL15A",
+      "function": "I/O",
+      "bank": "3",
+      "config": "",
+      "net": "I2C_SCL"
+    },
+    "14": {
+      "name": "IOL15B",
+      "function": "I/O",
+      "bank": "3",
+      "config": "",
+      "net": "I2C_SDA"
+    },
+    "15": {
+      "name": "IOL17A",
+      "function": "I/O",
+      "bank": "3",
+      "config": "",
+      "net": "ADC_RESET_N"
+    },
+    "16": {
+      "name": "IOL17B",
+      "function": "I/O",
+      "bank": "3",
+      "config": "",
+      "net": "DAC_CLK_RAW"
+    },
+    "54": {
+      "name": "IOR10I/DIN/CLKHOLD_N",
+      "function": "I/O",
+      "bank": "1",
+      "config": "DIN/CLKHOLD_N",
+      "net": "ADC_HS"
+    },
+    "55": {
+      "name": "IOR10H/SSPI_CS_N/D0",
+      "function": "I/O",
+      "bank": "1",
+      "config": "SSPI_CS_N/D0",
+      "net": "ADC_VS"
+    },
+    "56": {
+      "name": "IOR10G/SO/D1",
+      "function": "I/O",
+      "bank": "1",
+      "config": "SO/D1",
+      "net": "DAC_PSAVE_N"
+    },
+    "57": {
+      "name": "IOR10E/FASTRD_N/D3",
+      "function": "I/O",
+      "bank": "1",
+      "config": "FASTRD_N/D3",
+      "net": "ADC_PWDN"
+    },
+    "59": {
+      "name": "IOR10D/MCLK/D4",
+      "function": "I/O",
+      "bank": "1",
+      "config": "MCLK/D4",
+      "net": "DAC_BLANK_N"
+    },
+    "60": {
+      "name": "IOR10C/MCS_N/D5",
+      "function": "I/O",
+      "bank": "1",
+      "config": "MCS_N/D5",
+      "net": "H_OUT_RAW"
+    },
+    "61": {
+      "name": "IOR10B/MO/D6",
+      "function": "I/O",
+      "bank": "1",
+      "config": "MO/D6",
+      "net": "V_OUT_RAW"
+    },
+    "62": {
+      "name": "IOR10A/MI/D7",
+      "function": "I/O",
+      "bank": "1",
+      "config": "MI/D7",
+      "net": "POWER_GOOD"
+    },
+    "63": {
+      "name": "IOR3A/RPLL_T_in",
+      "function": "I/O",
+      "bank": "1",
+      "config": "RPLL_T_in",
+      "net": "ADC_CLK"
+    },
+    "87": {
+      "name": "IOT3B/MODE1",
+      "function": "I/O",
+      "bank": "0",
+      "config": "MODE1",
+      "net": "MODE1"
+    },
+    "88": {
+      "name": "IOT2B/MODE0",
+      "function": "I/O",
+      "bank": "0",
+      "config": "MODE0",
+      "net": "MODE0"
+    },
+    "68": {
+      "name": "IOT37B",
+      "function": "I/O",
+      "bank": "0",
+      "config": "",
+      "net": "ADC_R0"
+    },
+    "69": {
+      "name": "IOT37A",
+      "function": "I/O",
+      "bank": "0",
+      "config": "",
+      "net": "ADC_R1"
+    },
+    "70": {
+      "name": "IOT36B",
+      "function": "I/O",
+      "bank": "0",
+      "config": "",
+      "net": "ADC_R2"
+    },
+    "71": {
+      "name": "IOT36A",
+      "function": "I/O",
+      "bank": "0",
+      "config": "",
+      "net": "ADC_R3"
+    },
+    "72": {
+      "name": "IOT35B",
+      "function": "I/O",
+      "bank": "0",
+      "config": "",
+      "net": "ADC_R4"
+    },
+    "73": {
+      "name": "IOT35A",
+      "function": "I/O",
+      "bank": "0",
+      "config": "",
+      "net": "ADC_R5"
+    },
+    "74": {
+      "name": "IOT33B",
+      "function": "I/O",
+      "bank": "0",
+      "config": "",
+      "net": "ADC_R6"
+    },
+    "75": {
+      "name": "IOT32B",
+      "function": "I/O",
+      "bank": "0",
+      "config": "",
+      "net": "ADC_R7"
+    },
+    "76": {
+      "name": "IOT31B",
+      "function": "I/O",
+      "bank": "0",
+      "config": "",
+      "net": "ADC_G0"
+    },
+    "77": {
+      "name": "IOT30B",
+      "function": "I/O",
+      "bank": "0",
+      "config": "",
+      "net": "ADC_G1"
+    },
+    "79": {
+      "name": "IOT12A",
+      "function": "I/O",
+      "bank": "0",
+      "config": "",
+      "net": "ADC_G2"
+    },
+    "80": {
+      "name": "IOT9A",
+      "function": "I/O",
+      "bank": "0",
+      "config": "",
+      "net": "ADC_G3"
+    },
+    "81": {
+      "name": "IOT6B",
+      "function": "I/O",
+      "bank": "0",
+      "config": "",
+      "net": "ADC_G4"
+    },
+    "82": {
+      "name": "IOT6A",
+      "function": "I/O",
+      "bank": "0",
+      "config": "",
+      "net": "ADC_G5"
+    },
+    "83": {
+      "name": "IOT5B",
+      "function": "I/O",
+      "bank": "0",
+      "config": "",
+      "net": "ADC_G6"
+    },
+    "84": {
+      "name": "IOT5A",
+      "function": "I/O",
+      "bank": "0",
+      "config": "",
+      "net": "ADC_G7"
+    },
+    "85": {
+      "name": "IOT4B",
+      "function": "I/O",
+      "bank": "0",
+      "config": "",
+      "net": "ADC_B0"
+    },
+    "86": {
+      "name": "IOT4A",
+      "function": "I/O",
+      "bank": "0",
+      "config": "",
+      "net": "ADC_B1"
+    },
+    "48": {
+      "name": "IOR17B",
+      "function": "I/O",
+      "bank": "1",
+      "config": "",
+      "net": "ADC_B2"
+    },
+    "49": {
+      "name": "IOR17A",
+      "function": "I/O",
+      "bank": "1",
+      "config": "",
+      "net": "ADC_B3"
+    },
+    "50": {
+      "name": "IOR15B",
+      "function": "I/O",
+      "bank": "1",
+      "config": "",
+      "net": "ADC_B4"
+    },
+    "51": {
+      "name": "IOR11B/GCLKC_3",
+      "function": "I/O",
+      "bank": "1",
+      "config": "GCLKC_3",
+      "net": "ADC_B5"
+    },
+    "52": {
+      "name": "IOR11A/GCLKT_3",
+      "function": "I/O",
+      "bank": "1",
+      "config": "GCLKT_3",
+      "net": "ADC_B6"
+    },
+    "53": {
+      "name": "IOR10J/DOUT/WE_N",
+      "function": "I/O",
+      "bank": "1",
+      "config": "DOUT/WE_N",
+      "net": "ADC_B7"
+    },
+    "17": {
+      "name": "IOB2A",
+      "function": "I/O",
+      "bank": "2",
+      "config": "",
+      "net": "DAC_R0"
+    },
+    "18": {
+      "name": "IOB2B",
+      "function": "I/O",
+      "bank": "2",
+      "config": "",
+      "net": "DAC_R1"
+    },
+    "19": {
+      "name": "IOB4A",
+      "function": "I/O",
+      "bank": "2",
+      "config": "",
+      "net": "DAC_R2"
+    },
+    "20": {
+      "name": "IOB4B",
+      "function": "I/O",
+      "bank": "2",
+      "config": "",
+      "net": "DAC_R3"
+    },
+    "25": {
+      "name": "IOB6A",
+      "function": "I/O",
+      "bank": "2",
+      "config": "",
+      "net": "DAC_R4"
+    },
+    "26": {
+      "name": "IOB6B",
+      "function": "I/O",
+      "bank": "2",
+      "config": "",
+      "net": "DAC_R5"
+    },
+    "27": {
+      "name": "IOB8A",
+      "function": "I/O",
+      "bank": "2",
+      "config": "",
+      "net": "DAC_R6"
+    },
+    "28": {
+      "name": "IOB8B",
+      "function": "I/O",
+      "bank": "2",
+      "config": "",
+      "net": "DAC_R7"
+    },
+    "29": {
+      "name": "IOB10A",
+      "function": "I/O",
+      "bank": "2",
+      "config": "",
+      "net": "DAC_G0"
+    },
+    "30": {
+      "name": "IOB10B",
+      "function": "I/O",
+      "bank": "2",
+      "config": "",
+      "net": "DAC_G1"
+    },
+    "31": {
+      "name": "IOB12A",
+      "function": "I/O",
+      "bank": "2",
+      "config": "",
+      "net": "DAC_G2"
+    },
+    "32": {
+      "name": "IOB12B",
+      "function": "I/O",
+      "bank": "2",
+      "config": "",
+      "net": "DAC_G3"
+    },
+    "33": {
+      "name": "IOB14A",
+      "function": "I/O",
+      "bank": "2",
+      "config": "",
+      "net": "DAC_G4"
+    },
+    "34": {
+      "name": "IOB15A",
+      "function": "I/O",
+      "bank": "2",
+      "config": "",
+      "net": "DAC_G5"
+    },
+    "35": {
+      "name": "IOB20A/GCLKT_4",
+      "function": "I/O",
+      "bank": "2",
+      "config": "GCLKT_4",
+      "net": "DAC_G6"
+    },
+    "36": {
+      "name": "IOB20B/GCLKC_4",
+      "function": "I/O",
+      "bank": "2",
+      "config": "GCLKC_4",
+      "net": "DAC_G7"
+    },
+    "37": {
+      "name": "IOB26B",
+      "function": "I/O",
+      "bank": "2",
+      "config": "",
+      "net": "DAC_B0"
+    },
+    "38": {
+      "name": "IOB27B",
+      "function": "I/O",
+      "bank": "2",
+      "config": "",
+      "net": "DAC_B1"
+    },
+    "39": {
+      "name": "IOB28A",
+      "function": "I/O",
+      "bank": "2",
+      "config": "",
+      "net": "DAC_B2"
+    },
+    "40": {
+      "name": "IOB28B",
+      "function": "I/O",
+      "bank": "2",
+      "config": "",
+      "net": "DAC_B3"
+    },
+    "41": {
+      "name": "IOB30A",
+      "function": "I/O",
+      "bank": "2",
+      "config": "",
+      "net": "DAC_B4"
+    },
+    "42": {
+      "name": "IOB30B",
+      "function": "I/O",
+      "bank": "2",
+      "config": "",
+      "net": "DAC_B5"
+    },
+    "47": {
+      "name": "IOB36B",
+      "function": "I/O",
+      "bank": "2",
+      "config": "",
+      "net": "DAC_B6"
+    },
+    "3": {
+      "name": "IOL2A",
+      "function": "I/O",
+      "bank": "3",
+      "config": "",
+      "net": "DAC_B7"
+    }
+  }
+}
