@@ -1,0 +1,22 @@
+[
+ {"refs":"C:100nF:C_0603_1608Metric","kw":"100nF 0603","pkg":"0603","cap":"100nF","vmin":16,"diel":["X7R","X5R"]},
+ {"refs":"C:4.7nF:C_0603_1608Metric","kw":"4.7nF 0603 C0G","pkg":"0603","cap":"4.7nF","vmin":16,"diel":["C0G","NP0"]},
+ {"refs":"C:1nF:C_0603_1608Metric","kw":"1nF 0603 C0G","pkg":"0603","cap":"1nF","vmin":16,"diel":["C0G","NP0"]},
+ {"refs":"C:10nF:C_0603_1608Metric","kw":"10nF 0603 C0G","pkg":"0603","cap":"10nF","vmin":16,"diel":["C0G","NP0"],"fallback_diel":["X7R"]},
+ {"refs":"C:4.7uF:C_0805_2012Metric","kw":"4.7uF 0805","pkg":"0805","cap":"4.7uF","vmin":10,"diel":["X7R","X5R"]},
+ {"refs":"C:100nF:C_0402_1005Metric","kw":"100nF 0402","pkg":"0402","cap":"100nF","vmin":10,"diel":["X7R","X5R"]},
+ {"refs":"C:10uF:C_0805_2012Metric","kw":"10uF 0805","pkg":"0805","cap":"10uF","vmin":16,"diel":["X7R","X5R"]},
+ {"refs":"C:10uF 10V:C_0805_2012Metric","kw":"10uF 0805","pkg":"0805","cap":"10uF","vmin":16,"diel":["X7R","X5R"],"note":"5V input of TPS62160: >=16V preferred (value text says 10V)"},
+ {"refs":"C:22uF 10V:C_0805_2012Metric","kw":"22uF 0805","pkg":"0805","cap":"22uF","vmin":10,"diel":["X7R","X5R"]},
+ {"refs":"FB:220R@100MHz:L_0603_1608Metric","kw":"220Ω@100MHz 0603 ferrite bead","pkg":"0603","type":"Ferrite","z":"220","imin":0.5},
+ {"refs":"F:1A hold - select:Fuse_1206_3216Metric","kw":"1206 PPTC resettable fuse 1.1A","pkg":"1206","type":"PTC","hold_min":1.0,"hold_max":1.5,"vmin":6},
+ {"refs":"R:*:R_0603_1608Metric","pkg":"0603","resistor":true},
+ {"refs":"R:*:R_0402_1005Metric","pkg":"0402","resistor":true},
+ {"refs":"U:SN74LVC2G17DBVR","mpn":"SN74LVC2G17DBVR"},
+ {"refs":"U:SN74LVC1G17DBVR","mpn":"SN74LVC1G17DBVR"},
+ {"refs":"U:TPS62160DSGR","mpn":"TPS62160DSGR"},
+ {"refs":"Y:ECS-3225MVLC-270-CN-TR","mpn":"ECS-3225MVLC-270-CN-TR"},
+ {"refs":"J:33DSMT1-E15SNCT","mpn":"33DSMT1-E15SNCT"},
+ {"refs":"J:JTAG 2x05 2.54mm","kw":"2x5P 2.54mm SMD pin header","pkg":"SMD,P=2.54mm","type":"header"},
+ {"refs":"check:C3824085,C31900351,C9668,C165948,C7413169"}
+]

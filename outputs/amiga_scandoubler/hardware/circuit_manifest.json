@@ -523,8 +523,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -545,8 +545,8 @@
       "value": "1.5k",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "1.5k",
-      "lcsc": "",
+      "mpn": "0603WAF1501T5E",
+      "lcsc": "C22843",
       "notes": "",
       "pins": {
         "1": {
@@ -567,8 +567,8 @@
       "value": "4.7nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "4.7nF",
-      "lcsc": "",
+      "mpn": "CC0603JRNPO9BN472",
+      "lcsc": "C576818",
       "notes": "",
       "pins": {
         "1": {
@@ -589,8 +589,8 @@
       "value": "1nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "1nF",
-      "lcsc": "",
+      "mpn": "CC0603JRNPO9BN102",
+      "lcsc": "C106246",
       "notes": "",
       "pins": {
         "1": {
@@ -611,8 +611,8 @@
       "value": "10nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "10nF",
-      "lcsc": "",
+      "mpn": "GRM1885C1H103JA01D",
+      "lcsc": "C85973",
       "notes": "",
       "pins": {
         "1": {
@@ -633,8 +633,8 @@
       "value": "10nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "10nF",
-      "lcsc": "",
+      "mpn": "GRM1885C1H103JA01D",
+      "lcsc": "C85973",
       "notes": "",
       "pins": {
         "1": {
@@ -655,8 +655,8 @@
       "value": "10nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "10nF",
-      "lcsc": "",
+      "mpn": "GRM1885C1H103JA01D",
+      "lcsc": "C85973",
       "notes": "",
       "pins": {
         "1": {
@@ -677,8 +677,8 @@
       "value": "10nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "10nF",
-      "lcsc": "",
+      "mpn": "GRM1885C1H103JA01D",
+      "lcsc": "C85973",
       "notes": "",
       "pins": {
         "1": {
@@ -699,8 +699,8 @@
       "value": "10nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "10nF",
-      "lcsc": "",
+      "mpn": "GRM1885C1H103JA01D",
+      "lcsc": "C85973",
       "notes": "",
       "pins": {
         "1": {
@@ -721,8 +721,8 @@
       "value": "1nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "1nF",
-      "lcsc": "",
+      "mpn": "CC0603JRNPO9BN102",
+      "lcsc": "C106246",
       "notes": "",
       "pins": {
         "1": {
@@ -743,8 +743,8 @@
       "value": "10nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "10nF",
-      "lcsc": "",
+      "mpn": "GRM1885C1H103JA01D",
+      "lcsc": "C85973",
       "notes": "",
       "pins": {
         "1": {
@@ -765,8 +765,8 @@
       "value": "1nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "1nF",
-      "lcsc": "",
+      "mpn": "CC0603JRNPO9BN102",
+      "lcsc": "C106246",
       "notes": "",
       "pins": {
         "1": {
@@ -787,8 +787,8 @@
       "value": "10nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "10nF",
-      "lcsc": "",
+      "mpn": "GRM1885C1H103JA01D",
+      "lcsc": "C85973",
       "notes": "",
       "pins": {
         "1": {
@@ -809,8 +809,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -831,8 +831,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -853,8 +853,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -875,8 +875,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -897,8 +897,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -919,8 +919,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -941,8 +941,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -963,8 +963,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -985,8 +985,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -1007,8 +1007,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -1029,8 +1029,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -1051,8 +1051,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -1073,8 +1073,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -1095,8 +1095,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -1117,8 +1117,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -1139,8 +1139,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -1618,8 +1618,8 @@
       "value": "4.7k",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "4.7k",
-      "lcsc": "",
+      "mpn": "0603WAF4701T5E",
+      "lcsc": "C23162",
       "notes": "",
       "pins": {
         "1": {
@@ -1640,8 +1640,8 @@
       "value": "4.7k",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "4.7k",
-      "lcsc": "",
+      "mpn": "0603WAF4701T5E",
+      "lcsc": "C23162",
       "notes": "",
       "pins": {
         "1": {
@@ -1662,8 +1662,8 @@
       "value": "4.7k",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "4.7k",
-      "lcsc": "",
+      "mpn": "0603WAF4701T5E",
+      "lcsc": "C23162",
       "notes": "",
       "pins": {
         "1": {
@@ -1684,8 +1684,8 @@
       "value": "4.7k",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "4.7k",
-      "lcsc": "",
+      "mpn": "0603WAF4701T5E",
+      "lcsc": "C23162",
       "notes": "",
       "pins": {
         "1": {
@@ -1706,8 +1706,8 @@
       "value": "4.7k",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "4.7k",
-      "lcsc": "",
+      "mpn": "0603WAF4701T5E",
+      "lcsc": "C23162",
       "notes": "",
       "pins": {
         "1": {
@@ -1728,8 +1728,8 @@
       "value": "4.7k",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "4.7k",
-      "lcsc": "",
+      "mpn": "0603WAF4701T5E",
+      "lcsc": "C23162",
       "notes": "",
       "pins": {
         "1": {
@@ -1750,8 +1750,8 @@
       "value": "4.7k",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "4.7k",
-      "lcsc": "",
+      "mpn": "0603WAF4701T5E",
+      "lcsc": "C23162",
       "notes": "",
       "pins": {
         "1": {
@@ -1772,8 +1772,8 @@
       "value": "4.7k",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "4.7k",
-      "lcsc": "",
+      "mpn": "0603WAF4701T5E",
+      "lcsc": "C23162",
       "notes": "",
       "pins": {
         "1": {
@@ -1794,8 +1794,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -1816,8 +1816,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -1838,8 +1838,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -1860,8 +1860,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -1882,8 +1882,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -1904,8 +1904,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -1926,8 +1926,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -1948,8 +1948,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -1970,8 +1970,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -1992,8 +1992,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -2014,8 +2014,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -2036,8 +2036,8 @@
       "value": "4.7uF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0805_2012Metric",
-      "mpn": "4.7uF",
-      "lcsc": "",
+      "mpn": "CL21A475KAQNNNE",
+      "lcsc": "C1779",
       "notes": "",
       "pins": {
         "1": {
@@ -2058,8 +2058,8 @@
       "value": "4.7uF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0805_2012Metric",
-      "mpn": "4.7uF",
-      "lcsc": "",
+      "mpn": "CL21A475KAQNNNE",
+      "lcsc": "C1779",
       "notes": "",
       "pins": {
         "1": {
@@ -2080,8 +2080,8 @@
       "value": "JTAG 2x05 2.54mm",
       "symbol": "JTAG_2x05",
       "footprint": "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical_SMD",
-      "mpn": "JTAG 2x05 2.54mm",
-      "lcsc": "",
+      "mpn": "HX PZ2.54-2x5P TP",
+      "lcsc": "C32713285",
       "notes": "",
       "pins": {
         "1": {
@@ -2394,8 +2394,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0402_1005Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CL05B104KO5NNNC",
+      "lcsc": "C1525",
       "notes": "",
       "pins": {
         "1": {
@@ -2416,8 +2416,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -2438,8 +2438,8 @@
       "value": "536R 0.1%",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "536R 0.1%",
-      "lcsc": "",
+      "mpn": "RT0603BRD07536RL",
+      "lcsc": "C861466",
       "notes": "",
       "pins": {
         "1": {
@@ -2460,8 +2460,8 @@
       "value": "75R 0.1%",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "75R 0.1%",
-      "lcsc": "",
+      "mpn": "AR03BTCX0750",
+      "lcsc": "C319466",
       "notes": "",
       "pins": {
         "1": {
@@ -2482,8 +2482,8 @@
       "value": "75R 0.1%",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "75R 0.1%",
-      "lcsc": "",
+      "mpn": "AR03BTCX0750",
+      "lcsc": "C319466",
       "notes": "",
       "pins": {
         "1": {
@@ -2504,8 +2504,8 @@
       "value": "75R 0.1%",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "75R 0.1%",
-      "lcsc": "",
+      "mpn": "AR03BTCX0750",
+      "lcsc": "C319466",
       "notes": "",
       "pins": {
         "1": {
@@ -2526,8 +2526,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -2548,8 +2548,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -2570,8 +2570,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -2592,8 +2592,8 @@
       "value": "10uF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0805_2012Metric",
-      "mpn": "10uF",
-      "lcsc": "",
+      "mpn": "CL21A106KAYNNNE",
+      "lcsc": "C15850",
       "notes": "",
       "pins": {
         "1": {
@@ -2614,8 +2614,8 @@
       "value": "10k",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "10k",
-      "lcsc": "",
+      "mpn": "0603WAF1002T5E",
+      "lcsc": "C25804",
       "notes": "",
       "pins": {
         "1": {
@@ -2820,8 +2820,8 @@
       "value": "75R 0.1%",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "75R 0.1%",
-      "lcsc": "",
+      "mpn": "AR03BTCX0750",
+      "lcsc": "C319466",
       "notes": "",
       "pins": {
         "1": {
@@ -2842,8 +2842,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -2864,8 +2864,8 @@
       "value": "75R 0.1%",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "75R 0.1%",
-      "lcsc": "",
+      "mpn": "AR03BTCX0750",
+      "lcsc": "C319466",
       "notes": "",
       "pins": {
         "1": {
@@ -2886,8 +2886,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -2908,8 +2908,8 @@
       "value": "75R 0.1%",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "75R 0.1%",
-      "lcsc": "",
+      "mpn": "AR03BTCX0750",
+      "lcsc": "C319466",
       "notes": "",
       "pins": {
         "1": {
@@ -2930,8 +2930,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -2952,8 +2952,8 @@
       "value": "33R",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "33R",
-      "lcsc": "",
+      "mpn": "0603WAF330JT5E",
+      "lcsc": "C23140",
       "notes": "",
       "pins": {
         "1": {
@@ -2974,8 +2974,8 @@
       "value": "100k",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "100k",
-      "lcsc": "",
+      "mpn": "0603WAF1003T5E",
+      "lcsc": "C25803",
       "notes": "",
       "pins": {
         "1": {
@@ -2996,8 +2996,8 @@
       "value": "33R",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "33R",
-      "lcsc": "",
+      "mpn": "0603WAF330JT5E",
+      "lcsc": "C23140",
       "notes": "",
       "pins": {
         "1": {
@@ -3018,8 +3018,8 @@
       "value": "100k",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "100k",
-      "lcsc": "",
+      "mpn": "0603WAF1003T5E",
+      "lcsc": "C25803",
       "notes": "",
       "pins": {
         "1": {
@@ -3041,7 +3041,7 @@
       "symbol": "SN74LVC2G17DBVR",
       "footprint": "Package_TO_SOT_SMD:SOT-23-6",
       "mpn": "SN74LVC2G17DBVR",
-      "lcsc": "",
+      "lcsc": "C19829674",
       "notes": "",
       "pins": {
         "1": {
@@ -3083,7 +3083,7 @@
       "symbol": "SN74LVC2G17DBVR",
       "footprint": "Package_TO_SOT_SMD:SOT-23-6",
       "mpn": "SN74LVC2G17DBVR",
-      "lcsc": "",
+      "lcsc": "C19829674",
       "notes": "",
       "pins": {
         "1": {
@@ -3124,8 +3124,8 @@
       "value": "33R",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "33R",
-      "lcsc": "",
+      "mpn": "0603WAF330JT5E",
+      "lcsc": "C23140",
       "notes": "",
       "pins": {
         "1": {
@@ -3146,8 +3146,8 @@
       "value": "33R",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "33R",
-      "lcsc": "",
+      "mpn": "0603WAF330JT5E",
+      "lcsc": "C23140",
       "notes": "",
       "pins": {
         "1": {
@@ -3169,7 +3169,7 @@
       "symbol": "SN74LVC1G17DBVR",
       "footprint": "Package_TO_SOT_SMD:SOT-23-5",
       "mpn": "SN74LVC1G17DBVR",
-      "lcsc": "",
+      "lcsc": "C7836",
       "notes": "",
       "pins": {
         "1": {
@@ -3205,8 +3205,8 @@
       "value": "22R",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "22R",
-      "lcsc": "",
+      "mpn": "0603WAF220JT5E",
+      "lcsc": "C23345",
       "notes": "",
       "pins": {
         "1": {
@@ -3227,8 +3227,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -3249,8 +3249,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -3271,8 +3271,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -3390,8 +3390,8 @@
       "value": "5.1k 1%",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "5.1k 1%",
-      "lcsc": "",
+      "mpn": "0603WAF5101T5E",
+      "lcsc": "C23186",
       "notes": "",
       "pins": {
         "1": {
@@ -3412,8 +3412,8 @@
       "value": "5.1k 1%",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "5.1k 1%",
-      "lcsc": "",
+      "mpn": "0603WAF5101T5E",
+      "lcsc": "C23186",
       "notes": "",
       "pins": {
         "1": {
@@ -3434,8 +3434,8 @@
       "value": "1A hold - select",
       "symbol": "FUSE",
       "footprint": "Fuse:Fuse_1206_3216Metric",
-      "mpn": "1A hold - select",
-      "lcsc": "",
+      "mpn": "SMD1206B110TFT",
+      "lcsc": "C269119",
       "notes": "",
       "pins": {
         "1": {
@@ -3456,8 +3456,8 @@
       "value": "10uF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0805_2012Metric",
-      "mpn": "10uF",
-      "lcsc": "",
+      "mpn": "CL21A106KAYNNNE",
+      "lcsc": "C15850",
       "notes": "",
       "pins": {
         "1": {
@@ -3479,7 +3479,7 @@
       "symbol": "TPS62160DSGR",
       "footprint": "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm",
       "mpn": "TPS62160DSGR",
-      "lcsc": "",
+      "lcsc": "C324077",
       "notes": "",
       "pins": {
         "1": {
@@ -3557,8 +3557,8 @@
       "value": "312k 0.1%",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "312k 0.1%",
-      "lcsc": "",
+      "mpn": "RT0603BRD07312KL",
+      "lcsc": "C861315",
       "notes": "",
       "pins": {
         "1": {
@@ -3579,8 +3579,8 @@
       "value": "100k 0.1%",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "100k 0.1%",
-      "lcsc": "",
+      "mpn": "RT0603BRD07100KL",
+      "lcsc": "C122538",
       "notes": "",
       "pins": {
         "1": {
@@ -3601,8 +3601,8 @@
       "value": "10uF 10V",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0805_2012Metric",
-      "mpn": "10uF 10V",
-      "lcsc": "",
+      "mpn": "CL21A106KAYNNNE",
+      "lcsc": "C15850",
       "notes": "",
       "pins": {
         "1": {
@@ -3623,8 +3623,8 @@
       "value": "22uF 10V",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0805_2012Metric",
-      "mpn": "22uF 10V",
-      "lcsc": "",
+      "mpn": "CL21A226MAQNNNE",
+      "lcsc": "C45783",
       "notes": "",
       "pins": {
         "1": {
@@ -3646,7 +3646,7 @@
       "symbol": "TPS62160DSGR",
       "footprint": "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm",
       "mpn": "TPS62160DSGR",
-      "lcsc": "",
+      "lcsc": "C324077",
       "notes": "",
       "pins": {
         "1": {
@@ -3724,8 +3724,8 @@
       "value": "137k 0.1%",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "137k 0.1%",
-      "lcsc": "",
+      "mpn": "RT0603BRD07137KL",
+      "lcsc": "C861114",
       "notes": "",
       "pins": {
         "1": {
@@ -3746,8 +3746,8 @@
       "value": "100k 0.1%",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "100k 0.1%",
-      "lcsc": "",
+      "mpn": "RT0603BRD07100KL",
+      "lcsc": "C122538",
       "notes": "",
       "pins": {
         "1": {
@@ -3768,8 +3768,8 @@
       "value": "10uF 10V",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0805_2012Metric",
-      "mpn": "10uF 10V",
-      "lcsc": "",
+      "mpn": "CL21A106KAYNNNE",
+      "lcsc": "C15850",
       "notes": "",
       "pins": {
         "1": {
@@ -3790,8 +3790,8 @@
       "value": "22uF 10V",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0805_2012Metric",
-      "mpn": "22uF 10V",
-      "lcsc": "",
+      "mpn": "CL21A226MAQNNNE",
+      "lcsc": "C45783",
       "notes": "",
       "pins": {
         "1": {
@@ -3813,7 +3813,7 @@
       "symbol": "TPS62160DSGR",
       "footprint": "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm",
       "mpn": "TPS62160DSGR",
-      "lcsc": "",
+      "lcsc": "C324077",
       "notes": "",
       "pins": {
         "1": {
@@ -3891,8 +3891,8 @@
       "value": "49.9k 0.1%",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "49.9k 0.1%",
-      "lcsc": "",
+      "mpn": "RT0603BRD0749K9L",
+      "lcsc": "C705780",
       "notes": "",
       "pins": {
         "1": {
@@ -3913,8 +3913,8 @@
       "value": "100k 0.1%",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "100k 0.1%",
-      "lcsc": "",
+      "mpn": "RT0603BRD07100KL",
+      "lcsc": "C122538",
       "notes": "",
       "pins": {
         "1": {
@@ -3935,8 +3935,8 @@
       "value": "10uF 10V",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0805_2012Metric",
-      "mpn": "10uF 10V",
-      "lcsc": "",
+      "mpn": "CL21A106KAYNNNE",
+      "lcsc": "C15850",
       "notes": "",
       "pins": {
         "1": {
@@ -3957,8 +3957,8 @@
       "value": "22uF 10V",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0805_2012Metric",
-      "mpn": "22uF 10V",
-      "lcsc": "",
+      "mpn": "CL21A226MAQNNNE",
+      "lcsc": "C45783",
       "notes": "",
       "pins": {
         "1": {
@@ -3979,8 +3979,8 @@
       "value": "10k",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "10k",
-      "lcsc": "",
+      "mpn": "0603WAF1002T5E",
+      "lcsc": "C25804",
       "notes": "",
       "pins": {
         "1": {
@@ -4001,8 +4001,8 @@
       "value": "10k",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "10k",
-      "lcsc": "",
+      "mpn": "0603WAF1002T5E",
+      "lcsc": "C25804",
       "notes": "",
       "pins": {
         "1": {
@@ -4023,8 +4023,8 @@
       "value": "100k",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "100k",
-      "lcsc": "",
+      "mpn": "0603WAF1003T5E",
+      "lcsc": "C25803",
       "notes": "",
       "pins": {
         "1": {
@@ -4077,8 +4077,8 @@
       "value": "22R",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "22R",
-      "lcsc": "",
+      "mpn": "0603WAF220JT5E",
+      "lcsc": "C23345",
       "notes": "",
       "pins": {
         "1": {
@@ -4099,8 +4099,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -4121,8 +4121,8 @@
       "value": "220R@100MHz",
       "symbol": "FB",
       "footprint": "Inductor_SMD:L_0603_1608Metric",
-      "mpn": "220R@100MHz",
-      "lcsc": "",
+      "mpn": "HCB1608KF-221T20",
+      "lcsc": "C304314",
       "notes": "",
       "pins": {
         "1": {
@@ -4143,8 +4143,8 @@
       "value": "4.7uF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0805_2012Metric",
-      "mpn": "4.7uF",
-      "lcsc": "",
+      "mpn": "CL21A475KAQNNNE",
+      "lcsc": "C1779",
       "notes": "",
       "pins": {
         "1": {
@@ -4165,8 +4165,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -4187,8 +4187,8 @@
       "value": "220R@100MHz",
       "symbol": "FB",
       "footprint": "Inductor_SMD:L_0603_1608Metric",
-      "mpn": "220R@100MHz",
-      "lcsc": "",
+      "mpn": "HCB1608KF-221T20",
+      "lcsc": "C304314",
       "notes": "",
       "pins": {
         "1": {
@@ -4209,8 +4209,8 @@
       "value": "4.7uF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0805_2012Metric",
-      "mpn": "4.7uF",
-      "lcsc": "",
+      "mpn": "CL21A475KAQNNNE",
+      "lcsc": "C1779",
       "notes": "",
       "pins": {
         "1": {
@@ -4231,8 +4231,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -4253,8 +4253,8 @@
       "value": "220R@100MHz",
       "symbol": "FB",
       "footprint": "Inductor_SMD:L_0603_1608Metric",
-      "mpn": "220R@100MHz",
-      "lcsc": "",
+      "mpn": "HCB1608KF-221T20",
+      "lcsc": "C304314",
       "notes": "",
       "pins": {
         "1": {
@@ -4275,8 +4275,8 @@
       "value": "4.7uF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0805_2012Metric",
-      "mpn": "4.7uF",
-      "lcsc": "",
+      "mpn": "CL21A475KAQNNNE",
+      "lcsc": "C1779",
       "notes": "",
       "pins": {
         "1": {
@@ -4297,8 +4297,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -4319,8 +4319,8 @@
       "value": "220R@100MHz",
       "symbol": "FB",
       "footprint": "Inductor_SMD:L_0603_1608Metric",
-      "mpn": "220R@100MHz",
-      "lcsc": "",
+      "mpn": "HCB1608KF-221T20",
+      "lcsc": "C304314",
       "notes": "",
       "pins": {
         "1": {
@@ -4341,8 +4341,8 @@
       "value": "4.7uF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0805_2012Metric",
-      "mpn": "4.7uF",
-      "lcsc": "",
+      "mpn": "CL21A475KAQNNNE",
+      "lcsc": "C1779",
       "notes": "",
       "pins": {
         "1": {
@@ -4363,8 +4363,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0603_1608Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
       "notes": "",
       "pins": {
         "1": {
@@ -4385,8 +4385,8 @@
       "value": "2.2k",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0402_1005Metric",
-      "mpn": "2.2k",
-      "lcsc": "",
+      "mpn": "0402WGF2201TCE",
+      "lcsc": "C25879",
       "notes": "",
       "pins": {
         "1": {
@@ -4407,8 +4407,8 @@
       "value": "2.2k",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0402_1005Metric",
-      "mpn": "2.2k",
-      "lcsc": "",
+      "mpn": "0402WGF2201TCE",
+      "lcsc": "C25879",
       "notes": "",
       "pins": {
         "1": {
@@ -4429,8 +4429,8 @@
       "value": "10k",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0402_1005Metric",
-      "mpn": "10k",
-      "lcsc": "",
+      "mpn": "0402WGF1002TCE",
+      "lcsc": "C25744",
       "notes": "",
       "pins": {
         "1": {
@@ -4451,8 +4451,8 @@
       "value": "10k",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0402_1005Metric",
-      "mpn": "10k",
-      "lcsc": "",
+      "mpn": "0402WGF1002TCE",
+      "lcsc": "C25744",
       "notes": "",
       "pins": {
         "1": {
@@ -4473,8 +4473,8 @@
       "value": "10k",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "10k",
-      "lcsc": "",
+      "mpn": "0603WAF1002T5E",
+      "lcsc": "C25804",
       "notes": "",
       "pins": {
         "1": {
@@ -4495,8 +4495,8 @@
       "value": "10k",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "10k",
-      "lcsc": "",
+      "mpn": "0603WAF1002T5E",
+      "lcsc": "C25804",
       "notes": "",
       "pins": {
         "1": {
@@ -4517,8 +4517,8 @@
       "value": "10k",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "10k",
-      "lcsc": "",
+      "mpn": "0603WAF1002T5E",
+      "lcsc": "C25804",
       "notes": "",
       "pins": {
         "1": {
@@ -4539,8 +4539,8 @@
       "value": "4.7k",
       "symbol": "R",
       "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "mpn": "4.7k",
-      "lcsc": "",
+      "mpn": "0603WAF4701T5E",
+      "lcsc": "C23162",
       "notes": "",
       "pins": {
         "1": {
@@ -4561,8 +4561,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0402_1005Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CL05B104KO5NNNC",
+      "lcsc": "C1525",
       "notes": "U2 VCCO decap (pin 12), added in v0.30wip review",
       "pins": {
         "1": {
@@ -4583,8 +4583,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0402_1005Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CL05B104KO5NNNC",
+      "lcsc": "C1525",
       "notes": "U2 VCCO decap (pin 23), added in v0.30wip review",
       "pins": {
         "1": {
@@ -4605,8 +4605,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0402_1005Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CL05B104KO5NNNC",
+      "lcsc": "C1525",
       "notes": "3V3 return decap next to REF_27M via, added in v0.30wip review",
       "pins": {
         "1": {
@@ -4627,8 +4627,8 @@
       "value": "100nF",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0402_1005Metric",
-      "mpn": "100nF",
-      "lcsc": "",
+      "mpn": "CL05B104KO5NNNC",
+      "lcsc": "C1525",
       "notes": "3V3 return decap next to REF_27M via, added in v0.30wip review",
       "pins": {
         "1": {
