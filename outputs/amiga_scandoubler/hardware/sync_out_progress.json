@@ -52,13 +52,13 @@
       "net": "V_OUT_RAW",
       "from": [
         "U2",
-        "61"
+        "13"
       ],
       "to": [
         "R42",
         "1"
       ],
-      "layer": "B.Cu"
+      "layer": "F.Cu+B.Cu"
     },
     {
       "net": "V_OUT_RAW",
@@ -76,13 +76,13 @@
       "net": "H_OUT_RAW",
       "from": [
         "U2",
-        "60"
+        "14"
       ],
       "to": [
         "R41",
         "1"
       ],
-      "layer": "B.Cu"
+      "layer": "F.Cu+B.Cu"
     },
     {
       "net": "H_OUT_RAW",

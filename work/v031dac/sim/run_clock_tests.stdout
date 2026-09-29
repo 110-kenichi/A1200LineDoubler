@@ -1,0 +1,5 @@
+PASS video_clock_guard: 1517 checks; acquisition, phase drift, stopped high/low, stuck LOCK, qualification/LOCK loss, fast/slow clock, reset and reacquisition
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_video_clock_guard.sv:50: $finish called at 177489000 (1ps)
+CONFIRMED LIMITATION: DAC input register retains nonzero pixel after clock stops; digital BLANK alone is insufficient for analog muting
+PASS supervised_video_core: 1284 active RGB checks; nonzero-pixel clock freeze, asynchronous blanking, lock/config loss and restart
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_supervised_video_core.sv:66: $finish called at 135605000 (1ps)

@@ -1,0 +1,3 @@
+PASS board_startup: 100 reference edges; reset lengths 2/32/65; delayed/stopped reference; safe pins with ADC stopped and power low
+Scope: behavioral initialization and board elaboration with stubs; NOT vendor PLL/ODDR or fitted reset validation
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_board_startup.sv:44: $finish called at 4800000 (1ps)

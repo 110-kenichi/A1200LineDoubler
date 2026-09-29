@@ -1,0 +1,7 @@
+Yosys Gowin cells_sim.v SHA256 0af82c7c45d64bbdfca798b951c3cd5ba4b6a6f85336f8aaa518725a5a5f7222
+PASS mapped_reset CYCLES=2: initial assertion, stopped reference, exact release edge
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_mapped_reset.sv:18: $finish called at 1544000 (1ps)
+PASS mapped_reset CYCLES=32: initial assertion, stopped reference, exact release edge
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_mapped_reset.sv:18: $finish called at 2654000 (1ps)
+PASS mapped_reset CYCLES=65: initial assertion, stopped reference, exact release edge
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_mapped_reset.sv:18: $finish called at 3875000 (1ps)

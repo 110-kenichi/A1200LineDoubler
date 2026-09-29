@@ -1,0 +1,3 @@
+
+PASS dac_output_stage: 593 alignment, stability, stopped-clock clear and restart checks
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_dac_output_stage.sv:52: $finish called at 6220000 (1ps)

@@ -1,0 +1,18 @@
+PASS line_double N=32: 704 RGB samples, bank swaps, startup blank, sync loss, cadence error, reset
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_line_double.sv:47: $finish called at 7726000 (1ps)
+PASS line_double N=1816: 39952 RGB samples, bank swaps, startup blank, sync loss, cadence error, reset
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_line_double.sv:47: $finish called at 435886000 (1ps)
+PASS line_double N=1820: 40040 RGB samples, bank swaps, startup blank, sync loss, cadence error, reset
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_line_double.sv:47: $finish called at 436846000 (1ps)
+PASS line_double N=2048: 45056 RGB samples, bank swaps, startup blank, sync loss, cadence error, reset
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_line_double.sv:47: $finish called at 491566000 (1ps)
+PASS field_sync: field period=524 output lines, 2 frames, five-line VS
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_field_sync.sv:28: $finish called at 341770000 (1ps)
+PASS field_sync: field period=525 output lines, 2 frames, five-line VS
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_field_sync.sv:28: $finish called at 342410000 (1ps)
+PASS field_sync: field period=624 output lines, 2 frames, five-line VS
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_field_sync.sv:28: $finish called at 405770000 (1ps)
+PASS field_sync: field period=625 output lines, 2 frames, five-line VS
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_field_sync.sv:28: $finish called at 406410000 (1ps)
+PASS field_sync: field period=626 output lines, 2 frames, five-line VS
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_field_sync.sv:28: $finish called at 407050000 (1ps)

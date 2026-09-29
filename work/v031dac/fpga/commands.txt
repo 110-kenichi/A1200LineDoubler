@@ -1,0 +1,10 @@
+# v0.31 DAC re-pin evaluation (cloud session 2026-09-28)
+# tools: YoWASP (PyPI) yowasp-yosys 0.69 (9f75ca1f9) / yowasp-nextpnr-himbaechel-gowin 0.11.1, apycula
+#        (the original flow used OSS CAD Suite 2026-09-12: Yosys 0.69+24, nextpnr-himbaechel 0.11.1-26)
+# YoWASP runs under WASI: run from a work dir that contains rtl/, constraints/, exploratory_periods.sdc
+yowasp-yosys -q -l out/syn_N.log board_N.ys        # board_N.ys = implementation/output_release/board_N.ys with json path -> out/
+yowasp-nextpnr-himbaechel-gowin --device GW1N-LV4QN88C6/I5 --vopt family=GW1N-4 --json out/board_N.json \
+  --vopt cst=constraints/amiga_board_top_v031dac.cst --vopt sspi_as_gpio --sdc exploratory_periods.sdc --freq 56.75 \
+  --write out/dac_N_routed.json --report out/dac_N_timing.json --sdf out/dac_N.sdf --log out/dac_N_route.log
+# analysis: implementation/analyze_dac_sdf.py --implementation output_release ; analyze_capture_sdf.py --phase 180 ;
+#           verify_phase180_v031.py (dac_clock_output BEL now X0Y1/IOLOGICAO = pin 3)

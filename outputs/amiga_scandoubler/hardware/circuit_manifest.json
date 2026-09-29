@@ -1168,92 +1168,92 @@
         "68": {
           "name": "IOT37B",
           "type": "bidirectional",
-          "net": "ADC_R0"
+          "net": "ADC_G0"
         },
         "69": {
           "name": "IOT37A",
           "type": "bidirectional",
-          "net": "ADC_R1"
+          "net": "ADC_G1"
         },
         "70": {
           "name": "IOT36B",
           "type": "bidirectional",
-          "net": "ADC_R2"
+          "net": "ADC_G2"
         },
         "71": {
           "name": "IOT36A",
           "type": "bidirectional",
-          "net": "ADC_R3"
+          "net": "ADC_G3"
         },
         "72": {
           "name": "IOT35B",
           "type": "bidirectional",
-          "net": "ADC_R4"
+          "net": "ADC_G4"
         },
         "73": {
           "name": "IOT35A",
           "type": "bidirectional",
-          "net": "ADC_R5"
+          "net": "ADC_G5"
         },
         "74": {
           "name": "IOT33B",
           "type": "bidirectional",
-          "net": "ADC_R6"
+          "net": "ADC_G6"
         },
         "75": {
           "name": "IOT32B",
           "type": "bidirectional",
-          "net": "ADC_R7"
+          "net": "ADC_G7"
         },
         "76": {
           "name": "IOT31B",
           "type": "bidirectional",
-          "net": "ADC_G0"
+          "net": "ADC_B0"
         },
         "77": {
           "name": "IOT30B",
           "type": "bidirectional",
-          "net": "ADC_G1"
+          "net": "ADC_B1"
         },
         "79": {
           "name": "IOT12A",
           "type": "bidirectional",
-          "net": "ADC_G2"
+          "net": "ADC_B2"
         },
         "80": {
           "name": "IOT9A",
           "type": "bidirectional",
-          "net": "ADC_G3"
+          "net": "ADC_B3"
         },
         "81": {
           "name": "IOT6B",
           "type": "bidirectional",
-          "net": "ADC_G4"
+          "net": "ADC_B4"
         },
         "82": {
           "name": "IOT6A",
           "type": "bidirectional",
-          "net": "ADC_G5"
+          "net": "ADC_B5"
         },
         "83": {
           "name": "IOT5B",
           "type": "bidirectional",
-          "net": "ADC_G6"
+          "net": "ADC_B6"
         },
         "84": {
           "name": "IOT5A",
           "type": "bidirectional",
-          "net": "ADC_G7"
+          "net": "ADC_B7"
         },
         "85": {
           "name": "IOT4B",
           "type": "bidirectional",
-          "net": "ADC_B0"
+          "net": "ADC_HS"
         },
         "86": {
           "name": "IOT4A",
           "type": "bidirectional",
-          "net": "ADC_B1"
+          "net": "ADC_VS"
         },
         "87": {
           "name": "IOT3B/MODE1",
@@ -1268,42 +1268,42 @@
         "48": {
           "name": "IOR17B",
           "type": "bidirectional",
-          "net": "ADC_B2"
+          "net": "ADC_R0"
         },
         "49": {
           "name": "IOR17A",
           "type": "bidirectional",
-          "net": "ADC_B3"
+          "net": "ADC_R1"
         },
         "50": {
           "name": "IOR15B",
           "type": "bidirectional",
-          "net": "ADC_B4"
+          "net": "ADC_R2"
         },
         "51": {
           "name": "IOR11B/GCLKC_3",
           "type": "bidirectional",
-          "net": "ADC_B5"
+          "net": "ADC_R3"
         },
         "52": {
           "name": "IOR11A/GCLKT_3",
           "type": "bidirectional",
-          "net": "ADC_B6"
+          "net": "ADC_R4"
         },
         "53": {
           "name": "IOR10J/DOUT/WE_N",
           "type": "bidirectional",
-          "net": "ADC_B7"
+          "net": "ADC_R5"
         },
         "54": {
           "name": "IOR10I/DIN/CLKHOLD_N",
           "type": "bidirectional",
-          "net": "ADC_HS"
+          "net": "ADC_R6"
         },
         "55": {
           "name": "IOR10H/SSPI_CS_N/D0",
           "type": "bidirectional",
-          "net": "ADC_VS"
+          "net": "ADC_R7"
         },
         "56": {
           "name": "IOR10G/SO/D1",
@@ -1313,22 +1313,22 @@
         "57": {
           "name": "IOR10E/FASTRD_N/D3",
           "type": "bidirectional",
-          "net": "ADC_PWDN"
+          "net": "I2C_SDA"
         },
         "59": {
           "name": "IOR10D/MCLK/D4",
           "type": "bidirectional",
-          "net": "DAC_BLANK_N"
+          "net": "I2C_SCL"
         },
         "60": {
           "name": "IOR10C/MCS_N/D5",
           "type": "bidirectional",
-          "net": "H_OUT_RAW"
+          "net": "ADC_RESET_N"
         },
         "61": {
           "name": "IOR10B/MO/D6",
           "type": "bidirectional",
-          "net": "V_OUT_RAW"
+          "net": "ADC_PWDN"
         },
         "62": {
           "name": "IOR10A/MI/D7",
@@ -1343,57 +1343,57 @@
         "17": {
           "name": "IOB2A",
           "type": "bidirectional",
-          "net": "DAC_R0"
+          "net": "DAC_B5"
         },
         "18": {
           "name": "IOB2B",
           "type": "bidirectional",
-          "net": "DAC_R1"
+          "net": "DAC_B4"
         },
         "19": {
           "name": "IOB4A",
           "type": "bidirectional",
-          "net": "DAC_R2"
+          "net": "DAC_B3"
         },
         "20": {
           "name": "IOB4B",
           "type": "bidirectional",
-          "net": "DAC_R3"
+          "net": "DAC_B2"
         },
         "25": {
           "name": "IOB6A",
           "type": "bidirectional",
-          "net": "DAC_R4"
+          "net": "DAC_B1"
         },
         "26": {
           "name": "IOB6B",
           "type": "bidirectional",
-          "net": "DAC_R5"
+          "net": "DAC_B0"
         },
         "27": {
           "name": "IOB8A",
           "type": "bidirectional",
-          "net": "DAC_R6"
+          "net": "DAC_BLANK_N"
         },
         "28": {
           "name": "IOB8B",
           "type": "bidirectional",
-          "net": "DAC_R7"
+          "net": "DAC_G7"
         },
         "29": {
           "name": "IOB10A",
           "type": "bidirectional",
-          "net": "DAC_G0"
+          "net": "DAC_G6"
         },
         "30": {
           "name": "IOB10B",
           "type": "bidirectional",
-          "net": "DAC_G1"
+          "net": "DAC_G5"
         },
         "31": {
           "name": "IOB12A",
           "type": "bidirectional",
-          "net": "DAC_G2"
+          "net": "DAC_G4"
         },
         "32": {
           "name": "IOB12B",
@@ -1403,62 +1403,62 @@
         "33": {
           "name": "IOB14A",
           "type": "bidirectional",
-          "net": "DAC_G4"
+          "net": "DAC_G2"
         },
         "34": {
           "name": "IOB15A",
           "type": "bidirectional",
-          "net": "DAC_G5"
+          "net": "DAC_G1"
         },
         "35": {
           "name": "IOB20A/GCLKT_4",
           "type": "bidirectional",
-          "net": "DAC_G6"
+          "net": "DAC_G0"
         },
         "36": {
           "name": "IOB20B/GCLKC_4",
           "type": "bidirectional",
-          "net": "DAC_G7"
+          "net": "DAC_R7"
         },
         "37": {
           "name": "IOB26B",
           "type": "bidirectional",
-          "net": "DAC_B0"
+          "net": "DAC_R6"
         },
         "38": {
           "name": "IOB27B",
           "type": "bidirectional",
-          "net": "DAC_B1"
+          "net": "DAC_R5"
         },
         "39": {
           "name": "IOB28A",
           "type": "bidirectional",
-          "net": "DAC_B2"
+          "net": "DAC_R4"
         },
         "40": {
           "name": "IOB28B",
           "type": "bidirectional",
-          "net": "DAC_B3"
+          "net": "DAC_R3"
         },
         "41": {
           "name": "IOB30A",
           "type": "bidirectional",
-          "net": "DAC_B4"
+          "net": "DAC_R2"
         },
         "42": {
           "name": "IOB30B",
           "type": "bidirectional",
-          "net": "DAC_B5"
+          "net": "DAC_R1"
         },
         "47": {
           "name": "IOB36B",
           "type": "bidirectional",
-          "net": "DAC_B6"
+          "net": "DAC_R0"
         },
         "3": {
           "name": "IOL2A",
           "type": "bidirectional",
-          "net": "DAC_B7"
+          "net": "DAC_CLK_RAW"
         },
         "4": {
           "name": "IOL3A/JTAGSEL_N/LPLL_T_in",
@@ -1503,22 +1503,22 @@
         "13": {
           "name": "IOL15A",
           "type": "bidirectional",
-          "net": "I2C_SCL"
+          "net": "V_OUT_RAW"
         },
         "14": {
           "name": "IOL15B",
           "type": "bidirectional",
-          "net": "I2C_SDA"
+          "net": "H_OUT_RAW"
         },
         "15": {
           "name": "IOL17A",
           "type": "bidirectional",
-          "net": "ADC_RESET_N"
+          "net": "DAC_B7"
         },
         "16": {
           "name": "IOL17B",
           "type": "bidirectional",
-          "net": "DAC_CLK_RAW"
+          "net": "DAC_B6"
         },
         "1": {
           "name": "VCC",
@@ -2393,7 +2393,7 @@
       "reference": "C42",
       "value": "100nF",
       "symbol": "C",
-      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
       "mpn": "100nF",
       "lcsc": "",
       "notes": "",
@@ -4384,7 +4384,7 @@
       "reference": "R37",
       "value": "2.2k",
       "symbol": "R",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
       "mpn": "2.2k",
       "lcsc": "",
       "notes": "",
@@ -4406,7 +4406,7 @@
       "reference": "R38",
       "value": "2.2k",
       "symbol": "R",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
       "mpn": "2.2k",
       "lcsc": "",
       "notes": "",
@@ -4428,7 +4428,7 @@
       "reference": "R39",
       "value": "10k",
       "symbol": "R",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
       "mpn": "10k",
       "lcsc": "",
       "notes": "",
@@ -4450,7 +4450,7 @@
       "reference": "R40",
       "value": "10k",
       "symbol": "R",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
       "mpn": "10k",
       "lcsc": "",
       "notes": "",
@@ -4555,6 +4555,50 @@
         }
       },
       "sheet": "03_dac"
+    },
+    "C70": {
+      "reference": "C70",
+      "value": "100nF",
+      "symbol": "C",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "mpn": "100nF",
+      "lcsc": "",
+      "notes": "U2 VCCO decap (pin 12), added in v0.30wip review",
+      "pins": {
+        "1": {
+          "name": "~",
+          "type": "passive",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "~",
+          "type": "passive",
+          "net": "GND"
+        }
+      },
+      "sheet": "02_fpga"
+    },
+    "C71": {
+      "reference": "C71",
+      "value": "100nF",
+      "symbol": "C",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "mpn": "100nF",
+      "lcsc": "",
+      "notes": "U2 VCCO decap (pin 23), added in v0.30wip review",
+      "pins": {
+        "1": {
+          "name": "~",
+          "type": "passive",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "~",
+          "type": "passive",
+          "net": "GND"
+        }
+      },
+      "sheet": "02_fpga"
     }
   },
   "nets": {
@@ -4695,7 +4739,7 @@
       ],
       [
         "U2",
-        "55"
+        "86"
       ]
     ],
     "ADC_HS": [
@@ -4705,7 +4749,7 @@
       ],
       [
         "U2",
-        "54"
+        "85"
       ]
     ],
     "ADC_CLK": [
@@ -4725,7 +4769,7 @@
       ],
       [
         "U2",
-        "53"
+        "84"
       ]
     ],
     "ADC_B6": [
@@ -4735,7 +4779,7 @@
       ],
       [
         "U2",
-        "52"
+        "83"
       ]
     ],
     "ADC_B5": [
@@ -4745,7 +4789,7 @@
       ],
       [
         "U2",
-        "51"
+        "82"
       ]
     ],
     "ADC_B4": [
@@ -4755,7 +4799,7 @@
       ],
       [
         "U2",
-        "50"
+        "81"
       ]
     ],
     "ADC_B3": [
@@ -4765,7 +4809,7 @@
       ],
       [
         "U2",
-        "49"
+        "80"
       ]
     ],
     "ADC_B2": [
@@ -4775,7 +4819,7 @@
       ],
       [
         "U2",
-        "48"
+        "79"
       ]
     ],
     "ADC_B1": [
@@ -4785,7 +4829,7 @@
       ],
       [
         "U2",
-        "86"
+        "77"
       ]
     ],
     "ADC_B0": [
@@ -4795,7 +4839,7 @@
       ],
       [
         "U2",
-        "85"
+        "76"
       ]
     ],
     "ADC_G7": [
@@ -4805,7 +4849,7 @@
       ],
       [
         "U2",
-        "84"
+        "75"
       ]
     ],
     "ADC_G6": [
@@ -4815,7 +4859,7 @@
       ],
       [
         "U2",
-        "83"
+        "74"
       ]
     ],
     "ADC_G5": [
@@ -4825,7 +4869,7 @@
       ],
       [
         "U2",
-        "82"
+        "73"
       ]
     ],
     "ADC_G4": [
@@ -4835,7 +4879,7 @@
       ],
       [
         "U2",
-        "81"
+        "72"
       ]
     ],
     "ADC_G3": [
@@ -4845,7 +4889,7 @@
       ],
       [
         "U2",
-        "80"
+        "71"
       ]
     ],
     "ADC_G2": [
@@ -4855,7 +4899,7 @@
       ],
       [
         "U2",
-        "79"
+        "70"
       ]
     ],
     "ADC_G1": [
@@ -4865,7 +4909,7 @@
       ],
       [
         "U2",
-        "77"
+        "69"
       ]
     ],
     "ADC_G0": [
@@ -4875,7 +4919,7 @@
       ],
       [
         "U2",
-        "76"
+        "68"
       ]
     ],
     "ADC_R7": [
@@ -4885,7 +4929,7 @@
       ],
       [
         "U2",
-        "75"
+        "55"
       ]
     ],
     "ADC_R6": [
@@ -4895,7 +4939,7 @@
       ],
       [
         "U2",
-        "74"
+        "54"
       ]
     ],
     "ADC_R5": [
@@ -4905,7 +4949,7 @@
       ],
       [
         "U2",
-        "73"
+        "53"
       ]
     ],
     "ADC_R4": [
@@ -4915,7 +4959,7 @@
       ],
       [
         "U2",
-        "72"
+        "52"
       ]
     ],
     "ADC_R3": [
@@ -4925,7 +4969,7 @@
       ],
       [
         "U2",
-        "71"
+        "51"
       ]
     ],
     "ADC_R2": [
@@ -4935,7 +4979,7 @@
       ],
       [
         "U2",
-        "70"
+        "50"
       ]
     ],
     "ADC_R1": [
@@ -4945,7 +4989,7 @@
       ],
       [
         "U2",
-        "69"
+        "49"
       ]
     ],
     "ADC_R0": [
@@ -4955,7 +4999,7 @@
       ],
       [
         "U2",
-        "68"
+        "48"
       ]
     ],
     "ADC_PWDN": [
@@ -4964,12 +5008,12 @@
         "70"
       ],
       [
-        "U2",
-        "57"
-      ],
-      [
         "R40",
         "1"
+      ],
+      [
+        "U2",
+        "61"
       ]
     ],
     "ADC_RESET_N": [
@@ -4978,12 +5022,12 @@
         "71"
       ],
       [
-        "U2",
-        "15"
-      ],
-      [
         "R39",
         "1"
+      ],
+      [
+        "U2",
+        "60"
       ]
     ],
     "GND": [
@@ -5642,6 +5686,14 @@
       [
         "R44",
         "2"
+      ],
+      [
+        "C70",
+        "2"
+      ],
+      [
+        "C71",
+        "2"
       ]
     ],
     "I2C_SCL": [
@@ -5650,12 +5702,12 @@
         "74"
       ],
       [
-        "U2",
-        "13"
-      ],
-      [
         "R37",
         "1"
+      ],
+      [
+        "U2",
+        "59"
       ]
     ],
     "I2C_SDA": [
@@ -5664,12 +5716,12 @@
         "75"
       ],
       [
-        "U2",
-        "14"
-      ],
-      [
         "R38",
         "1"
+      ],
+      [
+        "U2",
+        "57"
       ]
     ],
     "V_IN_3V3": [
@@ -6040,6 +6092,14 @@
       [
         "R42",
         "2"
+      ],
+      [
+        "C70",
+        "1"
+      ],
+      [
+        "C71",
+        "1"
       ]
     ],
     "1V9": [
@@ -6160,23 +6220,19 @@
     ],
     "DAC_BLANK_N": [
       [
-        "U2",
-        "59"
-      ],
-      [
         "U3",
         "11"
       ],
       [
         "R14",
         "1"
+      ],
+      [
+        "U2",
+        "27"
       ]
     ],
     "H_OUT_RAW": [
-      [
-        "U2",
-        "60"
-      ],
       [
         "U5",
         "1"
@@ -6184,13 +6240,13 @@
       [
         "R41",
         "1"
+      ],
+      [
+        "U2",
+        "14"
       ]
     ],
     "V_OUT_RAW": [
-      [
-        "U2",
-        "61"
-      ],
       [
         "U5",
         "3"
@@ -6198,6 +6254,10 @@
       [
         "R42",
         "1"
+      ],
+      [
+        "U2",
+        "13"
       ]
     ],
     "POWER_GOOD": [
@@ -6220,112 +6280,112 @@
     ],
     "DAC_R0": [
       [
-        "U2",
-        "17"
-      ],
-      [
         "U3",
         "41"
+      ],
+      [
+        "U2",
+        "47"
       ]
     ],
     "DAC_R1": [
       [
-        "U2",
-        "18"
+        "U3",
+        "42"
       ],
       [
-        "U3",
+        "U2",
         "42"
       ]
     ],
     "DAC_R2": [
       [
-        "U2",
-        "19"
-      ],
-      [
         "U3",
         "43"
+      ],
+      [
+        "U2",
+        "41"
       ]
     ],
     "DAC_R3": [
       [
-        "U2",
-        "20"
-      ],
-      [
         "U3",
         "44"
+      ],
+      [
+        "U2",
+        "40"
       ]
     ],
     "DAC_R4": [
       [
-        "U2",
-        "25"
-      ],
-      [
         "U3",
         "45"
+      ],
+      [
+        "U2",
+        "39"
       ]
     ],
     "DAC_R5": [
       [
-        "U2",
-        "26"
-      ],
-      [
         "U3",
         "46"
+      ],
+      [
+        "U2",
+        "38"
       ]
     ],
     "DAC_R6": [
       [
-        "U2",
-        "27"
-      ],
-      [
         "U3",
         "47"
+      ],
+      [
+        "U2",
+        "37"
       ]
     ],
     "DAC_R7": [
       [
-        "U2",
-        "28"
-      ],
-      [
         "U3",
         "48"
+      ],
+      [
+        "U2",
+        "36"
       ]
     ],
     "DAC_G0": [
       [
-        "U2",
-        "29"
-      ],
-      [
         "U3",
         "3"
+      ],
+      [
+        "U2",
+        "35"
       ]
     ],
     "DAC_G1": [
       [
-        "U2",
-        "30"
-      ],
-      [
         "U3",
         "4"
+      ],
+      [
+        "U2",
+        "34"
       ]
     ],
     "DAC_G2": [
       [
-        "U2",
-        "31"
-      ],
-      [
         "U3",
         "5"
+      ],
+      [
+        "U2",
+        "33"
       ]
     ],
     "DAC_G3": [
@@ -6340,122 +6400,122 @@
     ],
     "DAC_G4": [
       [
-        "U2",
-        "33"
-      ],
-      [
         "U3",
         "7"
+      ],
+      [
+        "U2",
+        "31"
       ]
     ],
     "DAC_G5": [
       [
-        "U2",
-        "34"
-      ],
-      [
         "U3",
         "8"
+      ],
+      [
+        "U2",
+        "30"
       ]
     ],
     "DAC_G6": [
       [
-        "U2",
-        "35"
-      ],
-      [
         "U3",
         "9"
+      ],
+      [
+        "U2",
+        "29"
       ]
     ],
     "DAC_G7": [
       [
-        "U2",
-        "36"
-      ],
-      [
         "U3",
         "10"
+      ],
+      [
+        "U2",
+        "28"
       ]
     ],
     "DAC_B0": [
       [
-        "U2",
-        "37"
-      ],
-      [
         "U3",
         "16"
+      ],
+      [
+        "U2",
+        "26"
       ]
     ],
     "DAC_B1": [
       [
-        "U2",
-        "38"
-      ],
-      [
         "U3",
         "17"
+      ],
+      [
+        "U2",
+        "25"
       ]
     ],
     "DAC_B2": [
       [
-        "U2",
-        "39"
-      ],
-      [
         "U3",
         "18"
+      ],
+      [
+        "U2",
+        "20"
       ]
     ],
     "DAC_B3": [
       [
-        "U2",
-        "40"
+        "U3",
+        "19"
       ],
       [
-        "U3",
+        "U2",
         "19"
       ]
     ],
     "DAC_B4": [
       [
-        "U2",
-        "41"
-      ],
-      [
         "U3",
         "20"
+      ],
+      [
+        "U2",
+        "18"
       ]
     ],
     "DAC_B5": [
       [
-        "U2",
-        "42"
-      ],
-      [
         "U3",
         "21"
+      ],
+      [
+        "U2",
+        "17"
       ]
     ],
     "DAC_B6": [
       [
-        "U2",
-        "47"
-      ],
-      [
         "U3",
         "22"
+      ],
+      [
+        "U2",
+        "16"
       ]
     ],
     "DAC_B7": [
       [
-        "U2",
-        "3"
-      ],
-      [
         "U3",
         "23"
+      ],
+      [
+        "U2",
+        "15"
       ]
     ],
     "JTAGSEL_N": [
@@ -6546,16 +6606,16 @@
     ],
     "DAC_CLK_RAW": [
       [
-        "U2",
-        "16"
-      ],
-      [
         "U6",
         "2"
       ],
       [
         "R43",
         "1"
+      ],
+      [
+        "U2",
+        "3"
       ]
     ],
     "1V2": [

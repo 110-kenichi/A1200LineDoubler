@@ -1,0 +1,554 @@
+Info: Using uarch 'gowin' for device 'GW1N-LV4QN88C6/I5'
+Info: constraining clock net 'logic_core.clk_ref' to 27.00 MHz
+Info: constraining clock net 'clocks.adc_clock' to 28.38 MHz
+Info: constraining clock net 'video_clock' to 56.75 MHz
+
+Info: Reading constraints...
+Info: Create constant nets...
+Info: Modify LUTs...
+Info: Pack IOBs...
+Info: Pack I3C IOs...
+Info: Pack MIPI IOs...
+Info: Pack diff IOBs...
+Info: Pack FFs into IO cells...
+Info: Pack IODELAY...
+Info: Pack Input Edge Monitors...
+Info: Pack IO logic...
+Info: Pack DESER16 logic...
+Info: Pack GSR...
+Info: Pack HCLK cells...
+Info: Pack DLLDLYs...
+Info: Pack wide LUTs...
+Info: Packed MUX2_LUT8:3, MUX2_LU7:2, MUX2_LUT6:3, MUX2_LUT5:69
+Info: Pack ALUs...
+Info: Pack SSRAMs...
+Info: Constrained 300 LUTFF pairs.
+Info: Pack PLL...
+Info: Pack ADC...
+Info: Pack BSRAMs...
+Info: Pack DSP...
+Info: Pack INV...
+Info: Pack buffered nets...
+Info: Pack EMCU and UserFlash cells...
+Info: Pack UserFlash cells...
+Info: Pack DQCE cells...
+Info: Pack DCS cells...
+Info: Checksum: 0x480e4f2f
+
+Info: Device utilisation:
+Info: 	                 VCC:       1/      1   100%
+Info: 	                 IOB:      60/    218    27%
+Info: 	                LUT4:    1315/   4608    28%
+Info: 	            IOLOGICI:       0/    198     0%
+Info: 	            IOLOGICO:       1/    198     0%
+Info: 	           MUX2_LUT5:     107/   2304     4%
+Info: 	           MUX2_LUT6:      19/   1152     1%
+Info: 	           MUX2_LUT7:       8/    576     1%
+Info: 	           MUX2_LUT8:       3/    576     0%
+Info: 	                 ALU:     534/   3456    15%
+Info: 	                 GND:       1/      1   100%
+Info: 	                 DFF:     703/   3456    20%
+Info: 	               BSRAM:       6/     10    60%
+Info: 	              ALU54D:       0/      8     0%
+Info: 	     MULTADDALU18X18:       0/      8     0%
+Info: 	        MULTALU18X18:       0/      8     0%
+Info: 	        MULTALU36X18:       0/      8     0%
+Info: 	           MULT36X36:       0/      4     0%
+Info: 	           MULT18X18:       0/     16     0%
+Info: 	             MULT9X9:       0/     32     0%
+Info: 	              PADD18:       0/     16     0%
+Info: 	               PADD9:       0/     32     0%
+Info: 	                 GSR:       1/      1   100%
+Info: 	                 OSC:       0/      1     0%
+Info: 	                rPLL:       1/      2    50%
+Info: 	           FLASH256K:       0/      1     0%
+Info: 	                BUFG:       1/     17     5%
+Info: 	                DQCE:       0/     12     0%
+Info: 	                 DCS:       0/      4     0%
+Info: 	               DHCEN:       0/     18     0%
+Info: 	              CLKDIV:       0/      6     0%
+Info: 	             CLKDIV2:       0/     12     0%
+
+Info: Running custom HCLK placer...
+Info: Placed 0 cells based on constraints.
+Info: Creating initial analytic placement for 1097 cells, random placement wirelen = 35027.
+Info:     at initial placer iter 0, wirelen = 2224
+Info:     at initial placer iter 1, wirelen = 2090
+Info:     at initial placer iter 2, wirelen = 1977
+Info:     at initial placer iter 3, wirelen = 1946
+Info: Running main analytical placer, max placement attempts per cell = 954271.
+Info:     at iteration #1, type ALL: wirelen solved = 1984, spread = 6980, legal = 10704; time = 0.12s
+Info:     at iteration #2, type ALL: wirelen solved = 2151, spread = 7760, legal = 9885; time = 0.08s
+Info:     at iteration #3, type ALL: wirelen solved = 2282, spread = 6868, legal = 9249; time = 0.08s
+Info:     at iteration #4, type ALL: wirelen solved = 2474, spread = 9068, legal = 10327; time = 0.07s
+Info:     at iteration #5, type ALL: wirelen solved = 2851, spread = 6628, legal = 7760; time = 0.08s
+Info:     at iteration #6, type ALL: wirelen solved = 2756, spread = 6229, legal = 7573; time = 0.08s
+Info:     at iteration #7, type ALL: wirelen solved = 2942, spread = 6692, legal = 8056; time = 0.09s
+Info:     at iteration #8, type ALL: wirelen solved = 3105, spread = 6922, legal = 8499; time = 0.09s
+Info:     at iteration #9, type ALL: wirelen solved = 3142, spread = 6136, legal = 8580; time = 0.09s
+Info:     at iteration #10, type ALL: wirelen solved = 3241, spread = 6507, legal = 8474; time = 0.12s
+Info:     at iteration #11, type ALL: wirelen solved = 3305, spread = 6285, legal = 8416; time = 0.10s
+Info: HeAP Placer Time: 1.42s
+Info:   of which solving equations: 0.74s
+Info:   of which spreading cells: 0.05s
+Info:   of which strict legalisation: 0.45s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 39, wirelen = 7573
+Info:   at iteration #5: temp = 0.000000, timing cost = 22, wirelen = 6363
+Info:   at iteration #10: temp = 0.000000, timing cost = 21, wirelen = 6099
+Info:   at iteration #15: temp = 0.000000, timing cost = 19, wirelen = 5901
+Info:   at iteration #20: temp = 0.000000, timing cost = 18, wirelen = 5798
+Info:   at iteration #25: temp = 0.000000, timing cost = 18, wirelen = 5752
+Info:   at iteration #30: temp = 0.000000, timing cost = 18, wirelen = 5730
+Info:   at iteration #31: temp = 0.000000, timing cost = 18, wirelen = 5728 
+Info: SA placement time 5.83s
+
+Info: Max frequency for clock   'clocks.adc_clock': 332.67 MHz (PASS at 28.38 MHz)
+Info: Max frequency for clock        'video_clock': 127.49 MHz (PASS at 56.75 MHz)
+Info: Max frequency for clock 'logic_core.clk_ref': 86.02 MHz (PASS at 27.00 MHz)
+
+Info: Max delay posedge clocks.adc_clock -> posedge logic_core.clk_ref: 0.96 ns
+Info: Max delay negedge clocks.adc_clock -> posedge video_clock       : 0.86 ns
+Info: Max delay posedge video_clock      -> posedge logic_core.clk_ref: 1.96 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 5 endpoint(s)
+Info:          + represents [1,5) endpoint(s)
+Info: [  9777,  11098) |*+
+Info: [ 11098,  12419) |********+
+Info: [ 12419,  13740) |**+
+Info: [ 13740,  15061) |****************+
+Info: [ 15061,  16382) |*************+
+Info: [ 16382,  17703) |************************************************************ 
+Info: [ 17703,  19024) | 
+Info: [ 19024,  20345) | 
+Info: [ 20345,  21666) | 
+Info: [ 21666,  22987) | 
+Info: [ 22987,  24308) | 
+Info: [ 24308,  25629) |+
+Info: [ 25629,  26950) |*+
+Info: [ 26950,  28271) |+
+Info: [ 28271,  29592) |+
+Info: [ 29592,  30913) |+
+Info: [ 30913,  32234) |+
+Info: [ 32234,  33555) |***********+
+Info: [ 33555,  34876) |******+
+Info: [ 34876,  36197) |********+
+Info: Checksum: 0xa68add2d
+Info: Routing globals...
+Info:     'clocks.adc_clock' net was routed.
+Warning: Failed to route net 'logic_core.adc_rgb[20]' from X37Y10/F6 to X25Y10/D4 using dedicated routing.
+Info:     'video_clock' net was routed using global resources only.
+Info:     'logic_core.clk_ref' net was routed using global resources only.
+Info:     'logic_core.output_stage.clear' is routed using segments.
+Info:     'logic_core.video.core.lines.protocol_error_LUT4_I0_F_MUX2_LUT5_I1_O[1]' is routed using segments.
+Info:     'logic_core.capture.adc_release_LUT3_I2_F' is routed using segments.
+Info:     'logic_core.video.core.valid2_LUT3_I0_F_LUT2_I1_F[4]' is routed using segments.
+Info:     'logic_core.clocks.restart.hb_sync_DFFR_Q_RESET' is routed using segments.
+Info:     'logic_core.boot.state[5]' is routed using segments.
+Info:     'logic_core.boot.power_sequence.pg_sync_LUT2_I1_F[4]' is routed using segments.
+Info:     'logic_core.clocks.restart.stable_LUT2_I0_F[2]' is routed using segments.
+Info:     'logic_core.boot.index[3]' is routed using segments.
+Info:     'logic_core.boot.index[1]' is routed using segments.
+Info:     'logic_core.boot.index[4]' is routed using segments.
+Info:     'logic_core.boot.index[2]' is routed using segments.
+Info:     'logic_core.clocks.guard.permit_LUT1_I0_F_DFFP_PRESET_Q[4]' is routed using segments.
+Info:     'logic_core.video.front.have_vs_LUT2_I0_F[0]' is routed using segments.
+Info:     'logic_core.clocks.guard.permit_LUT1_I0_F_DFFP_PRESET_Q[2]' is routed using segments.
+Info:     'logic_core.video.core.lines.pixel_valid_LUT2_I0_F' is routed using segments.
+Info:     'logic_core.boot.config_done_DFFRE_Q_CE_LUT3_I1_F' is routed using segments.
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 5677 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:       1000 |       61        724 |   61   724 |      4749|       0.69       0.69|
+Info:       2000 |       63       1586 |    2   862 |      3751|       0.42       1.11|
+Info:       3000 |       66       2491 |    3   905 |      2754|       0.52       1.63|
+Info:       4000 |       74       3388 |    8   897 |      1764|       0.55       2.19|
+Info:       5000 |       94       4260 |   20   872 |       786|       0.58       2.76|
+Info:       5835 |      122       4974 |   28   714 |         0|       0.53       3.30|
+Info: Routing complete.
+Info: Router1 time 3.30s
+Info: Checksum: 0xf87ea788
+
+Info: Critical path report for clock 'clocks.adc_clock' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  0.46  0.46 Source logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_LUT1_F_I0_DFFC_Q.Q
+Info:    routing  0.41  0.87 Net logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_LUT1_F_I0 (23,4) -> (22,4)
+Info:                          Sink logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_1_CIN_ALU_COUT.I1
+Info:                          Defined in:
+Info:                               /share/gowin/cells_map.v:130.20-130.21
+Info:      logic  1.04  1.91 Source logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_1_CIN_ALU_COUT.COUT
+Info:    routing  0.00  1.91 Net logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_1_CIN (22,4) -> (22,4)
+Info:                          Sink logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_1.CIN
+Info:                          Defined in:
+Info:                               rtl/pll_restart_control.sv:37.47-37.61
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  1.97 Source logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_1.COUT
+Info:    routing  0.00  1.97 Net logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_1_COUT (22,4) -> (22,4)
+Info:                          Sink logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_2.CIN
+Info:                          Defined in:
+Info:                               rtl/pll_restart_control.sv:37.47-37.61
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  2.03 Source logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_2.COUT
+Info:    routing  0.00  2.03 Net logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_2_COUT (22,4) -> (22,4)
+Info:                          Sink logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_3.CIN
+Info:                          Defined in:
+Info:                               rtl/pll_restart_control.sv:37.47-37.61
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  2.09 Source logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_3.COUT
+Info:    routing  0.00  2.09 Net logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_3_COUT (22,4) -> (22,4)
+Info:                          Sink logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_5.CIN
+Info:                          Defined in:
+Info:                               rtl/pll_restart_control.sv:37.47-37.61
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  2.14 Source logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_5.COUT
+Info:    routing  0.00  2.14 Net logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_5_COUT (22,4) -> (23,4)
+Info:                          Sink logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_4.CIN
+Info:                          Defined in:
+Info:                               rtl/pll_restart_control.sv:37.47-37.61
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  2.20 Source logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_4.COUT
+Info:    routing  0.00  2.20 Net logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_4_COUT (23,4) -> (23,4)
+Info:                          Sink logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM.CIN
+Info:                          Defined in:
+Info:                               rtl/pll_restart_control.sv:37.47-37.61
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  2.26 Source logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM.COUT
+Info:    routing  0.00  2.26 Net logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM_ALU_SUM_COUT (23,4) -> (23,4)
+Info:                          Sink logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1.CIN
+Info:                          Defined in:
+Info:                               rtl/pll_restart_control.sv:37.47-37.61
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.56  2.82 Source logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1.SUM
+Info:    routing  0.00  2.82 Net logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_ALU_I1_SUM[7] (23,4) -> (23,4)
+Info:                          Sink logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_DFFC_Q.D
+Info:                          Defined in:
+Info:                               rtl/pll_restart_control.sv:37.47-37.61
+Info:                               /share/gowin/arith_map.v:34.28-34.29
+Info:      setup  0.40  3.22 Source logic_core.clocks.restart.hb_sync_DFFR_Q_1_D_DFFC_Q.D
+Info: 2.81 ns logic, 0.41 ns routing
+
+Info: Critical path report for clock 'video_clock' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  0.46  0.46 Source logic_core.video.front.v_age_DFFRE_Q_3.Q
+Info:    routing  1.22  1.67 Net logic_core.video.front.v_age[1] (10,5) -> (13,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.I1
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:33.18-33.23
+Info:      logic  1.04  2.72 Source logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  2.72 Net logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (13,5) -> (13,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  2.78 Source logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  2.78 Net logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (13,5) -> (13,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  2.83 Source logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  2.83 Net logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (13,5) -> (13,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  2.89 Source logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  2.89 Net logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (13,5) -> (14,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  2.95 Source logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  2.95 Net logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (14,5) -> (14,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.00 Source logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.00 Net logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (14,5) -> (14,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.06 Source logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.06 Net logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (14,5) -> (14,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.12 Source logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.12 Net logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (14,5) -> (14,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.17 Source logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.17 Net logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (14,5) -> (14,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.23 Source logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.23 Net logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (14,5) -> (15,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.29 Source logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.29 Net logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (15,5) -> (15,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.35 Source logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.35 Net logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (15,5) -> (15,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.40 Source logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.40 Net logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (15,5) -> (15,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.46 Source logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.46 Net logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (15,5) -> (15,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.52 Source logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.52 Net logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (15,5) -> (15,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.57 Source logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.57 Net logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (15,5) -> (16,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.63 Source logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.63 Net logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT_CIN (16,5) -> (16,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.69 Source logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.69 Net logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_CIN (16,5) -> (16,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  3.74 Source logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  3.74 Net logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_CIN (16,5) -> (16,5)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.38
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.56  4.31 Source logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT.SUM
+Info:    routing  0.89  5.20 Net logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_I0_ALU_SUM_CIN_ALU_COUT_SUM (16,5) -> (16,6)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT.I0
+Info:      logic  0.96  6.16 Source logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  6.16 Net logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT_CIN (16,6) -> (16,6)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.56
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  6.21 Source logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN_ALU_COUT.COUT
+Info:    routing  0.00  6.21 Net logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM_CIN (16,6) -> (16,6)
+Info:                          Sink logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM.CIN
+Info:                          Defined in:
+Info:                               rtl/stream_sync_frontend.sv:90.31-90.56
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.56  6.78 Source logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_SUM.SUM
+Info:    routing  0.81  7.58 Net logic_core.video.front.v_age_DFFRE_Q_12_D_ALU_SUM_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT_ALU_CIN_COUT[4] (16,6) -> (14,6)
+Info:                          Sink logic_core.video.front.have_vs_LUT4_I0_F_MUX2_LUT5_I0.S0
+Info:                          Defined in:
+Info:                               /share/gowin/cells_map.v:130.20-130.21
+Info:      logic  0.18  7.76 Source logic_core.video.front.have_vs_LUT4_I0_F_MUX2_LUT5_I0.O
+Info:    routing  1.37  9.13 Net logic_core.video.front.have_vs_LUT4_I0_F_MUX2_LUT5_I0_O[3] (14,6) -> (10,7)
+Info:                          Sink logic_core.video.front.vs_delay_DFFRE_Q_CE_MUX2_LUT5_O_I1_LUT4_F.I3
+Info:                          Defined in:
+Info:                               /share/gowin/cells_map.v:130.20-130.21
+Info:      logic  0.62  9.75 Source logic_core.video.front.vs_delay_DFFRE_Q_CE_MUX2_LUT5_O_I1_LUT4_F.F
+Info:    routing  0.00  9.75 Net logic_core.video.front.vs_delay_DFFRE_Q_CE_MUX2_LUT5_O_I1 (10,7) -> (10,7)
+Info:                          Sink logic_core.video.front.vs_delay_DFFRE_Q_CE_MUX2_LUT5_O.I1
+Info:                          Defined in:
+Info:                               /share/gowin/cells_map.v:151.13-151.15
+Info:      logic  0.50  10.26 Source logic_core.video.front.vs_delay_DFFRE_Q_CE_MUX2_LUT5_O.O
+Info:    routing  2.17  12.43 Net logic_core.video.front.vs_delay_DFFRE_Q_CE (10,7) -> (10,7)
+Info:                          Sink logic_core.video.front.vs_delay_DFFRE_Q_4.CE
+Info:      setup  0.04  12.47 Source logic_core.video.front.vs_delay_DFFRE_Q_4.CE
+Info: 6.01 ns logic, 6.46 ns routing
+
+Info: Critical path report for clock 'logic_core.clk_ref' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  0.46  0.46 Source startup.released_DFF_Q_6.Q
+Info:    routing  0.41  0.87 Net startup.released[31] (17,8) -> (17,7)
+Info:                          Sink clocks.locked_LUT4_I0.I1
+Info:                          Defined in:
+Info:                               rtl/configuration_reset.sv:7.22-7.30
+Info:      logic  1.10  1.97 Source clocks.locked_LUT4_I0.F
+Info:    routing  0.00  1.97 Net clocks.locked_LUT4_I0_F (17,7) -> (17,7)
+Info:                          Sink clocks.locked_LUT4_I0_F_MUX2_LUT5_I1.I1
+Info:                          Defined in:
+Info:                               /share/gowin/cells_map.v:171.43-171.68
+Info:                               /share/gowin/cells_map.v:164.41-164.66
+Info:                               /share/gowin/cells_map.v:158.41-158.66
+Info:                               /share/gowin/cells_map.v:151.13-151.15
+Info:      logic  0.50  2.47 Source clocks.locked_LUT4_I0_F_MUX2_LUT5_I1.O
+Info:    routing  0.00  2.47 Net clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O (17,7) -> (17,7)
+Info:                          Sink clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0.I0
+Info:                          Defined in:
+Info:                               /share/gowin/cells_map.v:171.43-171.68
+Info:                               /share/gowin/cells_map.v:164.41-164.66
+Info:                               /share/gowin/cells_map.v:157.9-157.11
+Info:      logic  0.47  2.94 Source clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0.O
+Info:    routing  0.00  2.94 Net clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O (17,7) -> (17,7)
+Info:                          Sink clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT7_I0.I0
+Info:                          Defined in:
+Info:                               /share/gowin/cells_map.v:171.43-171.68
+Info:                               /share/gowin/cells_map.v:163.9-163.11
+Info:      logic  0.47  3.41 Source clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT7_I0.O
+Info:    routing  0.00  3.41 Net clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT7_I0_O (17,7) -> (17,7)
+Info:                          Sink clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1.I1
+Info:                          Defined in:
+Info:                               /share/gowin/cells_map.v:169.13-169.15
+Info:      logic  0.50  3.91 Source clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1.O
+Info:    routing  2.24  6.16 Net clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O[0] (17,7) -> (13,3)
+Info:                          Sink logic_core.clocks.guard.heartbeat_sync_LUT3_I0_F_LUT3_I0_I2_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_I1_DFFC_Q.CLEAR
+Info:                          Defined in:
+Info:                               /share/gowin/cells_map.v:130.20-130.21
+Info:      logic  1.86  8.02 Source logic_core.clocks.guard.heartbeat_sync_LUT3_I0_F_LUT3_I0_I2_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_I1_DFFC_Q.Q
+Info:    routing  1.28  9.30 Net logic_core.clocks.guard.heartbeat_sync_LUT3_I0_F_LUT3_I0_I2_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT_I1 (13,3) -> (13,7)
+Info:                          Sink logic_core.clocks.guard.heartbeat_sync_LUT3_I0_F_LUT3_I0_I2_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT.I1
+Info:      logic  1.04  10.34 Source logic_core.clocks.guard.heartbeat_sync_LUT3_I0_F_LUT3_I0_I2_ALU_SUM_CIN_ALU_COUT_CIN_ALU_COUT.COUT
+Info:    routing  0.00  10.34 Net logic_core.clocks.guard.heartbeat_sync_LUT3_I0_F_LUT3_I0_I2_ALU_SUM_CIN_ALU_COUT_CIN (13,7) -> (14,7)
+Info:                          Sink logic_core.clocks.guard.heartbeat_sync_LUT3_I0_F_LUT3_I0_I2_ALU_SUM_CIN_ALU_COUT.CIN
+Info:                          Defined in:
+Info:                               rtl/video_clock_guard.sv:55.33-55.38
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  10.40 Source logic_core.clocks.guard.heartbeat_sync_LUT3_I0_F_LUT3_I0_I2_ALU_SUM_CIN_ALU_COUT.COUT
+Info:    routing  0.00  10.40 Net logic_core.clocks.guard.heartbeat_sync_LUT3_I0_F_LUT3_I0_I2_ALU_SUM_CIN (14,7) -> (14,7)
+Info:                          Sink logic_core.clocks.guard.heartbeat_sync_LUT3_I0_F_LUT3_I0_I2_ALU_SUM.CIN
+Info:                          Defined in:
+Info:                               rtl/video_clock_guard.sv:55.33-55.38
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.56  10.96 Source logic_core.clocks.guard.heartbeat_sync_LUT3_I0_F_LUT3_I0_I2_ALU_SUM.SUM
+Info:    routing  0.48  11.44 Net logic_core.clocks.guard.heartbeat_sync_LUT3_I0_F_LUT3_I0_I2[2] (14,7) -> (14,8)
+Info:                          Sink logic_core.clocks.guard.heartbeat_sync_LUT3_I0_F_LUT3_I0_I2_ALU_SUM_COUT_ALU_CIN_SUM_ALU_I0_CIN_ALU_COUT.I0
+Info:                          Defined in:
+Info:                               /share/gowin/cells_map.v:130.20-130.21
+Info:      logic  0.96  12.40 Source logic_core.clocks.guard.heartbeat_sync_LUT3_I0_F_LUT3_I0_I2_ALU_SUM_COUT_ALU_CIN_SUM_ALU_I0_CIN_ALU_COUT.COUT
+Info:    routing  0.00  12.40 Net logic_core.clocks.guard.heartbeat_sync_LUT3_I0_F_LUT3_I0_I2_ALU_SUM_COUT_ALU_CIN_SUM_ALU_I0_CIN (14,8) -> (14,8)
+Info:                          Sink logic_core.clocks.guard.heartbeat_sync_LUT3_I0_F_LUT3_I0_I2_ALU_SUM_COUT_ALU_CIN_SUM_ALU_I0.CIN
+Info:                          Defined in:
+Info:                               rtl/video_clock_guard.sv:55.33-55.55
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.06  12.46 Source logic_core.clocks.guard.heartbeat_sync_LUT3_I0_F_LUT3_I0_I2_ALU_SUM_COUT_ALU_CIN_SUM_ALU_I0.COUT
+Info:    routing  0.00  12.46 Net logic_core.clocks.guard.heartbeat_sync_LUT3_I0_F_LUT3_I0_I2_ALU_SUM_COUT_ALU_CIN_SUM_ALU_I0_COUT (14,8) -> (15,8)
+Info:                          Sink logic_core.clocks.guard.heartbeat_sync_LUT3_I0_F_LUT3_I0_I2_ALU_SUM_COUT_ALU_CIN_SUM_ALU_I0_COUT_ALU_CIN.CIN
+Info:                          Defined in:
+Info:                               rtl/video_clock_guard.sv:55.33-55.55
+Info:                               /share/gowin/arith_map.v:57.7-63.5
+Info:                               /share/gowin/cells_sim.v:1033.25-1033.29
+Info:      logic  0.56  13.02 Source logic_core.clocks.guard.heartbeat_sync_LUT3_I0_F_LUT3_I0_I2_ALU_SUM_COUT_ALU_CIN_SUM_ALU_I0_COUT_ALU_CIN.SUM
+Info:    routing  0.41  13.43 Net logic_core.clocks.guard.heartbeat_sync_LUT3_I0_F_LUT3_I0_I2_ALU_SUM_COUT_ALU_CIN_SUM_ALU_I0_COUT_ALU_CIN_SUM[2] (15,8) -> (15,8)
+Info:                          Sink clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_I0_LUT3_I0_F_DFFCE_CE_Q_LUT4_F.I2
+Info:                          Defined in:
+Info:                               /share/gowin/cells_map.v:130.20-130.21
+Info:      logic  0.82  14.26 Source clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_I0_LUT3_I0_F_DFFCE_CE_Q_LUT4_F.F
+Info:    routing  0.00  14.26 Net clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q_CE_LUT3_F_I0_ALU_COUT_CIN_ALU_COUT_SUM[1] (15,8) -> (15,8)
+Info:                          Sink clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q.D
+Info:                          Defined in:
+Info:                               /share/gowin/cells_map.v:130.20-130.21
+Info:      setup  0.40  14.65 Source clocks.locked_LUT4_I0_F_MUX2_LUT5_I1_O_MUX2_LUT6_I0_O_MUX2_LUT7_I0_O_MUX2_LUT8_I1_O_DFFCE_Q.D
+Info: 9.82 ns logic, 4.83 ns routing
+
+Info: Critical path report for cross-domain path 'posedge video_clock' -> 'posedge logic_core.clk_ref':
+Info:       type curr  total name
+Info:   clk-to-q  0.46  0.46 Source logic_core.clocks.guard.permit_LUT1_I0_F_DFFP_PRESET.Q
+Info:    routing  0.33  0.78 Net logic_core.clocks.guard.permit_LUT1_I0_F_DFFP_PRESET_Q[1] (17,1) -> (17,1)
+Info:                          Sink logic_core.output_stage.permit_LUT4_F.I1
+Info:                          Defined in:
+Info:                               /share/gowin/cells_map.v:130.20-130.21
+Info:      logic  1.10  1.88 Source logic_core.output_stage.permit_LUT4_F.F
+Info:    routing  0.00  1.88 Net logic_core.permit (17,1) -> (17,1)
+Info:                          Sink logic_core.clocks.guard.ready_sync_DFFC_Q.D
+Info:                          Defined in:
+Info:                               rtl/amiga_logic_core.sv:23.45-23.51
+Info:      setup  0.40  2.28 Source logic_core.clocks.guard.ready_sync_DFFC_Q.D
+Info: 1.96 ns logic, 0.33 ns routing
+
+Info: Max frequency for clock   'clocks.adc_clock': 310.75 MHz (PASS at 28.38 MHz)
+Info: Max frequency for clock        'video_clock': 80.17 MHz (PASS at 56.75 MHz)
+Info: Max frequency for clock 'logic_core.clk_ref': 68.24 MHz (PASS at 27.00 MHz)
+
+Info: Max delay posedge video_clock -> posedge logic_core.clk_ref: 2.28 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 2 endpoint(s)
+Info:          + represents [1,2) endpoint(s)
+Info: [  5148,   6625) |**+
+Info: [  6625,   8102) |*+
+Info: [  8102,   9579) |******************+
+Info: [  9579,  11056) |+
+Info: [ 11056,  12533) |*****+
+Info: [ 12533,  14010) |********************+
+Info: [ 14010,  15487) |************************************************************ 
+Info: [ 15487,  16964) |*****************************************+
+Info: [ 16964,  18441) | 
+Info: [ 18441,  19918) | 
+Info: [ 19918,  21395) | 
+Info: [ 21395,  22872) |+
+Info: [ 22872,  24349) |***+
+Info: [ 24349,  25826) |+
+Info: [ 25826,  27303) | 
+Info: [ 27303,  28780) |+
+Info: [ 28780,  30257) |****+
+Info: [ 30257,  31734) |************+
+Info: [ 31734,  33211) |********************+
+Info: [ 33211,  34688) |***+
+
+1 warning, 0 errors
+
+Info: Program finished normally.

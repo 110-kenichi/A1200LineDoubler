@@ -1,0 +1,85 @@
+from pathlib import Path
+# KiCad 7.0 対応版: GetConnectedItems(aTypes必須)の代わりに GetConnectedTracks/Pads とゾーン所属で連結を辿る
+import pcbnew as p,json,re,collections,hashlib,os
+BOARD=os.environ.get('BOARD','amiga_scandoubler_sync_in.kicad_pcb');TAG=os.environ.get('TAG','sync_in')
+root=Path(os.environ.get('REPO_ROOT',Path(__file__).resolve().parents[4]));h=root/'outputs/amiga_scandoubler/hardware'
+board=p.LoadBoard(str(h/BOARD));board.BuildConnectivity();conn=board.GetConnectivity()
+fps={f.GetReference():f for f in board.GetFootprints()};m=json.loads((h/'circuit_manifest.json').read_text());progress=json.loads((h/'distribution_progress.json').read_text())
+def pad(ref,num):return next(a for a in fps[ref].Pads() if a.GetNumber()==str(num))
+cache={}
+zmem=[(z,{x.m_Uuid.AsString() for x in list(conn.GetConnectedTracks(z))+list(conn.GetConnectedPads(z))}) for z in board.Zones()]
+def component(item):
+    key=item.m_Uuid.AsString()
+    if key in cache:return cache[key]
+    todo=[item];seen=set()
+    while todo:
+        q=todo.pop();uid=q.m_Uuid.AsString()
+        if uid in seen:continue
+        seen.add(uid)
+        todo.extend(list(conn.GetConnectedTracks(q))+list(conn.GetConnectedPads(q))+[z for z,m in zmem if uid in m])
+    for uid in seen:cache[uid]=seen
+    return seen
+def connected(a,z):return pad(*z).m_Uuid.AsString() in component(pad(*a))
+old=json.loads((h/'power_routing_report.json').read_text())
+for a,z in old['verified_local_power_connections']:assert connected(a,z),(a,z)
+sources={'3V3':('C56',1),'1V9':('C58',1),'1V2':('C60',1),'ADC_3V3A':('FB1',2),'ADC_1V9A':('FB2',2),'ADC_1V9PLL':('FB3',2),'DAC_3V3':('FB4',2)}
+zone=next(iter(board.Zones()));filled=zone.GetFilledPolysList(p.In1_Cu);assert filled.OutlineCount()==1,filled.OutlineCount()
+gv={v.m_Uuid.AsString() for v in board.GetTracks() if isinstance(v,p.PCB_VIA) and v.GetNetname()=='GND' and filled.Contains(v.GetPosition())}
+ground_checks=[];power_checks=[]
+for record in progress['escapes']:
+    endpoint=record['pad'];assert record['via_mm'],endpoint
+    q=pad(*endpoint)
+    if q.GetNetname()=='GND':assert component(q)&gv,endpoint;ground_checks.append(endpoint)
+    else:
+        source=sources[q.GetNetname()];assert connected(endpoint,source),(endpoint,source);power_checks.append([endpoint,source])
+for record in progress['IC_grounds']:
+    endpoint=record['pad'];assert component(pad(*endpoint))&gv,endpoint;ground_checks.append(endpoint)
+for record in progress['connections']:
+    a,z=record['from'],record['to'];assert connected(a,z),(a,z)
+    source=sources[pad(*a).GetNetname()];assert connected(a,source),(a,source);power_checks.append([a,source])
+analog=json.loads((h/'analog_progress.json').read_text())
+for row in analog['connections']:assert connected(row['from'],row['to']),row
+for endpoint in analog['ground_pads']:assert component(pad(*endpoint))&gv,endpoint
+net_status={}
+input_nets=['H_IN','V_IN','H_IN_BUF','V_IN_BUF','H_IN_3V3','V_IN_3V3']
+for net in analog['selected_nets']+input_nets+['H_OUT','V_OUT','H_OUT_BUF','V_OUT_BUF','H_OUT_RAW','V_OUT_RAW']:
+    qs=[q for f in fps.values() for q in f.Pads() if q.GetNetname()==net]
+    net_status[net]=all(q.m_Uuid.AsString() in component(qs[0]) for q in qs)
+for net in ['PLL_FILT1','PLL_FILT2','PLL_F','PLL_RC','R_OUT','G_OUT','B_OUT']:assert net_status[net],net
+new=json.loads((h/'sync_out_progress.json').read_text())
+for row in new['connections']:assert connected(row['from'],row['to']),row
+for endpoint in [('U5',5),('C52',1),('R41',2),('R42',2)]:assert connected(endpoint,('C56',1)),endpoint
+for endpoint in [('U5',2),('C52',2)]:assert component(pad(*endpoint))&gv,endpoint
+assert connected(('U5',5),('C52',1))
+incoming=json.loads((h/'sync_in_progress.json').read_text())
+for row in incoming['connections']:assert connected(row['from'],row['to']),row
+for endpoint in [('U4',5),('C51',1),('R19',2),('R21',2)]:assert connected(endpoint,('C56',1)),endpoint
+for endpoint in [('U4',2),('C51',2)]:assert component(pad(*endpoint))&gv,endpoint
+assert connected(('U4',5),('C51',1))
+for net in input_nets:assert net_status[net],net
+count=0
+for ref,f in fps.items():
+    for q in f.Pads():
+        if q.GetNumber() in m['parts'][ref]['pins']:
+            assert q.GetNetname()==(m['parts'][ref]['pins'][q.GetNumber()]['net'] or '');count+=1
+assert len(fps)==137 and count==596   # +C70/C71 (review #1, U2 VCCO decaps)
+bb=board.GetBoardEdgesBoundingBox()
+assert abs(p.ToMM(bb.GetWidth())-.05-95)<.001 and abs(p.ToMM(bb.GetHeight())-.05-95)<.001
+assert board.GetCopperLayerCount()==4
+import subprocess,os,shutil;subprocess.run([os.environ.get('KICAD_CLI','kicad-cli'),'pcb','drc','--refill-zones','-o',str(h/(TAG+'_drc.txt')),str(h/BOARD)],check=False,capture_output=True);assert (h/(TAG+'_drc.txt')).exists()
+txt=(h/(TAG+'_drc.txt')).read_text();counts=dict(collections.Counter(re.findall(r'^\[([^]]+)\]',txt,re.M)))
+for category in ['clearance','shorting_items','hole_clearance','hole_near_hole','courtyards_overlap','via_dangling','track_dangling','solder_mask_bridge','track_width','via_diameter','drill_out_of_range']:
+    assert not counts.get(category),(category,counts.get(category))
+lengths={net:sum(p.ToMM(t.GetLength()) for t in board.GetTracks() if not isinstance(t,p.PCB_VIA) and t.GetNetname()==net) for net in analog['selected_nets']}
+for t in board.GetTracks():
+    if t.GetNetname() in ['PLL_FILT1','PLL_FILT2','PLL_F','PLL_RC']:assert not isinstance(t,p.PCB_VIA) and t.GetLayer()==p.F_Cu
+tracks=list(board.GetTracks());vias=[v for v in tracks if isinstance(v,p.PCB_VIA)]
+result={'input_sync_net_complete':{n:net_status[n] for n in input_nets},'input_signal_connections_checked':len(incoming['connections']),'U4_to_C51_mm':incoming['U4_to_C51_mm'],'output_sync_net_complete':{n:net_status[n] for n in ['H_OUT','V_OUT','H_OUT_BUF','V_OUT_BUF','H_OUT_RAW','V_OUT_RAW']},'U5_to_C52_mm':new['U5_to_C52_mm'],'new_signal_connections_checked':len(new['connections']),'modified_decoupling_paths_require_requalification':True,'PLL_signal_vias':0,'analog_total_copper_length_mm':lengths,'analog_net_complete':net_status,'analog_connections_checked':len(analog['connections']),'additional_ground_returns':len(analog['ground_pads']),'status':'ANALOG_REVIEW_NOT_MANUFACTURING','parts':137,'pad_net_checks':count,'board_mm':[95,95],
+ 'previous_power_connections_rechecked':len(old['verified_local_power_connections']),
+ 'verified_supply_connections':power_checks,'verified_ground_plane_returns':ground_checks,
+ 'decoupling_pair_count':len(progress['connections']),'historical_v022_maximum_IC_to_cap_trace_mm':max(x['length_mm'] for x in progress['connections']),
+ 'track_segments':len(tracks)-len(vias),'through_vias':len(vias),'unconnected_items':conn.GetUnconnectedCount(False),'drc_categories':counts,
+ 'board_sha256':hashlib.sha256((h/BOARD).read_bytes()).hexdigest()}
+(h/(TAG+'_report.json')).write_text(json.dumps(result,indent=2)+'\n')
+print('PASS 57 previous connections,',len(power_checks),'supply and',len(ground_checks),'ground checks;',count,'pad nets')
+print('tracks',result['track_segments'],'vias',len(vias),'remaining',result['unconnected_items']);print(counts)

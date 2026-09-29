@@ -1,0 +1,12 @@
+PASS video_core N=32 FIELD_LINES=524: 100542 aligned RGB/HS/VS checks, 6 frame starts; blanking, sync loss, restart
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_video_core.sv:65: $finish called at 2350110000 (1ps)
+PASS video_core N=32 FIELD_LINES=525: 100734 aligned RGB/HS/VS checks, 6 frame starts; blanking, sync loss, restart
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_video_core.sv:65: $finish called at 2352030000 (1ps)
+PASS video_core N=32 FIELD_LINES=624: 119742 aligned RGB/HS/VS checks, 6 frame starts; blanking, sync loss, restart
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_video_core.sv:65: $finish called at 2542110000 (1ps)
+PASS video_core N=32 FIELD_LINES=625: 119934 aligned RGB/HS/VS checks, 6 frame starts; blanking, sync loss, restart
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_video_core.sv:65: $finish called at 2544030000 (1ps)
+PASS video_core N=32 FIELD_LINES=626: 120126 aligned RGB/HS/VS checks, 6 frame starts; blanking, sync loss, restart
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_video_core.sv:65: $finish called at 2545950000 (1ps)
+PASS video_core N=1816 FIELD_LINES=625: 6806366 aligned RGB/HS/VS checks, 6 frame starts; blanking, sync loss, restart
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_video_core.sv:65: $finish called at 68535870000 (1ps)

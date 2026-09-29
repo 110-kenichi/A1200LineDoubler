@@ -1,0 +1,16 @@
+PASS stream_sync_frontend N=32 FL=524 ALIGN=7: 168567 samples, 5238 line events; odd/even field phase, missing H/V, bad CE, reacquisition, long/short rejection
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_stream_sync_frontend.sv:67: $finish called at 3371327000 (1ps)
+PASS stream_sync_frontend N=32 FL=525 ALIGN=7: 168855 samples, 5246 line events; odd/even field phase, missing H/V, bad CE, reacquisition, long/short rejection
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_stream_sync_frontend.sv:67: $finish called at 3377087000 (1ps)
+PASS stream_sync_frontend N=32 FL=624 ALIGN=7: 197367 samples, 6138 line events; odd/even field phase, missing H/V, bad CE, reacquisition, long/short rejection
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_stream_sync_frontend.sv:67: $finish called at 3947327000 (1ps)
+PASS stream_sync_frontend N=32 FL=625 ALIGN=7: 197655 samples, 6146 line events; odd/even field phase, missing H/V, bad CE, reacquisition, long/short rejection
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_stream_sync_frontend.sv:67: $finish called at 3953087000 (1ps)
+PASS stream_sync_frontend N=32 FL=626 ALIGN=7: 197943 samples, 6156 line events; odd/even field phase, missing H/V, bad CE, reacquisition, long/short rejection
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_stream_sync_frontend.sv:67: $finish called at 3958847000 (1ps)
+PASS stream_sync_frontend N=32 FL=625 ALIGN=0: 197655 samples, 6146 line events; odd/even field phase, missing H/V, bad CE, reacquisition, long/short rejection
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_stream_sync_frontend.sv:67: $finish called at 3953087000 (1ps)
+PASS stream_sync_frontend N=1816 FL=625 ALIGN=31: 11216531 samples, 6146 line events; odd/even field phase, missing H/V, bad CE, reacquisition, long/short rejection
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_stream_sync_frontend.sv:67: $finish called at 224330607000 (1ps)
+PASS stream_input_video: 121176 independently calculated visible pixels; FPGA RGB blanking and H/V loss/recovery
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_stream_input_video.sv:43: $finish called at 3012237000 (1ps)
