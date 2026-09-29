@@ -62,7 +62,7 @@ for ref,f in fps.items():
     for q in f.Pads():
         if q.GetNumber() in m['parts'][ref]['pins']:
             assert q.GetNetname()==(m['parts'][ref]['pins'][q.GetNumber()]['net'] or '');count+=1
-assert len(fps)==135 and count==592
+assert len(fps)==137 and count==596   # +C70/C71 (review #1, U2 VCCO decaps)
 bb=board.GetBoardEdgesBoundingBox()
 assert abs(p.ToMM(bb.GetWidth())-.05-95)<.001 and abs(p.ToMM(bb.GetHeight())-.05-95)<.001
 assert board.GetCopperLayerCount()==4
@@ -74,7 +74,7 @@ lengths={net:sum(p.ToMM(t.GetLength()) for t in board.GetTracks() if not isinsta
 for t in board.GetTracks():
     if t.GetNetname() in ['PLL_FILT1','PLL_FILT2','PLL_F','PLL_RC']:assert not isinstance(t,p.PCB_VIA) and t.GetLayer()==p.F_Cu
 tracks=list(board.GetTracks());vias=[v for v in tracks if isinstance(v,p.PCB_VIA)]
-result={'input_sync_net_complete':{n:net_status[n] for n in input_nets},'input_signal_connections_checked':len(incoming['connections']),'U4_to_C51_mm':incoming['U4_to_C51_mm'],'output_sync_net_complete':{n:net_status[n] for n in ['H_OUT','V_OUT','H_OUT_BUF','V_OUT_BUF','H_OUT_RAW','V_OUT_RAW']},'U5_to_C52_mm':new['U5_to_C52_mm'],'new_signal_connections_checked':len(new['connections']),'modified_decoupling_paths_require_requalification':True,'PLL_signal_vias':0,'analog_total_copper_length_mm':lengths,'analog_net_complete':net_status,'analog_connections_checked':len(analog['connections']),'additional_ground_returns':len(analog['ground_pads']),'status':'ANALOG_REVIEW_NOT_MANUFACTURING','parts':135,'pad_net_checks':count,'board_mm':[95,95],
+result={'input_sync_net_complete':{n:net_status[n] for n in input_nets},'input_signal_connections_checked':len(incoming['connections']),'U4_to_C51_mm':incoming['U4_to_C51_mm'],'output_sync_net_complete':{n:net_status[n] for n in ['H_OUT','V_OUT','H_OUT_BUF','V_OUT_BUF','H_OUT_RAW','V_OUT_RAW']},'U5_to_C52_mm':new['U5_to_C52_mm'],'new_signal_connections_checked':len(new['connections']),'modified_decoupling_paths_require_requalification':True,'PLL_signal_vias':0,'analog_total_copper_length_mm':lengths,'analog_net_complete':net_status,'analog_connections_checked':len(analog['connections']),'additional_ground_returns':len(analog['ground_pads']),'status':'ANALOG_REVIEW_NOT_MANUFACTURING','parts':137,'pad_net_checks':count,'board_mm':[95,95],
  'previous_power_connections_rechecked':len(old['verified_local_power_connections']),
  'verified_supply_connections':power_checks,'verified_ground_plane_returns':ground_checks,
  'decoupling_pair_count':len(progress['connections']),'historical_v022_maximum_IC_to_cap_trace_mm':max(x['length_mm'] for x in progress['connections']),

@@ -92,8 +92,8 @@
   "analog_connections_checked": 22,
   "additional_ground_returns": 17,
   "status": "ANALOG_REVIEW_NOT_MANUFACTURING",
-  "parts": 135,
-  "pad_net_checks": 592,
+  "parts": 137,
+  "pad_net_checks": 596,
   "board_mm": [
     95,
     95
@@ -1175,8 +1175,8 @@
   ],
   "decoupling_pair_count": 30,
   "historical_v022_maximum_IC_to_cap_trace_mm": 5.384188309203678,
-  "track_segments": 2138,
-  "through_vias": 290,
+  "track_segments": 2144,
+  "through_vias": 291,
   "unconnected_items": 0,
   "drc_categories": {
     "silk_overlap": 26,
@@ -1186,5 +1186,5 @@
     "silk_edge_clearance": 2,
     "unconnected_items": 112
   },
-  "board_sha256": "5bd2732688f1213a5fc7097945efae9c7da2cc60965bd3f850345928b4a27d29"
+  "board_sha256": "479c6f6c9420614bb6f67fd4e7651ba27c742add33b9036e9e211696ce62804f"
 }

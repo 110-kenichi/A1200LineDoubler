@@ -4555,6 +4555,50 @@
         }
       },
       "sheet": "03_dac"
+    },
+    "C70": {
+      "reference": "C70",
+      "value": "100nF",
+      "symbol": "C",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "mpn": "100nF",
+      "lcsc": "",
+      "notes": "U2 VCCO decap (pin 12), added in v0.30wip review",
+      "pins": {
+        "1": {
+          "name": "~",
+          "type": "passive",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "~",
+          "type": "passive",
+          "net": "GND"
+        }
+      },
+      "sheet": "02_fpga"
+    },
+    "C71": {
+      "reference": "C71",
+      "value": "100nF",
+      "symbol": "C",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "mpn": "100nF",
+      "lcsc": "",
+      "notes": "U2 VCCO decap (pin 23), added in v0.30wip review",
+      "pins": {
+        "1": {
+          "name": "~",
+          "type": "passive",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "~",
+          "type": "passive",
+          "net": "GND"
+        }
+      },
+      "sheet": "02_fpga"
     }
   },
   "nets": {
@@ -5642,6 +5686,14 @@
       [
         "R44",
         "2"
+      ],
+      [
+        "C70",
+        "2"
+      ],
+      [
+        "C71",
+        "2"
       ]
     ],
     "I2C_SCL": [
@@ -6040,6 +6092,14 @@
       [
         "R42",
         "2"
+      ],
+      [
+        "C70",
+        "1"
+      ],
+      [
+        "C71",
+        "1"
       ]
     ],
     "1V9": [

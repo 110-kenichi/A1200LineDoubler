@@ -348,6 +348,13 @@ U2 を180°回転したため、**左辺（x=45.05）が U1(ADC) 側**、右辺�
      - `amiga_scandoubler.net`、`circuit_manifest.json`、`fpga_pin_assignment.json`、`board_port_map.json`、`sync_out_progress.json`（H/V_OUT_RAW を 14/13 へ）。
    - 回路図から書き出したネットリストと基板は、全587ノードで一致した。cst のポートは RTL のトップにすべて存在する（RTL は変更なし）。
    - 監査 `audit_sync_in_k7.py` は **PASS**（FAIL 0）。ERC は KiCad 7 の CLI にないため未実行。
+9b. **配線レビュー（2026-09-29、`review_v030wip_wiring.md`）**
+   - RTL シミュレーションは12本すべて PASS。
+   - 対策：
+     - #1：C70・C71 を追加（U2 VCCO pin12/23 のパスコン）。
+     - #2：In2 の線を引き直し、GIN_1 の基準面の切れ目を 4.9→4.5mm にした。
+   - 未対策：REF_27M のビアの近くのパスコン（4〜7mm）。部品の追加が必要なので保留。
+   - 部品数は137（C70/C71 を追加）。
 10. 仕上げ：シルク整理、最終 DRC/ERC、Gerber/ドリル、JLC BOM/CPL、ビットストリーム。
     - JLC 向け：EP 内の via-in-pad と J2.7/J2.8 のパッド上ビアは充填（plugged）または蓋（tented）を指定する。
 11. 検証が残っている項目：
