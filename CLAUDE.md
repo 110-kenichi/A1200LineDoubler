@@ -362,7 +362,7 @@ U2 を180°回転したため、**左辺（x=45.05）が U1(ADC) 側**、右辺�
     - **残り**：
       - LCSC 部品の選定（132点）。
       - CPL の回転を JLC のプレビューで確認する。
-      - ERC（利用者PCの KiCad 7）。
+      - ~~ERC~~ → KiCad 9 CLI で実行（2026-09-29、`tools/erc_k9.sh`、結果 `hardware/erc_k9.rpt`）。残りは PWR_FLAG なしの9件と U3 反転出力の2件（意図どおり）、グリッド外717件（接続に影響なし）。
       - 発注時のビアの指定（下記）。
     - JLC 向け：EP 内の via-in-pad は充填（plugged）または蓋（tented）を指定する（J2.7/J2.8 のパッド上ビアは J1/J2 の置き換えでなくなった）。
     - J1/J2 は HYC06-HDR15B-060（スルーホール）に置き換え、利用者が手はんだで付ける（JLC では実装しない）。発注には `fab/v030wip/jlc_bom_dnp_J1J2.csv` / `jlc_cpl_dnp_J1J2.csv` を使う。U1/U2 は JLC で実装する。スクリプトは `scripts/jc_*.py`、詳細は revision_0.30wip.md。

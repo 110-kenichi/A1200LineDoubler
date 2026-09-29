@@ -480,3 +480,14 @@
 - 未評価：
   - 実物のはまり具合（穴径、固定金具、ケースとの位置）。
   - 映像線の長さの変化（J2 側の R/G/B は短くなり、J1 側の H/V は基板の端を回るため長くなった）。
+
+## 2026-09-29 ERC（KiCad 9 CLI、読み取りのみ）
+
+- KiCad 7 の CLI には ERC がないため、KiCad 9.0.9 の CLI を使った（ppa:kicad/kicad-9.0-releases の .deb を展開しただけで、インストールはしていない。KiCad 7.0.11 はそのまま）。回路図はコピーで検査し、KiCad 9 では保存していない。
+  - 手順：`work/v030wip/w30/tools/erc_k9.sh`。結果：`hardware/erc_k9.rpt`。
+  - 同じ観点の自作検査（ネットリストとピンの種類から）：`tools/erc_net.py` → `hardware/erc_netlist_report.json`。結果は ERC と一致した。
+- 結果（実測、728件）：
+  - endpoint_off_grid 717件：ピンや配線の端が 1.27mm グリッドに乗っていない（回路図をスクリプトで生成したため）。接続には影響しない。回路図と基板のネットは一致している。
+  - power_pin_not_driven 9件：1V2、1V9、3V3、5V、ADC_1V9A、ADC_1V9PLL、ADC_3V3A、DAC_3V3、GND。電源がインダクタやフェライト経由で、PWR_FLAG がないため。
+  - pin_to_pin 2件：U3 の IOR_N/IOG_N/IOB_N（反転側の電流出力、Output 型）を3本とも GND につないでいる。回路の意図どおり。
+  - ライブラリ不一致（lib_symbol_mismatch）、フットプリントのリンク切れ、未接続ピン、ラベルの不一致は0件。
