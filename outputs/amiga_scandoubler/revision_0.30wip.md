@@ -367,3 +367,30 @@
 **未評価**
 - アナログ入力の配線インピーダンス、クロストーク（GIN_1 は 20mm で、B.Cu が U1 の下を通る）。
 - C14（pin7）・C16（pin13/14）のパスコンが、In2 経由の接続になった影響。
+
+## 2026-09-29 課題9：ドキュメントを v0.31 のピン割当に合わせる
+
+**方針**
+- 基板の U2 パッドのネット（= `constraints/amiga_board_top.cst`、v031dac 版）を正とした。
+- 設計資料をそれに合わせた。スクリプトは `scripts/p9_docs.py`。
+
+**変更したファイル（U2 の57ピン分）**
+- `hardware/02_fpga.kicad_sch`：U2 のピンにつながるグローバルラベル57個の名前を変えた。
+  - ラベルの位置と UUID は変えていない。
+  - ピンの端点→配線→ラベルの対応をたどって特定した。旧名が想定と違う場合は止める検査付き。
+- `hardware/amiga_scandoubler.net`：U2 のノード57個を新しいネットへ移した。
+- `hardware/circuit_manifest.json`：U2 のピンのネットと、ネットごとのノード一覧。
+- `hardware/fpga_pin_assignment.json`：I/O ピンのネット。
+- `constraints/board_port_map.json`：各ポートのピン番号と io_name（cst と一致）。
+- `hardware/sync_out_progress.json`：H/V_OUT_RAW の U2 側ピンを 60/61 → 14/13 に変えた。
+
+**検査結果（実測）**
+- KiCad 7 で回路図からネットリストを書き出し、基板と照合した。全587ノードでネットが一致した。更新した `.net` も同じ結果。
+- `board_port_map.json` の全ポートについて、ポートのネットと基板の U2 パッドのネットが一致した。
+- cst の全ポート（20種）が `rtl/amiga_board_top.sv` のトップのポートにあることを確認した。RTL は変更していない。
+- 監査 `audit_sync_in_k7.py`：**PASS**（既存接続57件、電源75件、GND80件、パッドネット592件）。
+  - 前版まで残っていた FAIL 59件（padnet 57件、H/V_OUT_RAW 2件）は解消した。
+- 基板は変更していない（DRC は前版のまま、エラー0件、未接続0件）。
+
+**未対応**
+- ERC：KiCad 7 の kicad-cli には ERC がないため、実行していない。
