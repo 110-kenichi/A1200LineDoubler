@@ -2638,7 +2638,7 @@
       "footprint": "Amiga:DE15_Conec_33DSMT1-E15SNCT",
       "mpn": "33DSMT1-E15SNCT",
       "lcsc": "C3146802",
-      "notes": "LCSC stock 0 at selection (2026-09-29): JLCPCB Global Sourcing or consigned part. Must stay a 3-row DE-15 (CLAUDE.md).",
+      "notes": "LCSC stock 0 at selection (2026-09-29): DNP at JLCPCB, hand-soldered by the user (buy CONEC 33DSMT1-E15SNCT separately). Use fab/v030wip/jlc_*_dnp_J1J2.csv. Must stay a 3-row DE-15 (CLAUDE.md).",
       "pins": {
         "1": {
           "name": "RED",
@@ -2730,7 +2730,7 @@
       "footprint": "Amiga:DE15_Conec_33DSMT1-E15SNCT",
       "mpn": "33DSMT1-E15SNCT",
       "lcsc": "C3146802",
-      "notes": "LCSC stock 0 at selection (2026-09-29): JLCPCB Global Sourcing or consigned part. Must stay a 3-row DE-15 (CLAUDE.md).",
+      "notes": "LCSC stock 0 at selection (2026-09-29): DNP at JLCPCB, hand-soldered by the user (buy CONEC 33DSMT1-E15SNCT separately). Use fab/v030wip/jlc_*_dnp_J1J2.csv. Must stay a 3-row DE-15 (CLAUDE.md).",
       "pins": {
         "1": {
           "name": "RED",
