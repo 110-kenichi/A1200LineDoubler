@@ -491,3 +491,15 @@
   - power_pin_not_driven 9件：1V2、1V9、3V3、5V、ADC_1V9A、ADC_1V9PLL、ADC_3V3A、DAC_3V3、GND。電源がインダクタやフェライト経由で、PWR_FLAG がないため。
   - pin_to_pin 2件：U3 の IOR_N/IOG_N/IOB_N（反転側の電流出力、Output 型）を3本とも GND につないでいる。回路の意図どおり。
   - ライブラリ不一致（lib_symbol_mismatch）、フットプリントのリンク切れ、未接続ピン、ラベルの不一致は0件。
+
+## 2026-09-29 ERC の対処（利用者の判断）
+
+- PWR_FLAG を追加した（`work/v030wip/w30/scripts/erc_pwrflag.py`、テキスト編集）。
+  - 対象は 5V、3V3、1V9、1V2、ADC_3V3A、ADC_1V9A、ADC_1V9PLL、DAC_3V3、GND の9ネット。05_power シートの y=256.54 に並べ、各 PWR_FLAG のピンに同じ名前の global label を置いた。
+  - シンボルは KiCad 7.0.11 の power ライブラリの PWR_FLAG と同じ定義（lib_symbol_mismatch なしを確認）。
+  - PWR_FLAG は部品表・基板に出ない。回路図から書き出したネットリストのノードは変わっていない（KiCad 7 で確認）。基板は変更していない。
+- U3.27/31/33（IOB_N/IOG_N/IOR_N を GND へ）は回路をそのままにし、ERC の除外として記録した：`hardware/erc_exclusions.json`。
+  - このフォルダーには回路図に対応する KiCad のプロジェクトファイルがないため、除外は KiCad ではなくこのファイルに記録し、`tools/erc_check.py` で適用する。
+  - ADV7125 のデータシートでの確認はできていない（analog.com と LCSC のデータシートの取得が失敗した）。
+- ERC（KiCad 9 CLI、`tools/erc_k9.sh`、KiCad 7 の power ライブラリを登録）：720件 → 除外を適用して **残り0件**（実測）。
+  - 除外：endpoint_off_grid 717件、pin_to_pin 3件（U3 の反転出力と、他の出力および GND の PWR_FLAG）。

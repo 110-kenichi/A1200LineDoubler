@@ -34,7 +34,7 @@
    - apycula のオープンソースツールで生成したもので、実機でも Gowin 純正ツールでも未検証。
    - 生成時に apycula が「IOLOGIC の INIT が未処理」と表示した（ODDR の初期値）。
    - H_SAMPLES 1816/2048 は暫定値で、PAL/NTSC の確定値ではない。
-6. **ERC**：KiCad 7 の CLI では実行できないため未実行。利用者PCの KiCad 7 で実行する。
+6. ~~**ERC**~~：KiCad 9 CLI で実行済み（2026-09-29）。除外（`hardware/erc_exclusions.json`）を適用して残り0件。詳細は revision_0.30wip.md。
 
 ## 部品選定（2026-09-29、JLCPCB の部品検索 API で在庫・価格を取得）
 - スクリプト：`work/v030wip/w30/scripts/r11_select.py`（選定）→ `r11_apply.py`（manifest、回路図、ネットリストへ反映）。
