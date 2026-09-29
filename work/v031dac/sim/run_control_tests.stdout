@@ -1,0 +1,23 @@
+TEST i2c_register_write HALF_CYCLES=6
+PASS I2C: 7-bit 0x5c produces B8 / 15 / 04 and STOP
+PASS I2C: request latched and busy request ignored
+PASS I2C: address, register and data NACK each terminate with STOP
+PASS I2C: clock stretching preserves transaction
+PASS I2C: occupied bus times out without START
+PASS I2C: stuck SCL times out and releases master pins
+PASS I2C: mid-transaction reset and fresh transaction
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_i2c_register_write.sv:113: $finish called at 31290000 (1ps)
+TEST i2c_register_write HALF_CYCLES=135
+PASS I2C: 7-bit 0x5c produces B8 / 15 / 04 and STOP
+PASS I2C: request latched and busy request ignored
+PASS I2C: address, register and data NACK each terminate with STOP
+PASS I2C: clock stretching preserves transaction
+PASS I2C: occupied bus times out without START
+PASS I2C: stuck SCL times out and releases master pins
+PASS I2C: mid-transaction reset and fresh transaction
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_i2c_register_write.sv:113: $finish called at 557610000 (1ps)
+TEST adc_power_sequence
+PASS ADC power: power wait, reset hold, settle, config and video lock gating
+PASS ADC power: brownout restarts, config error latches safe state
+PASS ADC power: interrupted power qualification restarts full delay
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_adc_power_sequence.sv:44: $finish called at 1880000 (1ps)

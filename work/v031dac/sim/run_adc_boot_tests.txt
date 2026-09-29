@@ -1,0 +1,8 @@
+PASS tvp7002_boot N=1816 HALF=6 ALC_WAIT=20: 778 complete wire transactions; divider order, config retention, video-lock gating, power restart, all 36 data-NACK positions, stuck bus, mid-write power loss
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_tvp7002_boot.sv:119: $finish called at 3503370000 (1ps)
+PASS tvp7002_boot N=1820 HALF=6 ALC_WAIT=20: 778 complete wire transactions; divider order, config retention, video-lock gating, power restart, all 36 data-NACK positions, stuck bus, mid-write power loss
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_tvp7002_boot.sv:119: $finish called at 3503370000 (1ps)
+PASS tvp7002_boot N=2048 HALF=6 ALC_WAIT=20: 778 complete wire transactions; divider order, config retention, video-lock gating, power restart, all 36 data-NACK positions, stuck bus, mid-write power loss
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_tvp7002_boot.sv:119: $finish called at 3503370000 (1ps)
+PASS tvp7002_boot N=1816 HALF=135 ALC_WAIT=810000: 72 complete wire transactions; divider order, config retention, video-lock gating, power restart
+/home/user/A1200LineDoubler/outputs/amiga_scandoubler/sim/tb_tvp7002_boot.sv:119: $finish called at 21999000000 (1ps)
