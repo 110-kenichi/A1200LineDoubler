@@ -2633,12 +2633,12 @@
     },
     "J1": {
       "reference": "J1",
-      "value": "33DSMT1-E15SNCT",
+      "value": "HYC06-HDR15B-060",
       "symbol": "DE15_Female",
-      "footprint": "Amiga:DE15_Conec_33DSMT1-E15SNCT",
-      "mpn": "33DSMT1-E15SNCT",
-      "lcsc": "C3146802",
-      "notes": "LCSC stock 0 at selection (2026-09-29): DNP at JLCPCB, hand-soldered by the user (buy CONEC 33DSMT1-E15SNCT separately). Use fab/v030wip/jlc_*_dnp_J1J2.csv. Must stay a 3-row DE-15 (CLAUDE.md).",
+      "footprint": "Amiga:DE15_HOAUC_HYC06-HDR15B-060",
+      "mpn": "HYC06-HDR15B-060",
+      "lcsc": "C711364",
+      "notes": "HOAUC HYC06-HDR15B-060 (LCSC C711364, JLC extended, stock 2230 on 2026-09-29): 3-row HD-15 female, right angle, THT. Replaces CONEC HYC06-HDR15B-060 (LCSC stock 0, 0.76 mm SMD). Pin rows 3.08/5.06/7.04 mm from the PCB edge, body 8.9 mm onto the board. Must stay a 3-row DE-15 (CLAUDE.md).",
       "pins": {
         "1": {
           "name": "RED",
@@ -2725,12 +2725,12 @@
     },
     "J2": {
       "reference": "J2",
-      "value": "33DSMT1-E15SNCT",
+      "value": "HYC06-HDR15B-060",
       "symbol": "DE15_Female",
-      "footprint": "Amiga:DE15_Conec_33DSMT1-E15SNCT",
-      "mpn": "33DSMT1-E15SNCT",
-      "lcsc": "C3146802",
-      "notes": "LCSC stock 0 at selection (2026-09-29): DNP at JLCPCB, hand-soldered by the user (buy CONEC 33DSMT1-E15SNCT separately). Use fab/v030wip/jlc_*_dnp_J1J2.csv. Must stay a 3-row DE-15 (CLAUDE.md).",
+      "footprint": "Amiga:DE15_HOAUC_HYC06-HDR15B-060",
+      "mpn": "HYC06-HDR15B-060",
+      "lcsc": "C711364",
+      "notes": "HOAUC HYC06-HDR15B-060 (LCSC C711364, JLC extended, stock 2230 on 2026-09-29): 3-row HD-15 female, right angle, THT. Replaces CONEC HYC06-HDR15B-060 (LCSC stock 0, 0.76 mm SMD). Pin rows 3.08/5.06/7.04 mm from the PCB edge, body 8.9 mm onto the board. Must stay a 3-row DE-15 (CLAUDE.md).",
       "pins": {
         "1": {
           "name": "RED",

@@ -1,5 +1,5 @@
-** Drc report for outputs/amiga_scandoubler/hardware/amiga_scandoubler_v030wip.kicad_pcb **
-** Created on 2026-09-29 14:08:51 **
+** Drc report for /tmp/claude-0/-home-user-A1200LineDoubler/d0f14dc9-1427-5a10-9449-2ee42efc957d/scratchpad/jc/r3.kicad_pcb **
+** Created on 2026-09-29 15:43:51 **
 
 ** Found 141 DRC violations **
 [lib_footprint_issues]: The current configuration does not include the library 'Amiga'.
@@ -47,6 +47,9 @@
 [lib_footprint_issues]: The current configuration does not include the library 'Inductor_SMD'.
     Local override; Severity: warning
     @(13.0000 mm, 30.0000 mm): Footprint FB1
+[lib_footprint_issues]: The current configuration does not include the library 'Amiga'.
+    Local override; Severity: warning
+    @(89.9400 mm, 42.0000 mm): Footprint J2
 [lib_footprint_issues]: The current configuration does not include the library 'Capacitor_SMD'.
     Local override; Severity: warning
     @(39.0000 mm, 24.0000 mm): Footprint C61
@@ -131,9 +134,6 @@
 [lib_footprint_issues]: The current configuration does not include the library 'Capacitor_SMD'.
     Local override; Severity: warning
     @(16.0000 mm, 44.5000 mm): Footprint C16
-[lib_footprint_issues]: The current configuration does not include the library 'Amiga'.
-    Local override; Severity: warning
-    @(5.0000 mm, 42.0000 mm): Footprint J1
 [lib_footprint_issues]: The current configuration does not include the library 'Package_TO_SOT_SMD'.
     Local override; Severity: warning
     @(17.0000 mm, 59.0000 mm): Footprint U4
@@ -215,9 +215,6 @@
 [lib_footprint_issues]: The current configuration does not include the library 'Resistor_SMD'.
     Local override; Severity: warning
     @(55.3000 mm, 52.3000 mm): Footprint R3
-[lib_footprint_issues]: The current configuration does not include the library 'Amiga'.
-    Local override; Severity: warning
-    @(90.0000 mm, 42.0000 mm): Footprint J2
 [lib_footprint_issues]: The current configuration does not include the library 'Connector_PinHeader_2.54mm'.
     Local override; Severity: warning
     @(47.5000 mm, 10.0000 mm): Footprint J4
@@ -401,6 +398,9 @@
 [lib_footprint_issues]: The current configuration does not include the library 'Capacitor_SMD'.
     Local override; Severity: warning
     @(16.0000 mm, 41.0000 mm): Footprint C14
+[lib_footprint_issues]: The current configuration does not include the library 'Amiga'.
+    Local override; Severity: warning
+    @(5.0600 mm, 42.0000 mm): Footprint J1
 [lib_footprint_issues]: The current configuration does not include the library 'Capacitor_SMD'.
     Local override; Severity: warning
     @(44.4000 mm, 31.3000 mm): Footprint C40

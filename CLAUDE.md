@@ -60,7 +60,7 @@
 | U6 | DAC クロックバッファ | DAC_CLK_RAW(16番) → DAC_CLK_BUF → R24 → U3 |
 | U8, U9 | 電源（POWER_GOOD 系） | POWER_GOOD は FPGA 62番へ |
 | Y1 | 27MHz 発振器 ECS-3225MVLC-270 | REF_27M。R36 で分岐し、U1.80 と U2.11 へ |
-| J1 / 出力 | CONEC 33DSMT1-E15SNCT | 3列 DE-15 メス（信号端子SMT）。2列15ピン品を誤って採用しないこと |
+| J1 / J2 | HOAUC HYC06-HDR15B-060（C711364） | 3列 DE-15 メス、90°スルーホール（2026-09-29 に CONEC 33DSMT1-E15SNCT から変更、利用者が手はんだ）。2列15ピン品を誤って採用しないこと |
 | J4 | JTAG/設定ヘッダ | JTAG_TMS/TCK/TDI/TDO、RECONFIG_N |
 | USB | HRO TYPE-C-31-M-12 | 5V 給電のみ |
 
@@ -364,8 +364,8 @@ U2 を180°回転したため、**左辺（x=45.05）が U1(ADC) 側**、右辺�
       - CPL の回転を JLC のプレビューで確認する。
       - ERC（利用者PCの KiCad 7）。
       - 発注時のビアの指定（下記）。
-    - JLC 向け：EP 内の via-in-pad と J2.7/J2.8 のパッド上ビアは充填（plugged）または蓋（tented）を指定する。
-    - J1/J2 は利用者が手はんだで付ける（JLC では実装しない）。発注には `fab/v030wip/jlc_bom_dnp_J1J2.csv` / `jlc_cpl_dnp_J1J2.csv` を使う。U1/U2 は JLC で実装する。
+    - JLC 向け：EP 内の via-in-pad は充填（plugged）または蓋（tented）を指定する（J2.7/J2.8 のパッド上ビアは J1/J2 の置き換えでなくなった）。
+    - J1/J2 は HYC06-HDR15B-060（スルーホール）に置き換え、利用者が手はんだで付ける（JLC では実装しない）。発注には `fab/v030wip/jlc_bom_dnp_J1J2.csv` / `jlc_cpl_dnp_J1J2.csv` を使う。U1/U2 は JLC で実装する。スクリプトは `scripts/jc_*.py`、詳細は revision_0.30wip.md。
 11. 検証が残っている項目：
     - PLL の実位相とジッター、hold と recovery/removal。
     - DAC 端子での setup/hold、PSAVE Low 時のアナログ出力。
