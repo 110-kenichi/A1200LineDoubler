@@ -1,8 +1,8 @@
 {
  "parts": 139,
  "bom_lines": 37,
- "lcsc_missing_lines": 2,
- "lcsc_missing_parts": 3,
+ "lcsc_missing_lines": 0,
+ "lcsc_missing_parts": 0,
  "board_vias": 295,
  "board_pth_pads": 8,
  "board_npth_pads": 6,

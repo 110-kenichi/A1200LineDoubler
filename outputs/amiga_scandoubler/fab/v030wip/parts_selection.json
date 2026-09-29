@@ -7,9 +7,9 @@
   "footprint": "TQFP-100_TVP7002_14x14_P0.5_EP6.2",
   "qty_per_board": 1,
   "fixed_lcsc": "C3824085",
-  "qty_needed": 5,
-  "stock_short": true,
-  "low_margin": false,
+  "qty_needed": 2,
+  "stock_short": false,
+  "low_margin": true,
   "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C3824085",
@@ -81,18 +81,18 @@
   "value": "100nF",
   "footprint": "C_0603_1608Metric",
   "qty_per_board": 43,
-  "fixed_lcsc": "",
-  "qty_needed": 215,
+  "fixed_lcsc": "C14663",
+  "qty_needed": 86,
   "stock_short": false,
   "low_margin": false,
-  "rule": "C 100nF >=16V X7R/X5R",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C14663",
    "mpn": "CC0603KRX7R9BB104",
    "brand": "YAGEO",
    "pkg": "0603",
    "lib": "basic",
-   "stock": 55905122,
+   "stock": 55877789,
    "price_usd": 0.0122,
    "describe": "100nF 50V X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
    "attrs": {
@@ -102,41 +102,8 @@
     "Temperature Coefficient": "X7R"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C286510",
-    "mpn": "0603B104M500NT",
-    "brand": "FH (Guangdong Fenghua Advanced Tech)",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 12207825,
-    "price_usd": 0.004,
-    "describe": "100nF 50V X7R ±20% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
-    "attrs": {
-     "Voltage Rating": "50V",
-     "Tolerance": "±20%",
-     "Capacitance": "100nF",
-     "Temperature Coefficient": "X7R"
-    }
-   },
-   {
-    "lcsc": "C1591",
-    "mpn": "CL10B104KB8NNNC",
-    "brand": "Samsung Electro-Mechanics",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 2422136,
-    "price_usd": 0.0084,
-    "describe": "100nF 50V X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
-    "attrs": {
-     "Voltage Rating": "50V",
-     "Tolerance": "±10%",
-     "Capacitance": "100nF",
-     "Temperature Coefficient": "X7R"
-    }
-   }
-  ],
-  "n_candidates": 88
+  "alternatives": [],
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -145,18 +112,18 @@
   "value": "1.5k",
   "footprint": "R_0603_1608Metric",
   "qty_per_board": 1,
-  "fixed_lcsc": "",
-  "qty_needed": 5,
+  "fixed_lcsc": "C22843",
+  "qty_needed": 2,
   "stock_short": false,
   "low_margin": false,
-  "rule": "R 1.5k 1.0%",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C22843",
    "mpn": "0603WAF1501T5E",
    "brand": "UNI-ROYAL(Uniroyal Elec)",
    "pkg": "0603",
    "lib": "basic",
-   "stock": 4841924,
+   "stock": 4836750,
    "price_usd": 0.002,
    "describe": "-55℃~+155℃ 1.5kΩ 100mW 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
    "attrs": {
@@ -169,47 +136,8 @@
     "Temperature Coefficient": "±100ppm/℃"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C2930050",
-    "mpn": "FRC0603F1501TS",
-    "brand": "FOJAN",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 7838417,
-    "price_usd": 0.0023,
-    "describe": "-55℃~+155℃ 1.5kΩ 100mW 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
-    "attrs": {
-     "Resistance": "1.5kΩ",
-     "Operating Temperature": "-55℃~+155℃",
-     "Power(Watts)": "100mW",
-     "Type": "Thick Film Resistor",
-     "Voltage-Supply(Max)": "75V",
-     "Tolerance": "±1%",
-     "Temperature Coefficient": "±100ppm/℃"
-    }
-   },
-   {
-    "lcsc": "C114668",
-    "mpn": "RC0603FR-071K5L",
-    "brand": "YAGEO",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 926591,
-    "price_usd": 0.0035,
-    "describe": "-55℃~+155℃ 1.5kΩ 100mW 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
-    "attrs": {
-     "Resistance": "1.5kΩ",
-     "Operating Temperature": "-55℃~+155℃",
-     "Power(Watts)": "100mW",
-     "Type": "Thick Film Resistor",
-     "Voltage-Supply(Max)": "75V",
-     "Tolerance": "±1%",
-     "Temperature Coefficient": "±100ppm/℃"
-    }
-   }
-  ],
-  "n_candidates": 78
+  "alternatives": [],
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -218,11 +146,11 @@
   "value": "4.7nF",
   "footprint": "C_0603_1608Metric",
   "qty_per_board": 1,
-  "fixed_lcsc": "",
-  "qty_needed": 5,
+  "fixed_lcsc": "C576818",
+  "qty_needed": 2,
   "stock_short": false,
   "low_margin": false,
-  "rule": "C 4.7nF >=16V C0G/NP0",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C576818",
    "mpn": "CC0603JRNPO9BN472",
@@ -239,41 +167,8 @@
     "Temperature Coefficient": "NP0"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C85980",
-    "mpn": "GRM1885C1H472JA01D",
-    "brand": "Murata Electronics",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 96024,
-    "price_usd": 0.0212,
-    "describe": "4.7nF 50V C0G ±5% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
-    "attrs": {
-     "Voltage Rating": "50V",
-     "Tolerance": "±5%",
-     "Capacitance": "4.7nF",
-     "Temperature Coefficient": "C0G"
-    }
-   },
-   {
-    "lcsc": "C695387",
-    "mpn": "CGA3EAC0G2A472JT000E",
-    "brand": "TDK",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 7627,
-    "price_usd": 0.0978,
-    "describe": "100V 4.7nF C0G ±5% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
-    "attrs": {
-     "Voltage Rating": "100V",
-     "Tolerance": "±5%",
-     "Capacitance": "4.7nF",
-     "Temperature Coefficient": "C0G"
-    }
-   }
-  ],
-  "n_candidates": 18
+  "alternatives": [],
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -284,11 +179,11 @@
   "value": "1nF",
   "footprint": "C_0603_1608Metric",
   "qty_per_board": 3,
-  "fixed_lcsc": "",
-  "qty_needed": 15,
+  "fixed_lcsc": "C106246",
+  "qty_needed": 6,
   "stock_short": false,
   "low_margin": false,
-  "rule": "C 1nF >=16V C0G/NP0",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C106246",
    "mpn": "CC0603JRNPO9BN102",
@@ -305,41 +200,8 @@
     "Temperature Coefficient": "NP0"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C163508",
-    "mpn": "CL10C102JB8NNNC",
-    "brand": "Samsung Electro-Mechanics",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 521157,
-    "price_usd": 0.0083,
-    "describe": "1nF 50V C0G ±5% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
-    "attrs": {
-     "Voltage Rating": "50V",
-     "Tolerance": "±5%",
-     "Capacitance": "1nF",
-     "Temperature Coefficient": "C0G"
-    }
-   },
-   {
-    "lcsc": "C309468",
-    "mpn": "CC0603FRNPO9BN102",
-    "brand": "YAGEO",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 488520,
-    "price_usd": 0.0165,
-    "describe": "1nF 50V NP0 ±1% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
-    "attrs": {
-     "Voltage Rating": "50V",
-     "Tolerance": "±1%",
-     "Capacitance": "1nF",
-     "Temperature Coefficient": "NP0"
-    }
-   }
-  ],
-  "n_candidates": 32
+  "alternatives": [],
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -354,18 +216,18 @@
   "value": "10nF",
   "footprint": "C_0603_1608Metric",
   "qty_per_board": 7,
-  "fixed_lcsc": "",
-  "qty_needed": 35,
+  "fixed_lcsc": "C85973",
+  "qty_needed": 14,
   "stock_short": false,
   "low_margin": false,
-  "rule": "C 10nF >=16V C0G/NP0",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C85973",
    "mpn": "GRM1885C1H103JA01D",
    "brand": "Murata Electronics",
    "pkg": "0603",
    "lib": "extended",
-   "stock": 49256,
+   "stock": 49116,
    "price_usd": 0.0291,
    "describe": "10nF 50V C0G ±5% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
    "attrs": {
@@ -375,41 +237,8 @@
     "Temperature Coefficient": "C0G"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C76599",
-    "mpn": "C1608C0G1H103JT000N",
-    "brand": "TDK",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 12858,
-    "price_usd": 0.0455,
-    "describe": "10nF 50V C0G ±5% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
-    "attrs": {
-     "Voltage Rating": "50V",
-     "Tolerance": "±5%",
-     "Capacitance": "10nF",
-     "Temperature Coefficient": "C0G"
-    }
-   },
-   {
-    "lcsc": "C342796",
-    "mpn": "CGA3EAC0G2A103JT000E",
-    "brand": "TDK",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 3250,
-    "price_usd": 0.1446,
-    "describe": "100V 10nF C0G ±5% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
-    "attrs": {
-     "Voltage Rating": "100V",
-     "Tolerance": "±5%",
-     "Capacitance": "10nF",
-     "Temperature Coefficient": "C0G"
-    }
-   }
-  ],
-  "n_candidates": 10
+  "alternatives": [],
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -419,7 +248,7 @@
   "footprint": "QFN-88_GW1N4_10x10_P0.4_EP6.8",
   "qty_per_board": 1,
   "fixed_lcsc": "C31900351",
-  "qty_needed": 5,
+  "qty_needed": 2,
   "stock_short": false,
   "low_margin": false,
   "rule": "manifest LCSC (verify)",
@@ -452,18 +281,18 @@
   "value": "4.7k",
   "footprint": "R_0603_1608Metric",
   "qty_per_board": 9,
-  "fixed_lcsc": "",
-  "qty_needed": 45,
+  "fixed_lcsc": "C23162",
+  "qty_needed": 18,
   "stock_short": false,
   "low_margin": false,
-  "rule": "R 4.7k 1.0%",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C23162",
    "mpn": "0603WAF4701T5E",
    "brand": "UNI-ROYAL(Uniroyal Elec)",
    "pkg": "0603",
    "lib": "basic",
-   "stock": 22738200,
+   "stock": 22731309,
    "price_usd": 0.0028,
    "describe": "-55℃~+155℃ 100mW 4.7kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
    "attrs": {
@@ -476,47 +305,8 @@
     "Temperature Coefficient": "±100ppm/℃"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C99782",
-    "mpn": "RC0603FR-074K7L",
-    "brand": "YAGEO",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 9491131,
-    "price_usd": 0.0033,
-    "describe": "-55℃~+155℃ 100mW 4.7kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
-    "attrs": {
-     "Resistance": "4.7kΩ",
-     "Operating Temperature": "-55℃~+155℃",
-     "Power(Watts)": "100mW",
-     "Type": "Thick Film Resistor",
-     "Voltage-Supply(Max)": "75V",
-     "Tolerance": "±1%",
-     "Temperature Coefficient": "±100ppm/℃"
-    }
-   },
-   {
-    "lcsc": "C116693",
-    "mpn": "RS-03K4701FT",
-    "brand": "FH (Guangdong Fenghua Advanced Tech)",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 3075756,
-    "price_usd": 0.0038,
-    "describe": "-55℃~+155℃ 100mW 4.7kΩ 50V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
-    "attrs": {
-     "Resistance": "4.7kΩ",
-     "Operating Temperature": "-55℃~+155℃",
-     "Power(Watts)": "100mW",
-     "Type": "Thick Film Resistor",
-     "Voltage-Supply(Max)": "50V",
-     "Tolerance": "±1%",
-     "Temperature Coefficient": "±100ppm/℃"
-    }
-   }
-  ],
-  "n_candidates": 68
+  "alternatives": [],
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -530,18 +320,18 @@
   "value": "4.7uF",
   "footprint": "C_0805_2012Metric",
   "qty_per_board": 6,
-  "fixed_lcsc": "",
-  "qty_needed": 30,
+  "fixed_lcsc": "C1779",
+  "qty_needed": 12,
   "stock_short": false,
   "low_margin": false,
-  "rule": "C 4.7uF >=10V X7R/X5R",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C1779",
    "mpn": "CL21A475KAQNNNE",
    "brand": "Samsung Electro-Mechanics",
    "pkg": "0805",
    "lib": "basic",
-   "stock": 2984663,
+   "stock": 2984448,
    "price_usd": 0.0345,
    "describe": "25V 4.7uF X5R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
    "attrs": {
@@ -551,41 +341,8 @@
     "Temperature Coefficient": "X5R"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C354262",
-    "mpn": "CC0805KKX7R8BB475",
-    "brand": "YAGEO",
-    "pkg": "0805",
-    "lib": "extended",
-    "stock": 581266,
-    "price_usd": 0.072,
-    "describe": "25V 4.7uF X7R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
-    "attrs": {
-     "Voltage Rating": "25V",
-     "Tolerance": "±10%",
-     "Capacitance": "4.7uF",
-     "Temperature Coefficient": "X7R"
-    }
-   },
-   {
-    "lcsc": "C98192",
-    "mpn": "CL21A475KBQNNNE",
-    "brand": "Samsung Electro-Mechanics",
-    "pkg": "0805",
-    "lib": "extended",
-    "stock": 361739,
-    "price_usd": 0.0952,
-    "describe": "4.7uF 50V X5R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
-    "attrs": {
-     "Voltage Rating": "50V",
-     "Tolerance": "±10%",
-     "Capacitance": "4.7uF",
-     "Temperature Coefficient": "X5R"
-    }
-   }
-  ],
-  "n_candidates": 79
+  "alternatives": [],
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -594,11 +351,11 @@
   "value": "JTAG 2x05 2.54mm",
   "footprint": "PinHeader_2x05_P2.54mm_Vertical_SMD",
   "qty_per_board": 1,
-  "fixed_lcsc": "",
-  "qty_needed": 5,
+  "fixed_lcsc": "C32713285",
+  "qty_needed": 2,
   "stock_short": false,
   "low_margin": false,
-  "rule": "SMD 2x5 2.54 vertical (footprint fit to be checked)",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C32713285",
    "mpn": "HX PZ2.54-2x5P TP",
@@ -628,65 +385,8 @@
     "Circluar Pins/Square Pins": "Square pin"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C55213916",
-    "mpn": "PZ2.54-2x5PLT-L11.0",
-    "brand": "SHOU HAN",
-    "pkg": "SMD,P=2.54mm",
-    "lib": "extended",
-    "stock": 1202,
-    "price_usd": 0.0915,
-    "describe": "-40℃~+105℃ 10P 1kV 2 2.05mm 2.54mm 2x5P 3A 6mm Black Brass Gold Pin Header Surface Mount,Vertical SMD,P=2.54mm Pin Headers ROHS",
-    "attrs": {
-     "Operating Temperature": "-40℃~+105℃",
-     "Number of Rows": "2",
-     "Voltage Rating (Max)": "1kV",
-     "Insulation Height": "2.05mm",
-     "Length of End Connection Pin": "-",
-     "Color": "Black",
-     "Current Rating": "3A",
-     "Row Spacing": "-",
-     "Mounting Type": "Surface Mount,Vertical",
-     "Contact Plating": "Gold",
-     "Number of Pins": "10P",
-     "Pitch": "2.54mm",
-     "Contact Material": "Brass",
-     "Pin Structure": "2x5P",
-     "Length of Mating Pin": "6mm",
-     "Circluar Pins/Square Pins": "Square pin"
-    }
-   },
-   {
-    "lcsc": "C42163083",
-    "mpn": "HC-PZ254-11L-2x5PS",
-    "brand": "Hong Cheng",
-    "pkg": "SMD,P=2.54mm",
-    "lib": "extended",
-    "stock": 413,
-    "price_usd": 0.0717,
-    "describe": "-40℃~+105℃ 10P 2 2.54mm 2.54mm 2.5mm 2x5P 3A 6mm Black Brass Gold Pin Header SMD,P=2.54mm Pin Headers ROHS",
-    "attrs": {
-     "Operating Temperature": "-40℃~+105℃",
-     "Number of Rows": "2",
-     "Voltage Rating (Max)": "-",
-     "Insulation Height": "2.5mm",
-     "Length of End Connection Pin": "-",
-     "Color": "Black",
-     "Current Rating": "3A",
-     "Row Spacing": "2.54mm",
-     "Mounting Type": "Surface Mount,Vertical",
-     "Contact Plating": "Gold",
-     "Number of Pins": "10P",
-     "Pitch": "2.54mm",
-     "Contact Material": "Brass",
-     "Pin Structure": "2x5P",
-     "Length of Mating Pin": "6mm",
-     "Circluar Pins/Square Pins": "Square pin"
-    }
-   }
-  ],
-  "n_candidates": 3
+  "alternatives": [],
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -696,7 +396,7 @@
   "footprint": "LQFP-48_7x7mm_P0.5mm",
   "qty_per_board": 1,
   "fixed_lcsc": "C9668",
-  "qty_needed": 5,
+  "qty_needed": 2,
   "stock_short": false,
   "low_margin": false,
   "rule": "manifest LCSC (verify)",
@@ -737,18 +437,18 @@
   "value": "100nF",
   "footprint": "C_0402_1005Metric",
   "qty_per_board": 5,
-  "fixed_lcsc": "",
-  "qty_needed": 25,
+  "fixed_lcsc": "C1525",
+  "qty_needed": 10,
   "stock_short": false,
   "low_margin": false,
-  "rule": "C 100nF >=10V X7R/X5R",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C1525",
    "mpn": "CL05B104KO5NNNC",
    "brand": "Samsung Electro-Mechanics",
    "pkg": "0402",
    "lib": "basic",
-   "stock": 22945184,
+   "stock": 22944844,
    "price_usd": 0.0045,
    "describe": "100nF 16V X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
    "attrs": {
@@ -758,41 +458,8 @@
     "Temperature Coefficient": "X7R"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C307331",
-    "mpn": "CL05B104KB54PNC",
-    "brand": "Samsung Electro-Mechanics",
-    "pkg": "0402",
-    "lib": "basic",
-    "stock": 13117952,
-    "price_usd": 0.0104,
-    "describe": "100nF 50V X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
-    "attrs": {
-     "Voltage Rating": "50V",
-     "Tolerance": "±10%",
-     "Capacitance": "100nF",
-     "Temperature Coefficient": "X7R"
-    }
-   },
-   {
-    "lcsc": "C60474",
-    "mpn": "CC0402KRX7R7BB104",
-    "brand": "YAGEO",
-    "pkg": "0402",
-    "lib": "extended",
-    "stock": 15318250,
-    "price_usd": 0.0048,
-    "describe": "100nF 16V X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
-    "attrs": {
-     "Voltage Rating": "16V",
-     "Tolerance": "±10%",
-     "Capacitance": "100nF",
-     "Temperature Coefficient": "X7R"
-    }
-   }
-  ],
-  "n_candidates": 89
+  "alternatives": [],
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -801,11 +468,11 @@
   "value": "536R 0.1%",
   "footprint": "R_0603_1608Metric",
   "qty_per_board": 1,
-  "fixed_lcsc": "",
-  "qty_needed": 5,
+  "fixed_lcsc": "C861466",
+  "qty_needed": 2,
   "stock_short": false,
   "low_margin": false,
-  "rule": "R 536R 0.1% 0.1% thin film",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C861466",
    "mpn": "RT0603BRD07536RL",
@@ -826,7 +493,7 @@
    }
   },
   "alternatives": [],
-  "n_candidates": 47
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -840,11 +507,11 @@
   "value": "75R 0.1%",
   "footprint": "R_0603_1608Metric",
   "qty_per_board": 6,
-  "fixed_lcsc": "",
-  "qty_needed": 30,
+  "fixed_lcsc": "C319466",
+  "qty_needed": 12,
   "stock_short": false,
   "low_margin": false,
-  "rule": "R 75R 0.1% 0.1% thin film",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C319466",
    "mpn": "AR03BTCX0750",
@@ -864,47 +531,8 @@
     "Temperature Coefficient": "±25ppm/℃"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C394544",
-    "mpn": "PTFR0603B75R0N9",
-    "brand": "RESI",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 16139,
-    "price_usd": 0.1771,
-    "describe": "-55℃~+125℃ 100V 100mW 75Ω Thin Film Resistor ±0.1% ±10ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
-    "attrs": {
-     "Resistance": "75Ω",
-     "Operating Temperature": "-55℃~+125℃",
-     "Power(Watts)": "100mW",
-     "Type": "Thin Film Resistor",
-     "Voltage-Supply(Max)": "100V",
-     "Tolerance": "±0.1%",
-     "Temperature Coefficient": "±10ppm/℃"
-    }
-   },
-   {
-    "lcsc": "C705794",
-    "mpn": "RT0603BRD0775RL",
-    "brand": "YAGEO",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 11558,
-    "price_usd": 0.0424,
-    "describe": "-55℃~+155℃ 100mW 75V 75Ω Thin Film Resistor ±0.1% ±25ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
-    "attrs": {
-     "Resistance": "75Ω",
-     "Operating Temperature": "-55℃~+155℃",
-     "Power(Watts)": "100mW",
-     "Type": "Thin Film Resistor",
-     "Voltage-Supply(Max)": "75V",
-     "Tolerance": "±0.1%",
-     "Temperature Coefficient": "±25ppm/℃"
-    }
-   }
-  ],
-  "n_candidates": 55
+  "alternatives": [],
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -914,18 +542,18 @@
   "value": "10uF",
   "footprint": "C_0805_2012Metric",
   "qty_per_board": 2,
-  "fixed_lcsc": "",
-  "qty_needed": 10,
+  "fixed_lcsc": "C15850",
+  "qty_needed": 4,
   "stock_short": false,
   "low_margin": false,
-  "rule": "C 10uF >=16V X7R/X5R",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C15850",
    "mpn": "CL21A106KAYNNNE",
    "brand": "Samsung Electro-Mechanics",
    "pkg": "0805",
    "lib": "basic",
-   "stock": 5141651,
+   "stock": 5137998,
    "price_usd": 0.065,
    "describe": "10uF 25V X5R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
    "attrs": {
@@ -935,41 +563,8 @@
     "Temperature Coefficient": "X5R"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C77075",
-    "mpn": "GRM21BR61C106KE15L",
-    "brand": "Murata Electronics",
-    "pkg": "0805",
-    "lib": "extended",
-    "stock": 730795,
-    "price_usd": 0.04,
-    "describe": "10uF 16V X5R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
-    "attrs": {
-     "Voltage Rating": "16V",
-     "Tolerance": "±10%",
-     "Capacitance": "10uF",
-     "Temperature Coefficient": "X5R"
-    }
-   },
-   {
-    "lcsc": "C318691",
-    "mpn": "CL21A106KAYNNNG",
-    "brand": "Samsung Electro-Mechanics",
-    "pkg": "0805",
-    "lib": "extended",
-    "stock": 440524,
-    "price_usd": 0.1063,
-    "describe": "10uF 25V X5R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
-    "attrs": {
-     "Voltage Rating": "25V",
-     "Tolerance": "±10%",
-     "Capacitance": "10uF",
-     "Temperature Coefficient": "X5R"
-    }
-   }
-  ],
-  "n_candidates": 41
+  "alternatives": [],
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -983,18 +578,18 @@
   "value": "10k",
   "footprint": "R_0603_1608Metric",
   "qty_per_board": 6,
-  "fixed_lcsc": "",
-  "qty_needed": 30,
+  "fixed_lcsc": "C25804",
+  "qty_needed": 12,
   "stock_short": false,
   "low_margin": false,
-  "rule": "R 10k 1.0%",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C25804",
    "mpn": "0603WAF1002T5E",
    "brand": "UNI-ROYAL(Uniroyal Elec)",
    "pkg": "0603",
    "lib": "basic",
-   "stock": 21298587,
+   "stock": 21289338,
    "price_usd": 0.0018,
    "describe": "-55℃~+155℃ 100mW 10kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
    "attrs": {
@@ -1007,47 +602,8 @@
     "Temperature Coefficient": "±100ppm/℃"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C98220",
-    "mpn": "RC0603FR-0710KL",
-    "brand": "YAGEO",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 12453697,
-    "price_usd": 0.0034,
-    "describe": "-55℃~+155℃ 100mW 10kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
-    "attrs": {
-     "Resistance": "10kΩ",
-     "Operating Temperature": "-55℃~+155℃",
-     "Power(Watts)": "100mW",
-     "Type": "Thick Film Resistor",
-     "Voltage-Supply(Max)": "75V",
-     "Tolerance": "±1%",
-     "Temperature Coefficient": "±100ppm/℃"
-    }
-   },
-   {
-    "lcsc": "C116677",
-    "mpn": "AC0603FR-0710KL",
-    "brand": "YAGEO",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 3509176,
-    "price_usd": 0.005,
-    "describe": "-55℃~+155℃ 100mW 10kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
-    "attrs": {
-     "Resistance": "10kΩ",
-     "Operating Temperature": "-55℃~+155℃",
-     "Power(Watts)": "100mW",
-     "Type": "Thick Film Resistor",
-     "Voltage-Supply(Max)": "75V",
-     "Tolerance": "±1%",
-     "Temperature Coefficient": "±100ppm/℃"
-    }
-   }
-  ],
-  "n_candidates": 75
+  "alternatives": [],
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -1058,7 +614,7 @@
   "footprint": "DE15_Conec_33DSMT1-E15SNCT",
   "qty_per_board": 2,
   "fixed_lcsc": "",
-  "qty_needed": 10,
+  "qty_needed": 4,
   "stock_short": true,
   "low_margin": false,
   "rule": "exact MPN",
@@ -1093,18 +649,18 @@
   "value": "33R",
   "footprint": "R_0603_1608Metric",
   "qty_per_board": 4,
-  "fixed_lcsc": "",
-  "qty_needed": 20,
+  "fixed_lcsc": "C23140",
+  "qty_needed": 8,
   "stock_short": false,
   "low_margin": false,
-  "rule": "R 33R 1.0%",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C23140",
    "mpn": "0603WAF330JT5E",
    "brand": "UNI-ROYAL(Uniroyal Elec)",
    "pkg": "0603",
    "lib": "basic",
-   "stock": 5677235,
+   "stock": 5676786,
    "price_usd": 0.0025,
    "describe": "-55℃~+155℃ 100mW 33Ω 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
    "attrs": {
@@ -1117,47 +673,8 @@
     "Temperature Coefficient": "±100ppm/℃"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C2909394",
-    "mpn": "FRC0603F33R0TS",
-    "brand": "FOJAN",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 2671371,
-    "price_usd": 0.0027,
-    "describe": "-55℃~+155℃ 100mW 33Ω 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
-    "attrs": {
-     "Resistance": "33Ω",
-     "Operating Temperature": "-55℃~+155℃",
-     "Power(Watts)": "100mW",
-     "Type": "Thick Film Resistor",
-     "Voltage-Supply(Max)": "75V",
-     "Tolerance": "±1%",
-     "Temperature Coefficient": "±100ppm/℃"
-    }
-   },
-   {
-    "lcsc": "C108661",
-    "mpn": "RC0603FR-0733RL",
-    "brand": "YAGEO",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 832024,
-    "price_usd": 0.0032,
-    "describe": "-55℃~+155℃ 100mW 33Ω 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
-    "attrs": {
-     "Resistance": "33Ω",
-     "Operating Temperature": "-55℃~+155℃",
-     "Power(Watts)": "100mW",
-     "Type": "Thick Film Resistor",
-     "Voltage-Supply(Max)": "75V",
-     "Tolerance": "±1%",
-     "Temperature Coefficient": "±100ppm/℃"
-    }
-   }
-  ],
-  "n_candidates": 72
+  "alternatives": [],
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -1168,18 +685,18 @@
   "value": "100k",
   "footprint": "R_0603_1608Metric",
   "qty_per_board": 3,
-  "fixed_lcsc": "",
-  "qty_needed": 15,
+  "fixed_lcsc": "C25803",
+  "qty_needed": 6,
   "stock_short": false,
   "low_margin": false,
-  "rule": "R 100k 1.0%",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C25803",
    "mpn": "0603WAF1003T5E",
    "brand": "UNI-ROYAL(Uniroyal Elec)",
    "pkg": "0603",
    "lib": "basic",
-   "stock": 22426136,
+   "stock": 22419467,
    "price_usd": 0.0031,
    "describe": "-55℃~+155℃ 100kΩ 100mW 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
    "attrs": {
@@ -1192,47 +709,8 @@
     "Temperature Coefficient": "±100ppm/℃"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C14675",
-    "mpn": "RC0603FR-07100KL",
-    "brand": "YAGEO",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 8664372,
-    "price_usd": 0.0026,
-    "describe": "-55℃~+155℃ 100kΩ 100mW 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
-    "attrs": {
-     "Resistance": "100kΩ",
-     "Operating Temperature": "-55℃~+155℃",
-     "Power(Watts)": "100mW",
-     "Type": "Thick Film Resistor",
-     "Voltage-Supply(Max)": "75V",
-     "Tolerance": "±1%",
-     "Temperature Coefficient": "±100ppm/℃"
-    }
-   },
-   {
-    "lcsc": "C115320",
-    "mpn": "RS-03K1003FT",
-    "brand": "FH (Guangdong Fenghua Advanced Tech)",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 5941681,
-    "price_usd": 0.0034,
-    "describe": "-55℃~+155℃ 100kΩ 100mW 50V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
-    "attrs": {
-     "Resistance": "100kΩ",
-     "Operating Temperature": "-55℃~+155℃",
-     "Power(Watts)": "100mW",
-     "Type": "Thick Film Resistor",
-     "Voltage-Supply(Max)": "50V",
-     "Tolerance": "±1%",
-     "Temperature Coefficient": "±100ppm/℃"
-    }
-   }
-  ],
-  "n_candidates": 76
+  "alternatives": [],
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -1242,11 +720,11 @@
   "value": "SN74LVC2G17DBVR",
   "footprint": "SOT-23-6",
   "qty_per_board": 2,
-  "fixed_lcsc": "",
-  "qty_needed": 10,
+  "fixed_lcsc": "C19829674",
+  "qty_needed": 4,
   "stock_short": false,
   "low_margin": false,
-  "rule": "exact MPN",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C19829674",
    "mpn": "SN74LVC2G17DBVR",
@@ -1272,34 +750,8 @@
     "output type": "-"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C10429",
-    "mpn": "SN74LVC2G17DBVR",
-    "brand": "Texas Instruments",
-    "pkg": "SOT-23-6",
-    "lib": "extended",
-    "stock": 49962,
-    "price_usd": 0.2348,
-    "describe": "-40℃~+85℃ 1 1.65V~5.5V 10uA 2 32mA 32mA 5.4ns@3.3V,50pF 74LVC Schmitt trigger SOT-23-6 Buffers, Drivers, Receivers, Transceivers ROHS",
-    "attrs": {
-     "Input type": "Schmitt trigger",
-     "Operating Temperature": "-40℃~+85℃",
-     "Propagation Delay": "5.4ns@3.3V,50pF",
-     "Number of Bits per Element": "1",
-     "Voltage - Supply": "1.65V~5.5V",
-     "Channel Type": "Unidirectional",
-     "Quiescent Current": "10uA",
-     "Current - Output High(IOH)": "32mA",
-     "Features": "Power-off isolation",
-     "Number of Elements": "2",
-     "Logic Family": "74LVC",
-     "Current - Output Low(IOL)": "32mA",
-     "output type": "-"
-    }
-   }
-  ],
-  "n_candidates": 2
+  "alternatives": [],
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -1308,18 +760,18 @@
   "value": "SN74LVC1G17DBVR",
   "footprint": "SOT-23-5",
   "qty_per_board": 1,
-  "fixed_lcsc": "",
-  "qty_needed": 5,
+  "fixed_lcsc": "C7836",
+  "qty_needed": 2,
   "stock_short": false,
   "low_margin": false,
-  "rule": "exact MPN",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C7836",
    "mpn": "SN74LVC1G17DBVR",
    "brand": "Texas Instruments",
    "pkg": "SOT-23-5",
    "lib": "extended",
-   "stock": 62551,
+   "stock": 62485,
    "price_usd": 0.1678,
    "describe": "-40℃~+125℃ 1 1 1.65V~5.5V 10uA 32mA 32mA 4.6ns@3.3V,15pF 74LVC Push-pull Schmitt trigger Unidirectional SOT-23-5 Buffers, Drivers, Receivers, Transceivers ROHS",
    "attrs": {
@@ -1338,38 +790,8 @@
     "Current - Output Low(IOL)": "32mA"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C19829662",
-    "mpn": "SN74LVC1G17DBVR",
-    "brand": "TECH PUBLIC",
-    "pkg": "SOT-23-5",
-    "lib": "extended",
-    "stock": 11967,
-    "price_usd": 0.046,
-    "describe": "-40℃~+125℃ 1 1 1.2V、1.9V、2.3V、2.4V 1.65V~5.5V 100mV、300mV、400mV、550mV 10uA 32mA 32mA 74LVC 8.3ns@5V,50pF SOT-23-5 Logic Gates ROHS",
-    "attrs": {
-     "Output Logic Level - Low": "100mV、300mV、400mV、550mV",
-     "Operating Temperature": "-40℃~+125℃",
-     "Propagation Delay": "8.3ns@5V,50pF",
-     "Output Logic Level - High": "1.2V、1.9V、2.3V、2.4V",
-     "Logic Type": "-",
-     "Current - Output High(IOH)": "32mA",
-     "Input Logic Level - Low": "-",
-     "Input type": "Schmitt trigger",
-     "Series": "74LVC",
-     "Input Logic Level - High": "-",
-     "Voltage - Supply": "1.65V~5.5V",
-     "Number of Gates": "1",
-     "Quiescent Current": "10uA",
-     "Features": "Local shutdown mode",
-     "Inputs per Gates": "1",
-     "output type": "-",
-     "Current - Output Low(IOL)": "32mA"
-    }
-   }
-  ],
-  "n_candidates": 2
+  "alternatives": [],
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -1379,18 +801,18 @@
   "value": "22R",
   "footprint": "R_0603_1608Metric",
   "qty_per_board": 2,
-  "fixed_lcsc": "",
-  "qty_needed": 10,
+  "fixed_lcsc": "C23345",
+  "qty_needed": 4,
   "stock_short": false,
   "low_margin": false,
-  "rule": "R 22R 1.0%",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C23345",
    "mpn": "0603WAF220JT5E",
    "brand": "UNI-ROYAL(Uniroyal Elec)",
    "pkg": "0603",
    "lib": "basic",
-   "stock": 9241742,
+   "stock": 9238770,
    "price_usd": 0.0017,
    "describe": "-55℃~+155℃ 100mW 22Ω 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
    "attrs": {
@@ -1403,47 +825,8 @@
     "Temperature Coefficient": "±100ppm/℃"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C2930077",
-    "mpn": "FRC0603F22R0TS",
-    "brand": "FOJAN",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 1564370,
-    "price_usd": 0.0026,
-    "describe": "-55℃~+155℃ 100mW 22Ω 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
-    "attrs": {
-     "Resistance": "22Ω",
-     "Operating Temperature": "-55℃~+155℃",
-     "Power(Watts)": "100mW",
-     "Type": "Thick Film Resistor",
-     "Voltage-Supply(Max)": "75V",
-     "Tolerance": "±1%",
-     "Temperature Coefficient": "±100ppm/℃"
-    }
-   },
-   {
-    "lcsc": "C22356474",
-    "mpn": "RCA0322RFLF",
-    "brand": "HKR(Hong Kong Resistors)",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 401862,
-    "price_usd": 0.0017,
-    "describe": "-55℃~+155℃ 100mW 22Ω 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
-    "attrs": {
-     "Resistance": "22Ω",
-     "Operating Temperature": "-55℃~+155℃",
-     "Power(Watts)": "100mW",
-     "Type": "Thick Film Resistor",
-     "Voltage-Supply(Max)": "75V",
-     "Tolerance": "±1%",
-     "Temperature Coefficient": "±100ppm/℃"
-    }
-   }
-  ],
-  "n_candidates": 62
+  "alternatives": [],
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -1453,7 +836,7 @@
   "footprint": "USB_C_Receptacle_HRO_TYPE-C-31-M-12",
   "qty_per_board": 1,
   "fixed_lcsc": "C165948",
-  "qty_needed": 5,
+  "qty_needed": 2,
   "stock_short": false,
   "low_margin": false,
   "rule": "manifest LCSC (verify)",
@@ -1463,7 +846,7 @@
    "brand": "Korean Hroparts Elec",
    "pkg": "SMD",
    "lib": "extended",
-   "stock": 440774,
+   "stock": 440764,
    "price_usd": 0.1856,
    "describe": "-30℃~+80℃ 1 10,000 cycles 16P 20V 5A 7.35mm Female Surface Mount, Right Angle Type-C SMD USB Connectors ROHS",
    "attrs": {
@@ -1491,18 +874,18 @@
   "value": "5.1k 1%",
   "footprint": "R_0603_1608Metric",
   "qty_per_board": 2,
-  "fixed_lcsc": "",
-  "qty_needed": 10,
+  "fixed_lcsc": "C23186",
+  "qty_needed": 4,
   "stock_short": false,
   "low_margin": false,
-  "rule": "R 5.1k 1% 1.0%",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C23186",
    "mpn": "0603WAF5101T5E",
    "brand": "UNI-ROYAL(Uniroyal Elec)",
    "pkg": "0603",
    "lib": "basic",
-   "stock": 25569538,
+   "stock": 25568811,
    "price_usd": 0.0015,
    "describe": "-55℃~+155℃ 100mW 5.1kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
    "attrs": {
@@ -1515,47 +898,8 @@
     "Temperature Coefficient": "±100ppm/℃"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C2907044",
-    "mpn": "FRC0603F5101TS",
-    "brand": "FOJAN",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 6196237,
-    "price_usd": 0.0022,
-    "describe": "-55℃~+155℃ 100mW 5.1kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
-    "attrs": {
-     "Resistance": "5.1kΩ",
-     "Operating Temperature": "-55℃~+155℃",
-     "Power(Watts)": "100mW",
-     "Type": "Thick Film Resistor",
-     "Voltage-Supply(Max)": "75V",
-     "Tolerance": "±1%",
-     "Temperature Coefficient": "±100ppm/℃"
-    }
-   },
-   {
-    "lcsc": "C105580",
-    "mpn": "RC0603FR-075K1L",
-    "brand": "YAGEO",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 6338523,
-    "price_usd": 0.0023,
-    "describe": "-55℃~+155℃ 100mW 5.1kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
-    "attrs": {
-     "Resistance": "5.1kΩ",
-     "Operating Temperature": "-55℃~+155℃",
-     "Power(Watts)": "100mW",
-     "Type": "Thick Film Resistor",
-     "Voltage-Supply(Max)": "75V",
-     "Tolerance": "±1%",
-     "Temperature Coefficient": "±100ppm/℃"
-    }
-   }
-  ],
-  "n_candidates": 78
+  "alternatives": [],
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -1564,11 +908,11 @@
   "value": "1A hold - select",
   "footprint": "Fuse_1206_3216Metric",
   "qty_per_board": 1,
-  "fixed_lcsc": "",
-  "qty_needed": 5,
+  "fixed_lcsc": "C269119",
+  "qty_needed": 2,
   "stock_short": false,
   "low_margin": false,
-  "rule": "PTC 1206 hold 1.0-1.5A >=6V",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C269119",
    "mpn": "SMD1206B110TFT",
@@ -1594,59 +938,8 @@
     "Resistance - Post Trip (R1) (Max)": "210mΩ"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C21714343",
-    "mpn": "BSMD1206-110-30V",
-    "brand": "BHFUSE",
-    "pkg": "1206",
-    "lib": "extended",
-    "stock": 33787,
-    "price_usd": 0.1497,
-    "describe": "-40℃~+85℃ 1.1A 1W 2.2A 270mΩ 300ms 30V 40A 40mΩ 1206 Resettable Fuses ROHS",
-    "attrs": {
-     "Operating Temperature": "-40℃~+85℃",
-     "Power Dissipation": "1W",
-     "Voltage - Max": "30V",
-     "Time to Trip(Max)": "300ms",
-     "Length": "-",
-     "Resistance - Initial (Ri) (Min)": "40mΩ",
-     "Trip Current": "2.2A",
-     "Pitch": "-",
-     "Hold Current": "1.1A",
-     "Height": "-",
-     "Current - Max": "40A",
-     "Width": "-",
-     "Resistance - Post Trip (R1) (Max)": "270mΩ"
-    }
-   },
-   {
-    "lcsc": "C48985884",
-    "mpn": "1206L110/33NR",
-    "brand": "LUTE",
-    "pkg": "1206",
-    "lib": "extended",
-    "stock": 28416,
-    "price_usd": 0.0863,
-    "describe": "-40℃~+85℃ 1.1A 1.2W 1.6mm 1.9mm 2.2A 270mΩ 3.6mm 300ms 33V 40A 40mΩ 1206 Resettable Fuses ROHS",
-    "attrs": {
-     "Operating Temperature": "-40℃~+85℃",
-     "Voltage - Max": "33V",
-     "Power Dissipation": "1.2W",
-     "Time to Trip(Max)": "300ms",
-     "Length": "3.6mm",
-     "Resistance - Initial (Ri) (Min)": "40mΩ",
-     "Trip Current": "2.2A",
-     "Pitch": "-",
-     "Hold Current": "1.1A",
-     "Height": "1.6mm",
-     "Current - Max": "40A",
-     "Width": "1.9mm",
-     "Resistance - Post Trip (R1) (Max)": "270mΩ"
-    }
-   }
-  ],
-  "n_candidates": 51
+  "alternatives": [],
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -1657,11 +950,11 @@
   "value": "TPS62160DSGR",
   "footprint": "WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm",
   "qty_per_board": 3,
-  "fixed_lcsc": "",
-  "qty_needed": 15,
+  "fixed_lcsc": "C324077",
+  "qty_needed": 6,
   "stock_short": false,
   "low_margin": false,
-  "rule": "exact MPN",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C324077",
    "mpn": "TPS62160DSGR",
@@ -1669,7 +962,7 @@
    "pkg": "WSON-8-EP(2x2)",
    "lib": "extended",
    "stock": 12390,
-   "price_usd": 0.7018,
+   "price_usd": 0.8772,
    "describe": "-40℃~+125℃@(TJ) 1 17uA 1A 2.25MHz 3V~17V 900mV~6V Adjustable Buck Buck Built-in Yes WSON-8-EP(2x2) DC-DC Converters ROHS",
    "attrs": {
     "Operating Temperature": "-40℃~+125℃@(TJ)",
@@ -1700,9 +993,9 @@
   "footprint": "L_TDK_VLS4012CX",
   "qty_per_board": 3,
   "fixed_lcsc": "C7413169",
-  "qty_needed": 15,
+  "qty_needed": 6,
   "stock_short": false,
-  "low_margin": true,
+  "low_margin": false,
   "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C7413169",
@@ -1732,11 +1025,11 @@
   "value": "312k 0.1%",
   "footprint": "R_0603_1608Metric",
   "qty_per_board": 1,
-  "fixed_lcsc": "",
-  "qty_needed": 5,
+  "fixed_lcsc": "C861315",
+  "qty_needed": 2,
   "stock_short": false,
   "low_margin": false,
-  "rule": "R 312k 0.1% 0.1% thin film",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C861315",
    "mpn": "RT0603BRD07312KL",
@@ -1756,7 +1049,7 @@
    }
   },
   "alternatives": [],
-  "n_candidates": 5
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -1767,11 +1060,11 @@
   "value": "100k 0.1%",
   "footprint": "R_0603_1608Metric",
   "qty_per_board": 3,
-  "fixed_lcsc": "",
-  "qty_needed": 15,
+  "fixed_lcsc": "C122538",
+  "qty_needed": 6,
   "stock_short": false,
   "low_margin": false,
-  "rule": "R 100k 0.1% 0.1% thin film",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C122538",
    "mpn": "RT0603BRD07100KL",
@@ -1791,47 +1084,8 @@
     "Temperature Coefficient": "±25ppm/℃"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C326758",
-    "mpn": "RT0603BRE07100KL",
-    "brand": "YAGEO",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 226812,
-    "price_usd": 0.0472,
-    "describe": "-55℃~+155℃ 100kΩ 100mW 75V Thin Film Resistor ±0.1% ±50ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
-    "attrs": {
-     "Resistance": "100kΩ",
-     "Operating Temperature": "-55℃~+155℃",
-     "Power(Watts)": "100mW",
-     "Type": "Thin Film Resistor",
-     "Voltage-Supply(Max)": "75V",
-     "Tolerance": "±0.1%",
-     "Temperature Coefficient": "±50ppm/℃"
-    }
-   },
-   {
-    "lcsc": "C328419",
-    "mpn": "PTFR0603B100KP9",
-    "brand": "RESI",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 197634,
-    "price_usd": 0.0395,
-    "describe": "-55℃~+125℃ 100V 100kΩ 100mW Thin Film Resistor ±0.1% ±25ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
-    "attrs": {
-     "Resistance": "100kΩ",
-     "Operating Temperature": "-55℃~+125℃",
-     "Power(Watts)": "100mW",
-     "Type": "Thin Film Resistor",
-     "Voltage-Supply(Max)": "100V",
-     "Tolerance": "±0.1%",
-     "Temperature Coefficient": "±25ppm/℃"
-    }
-   }
-  ],
-  "n_candidates": 84
+  "alternatives": [],
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -1842,18 +1096,18 @@
   "value": "10uF 10V",
   "footprint": "C_0805_2012Metric",
   "qty_per_board": 3,
-  "fixed_lcsc": "",
-  "qty_needed": 15,
+  "fixed_lcsc": "C15850",
+  "qty_needed": 6,
   "stock_short": false,
   "low_margin": false,
-  "rule": "C 10uF >=16V X7R/X5R",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C15850",
    "mpn": "CL21A106KAYNNNE",
    "brand": "Samsung Electro-Mechanics",
    "pkg": "0805",
    "lib": "basic",
-   "stock": 5141651,
+   "stock": 5137998,
    "price_usd": 0.065,
    "describe": "10uF 25V X5R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
    "attrs": {
@@ -1863,41 +1117,8 @@
     "Temperature Coefficient": "X5R"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C77075",
-    "mpn": "GRM21BR61C106KE15L",
-    "brand": "Murata Electronics",
-    "pkg": "0805",
-    "lib": "extended",
-    "stock": 730795,
-    "price_usd": 0.04,
-    "describe": "10uF 16V X5R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
-    "attrs": {
-     "Voltage Rating": "16V",
-     "Tolerance": "±10%",
-     "Capacitance": "10uF",
-     "Temperature Coefficient": "X5R"
-    }
-   },
-   {
-    "lcsc": "C318691",
-    "mpn": "CL21A106KAYNNNG",
-    "brand": "Samsung Electro-Mechanics",
-    "pkg": "0805",
-    "lib": "extended",
-    "stock": 440524,
-    "price_usd": 0.1063,
-    "describe": "10uF 25V X5R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
-    "attrs": {
-     "Voltage Rating": "25V",
-     "Tolerance": "±10%",
-     "Capacitance": "10uF",
-     "Temperature Coefficient": "X5R"
-    }
-   }
-  ],
-  "n_candidates": 41
+  "alternatives": [],
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -1908,18 +1129,18 @@
   "value": "22uF 10V",
   "footprint": "C_0805_2012Metric",
   "qty_per_board": 3,
-  "fixed_lcsc": "",
-  "qty_needed": 15,
+  "fixed_lcsc": "C45783",
+  "qty_needed": 6,
   "stock_short": false,
   "low_margin": false,
-  "rule": "C 22uF >=10V X7R/X5R",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C45783",
    "mpn": "CL21A226MAQNNNE",
    "brand": "Samsung Electro-Mechanics",
    "pkg": "0805",
    "lib": "basic",
-   "stock": 4064318,
+   "stock": 4062429,
    "price_usd": 0.22,
    "describe": "22uF 25V X5R ±20% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
    "attrs": {
@@ -1929,41 +1150,8 @@
     "Temperature Coefficient": "X5R"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C98190",
-    "mpn": "CL21A226MOQNNNE",
-    "brand": "Samsung Electro-Mechanics",
-    "pkg": "0805",
-    "lib": "extended",
-    "stock": 969140,
-    "price_usd": 0.1047,
-    "describe": "16V 22uF X5R ±20% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
-    "attrs": {
-     "Voltage Rating": "16V",
-     "Tolerance": "±20%",
-     "Capacitance": "22uF",
-     "Temperature Coefficient": "X5R"
-    }
-   },
-   {
-    "lcsc": "C29277",
-    "mpn": "CL21A226MPQNNNE",
-    "brand": "Samsung Electro-Mechanics",
-    "pkg": "0805",
-    "lib": "extended",
-    "stock": 781990,
-    "price_usd": 0.0816,
-    "describe": "10V 22uF X5R ±20% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
-    "attrs": {
-     "Voltage Rating": "10V",
-     "Tolerance": "±20%",
-     "Capacitance": "22uF",
-     "Temperature Coefficient": "X5R"
-    }
-   }
-  ],
-  "n_candidates": 42
+  "alternatives": [],
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -1972,11 +1160,11 @@
   "value": "137k 0.1%",
   "footprint": "R_0603_1608Metric",
   "qty_per_board": 1,
-  "fixed_lcsc": "",
-  "qty_needed": 5,
+  "fixed_lcsc": "C861114",
+  "qty_needed": 2,
   "stock_short": false,
   "low_margin": false,
-  "rule": "R 137k 0.1% 0.1% thin film",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C861114",
    "mpn": "RT0603BRD07137KL",
@@ -1997,7 +1185,7 @@
    }
   },
   "alternatives": [],
-  "n_candidates": 31
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -2006,11 +1194,11 @@
   "value": "49.9k 0.1%",
   "footprint": "R_0603_1608Metric",
   "qty_per_board": 1,
-  "fixed_lcsc": "",
-  "qty_needed": 5,
+  "fixed_lcsc": "C705780",
+  "qty_needed": 2,
   "stock_short": false,
   "low_margin": false,
-  "rule": "R 49.9k 0.1% 0.1% thin film",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C705780",
    "mpn": "RT0603BRD0749K9L",
@@ -2030,70 +1218,38 @@
     "Temperature Coefficient": "±25ppm/℃"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C55205306",
-    "mpn": "CRF0603Q4992BN",
-    "brand": "SIE",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 50000,
-    "price_usd": 0.035,
-    "describe": "-55℃~+155℃ 100mW 49.9kΩ 75V Thin Film Resistor ±0.1% ±25ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
-    "attrs": {
-     "Resistance": "49.9kΩ",
-     "Operating Temperature": "-55℃~+155℃",
-     "Power(Watts)": "100mW",
-     "Type": "Thin Film Resistor",
-     "Voltage-Supply(Max)": "75V",
-     "Tolerance": "±0.1%",
-     "Temperature Coefficient": "±25ppm/℃"
-    }
-   },
-   {
-    "lcsc": "C860414",
-    "mpn": "RT0603BRB0749K9L",
-    "brand": "YAGEO",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 15017,
-    "price_usd": 0.2171,
-    "describe": "-55℃~+155℃ 100mW 49.9kΩ 75V Thin Film Resistor ±0.1% ±10ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
-    "attrs": {
-     "Resistance": "49.9kΩ",
-     "Operating Temperature": "-55℃~+155℃",
-     "Power(Watts)": "100mW",
-     "Type": "Thin Film Resistor",
-     "Voltage-Supply(Max)": "75V",
-     "Tolerance": "±0.1%",
-     "Temperature Coefficient": "±10ppm/℃"
-    }
-   }
-  ],
-  "n_candidates": 77
+  "alternatives": [],
+  "n_candidates": 1
  },
  {
   "refs": [
    "Y1"
   ],
-  "value": "27MHz ECS-3225MVLC",
+  "value": "27MHz OT2EL4C4JI-111OLP-27M",
   "footprint": "OSC_ECS-3225MVLC_3.2x2.5",
   "qty_per_board": 1,
-  "fixed_lcsc": "",
-  "qty_needed": 5,
-  "stock_short": true,
+  "fixed_lcsc": "C5203549",
+  "qty_needed": 2,
+  "stock_short": false,
   "low_margin": false,
-  "rule": "exact MPN",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
-   "lcsc": "C17239793",
-   "mpn": "ECS-3225MVLC-270-CN-TR",
-   "brand": "ECS",
+   "lcsc": "C5203549",
+   "mpn": "OT2EL4C4JI-111OLP-27M",
+   "brand": "YXC Crystal Oscillators",
    "pkg": "SMD3225-4P",
    "lib": "extended",
-   "stock": 4,
-   "price_usd": 1.3564,
-   "describe": "SMD3225-4P Crystal Oscillators ROHS",
-   "attrs": {}
+   "stock": 34524,
+   "price_usd": 0.4776,
+   "describe": "-40℃~+85℃ 1.8V~3.3V 27MHz CMOS ±10ppm ±20ppm SMD3225-4P Crystal Oscillators ROHS",
+   "attrs": {
+    "Operating Temperature": "-40℃~+85℃",
+    "Normal temperature Frequency Tolerance": "±10ppm",
+    "Output Type": "CMOS",
+    "Voltage - Supply": "1.8V~3.3V",
+    "Frequency Stability": "±20ppm",
+    "Frequency": "27MHz"
+   }
   },
   "alternatives": [],
   "n_candidates": 1
@@ -2108,11 +1264,11 @@
   "value": "220R@100MHz",
   "footprint": "L_0603_1608Metric",
   "qty_per_board": 4,
-  "fixed_lcsc": "",
-  "qty_needed": 20,
+  "fixed_lcsc": "C304314",
+  "qty_needed": 8,
   "stock_short": false,
   "low_margin": false,
-  "rule": "FB 220R@100MHz >=0.5A",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C304314",
    "mpn": "HCB1608KF-221T20",
@@ -2131,45 +1287,8 @@
     "DC Resistance(DCR)": "100mΩ"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C76815",
-    "mpn": "MPZ1608S221ATA00",
-    "brand": "TDK",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 588689,
-    "price_usd": 0.0202,
-    "describe": "-55℃~+125℃ 1 2.2A 220Ω@100MHz 50mΩ ±25% 0603 Ferrite Beads ROHS",
-    "attrs": {
-     "Operating Temperature": "-55℃~+125℃",
-     "Impedance @ Frequency": "220Ω@100MHz",
-     "Tolerance": "±25%",
-     "Current Rating": "2.2A",
-     "Number of Circuits": "1",
-     "DC Resistance(DCR)": "50mΩ"
-    }
-   },
-   {
-    "lcsc": "C85827",
-    "mpn": "BLM18EG221SN1D",
-    "brand": "Murata Electronics",
-    "pkg": "0603",
-    "lib": "extended",
-    "stock": 357777,
-    "price_usd": 0.0657,
-    "describe": "-55℃~+125℃ 1 220Ω@100MHz 2A 50mΩ ±25% 0603 Ferrite Beads ROHS",
-    "attrs": {
-     "Operating Temperature": "-55℃~+125℃",
-     "Impedance @ Frequency": "220Ω@100MHz",
-     "Tolerance": "±25%",
-     "Current Rating": "2A",
-     "Number of Circuits": "1",
-     "DC Resistance(DCR)": "50mΩ"
-    }
-   }
-  ],
-  "n_candidates": 72
+  "alternatives": [],
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -2179,18 +1298,18 @@
   "value": "2.2k",
   "footprint": "R_0402_1005Metric",
   "qty_per_board": 2,
-  "fixed_lcsc": "",
-  "qty_needed": 10,
+  "fixed_lcsc": "C25879",
+  "qty_needed": 4,
   "stock_short": false,
   "low_margin": false,
-  "rule": "R 2.2k 1.0%",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C25879",
    "mpn": "0402WGF2201TCE",
    "brand": "UNI-ROYAL(Uniroyal Elec)",
    "pkg": "0402",
    "lib": "basic",
-   "stock": 2334093,
+   "stock": 2334053,
    "price_usd": 0.0053,
    "describe": "-55℃~+155℃ 2.2kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS",
    "attrs": {
@@ -2203,47 +1322,8 @@
     "Temperature Coefficient": "±100ppm/℃"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C22369570",
-    "mpn": "RCA022K2FLF",
-    "brand": "HKR(Hong Kong Resistors)",
-    "pkg": "0402",
-    "lib": "extended",
-    "stock": 3333073,
-    "price_usd": 0.001,
-    "describe": "-55℃~+155℃ 2.2kΩ 50V 62.5mW Thick Film Resistor ±1% ±200ppm/℃ 0402 Chip Resistor - Surface Mount ROHS",
-    "attrs": {
-     "Resistance": "2.2kΩ",
-     "Operating Temperature": "-55℃~+155℃",
-     "Power(Watts)": "62.5mW",
-     "Type": "Thick Film Resistor",
-     "Voltage-Supply(Max)": "50V",
-     "Tolerance": "±1%",
-     "Temperature Coefficient": "±200ppm/℃"
-    }
-   },
-   {
-    "lcsc": "C2906865",
-    "mpn": "FRC0402F2201TS",
-    "brand": "FOJAN",
-    "pkg": "0402",
-    "lib": "extended",
-    "stock": 1339681,
-    "price_usd": 0.0021,
-    "describe": "-55℃~+155℃ 2.2kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS",
-    "attrs": {
-     "Resistance": "2.2kΩ",
-     "Operating Temperature": "-55℃~+155℃",
-     "Power(Watts)": "62.5mW",
-     "Type": "Thick Film Resistor",
-     "Voltage-Supply(Max)": "50V",
-     "Tolerance": "±1%",
-     "Temperature Coefficient": "±100ppm/℃"
-    }
-   }
-  ],
-  "n_candidates": 66
+  "alternatives": [],
+  "n_candidates": 1
  },
  {
   "refs": [
@@ -2253,18 +1333,18 @@
   "value": "10k",
   "footprint": "R_0402_1005Metric",
   "qty_per_board": 2,
-  "fixed_lcsc": "",
-  "qty_needed": 10,
+  "fixed_lcsc": "C25744",
+  "qty_needed": 4,
   "stock_short": false,
   "low_margin": false,
-  "rule": "R 10k 1.0%",
+  "rule": "manifest LCSC (verify)",
   "chosen": {
    "lcsc": "C25744",
    "mpn": "0402WGF1002TCE",
    "brand": "UNI-ROYAL(Uniroyal Elec)",
    "pkg": "0402",
    "lib": "basic",
-   "stock": 22263715,
+   "stock": 22263491,
    "price_usd": 0.0034,
    "describe": "-55℃~+155℃ 10kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS",
    "attrs": {
@@ -2277,46 +1357,7 @@
     "Temperature Coefficient": "±100ppm/℃"
    }
   },
-  "alternatives": [
-   {
-    "lcsc": "C60490",
-    "mpn": "RC0402FR-0710KL",
-    "brand": "YAGEO",
-    "pkg": "0402",
-    "lib": "extended",
-    "stock": 9112841,
-    "price_usd": 0.0023,
-    "describe": "-55℃~+155℃ 10kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS",
-    "attrs": {
-     "Resistance": "10kΩ",
-     "Operating Temperature": "-55℃~+155℃",
-     "Power(Watts)": "62.5mW",
-     "Type": "Thick Film Resistor",
-     "Voltage-Supply(Max)": "50V",
-     "Tolerance": "±1%",
-     "Temperature Coefficient": "±100ppm/℃"
-    }
-   },
-   {
-    "lcsc": "C144807",
-    "mpn": "AC0402FR-0710KL",
-    "brand": "YAGEO",
-    "pkg": "0402",
-    "lib": "extended",
-    "stock": 2463697,
-    "price_usd": 0.0025,
-    "describe": "-55℃~+155℃ 10kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS",
-    "attrs": {
-     "Resistance": "10kΩ",
-     "Operating Temperature": "-55℃~+155℃",
-     "Power(Watts)": "62.5mW",
-     "Type": "Thick Film Resistor",
-     "Voltage-Supply(Max)": "50V",
-     "Tolerance": "±1%",
-     "Temperature Coefficient": "±100ppm/℃"
-    }
-   }
-  ],
-  "n_candidates": 72
+  "alternatives": [],
+  "n_candidates": 1
  }
 ]

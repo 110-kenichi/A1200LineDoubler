@@ -2637,8 +2637,8 @@
       "symbol": "DE15_Female",
       "footprint": "Amiga:DE15_Conec_33DSMT1-E15SNCT",
       "mpn": "33DSMT1-E15SNCT",
-      "lcsc": "",
-      "notes": "SMT candidate. JLC procurement and custom footprint pending.",
+      "lcsc": "C3146802",
+      "notes": "LCSC stock 0 at selection (2026-09-29): JLCPCB Global Sourcing or consigned part. Must stay a 3-row DE-15 (CLAUDE.md).",
       "pins": {
         "1": {
           "name": "RED",
@@ -2729,8 +2729,8 @@
       "symbol": "DE15_Female",
       "footprint": "Amiga:DE15_Conec_33DSMT1-E15SNCT",
       "mpn": "33DSMT1-E15SNCT",
-      "lcsc": "",
-      "notes": "SMT candidate. JLC procurement and custom footprint pending.",
+      "lcsc": "C3146802",
+      "notes": "LCSC stock 0 at selection (2026-09-29): JLCPCB Global Sourcing or consigned part. Must stay a 3-row DE-15 (CLAUDE.md).",
       "pins": {
         "1": {
           "name": "RED",
@@ -4042,12 +4042,12 @@
     },
     "Y1": {
       "reference": "Y1",
-      "value": "27MHz ECS-3225MVLC",
+      "value": "27MHz OT2EL4C4JI-111OLP-27M",
       "symbol": "OSC_3225",
       "footprint": "Amiga:OSC_ECS-3225MVLC_3.2x2.5",
-      "mpn": "ECS-3225MVLC-270-CN-TR",
-      "lcsc": "",
-      "notes": "27 MHz, +/-25 ppm, 1.6-3.6V CMOS; JLC sourcing pending.",
+      "mpn": "OT2EL4C4JI-111OLP-27M",
+      "lcsc": "C5203549",
+      "notes": "YXC YSO110TR series; replaces ECS-3225MVLC-270-CN-TR (LCSC stock 4)",
       "pins": {
         "1": {
           "name": "OE",

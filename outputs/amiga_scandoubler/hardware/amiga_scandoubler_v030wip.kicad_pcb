@@ -218,7 +218,7 @@
         (effects (font (size 0.8 0.8) (thickness 0.15)))
       (tstamp 7c6b8d79-8c80-47a1-b7b9-4e2194898145)
     )
-    (fp_text value "27MHz ECS-3225MVLC" (at 0 6) (layer "F.Fab") hide
+    (fp_text value "27MHz OT2EL4C4JI-111OLP-27M" (at 0 6) (layer "F.Fab") hide
         (effects (font (size 0.8 0.8) (thickness 0.1)))
       (tstamp de37f7a1-9482-4b48-93fe-3d065a5a7a98)
     )

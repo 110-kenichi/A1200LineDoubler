@@ -1,5 +1,5 @@
-** Drc report for ../../../../outputs/amiga_scandoubler/hardware/amiga_scandoubler_v030wip.kicad_pcb **
-** Created on 2026-09-29 13:17:12 **
+** Drc report for outputs/amiga_scandoubler/hardware/amiga_scandoubler_v030wip.kicad_pcb **
+** Created on 2026-09-29 14:08:51 **
 
 ** Found 141 DRC violations **
 [lib_footprint_issues]: The current configuration does not include the library 'Amiga'.
