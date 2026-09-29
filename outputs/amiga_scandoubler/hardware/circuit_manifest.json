@@ -4599,6 +4599,50 @@
         }
       },
       "sheet": "02_fpga"
+    },
+    "C72": {
+      "reference": "C72",
+      "value": "100nF",
+      "symbol": "C",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "mpn": "100nF",
+      "lcsc": "",
+      "notes": "3V3 return decap next to REF_27M via, added in v0.30wip review",
+      "pins": {
+        "1": {
+          "name": "~",
+          "type": "passive",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "~",
+          "type": "passive",
+          "net": "GND"
+        }
+      },
+      "sheet": "02_fpga"
+    },
+    "C73": {
+      "reference": "C73",
+      "value": "100nF",
+      "symbol": "C",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "mpn": "100nF",
+      "lcsc": "",
+      "notes": "3V3 return decap next to REF_27M via, added in v0.30wip review",
+      "pins": {
+        "1": {
+          "name": "~",
+          "type": "passive",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "~",
+          "type": "passive",
+          "net": "GND"
+        }
+      },
+      "sheet": "02_fpga"
     }
   },
   "nets": {
@@ -5694,6 +5738,14 @@
       [
         "C71",
         "2"
+      ],
+      [
+        "C72",
+        "2"
+      ],
+      [
+        "C73",
+        "2"
       ]
     ],
     "I2C_SCL": [
@@ -6099,6 +6151,14 @@
       ],
       [
         "C71",
+        "1"
+      ],
+      [
+        "C72",
+        "1"
+      ],
+      [
+        "C73",
         "1"
       ]
     ],
