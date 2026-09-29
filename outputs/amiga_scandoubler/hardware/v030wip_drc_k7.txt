@@ -1,5 +1,5 @@
-** Drc report for ../../../../outputs/amiga_scandoubler/hardware/amiga_scandoubler_v030wip.kicad_pcb **
-** Created on 2026-09-29 03:55:25 **
+** Drc report for /tmp/claude-0/-home-user-A1200LineDoubler/d0f14dc9-1427-5a10-9449-2ee42efc957d/scratchpad/p8/frm.kicad_pcb **
+** Created on 2026-09-29 04:28:44 **
 
 ** Found 350 DRC violations **
 [silk_overlap]: Silkscreen overlap
@@ -1077,35 +1077,7 @@
     @(95.0000 mm, 95.0000 mm): Line on Edge.Cuts
     @(52.2000 mm, 93.3500 mm): Line on F.Silkscreen
 
-** Found 7 unconnected pads **
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(14.0000 mm, 36.2750 mm): Pad 1 [RIN_3] of C4 on F.Cu
-    @(18.3500 mm, 40.0000 mm): Pad 9 [RIN_3] of U1 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(12.0000 mm, 41.2750 mm): Pad 1 [RIN_2] of C5 on F.Cu
-    @(18.3500 mm, 40.5000 mm): Pad 10 [RIN_2] of U1 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(12.0000 mm, 32.7250 mm): Pad 2 [RIN_1] of C48 on F.Cu
-    @(18.3500 mm, 41.0000 mm): Pad 11 [RIN_1] of U1 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(14.7250 mm, 49.5000 mm): Pad 1 [BIN_2] of C7 on F.Cu
-    @(18.3500 mm, 44.0000 mm): Pad 17 [BIN_2] of U1 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(16.2750 mm, 51.5000 mm): Pad 2 [BIN_1] of C50 on F.Cu
-    @(18.3500 mm, 44.5000 mm): Pad 18 [BIN_1] of U1 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(20.2250 mm, 28.0000 mm): Pad 1 [GIN_3] of C10 on F.Cu
-    @(21.0000 mm, 34.3500 mm): Pad 98 [GIN_3] of U1 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(15.0000 mm, 31.2750 mm): Pad 1 [SOGIN_2] of C11 on F.Cu
-    @(20.5000 mm, 34.3500 mm): Pad 99 [SOGIN_2] of U1 on F.Cu
+** Found 0 unconnected pads **
 
 ** Found 0 Footprint errors **
 
