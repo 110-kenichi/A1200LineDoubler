@@ -1,8 +1,16 @@
 # Amiga 1200 15kHz → 31kHz スキャンダブラー
 
-2026-09-27 / 出力同期配線版 v0.27 / **製造用リリースではありません**
+2026-09-29 / 全配線完了・製造データ一次版 v0.30 / **製造用リリースではありません（発注前の確認が残っている）**
 
-## この版に含まれるもの
+## v0.30（最新）
+
+- 変更点・検査結果・残作業：`revision_0.30.md`（作業ログは `revision_0.30wip.md`）
+- 基板：`hardware/amiga_scandoubler_v030wip.kicad_pcb`（KiCad 7 形式。DRC エラー0・未接続0）
+- 製造データ：`fab/v030wip/`（README に一覧と発注前の注意）
+- 配線レビューとシミュレーション：`review_v030wip_wiring.md`
+- ERC：`hardware/erc_k9.rpt`、除外 `hardware/erc_exclusions.json`
+
+## v0.27 の内容（以下は当時の記述）
 
 - **最新：出力側H/V同期配線**：`sync_out_review.md`
 - 現行基板：`hardware/amiga_scandoubler_sync_out.kicad_pcb`
