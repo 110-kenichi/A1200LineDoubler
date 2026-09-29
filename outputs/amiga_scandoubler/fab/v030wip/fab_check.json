@@ -1,0 +1,12 @@
+{
+ "parts": 139,
+ "bom_lines": 37,
+ "lcsc_missing_lines": 32,
+ "lcsc_missing_parts": 132,
+ "board_vias": 295,
+ "board_pth_pads": 8,
+ "board_npth_pads": 6,
+ "drill_pth_hits": 303,
+ "drill_npth_hits": 6,
+ "drill_ok": true
+}
