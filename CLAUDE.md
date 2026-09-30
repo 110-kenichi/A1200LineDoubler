@@ -365,6 +365,7 @@ U2 を180°回転したため、**左辺（x=45.05）が U1(ADC) 側**、右辺�
       - ~~ERC~~ → 完了（2026-09-29）。KiCad 9 CLI（`tools/erc_k9.sh`）で実行。PWR_FLAG を9ネットに追加し、U3.27/31/33 は `hardware/erc_exclusions.json` で除外。`tools/erc_check.py` で残り0件。
       - 発注時のビアの指定（下記）。
     - JLC 向け：EP 内の via-in-pad は充填（plugged）または蓋（tented）を指定する（J2.7/J2.8 のパッド上ビアは J1/J2 の置き換えでなくなった）。
+    - **JLC DFM 対応（2026-09-30）**：ビア30個を移動（41883af の C59 の配線切れは修正済み。検査 `tools/padconn_cmp.py`）（`scripts/dfm_vias.py`、`dfm_fix2.py`）、受動部品のパッド中のビアを解消（C56/C58/C59/C60/C71）、J3 の長穴を 0.8mm に（`Amiga:USB_C_Receptacle_HRO_TYPE-C-31-M-12_Slot0.8`）、シルク50個を置き直し（`dfm_silk.py`）。L1〜L3 を NRS4018T2R2MDGJ（C92959）に変更、C15850 の5個を値「10uF 25V」で1行に。U1 は在庫4なので実装数は2枚。詳細は revision_0.30.md の追記。
     - J1/J2 は HYC06-HDR15B-060（スルーホール）に置き換え、利用者が手はんだで付ける（JLC では実装しない）。発注には `fab/v030wip/jlc_bom_dnp_J1J2.csv` / `jlc_cpl_dnp_J1J2.csv` を使う。U1/U2 は JLC で実装する。スクリプトは `scripts/jc_*.py`、詳細は revision_0.30wip.md。
 11. 検証が残っている項目：
     - PLL の実位相とジッター、hold と recovery/removal。

@@ -3,11 +3,13 @@
 # For each part: find the rotation R (0/90/180/270, CCW seen from the top) that maps the EasyEDA pads onto the KiCad
 # footprint pads at 0 deg (same pad numbers, both relative to their pad centroids). JLC rotation = CPL rotation + R.
 # Also reports the placement error if JLC puts the EasyEDA footprint origin on the CPL point (= KiCad origin).
-# usage: jlc_rotcheck.py <board.kicad_pcb> <jlc_cpl.csv> <manifest.json> <easyeda json dir> <out.json>
+# usage: jlc_rotcheck.py <board.kicad_pcb> <cpl_raw.csv> <manifest.json> <easyeda json dir> <out.json>
 import sys,os,json,math,csv
 import pcbnew as p
 U=0.254   # EasyEDA unit (10 mil) in mm
-b=p.LoadBoard(sys.argv[1]);cpl={r['Designator']:r for r in csv.DictReader(open(sys.argv[2]))}
+b=p.LoadBoard(sys.argv[1])
+# CPL: KiCad's own position file (cpl_raw.csv: Ref/Rot) - NOT the corrected jlc_cpl.csv
+cpl={(r.get('Designator') or r['Ref']):dict(r,Rotation=r.get('Rotation',r.get('Rot'))) for r in csv.DictReader(open(sys.argv[2]))}
 M=json.load(open(sys.argv[3]))['parts'];D=sys.argv[4]
 REFS=['U1','U2','U3','U4','U5','U6','U7','U8','U9','Y1','J3','J4'] if not os.environ.get('ALL') else sorted(cpl,key=lambda r:(r.rstrip('0123456789'),int(r[len(r.rstrip('0123456789')):])))
 # 2-pad parts are symmetric: R 0/180 fit equally (the first, 0, is reported); only 90/270 means a real mismatch.

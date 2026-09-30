@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,7.0.11+dfsg-1build4*%
-%TF.CreationDate,2026-09-29T15:44:01+00:00*%
+%TF.CreationDate,2026-09-30T14:47:14+00:00*%
 %TF.ProjectId,amiga_scandoubler_v030wip,616d6967-615f-4736-9361-6e646f75626c,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Paste,Top*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 7.0.11+dfsg-1build4) date 2026-09-29 15:44:01*
+G04 Created by KiCad (PCBNEW 7.0.11+dfsg-1build4) date 2026-09-30 14:47:14*
 %MOMM*%
 %LPD*%
 G01*
@@ -241,8 +241,8 @@ X54200000Y-46950000D03*
 %TD*%
 D23*
 %TO.C,C29*%
-X57975000Y-36300000D03*
-X56425000Y-36300000D03*
+X58375000Y-36300000D03*
+X56825000Y-36300000D03*
 %TD*%
 D18*
 %TO.C,FB1*%
@@ -494,8 +494,8 @@ X27125000Y-28500000D03*
 %TD*%
 D32*
 %TO.C,C71*%
-X54270000Y-35905000D03*
-X55230000Y-35905000D03*
+X54670000Y-35905000D03*
+X55630000Y-35905000D03*
 %TD*%
 D16*
 %TO.C,R11*%

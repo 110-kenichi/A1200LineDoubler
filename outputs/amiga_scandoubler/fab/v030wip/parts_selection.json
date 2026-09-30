@@ -537,13 +537,16 @@
  {
   "refs": [
    "C47",
-   "C54"
+   "C54",
+   "C55",
+   "C57",
+   "C59"
   ],
-  "value": "10uF",
+  "value": "10uF 25V",
   "footprint": "C_0805_2012Metric",
-  "qty_per_board": 2,
+  "qty_per_board": 5,
   "fixed_lcsc": "C15850",
-  "qty_needed": 4,
+  "qty_needed": 10,
   "stock_short": false,
   "low_margin": false,
   "rule": "manifest LCSC (verify)",
@@ -1000,23 +1003,23 @@
   "qty_needed": 6,
   "stock_short": false,
   "low_margin": false,
-  "rule": "manifest LCSC (verify)",
+  "rule": "exact MPN (EasyEDA footprint available)",
   "chosen": {
-   "lcsc": "C7413169",
-   "mpn": "VLS4012CX-2R2M-1",
-   "brand": "TDK",
+   "lcsc": "C92959",
+   "mpn": "NRS4018T2R2MDGJ",
+   "brand": "Taiyo Yuden",
    "pkg": "SMD,4x4mm",
    "lib": "extended",
-   "stock": 135,
-   "price_usd": 0.1762,
-   "describe": "2.01A 2.2uH 2.56A 74mΩ Magnetic Shielded Inductor ±20% SMD,4x4mm Power Inductors ROHS",
+   "stock": 10752,
+   "price_usd": 0.1455,
+   "describe": "2.2A 2.2uH 3A 42mΩ ±20% SMD,4x4mm Power Inductors ROHS",
    "attrs": {
-    "Current - Saturation(Isat)": "2.01A",
+    "Current - Saturation(Isat)": "3A",
     "Inductance": "2.2uH",
-    "Type": "Magnetic Shielded Inductor",
+    "Type": "-",
     "Tolerance": "±20%",
-    "Current Rating": "2.56A",
-    "DC Resistance(DCR)": "74mΩ"
+    "Current Rating": "2.2A",
+    "DC Resistance(DCR)": "42mΩ"
    }
   },
   "alternatives": [],
@@ -1086,39 +1089,6 @@
     "Voltage-Supply(Max)": "75V",
     "Tolerance": "±0.1%",
     "Temperature Coefficient": "±25ppm/℃"
-   }
-  },
-  "alternatives": [],
-  "n_candidates": 1
- },
- {
-  "refs": [
-   "C55",
-   "C57",
-   "C59"
-  ],
-  "value": "10uF 10V",
-  "footprint": "C_0805_2012Metric",
-  "qty_per_board": 3,
-  "fixed_lcsc": "C15850",
-  "qty_needed": 6,
-  "stock_short": false,
-  "low_margin": false,
-  "rule": "manifest LCSC (verify)",
-  "chosen": {
-   "lcsc": "C15850",
-   "mpn": "CL21A106KAYNNNE",
-   "brand": "Samsung Electro-Mechanics",
-   "pkg": "0805",
-   "lib": "basic",
-   "stock": 5137998,
-   "price_usd": 0.065,
-   "describe": "10uF 25V X5R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
-   "attrs": {
-    "Voltage Rating": "25V",
-    "Tolerance": "±10%",
-    "Capacitance": "10uF",
-    "Temperature Coefficient": "X5R"
    }
   },
   "alternatives": [],

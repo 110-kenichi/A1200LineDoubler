@@ -1,5 +1,5 @@
-** Drc report for /tmp/claude-0/-home-user-A1200LineDoubler/d0f14dc9-1427-5a10-9449-2ee42efc957d/scratchpad/jc/r3.kicad_pcb **
-** Created on 2026-09-29 15:43:51 **
+** Drc report for /tmp/claude-0/-home-user-A1200LineDoubler/d0f14dc9-1427-5a10-9449-2ee42efc957d/scratchpad/dfm/e2.kicad_pcb **
+** Created on 2026-09-30 14:46:48 **
 
 ** Found 141 DRC violations **
 [lib_footprint_issues]: The current configuration does not include the library 'Amiga'.
@@ -43,7 +43,7 @@
     @(50.0000 mm, 42.0000 mm): Footprint U2
 [lib_footprint_issues]: The current configuration does not include the library 'Capacitor_SMD'.
     Local override; Severity: warning
-    @(57.2000 mm, 36.3000 mm): Footprint C29
+    @(57.6000 mm, 36.3000 mm): Footprint C29
 [lib_footprint_issues]: The current configuration does not include the library 'Inductor_SMD'.
     Local override; Severity: warning
     @(13.0000 mm, 30.0000 mm): Footprint FB1
@@ -62,7 +62,7 @@
 [lib_footprint_issues]: The current configuration does not include the library 'Capacitor_SMD'.
     Local override; Severity: warning
     @(43.0000 mm, 37.3500 mm): Footprint C32
-[lib_footprint_issues]: The current configuration does not include the library 'Connector_USB'.
+[lib_footprint_issues]: The current configuration does not include the library 'Amiga'.
     Local override; Severity: warning
     @(47.5000 mm, 91.3500 mm): Footprint J3
 [lib_footprint_issues]: The current configuration does not include the library 'Capacitor_SMD'.
@@ -175,7 +175,7 @@
     @(27.9000 mm, 28.5000 mm): Footprint C26
 [lib_footprint_issues]: The current configuration does not include the library ''.
     Local override; Severity: warning
-    @(54.7500 mm, 35.9050 mm): Footprint C71
+    @(55.1500 mm, 35.9050 mm): Footprint C71
 [lib_footprint_issues]: The current configuration does not include the library 'Resistor_SMD'.
     Local override; Severity: warning
     @(81.0000 mm, 37.5000 mm): Footprint R11
