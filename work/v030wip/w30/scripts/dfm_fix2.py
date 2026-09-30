@@ -22,6 +22,19 @@ def move_point(net,old,new):
             if at(t.GetStart(),*old):t.SetStart(V(*new));n+=1
             if at(t.GetEnd(),*old):t.SetEnd(V(*new));n+=1
     assert n,(net,old);return n
+# Square up wide (>=0.5 mm) tracks that dfm_vias.py left slanted (via moved sideways): the far corner moves to the
+# via's x (or y), so the leg is vertical (horizontal) again; tracks meeting at that corner follow.
+vpos={(round(mm(t.GetPosition().x),4),round(mm(t.GetPosition().y),4)) for t in tr if isinstance(t,p.PCB_VIA)}
+for t in list(tr):
+    if isinstance(t,p.PCB_VIA) or t.GetWidth()<p.FromMM(0.5):continue
+    s=(round(mm(t.GetStart().x),4),round(mm(t.GetStart().y),4));e=(round(mm(t.GetEnd().x),4),round(mm(t.GetEnd().y),4))
+    dx,dy=abs(s[0]-e[0]),abs(s[1]-e[1])
+    if min(dx,dy)<1e-3 or abs(dx-dy)<1e-3:continue
+    a,c=(s,e) if s in vpos else ((e,s) if e in vpos else (None,None))
+    if a is None:continue
+    new=(a[0],c[1]) if dx<dy else (c[0],a[1])
+    print('square',t.GetNetname(),c,'->',new);move_point(t.GetNetname(),c,new)
+# (U2.67 / C34 3V3 via at (45.6,47.6) stays: west is blocked by the In2 1V2 line, no other free spot; same net, tented)
 # C71
 f=b.FindFootprintByReference('C71');x,y=mm(f.GetPosition().x),mm(f.GetPosition().y);f.SetPosition(V(x+0.40,y))
 move_point('3V3',(54.27,35.905),(54.67,35.905))

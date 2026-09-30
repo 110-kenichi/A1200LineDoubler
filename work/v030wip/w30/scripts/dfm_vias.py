@@ -43,14 +43,19 @@ for v,(d0,pn) in cand:
     net=v.GetNetCode();x0,y0=mm(v.GetPosition().x),mm(v.GetPosition().y);r=mm(v.GetWidth())/2;hr=mm(v.GetDrill())/2
     # tracks of the same net whose end lies inside the via land (some ends are off-centre, e.g. 0.0125 mm) follow the via
     inside=lambda q:(mm(q.x)-x0)**2+(mm(q.y)-y0)**2<(r-0.01)**2
-    # a track with BOTH ends in the land (a short via->pad stub) stays put: moving it would collapse it to length 0
+    # a track with BOTH ends in the land: if one end is on a pad it is a via->pad stub and stays on the pad;
+    # otherwise it is a tiny piece inside the via and is collapsed onto the new via (zero length, deleted afterwards by text edit)
     both=lambda t:inside(t.GetStart()) and inside(t.GetEnd())
-    att=[(t,'s') for t in trks if t.GetNetCode()==net and inside(t.GetStart()) and not both(t)]+\
-        [(t,'e') for t in trks if t.GetNetCode()==net and inside(t.GetEnd()) and not both(t)]
-    # same-net pads the via touched: they get a new track pad centre -> new via (width of the widest track on this via)
+    onpad=lambda q:any(pd['g'].contains(Point(mm(q.x),mm(q.y))) for pd in pads if pd['net']==net)
+    samenet=[t for t in trks if t.GetNetCode()==net and not isinstance(t,p.PCB_VIA)]
+    att=[(t,'s') for t in samenet if inside(t.GetStart()) and not (both(t) and (onpad(t.GetStart()) or onpad(t.GetEnd())))]+\
+        [(t,'e') for t in samenet if inside(t.GetEnd()) and not (both(t) and (onpad(t.GetStart()) or onpad(t.GetEnd())))]
+    tiny={id(t) for t in samenet if both(t) and not (onpad(t.GetStart()) or onpad(t.GetEnd()))}
+    # same-net pads the via land touched and that no following track reaches with its fixed end: new track pad -> via
     land=Point(x0,y0).buffer(r,32)
-    tpads=[pd for pd in pads if pd['net']==net and pd['g'].intersects(land) and 'F.Cu' in pd['layers']]
-    ws=[mm(t.GetWidth()) for t in trks if t.GetNetCode()==net and (inside(t.GetStart()) or inside(t.GetEnd()))]
+    fixed_ends=[Point(mm(t.GetEnd().x),mm(t.GetEnd().y)) if e=='s' else Point(mm(t.GetStart().x),mm(t.GetStart().y)) for t,e in att if id(t) not in tiny]
+    tpads=[pd for pd in pads if pd['net']==net and pd['g'].intersects(land) and 'F.Cu' in pd['layers'] and not any(pd['g'].contains(q) for q in fixed_ends)]
+    ws=[mm(t.GetWidth()) for t in samenet if inside(t.GetStart()) or inside(t.GetEnd())]
     wnew=max(ws+[0.25]);pc=[(pd,(pd['g'].centroid.x,pd['g'].centroid.y)) for pd in tpads]
     attset={id(t) for t,_ in att}
     # obstacles of other nets
@@ -105,9 +110,14 @@ for v,(d0,pn) in cand:
         t=p.PCB_TRACK(b);t.SetStart(V(round(c[0],4),round(c[1],4)));t.SetEnd(V(x,y));t.SetWidth(p.FromMM(wnew));t.SetLayer(p.F_Cu);t.SetNet(v.GetNet());b.Add(t);trks.append(t)
     log.append(dict(via=[x0,y0],to=[x,y],net=v.GetNetname(),pad=pn,gap0=round(d0,3),gap_target=gap,shift=round(rr,3),tracks=len(att)))
     print('moved %-12s (%.3f,%.3f)->(%.4f,%.4f) shift %.3f  pad %s gap %.3f -> >=%.2f, %d tracks'%(v.GetNetname(),x0,y0,x,y,rr,pn,d0,gap,len(att)))
-zero=[(t.GetNetname(),mm(t.GetStart().x),mm(t.GetStart().y)) for t in trks if t.GetStart()==t.GetEnd()]
-assert not zero,('zero-length tracks',zero)
 json.dump(log,open(sys.argv[2].replace('.kicad_pcb','_vias.json'),'w'),indent=1)
+# tiny in-via pieces collapsed to length 0: delete them by text edit (BOARD.Remove is unsafe in KiCad 7.0.11), then refill + DRC
+import re
+p.SaveBoard(sys.argv[2],b);L=open(sys.argv[2],encoding='utf-8').read().split('\n');n0=len(L)
+L=[l for l in L if not (lambda m:m and m.group(1)==m.group(3) and m.group(2)==m.group(4))(re.match(r'\s*\(segment \(start ([-\d.]+) ([-\d.]+)\) \(end ([-\d.]+) ([-\d.]+)\)',l))]
+open(sys.argv[2],'w',encoding='utf-8').write('\n'.join(L));print('zero-length segments deleted:',n0-len(L))
+b=p.LoadBoard(sys.argv[2])
+zero=[t for t in b.GetTracks() if not isinstance(t,p.PCB_VIA) and t.GetStart()==t.GetEnd()];assert not zero
 sys.path.insert(0,os.path.join(os.path.dirname(os.path.abspath(__file__)),'../tools'))
 from pcbk7 import finish
 finish(b,sys.argv[2])
