@@ -1,0 +1,9 @@
+{
+ "note": "ERC exclusions decided by the user on 2026-09-29. KiCad 7 keeps no project file for this schematic here, so exclusions are recorded in this file and applied by tools/erc_check.py.",
+ "exclusions": [
+  {"code": "pin_to_pin", "ref": "U3", "pins": ["27", "31", "33"],
+   "reason": "ADV7125 complementary current outputs IOB_N/IOG_N/IOR_N (pin type Output) are tied to GND on purpose (unused complementary outputs). Circuit kept as is. Covers Output-Output and Output-Power output (GND PWR_FLAG) reports."},
+  {"code": "endpoint_off_grid", "ref": "*", "pins": ["*"],
+   "reason": "Script-generated schematic is not on the 1.27 mm grid. Connectivity is unaffected (schematic netlist matches the board)."}
+ ]
+}

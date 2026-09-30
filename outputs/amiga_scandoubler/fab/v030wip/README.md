@@ -1,0 +1,67 @@
+# 製造データ v0.30wip（2026-09-29）
+
+**発注用の確定版ではない。** JLC などへのアップロードはしていない（CLAUDE.md の規則）。
+
+## 中身
+| ファイル | 内容 | 作り方 |
+|---|---|---|
+| `gerber/*.gtl .g2 .g3 .gbl` | 銅箔4層（F / In1=GND / In2=3V3 / B） | `kicad-cli pcb export gerbers`（KiCad 7.0.11、Protel 拡張子、Value を除外、シルクからマスク開口を削る） |
+| `gerber/*.gts .gbs .gtp .gbp .gto .gbo .gm1` | マスク、ペースト、シルク、外形 | 同上 |
+| `gerber/*-PTH.drl`, `*-NPTH.drl`, `*_map.svg` | ドリル（Excellon、mm、PTH と NPTH を分割）と穴位置の図 | `kicad-cli pcb export drill --excellon-separate-th --generate-map` |
+| `cpl_raw.csv` | KiCad の部品位置データ（上面139点） | `kicad-cli pcb export pos --side front` |
+| `jlc_cpl.csv`, `jlc_bom.csv` | JLC 形式の CPL と BOM（37行） | `work/v030wip/w30/scripts/r10_fab.py` |
+| `parts_to_select.csv` | LCSC 番号が未選定の部品（32行、132点） | 同上 |
+| `fab_check.json` | ドリルのヒット数と基板の照合結果 | 同上 |
+| `preview_top.png` | 上面のプレビュー（gerbv で描画） | gerbv |
+| `bitstream/*.fs` | FPGA ビットストリーム（H_SAMPLES 1816 / 2048） | apycula `gowin_pack -d GW1N-4 --sspi_as_gpio`（v0.31 cst で配置配線した結果から） |
+| `*SHA256SUMS` | 各ファイルのハッシュ | sha256sum |
+
+## 検査（実測）
+- 対象の基板：`hardware/amiga_scandoubler_v030wip.kicad_pcb`。
+- DRC：エラー0件、未接続0件。
+  - 残っている警告は、ライブラリ設定（lib_footprint_issues、クラウドにライブラリの設定がないため）と、USB コネクタ J3 の外形シルクが基板端にかかる2件。
+- 監査 `audit_sync_in_k7.py`：PASS（139部品、600パッドのネット）。
+- 回路図とネットリストと基板のネットは一致（接続のある570ノード。未接続ピン25は除く）。
+- ドリル：PTH 323 ＝ ビア285 ＋ PTH パッド38、NPTH 2。基板と一致した（J1/J2 をスルーホール品にした後の値）。
+- RTL シミュレーション：12本すべて PASS（`work/v031dac/sim/`）。
+
+## 発注前に必要なこと（未完了）
+1. **部品選定**：LCSC 番号が入っているのは139点中7点だけ。`parts_to_select.csv` を見て選び、manifest か BOM に記入する。F1 は未選定（「1A hold - select」）。
+2. **CPL の回転**：EasyEDA（JLC のライブラリ）のフットプリントと照合し、回転と位置の補正を `jlc_cpl.csv` / `jlc_cpl_dnp_J1J2.csv` に入れた（2026-09-30。U1/U3/U4/U5 +270°、U2 180→90°、U6 180°、J4 90→0°、J3 位置 1.571mm）。詳細と確認表は `cpl_rotation_check.md`。発注画面のプレビューで、ピン1の位置を全数確認する（利用者側）。
+3. **ビアの処理**：U1/U2 の EP 内のビアは、**充填（plugged / via-in-pad）**を指定する。ほかのビアは蓋（tented）。J2.7/J2.8 のパッド上のビアは、J1/J2 の置き換えでなくなった。
+4. **層構成**：インピーダンス制御は指定していない。JLC の標準4層（1.6mm）を想定。
+5. **ビットストリーム**：
+   - apycula のオープンソースツールで生成したもので、実機でも Gowin 純正ツールでも未検証。
+   - 生成時に apycula が「IOLOGIC の INIT が未処理」と表示した（ODDR の初期値）。
+   - H_SAMPLES 1816/2048 は暫定値で、PAL/NTSC の確定値ではない。
+6. ~~**ERC**~~：KiCad 9 CLI で実行済み（2026-09-29）。除外（`hardware/erc_exclusions.json`）を適用して残り0件。詳細は revision_0.30wip.md。
+
+## 部品選定（2026-09-29、JLCPCB の部品検索 API で在庫・価格を取得）
+- スクリプト：`work/v030wip/w30/scripts/r11_select.py`（選定）→ `r11_apply.py`（manifest、回路図、ネットリストへ反映）。
+  - 仕様は `r11_parts_spec.json`。API の呼び出しは `tools/jlcsel.py`（読み取りのみ。注文はしていない）。
+- 結果は `parts_selection.csv` / `.json`：LCSC 番号、基本/拡張の区分、在庫、5枚分の数量での単価、代替2件。
+- 選定の規則：
+  - パッケージと仕様（容量、耐圧、誘電体、抵抗値、許容差、0.1% は薄膜）が一致するもの。
+  - 基本部品 → 優先拡張部品 → 在庫の多いもの、の順。
+  - 在庫は必要数の20倍以上を優先する。
+- 確定したもの：37行中 35行（135点）。
+  - 基本部品 15行、拡張部品 22行。
+  - 部品代の目安は約 60.7 USD/枚（取得時点の単価。拡張部品の手数料と基板代は含まない）。
+- 耐圧：C55/57/59（5V 入力）と C47/C54 は 25V の 10uF（CL21A106KAYNNNE、C15850）。回路図の値の表記「10V」は最低定格の意味として残した。
+- **2026-09-29 追記（利用者の判断）**：
+  - 製作は **2枚**。選定の数量も2枚分でやり直した（`BOARDS=2`）。
+    - JLCPCB の PCBA は Economic・Standard とも最少2枚（公式の capabilities ページで確認）。
+  - **Y1 を YXC OT2EL4C4JI-111OLP-27M（C5203549）に置き換えた**（`scripts/r12_y1.py`）。フットプリントは同じ。
+  - U1 TVP7002（C3824085）はそのまま使う。在庫4個で、必要数2個に対して余裕は小さい。
+  - J1/J2 は CONEC 33DSMT1-E15SNCT（C3146802、在庫0、0.76mm ピッチの SMD）から、**HOAUC HYC06-HDR15B-060（C711364、在庫2230、スルーホール）に置き換えた**（下の節）。
+- 全139点の LCSC 番号がそろった。部品代の目安は約 44.6 USD/枚（2枚分の数量での単価。拡張部品の手数料、基板代は含まない。J1/J2 の2点分を含む。置き換え前は約 60.3 USD/枚）。
+
+## J1・J2（DE-15 メス）：HOAUC HYC06-HDR15B-060、手はんだ（2026-09-29、利用者の判断）
+- 部品：HOAUC HYC06-HDR15B-060（LCSC C711364、JLC 拡張部品、在庫2230、0.21 USD）。3列 HD-15 メス、90°曲げ、スルーホール。
+  - データシート（2013-09-20 版）で寸法を確認：端子穴 φ1.09 の3列が基板の端から 3.08 / 5.06 / 7.04mm、横ピッチ 2.29mm。固定金具の PTH φ3.2 が2つ、25mm 間隔（中段と同じ列）。本体は基板の端から 8.9mm まで、前方に 5.9mm はみ出す。
+  - フットプリント：`hardware/Amiga.pretty/DE15_HOAUC_HYC06-HDR15B-060.kicad_mod`（穴 1.1mm／ランド 1.7mm、固定金具 3.2mm／4.0mm、GND ＝ pad16）。
+  - ピンの並びは DE-15 の規格どおり（部品面から見て pin1・pin6 が右側。KiCad 標準フットプリントと同じ）。データシートの穴配置図には「Top View」とあり、この並びと一致する。
+- 発注：`jlc_bom_dnp_J1J2.csv`（36行）、`jlc_cpl_dnp_J1J2.csv`（137点）で J1・J2 を除き、ほかの部品を JLCPCB で実装する。J1・J2 は LCSC で別に買って手はんだで付ける。
+  - JLC にスルーホール実装も任せる場合は、元の `jlc_bom.csv` / `jlc_cpl.csv`（139点）を使う（在庫あり）。
+- 付け方の目安（推定）：端子15本・固定金具2本とも、はんだごてで1本ずつ付けられる。固定金具は熱容量が大きいので、こて先は太めを使う。付けたあと、テスターで隣どうしの短絡と、J1/J2 の各ピン ↔ 相手（J1：R15〜R18・R20、J2：R11〜R13・R22・R23）の導通を確認する。
+- 旧 CONEC 品は Global Sourcing が必要だったが、その手配は不要になった。
