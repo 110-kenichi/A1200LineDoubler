@@ -43,7 +43,15 @@ for v,(d0,pn) in cand:
     net=v.GetNetCode();x0,y0=mm(v.GetPosition().x),mm(v.GetPosition().y);r=mm(v.GetWidth())/2;hr=mm(v.GetDrill())/2
     # tracks of the same net whose end lies inside the via land (some ends are off-centre, e.g. 0.0125 mm) follow the via
     inside=lambda q:(mm(q.x)-x0)**2+(mm(q.y)-y0)**2<(r-0.01)**2
-    att=[(t,'s') for t in trks if t.GetNetCode()==net and inside(t.GetStart())]+[(t,'e') for t in trks if t.GetNetCode()==net and inside(t.GetEnd())]
+    # a track with BOTH ends in the land (a short via->pad stub) stays put: moving it would collapse it to length 0
+    both=lambda t:inside(t.GetStart()) and inside(t.GetEnd())
+    att=[(t,'s') for t in trks if t.GetNetCode()==net and inside(t.GetStart()) and not both(t)]+\
+        [(t,'e') for t in trks if t.GetNetCode()==net and inside(t.GetEnd()) and not both(t)]
+    # same-net pads the via touched: they get a new track pad centre -> new via (width of the widest track on this via)
+    land=Point(x0,y0).buffer(r,32)
+    tpads=[pd for pd in pads if pd['net']==net and pd['g'].intersects(land) and 'F.Cu' in pd['layers']]
+    ws=[mm(t.GetWidth()) for t in trks if t.GetNetCode()==net and (inside(t.GetStart()) or inside(t.GetEnd()))]
+    wnew=max(ws+[0.25]);pc=[(pd,(pd['g'].centroid.x,pd['g'].centroid.y)) for pd in tpads]
     attset={id(t) for t,_ in att}
     # obstacles of other nets
     obs={L:[] for L in ('F.Cu','In1.Cu','In2.Cu','B.Cu')};holes=[]
@@ -77,22 +85,28 @@ for v,(d0,pn) in cand:
             sg=tg(t,(x,y),other)
             T=tree.get(L)
             if T is not None and any(sg.distance(obs[L][i])<CL for i in T.query(sg.buffer(CL))):return False
-            # a moved track must not newly run over a pad of its own net other than where it already touches (keep it simple: other-net checked above)
+        for pd,c in pc:   # new pad -> via tracks
+            sg=LineString([c,(x,y)]).buffer(wnew/2,16);T=tree.get('F.Cu')
+            if T is not None and any(sg.distance(obs['F.Cu'][i])<CL for i in T.query(sg.buffer(CL))):return False
         return True
     best=None
     for gap in GAP:
         for k in range(1,49):           # radius 0.025 .. 1.2 mm
             rr=k*0.025;n=max(8,int(2*math.pi*rr/0.025))
-            for i in range(n):
-                a=2*math.pi*i/n;x,y=round(x0+rr*math.cos(a),4),round(y0+rr*math.sin(a),4)
+            for a in [math.pi/4*j for j in range(8)]+[2*math.pi*i/n for i in range(n)]:   # axis / 45-degree moves first
+                x,y=round(x0+rr*math.cos(a),4),round(y0+rr*math.sin(a),4)
                 if ok(x,y,gap):best=(x,y,gap,rr);break
             if best:break
         if best:break
     if not best:log.append(dict(via=[x0,y0],net=v.GetNetname(),pad=pn,gap0=round(d0,3),moved=False));print('NOT MOVED',v.GetNetname(),(x0,y0),pn,round(d0,3));continue
     x,y,gap,rr=best;v.SetPosition(V(x,y))
     for t,end in att:(t.SetStart if end=='s' else t.SetEnd)(V(x,y))
+    for pd,c in pc:
+        t=p.PCB_TRACK(b);t.SetStart(V(round(c[0],4),round(c[1],4)));t.SetEnd(V(x,y));t.SetWidth(p.FromMM(wnew));t.SetLayer(p.F_Cu);t.SetNet(v.GetNet());b.Add(t);trks.append(t)
     log.append(dict(via=[x0,y0],to=[x,y],net=v.GetNetname(),pad=pn,gap0=round(d0,3),gap_target=gap,shift=round(rr,3),tracks=len(att)))
     print('moved %-12s (%.3f,%.3f)->(%.4f,%.4f) shift %.3f  pad %s gap %.3f -> >=%.2f, %d tracks'%(v.GetNetname(),x0,y0,x,y,rr,pn,d0,gap,len(att)))
+zero=[(t.GetNetname(),mm(t.GetStart().x),mm(t.GetStart().y)) for t in trks if t.GetStart()==t.GetEnd()]
+assert not zero,('zero-length tracks',zero)
 json.dump(log,open(sys.argv[2].replace('.kicad_pcb','_vias.json'),'w'),indent=1)
 sys.path.insert(0,os.path.join(os.path.dirname(os.path.abspath(__file__)),'../tools'))
 from pcbk7 import finish
