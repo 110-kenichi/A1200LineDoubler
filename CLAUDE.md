@@ -1,6 +1,6 @@
 # CLAUDE.md — Amiga 1200 スキャンラインダブラー（15kHz→31kHz）
 
-最終更新: 2026-09-28（Cowork クラウドセッションから Claude Code へ移行）
+最終更新: 2026-09-30（v0.30 確定。2026-09-28 に Cowork クラウドセッションから Claude Code へ移行）
 作業フォルダ（利用者PC）: `E:\A1200\A1200 Line Doubler\`
 
 ---
@@ -16,6 +16,7 @@
    - **KiCad 7.0.11 の Python では `BOARD.Remove()` の後に SWIG の型情報が壊れる**（`GetTracks()` が反復できなくなる）。
      - 削除は先に `tools/pcbedit.py`（テキスト編集）で行う。
      - 追加・再充填・保存・DRC は `tools/pcbk7.py` で行う。
+   - **ERC**：KiCad 7 の CLI にはないため、KiCad 9 の CLI を読み取り専用で使う（`tools/erc_k9.sh`。.deb を `dpkg -x` で展開するだけで、KiCad 7 は置き換えない。回路図はコピーで検査し、KiCad 9 では保存しない）。除外は `hardware/erc_exclusions.json`、判定は `tools/erc_check.py`。
 3. **承認済みの方針は変えない。**
    - DE-15 メスの入出力、USB 給電。
    - 95×95mm の 4層基板。
@@ -56,15 +57,15 @@
 | U2 | Gowin GW1N-LV4QN88C6/I5（QFN-88、EP=pin89 GND） | ラインダブラー本体。1.2V コア、3.3V I/O。**基板上で180°回転済み（v0.29）** |
 | U3 | ADI ADV7125KSTZ140 | RGB DAC。PSAVE_N＝FPGA 56番（R44 4.7k で GND へプルダウン） |
 | U4 | SN74LVC2G17 | H/V 入力同期のバッファ（5V 入力に耐え、3.3V へ変換） |
-| U5 | 出力同期バッファ | H/V_OUT |
-| U6 | DAC クロックバッファ | DAC_CLK_RAW(16番) → DAC_CLK_BUF → R24 → U3 |
-| U8, U9 | 電源（POWER_GOOD 系） | POWER_GOOD は FPGA 62番へ |
-| Y1 | 27MHz 発振器 ECS-3225MVLC-270 | REF_27M。R36 で分岐し、U1.80 と U2.11 へ |
+| U5 | SN74LVC2G17 | 出力同期バッファ（H/V_OUT） |
+| U6 | SN74LVC1G17 | DAC クロックバッファ：DAC_CLK_RAW（U2.3）→ DAC_CLK_BUF → R24 → U3 |
+| U7, U8, U9 | TPS62160 | 3.3V / 1.9V / 1.2V。U8・U9 の PG が POWER_GOOD（FPGA 62番）。U9（1.2V）は U7 の PG_3V3 で有効化 |
+| Y1 | 27MHz 発振器 YXC OT2EL4C4JI-111OLP-27M（C5203549） | REF_27M。R36 で分岐し、U1.80 と U2.11 へ。2026-09-29 に ECS-3225MVLC-270 から変更（フットプリント同じ） |
 | J1 / J2 | HOAUC HYC06-HDR15B-060（C711364） | 3列 DE-15 メス、90°スルーホール（2026-09-29 に CONEC 33DSMT1-E15SNCT から変更、利用者が手はんだ）。2列15ピン品を誤って採用しないこと |
-| J4 | JTAG/設定ヘッダ | JTAG_TMS/TCK/TDI/TDO、RECONFIG_N |
+| J4 | JTAG/設定ヘッダ（2×5、2.54mm） | JTAG_TMS/TCK/TDI/TDO、JTAGSEL_N、RECONFIG_N、DONE |
 | USB | HRO TYPE-C-31-M-12 | 5V 給電のみ |
 
-部品は134点。部品番号と数量は `hardware/circuit_manifest.json` にある。完成 BOM ではない（在庫・定格・調達は未確定）。
+部品は139点（C70–C73 を含む）。部品番号・型番・LCSC 番号は `hardware/circuit_manifest.json` にある。全139点に LCSC 番号を付けた（選定の記録は `fab/v030wip/parts_selection.csv`、在庫・単価は 2026-09-29 時点）。
 
 ---
 
@@ -86,14 +87,14 @@
 | clk_ref | 27.00MHz | Y1。監視と I²C 制御に使用 |
 | ADC_CLK（adc_clock） | 約28.375MHz | TVP7002 の DATACLK。**U2.63（PLL 入力ピン、変更不可）** |
 | video_clock | 56.75MHz | PLL で ADC クロックの厳密な2倍を生成。**位相180°（PSDA_SEL=1000）**、デューティー50% |
-| DAC クロック | video に対して反転 | ODDR 出力を U2.16 から出す |
+| DAC クロック | video に対して反転 | ODDR 出力を U2.3 から出す（v0.31。旧 U2.16） |
 
 - ADC 取り込み（負エッジ→映像正エッジ、26経路）の暫定予算：
   - 2048画素条件：+4.269ns。
   - 1816画素条件：+3.786ns。
   - いずれも High 52%、180°の理想間隔8.106ns からの差。
   - 挿入 LUT の SDF 遅延が欠落しており、625ps を借用して補った推定値である。最終的なスラックではない。
-- DAC データ側の最大抽出遅延は3.632ns（OBUF、基板、負荷を含まない）。
+- DAC データ側の最大抽出遅延は3.632ns（旧割当での値。OBUF、基板、負荷を含まない。v0.31 の値は下記）。
 - 出力の解除は2段同期。recovery/removal 規格が SDF にないため、最終判定はしていない。
 - 1816/1820 は暫定の検討値で、PAL/NTSC の確定値ではない。
 
@@ -111,15 +112,13 @@
   - DAC 出力 25本の抽出遅延は、1816 で 1.484–3.931ns、2048 で 1.648–4.248ns。
   - 旧割当の再実行値は 1.551–3.605 / 1.715–3.374ns。最大値は約 0.3–0.9ns 増えた（pin47＝R0 が U2 の反対側にあるため）。
   - 半周期 8.811ns（setup 0.2 / hold 1.5ns）に対しては余裕があるが、推定値であり合格判定ではない。
-- シミュレーションは未実行。RTL は変更していない（ピン割当のみ）。
+- シミュレーション：12本すべて PASS（82件、2026-09-29、`review_v030wip_wiring.md` の1章）。RTL は変更していない（ピン割当のみ）。
 
-**v0.30wip のピン割当（`fpga/amiga_board_top_v030wip.cst`）で nextpnr を再実行した結果：** 1816／2048 とも全クロックが PASS（2048：video 89.05MHz、adc 310.75MHz、clk_ref 73.15MHz）。ただし次は未実行で、ピン変更後に必ず実行する。
-- `analyze_capture_sdf` / `analyze_dac_sdf` / `verify_phase180`
-- シミュレーション
+（参考・旧版）v0.30wip のピン割当（`fpga/amiga_board_top_v030wip.cst`）での nextpnr：1816／2048 とも全クロック PASS（2048：video 89.05MHz）。現行は上の v0.31 cst で、解析とシミュレーションも v0.31 で実行済み。
 
 ---
 
-## 4. FPGA ピン割当（v0.30wip 現行）
+## 4. FPGA ピン割当（現行：v0.31 cst、基板 v0.30 と一致）
 
 U2 を180°回転したため、**左辺（x=45.05）が U1(ADC) 側**、右辺（x=54.95）が U3(DAC) 側になっている。
 
@@ -158,15 +157,16 @@ U2 を180°回転したため、**左辺（x=45.05）が U1(ADC) 側**、右辺�
 
 ---
 
-## 5. 基板の現状（v0.30wip）
+## 5. 基板の現状（v0.30、2026-09-29 確定。まとめは `outputs/amiga_scandoubler/revision_0.30.md`）
 
-- 基板：`outputs/amiga_scandoubler/hardware/amiga_scandoubler_v030wip.kicad_pcb`（KiCad 7 形式。KiCad 7 の DRC 結果は `v030wip_drc_k7.txt`）
+- 基板：`outputs/amiga_scandoubler/hardware/amiga_scandoubler_v030wip.kicad_pcb`（ファイル名は wip のままだが内容は v0.30。KiCad 7 形式。KiCad 7 の DRC 結果は `v030wip_drc_k7.txt`）
+- 製造データ：`outputs/amiga_scandoubler/fab/v030wip/`（Gerber、ドリル、CPL、JLC BOM/CPL、J1/J2 を除いた発注用 BOM/CPL、ビットストリーム）
+- ERC：除外を適用して残り0件（`hardware/erc_k9.rpt`）。回路図と基板は接続のある570ノードで一致。
 - DRC 結果：
   - エラー（短絡、クリアランス、穴間隔、配線端・ビアの未接続）0件。
   - **未接続0件**（課題8完了後。課題7完了後7件、課題6完了後44件、課題5完了後73件、JTAG 系完了後78件、課題4完了後95件、課題3完了後97件、課題2完了後98件、本線配線後106件、C34 修正後110件、修正前112件、v0.29 は143件）。
-  - シルクと `lib_footprint_mismatch` の警告は既知。
-- 電源監査：電源75件・GND80件の検査はすべて PASS（C34 修正後）。
-  - 課題9完了後、監査は **PASS**（FAIL 0）。
+  - 残る警告は J3 の外形シルクの2件と lib_footprint_issues（クラウドにライブラリ表がないため）だけ。
+- 監査 `audit_sync_in_k7.py`：**PASS**（電源75件・GND80件、139部品・600パッドのネット）。
 
 ### v0.29 からの変更（v0.30wip）
 
@@ -239,7 +239,7 @@ U2 を180°回転したため、**左辺（x=45.05）が U1(ADC) 側**、右辺�
      - PSAVE の B.Cu（y 36.6–41、x 46–75）が、U2 と U3 の間の B.Cu を東西に横切る。
      - R44（65.5,40）は DAC バスの通り道の中央にある。
      - DAC バスは F.Cu のリバー配線を前提にする。R44 は、バスの計画時に通り道の外へ移すことを検討する。
-5. 右辺：H/V_OUT_RAW（13/14）→ R41/R42 の既存の途中配線（ビア 67.3,48.625 / 65.875,49.8）、DAC_BLANK_N（15）→ R14/U3.11、I²C 以外の JTAG/RECONFIG/DONE → J4/R5–R9、DAC_CLK_RAW（16）→ U6/R43。
+5. ~~右辺（H/V_OUT_RAW、DAC_BLANK_N、JTAG/RECONFIG/DONE、DAC_CLK_RAW）~~ → **完了（2026-09-28）**。ピン番号は v0.31 で変わった（H/V_OUT 14/13、BLANK 27、DAC_CLK 3）。以下は当時の記録。
    - ~~右側の 1V2 の B.Cu 壁~~ → 同じ形のまま **In2.Cu へ移した**（2026-09-28、`scripts/r5_1v2wall_in2.py`）。B.Cu の x 55.4–60 が空いた。
    - **JTAG 系・設定ピン（4–10番）→ 完了（2026-09-28、利用者の判断で C37/C31/R4/R9 を移動）**
      - スクリプト：`scripts/r5_right_rm.py`（テキスト削除）→ `scripts/r5_right_add.py`（pcbnew 追加）。
@@ -327,7 +327,7 @@ U2 を180°回転したため、**左辺（x=45.05）が U1(ADC) 側**、右辺�
    - 面から浮いていたパッド28個に、短い F.Cu 引き出しと面ビアを付けた（`tools/viastub.py` で探索、`scripts/p7_viastub_plan.json`）。
      - 探索条件：全層のクリアランス、穴間隔、パッドに重ねない。1個決めるごとに障害物に加える。
    - J1.10 は J1.5 へ配線でつないだ。
-   - J2.7/J2.8 は配線に囲まれているため、**パッド上にビアを置いた**。JLC では充填（plugged）を指定する（課題10）。
+   - J2.7/J2.8 は配線に囲まれているため、パッド上にビアを置いた。→ **J1/J2 の置き換え（2026-09-29）でなくなった**（GND 端子はスルーホールで In1 に直結）。
    - ADC_3V3A（C62/C63）、ADC_1V9PLL（C66/C67）、DAC_3V3（C68/C69）を個別に接続した。
    - 結果（実測）：
      - DRC エラー0、未接続 44→7（電源系はすべて0）。
@@ -347,7 +347,7 @@ U2 を180°回転したため、**左辺（x=45.05）が U1(ADC) 側**、右辺�
      - `02_fpga.kicad_sch` のラベル57個。
      - `amiga_scandoubler.net`、`circuit_manifest.json`、`fpga_pin_assignment.json`、`board_port_map.json`、`sync_out_progress.json`（H/V_OUT_RAW を 14/13 へ）。
    - 回路図から書き出したネットリストと基板は、全587ノードで一致した。cst のポートは RTL のトップにすべて存在する（RTL は変更なし）。
-   - 監査 `audit_sync_in_k7.py` は **PASS**（FAIL 0）。ERC は KiCad 7 の CLI にないため未実行。
+   - 監査 `audit_sync_in_k7.py` は **PASS**（FAIL 0）。ERC は後で KiCad 9 CLI で実行した（課題10）。
 9b. **配線レビュー（2026-09-29、`review_v030wip_wiring.md`）**
    - RTL シミュレーションは12本すべて PASS。
    - 対策：
@@ -356,11 +356,11 @@ U2 を180°回転したため、**左辺（x=45.05）が U1(ADC) 側**、右辺�
    - REF_27M：C72・C73 を追加した。ビアからの距離は 5.2→1.6mm、4.3→0.8mm。U1 の下のビア (30.4,35.6) は 6.2mm のまま。
    - 部品数は139（C70–C73 を追加）。監査の期待値は 139 部品・600 パッド。
 10. 仕上げ → **一次完了（2026-09-29）**。成果物は `fab/v030wip/`（README に一覧）。
-    - シルクを整理した：部品番号 0.8mm で全数表示。残る警告は J3 の外形の2件。
+    - シルクを整理した：部品番号 0.8mm。R15 だけ置き場所がなく非表示（J1 の本体の下になったため、F.Fab には残る）。残る警告は J3 の外形の2件。
     - Gerber／ドリル／CPL／JLC BOM・CPL／プレビューを出力した。ドリルのヒット数は基板と一致。
     - ビットストリーム 1816/2048 を apycula で生成した（実機未検証）。
     - **残り**：
-      - LCSC 部品の選定（132点）。
+      - ~~LCSC 部品の選定~~ → 完了（全139点、2026-09-29）。
       - CPL の回転を JLC のプレビューで確認する。
       - ~~ERC~~ → 完了（2026-09-29）。KiCad 9 CLI（`tools/erc_k9.sh`）で実行。PWR_FLAG を9ネットに追加し、U3.27/31/33 は `hardware/erc_exclusions.json` で除外。`tools/erc_check.py` で残り0件。
       - 発注時のビアの指定（下記）。
@@ -372,6 +372,9 @@ U2 を180°回転したため、**左辺（x=45.05）が U1(ADC) 側**、右辺�
     - PAL/NTSC の実入力プロファイル、長短ラインの連続。
     - ADC_1V9PLL のデカップリング経路（In2 経由）の品質。
     - V_IN_3V3 が U4 本体の下を通過している点の目視確認。
+    - J1/J2（HYC06-HDR15B-060）の実物のはまり具合（穴径、固定金具、ケースとの位置）。J1 の H/V は基板の端を回るため長くなった。
+    - U3 の反転出力（IOR_N/IOG_N/IOB_N）を GND に落とす使い方を、ADV7125 のデータシートで再確認する（取得できなかった）。
+    - 旧 CONEC 用フットプリントは、ピンの左右が規格と逆に見えた（照合なし。置き換え済みで影響なし）。
 
 ---
 
@@ -385,7 +388,7 @@ U2 を180°回転したため、**左辺（x=45.05）が U1(ADC) 側**、右辺�
   - EP サーマルビアは (48/50/52, 40/42/44)。
   - その間の B.Cu に各2本程度通せる。
 - B7(52.6) と MODE1(53.8) の間の溝に置けるビアは1個（x 53.15–53.25）。
-- 自作ルーター `tools/router.py`：
+- 自作ルーター `tools/router.py`（v0.30 の後半は `tools/router7.py`：PTH や既存ビアを考慮し、始点・終点の層を選べる）：
   - 0.05mm 格子の A*、F/B 層とビアを扱う。
   - `block()` の矩形にはクリアランスが加算される。細い予約は幅0の線で指定する。
   - 失敗の切り分けには `scripts/reach.py`（到達可能性の flood fill）を使う。
@@ -400,14 +403,17 @@ U2 を180°回転したため、**左辺（x=45.05）が U1(ADC) 側**、右辺�
 ```
 E:\A1200\A1200 Line Doubler\
   outputs\amiga_scandoubler\
-    README.md, design.md, *_review.md, revision_0.xx.md   … 設計記録（v0.2〜0.29）
+    README.md, design.md, *_review.md, revision_0.xx.md   … 設計記録（v0.2〜0.30。v0.30 は revision_0.30.md、作業ログは revision_0.30wip.md）
+    fab\v030wip\  … 製造データ一式（README に一覧と発注前の注意）
     rtl\        … SystemVerilog（amiga_board_top.sv, line_double.sv, gowin_video_pll.sv, tvp7002_boot.sv など18本）
     sim\        … Icarus テスト（run_*_tests.py、tb_*.sv）
     synthesis\, implementation\output_release\  … 現行の合成・配置配線・解析手順（commands.txt）
     constraints\amiga_board_top.cst, board_port_map.json
     hardware\
       amiga_scandoubler.kicad_sch（01_adc〜06_support）, Amiga.kicad_sym, Amiga.pretty
-      amiga_scandoubler_u2rot.kicad_pcb   … 2026-09-28 に v030wip の内容で上書き済み（v0.29 原本は work\backup_before_v030wip\）
+      amiga_scandoubler_v030wip.kicad_pcb … 現行の基板（v0.30）
+      amiga_scandoubler_u2rot.kicad_pcb   … 2026-09-28 時点の v030wip の写し（現在は古い。v0.29 原本は work\backup_before_v030wip\）
+      erc_k9.rpt, erc_exclusions.json, erc_netlist_report.json … ERC の結果と除外
       circuit_manifest.json, fpga_pin_assignment.json, *_progress.json, power_routing_report.json
   work\audit_sync_in.py
 ```
@@ -423,7 +429,7 @@ Claude プロジェクト（claude.ai）に保存してあるもの：
 **移行後の最初の作業：**
 1. ~~v030wip の基板を KiCad 7 で開けることを確認する~~ 済（KiCad 7.0.11）。
 2. ~~KiCad 7 で DRC を実行し、ゾーンを再充填して保存する~~ 済。
-3. ~~6章の課題1（C34）~~、~~課題2（制御線とプルアップ）~~ 済。~~課題3（POWER_GOOD）~~ 済。~~課題4（DAC_PSAVE_N）~~ 済。課題5は JTAG 系まで済み。DAC 再ピン（v0.31）済み。課題5完了。~~課題6（DAC バス）~~ 済。~~課題7（電源）~~ 済。~~課題8（アナログ入力）~~ 済（未接続0）。~~課題9（ドキュメント）~~ 済（監査 PASS）。次は課題10（仕上げ）。
+3. ~~6章の課題1（C34）~~、~~課題2（制御線とプルアップ）~~ 済。~~課題3（POWER_GOOD）~~ 済。~~課題4（DAC_PSAVE_N）~~ 済。課題5は JTAG 系まで済み。DAC 再ピン（v0.31）済み。課題5完了。~~課題6（DAC バス）~~ 済。~~課題7（電源）~~ 済。~~課題8（アナログ入力）~~ 済（未接続0）。~~課題9（ドキュメント）~~ 済（監査 PASS）。~~課題10（仕上げ）~~ 一次完了（部品選定・J1/J2 置き換え・ERC まで済み）。
 4. ~~区切りのよいところで v0.30 として revision を記録する~~ → `outputs/amiga_scandoubler/revision_0.30.md`（2026-09-29）。基板ファイル名は `v030wip` のまま。
 
 ---
