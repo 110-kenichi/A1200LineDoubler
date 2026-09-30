@@ -1149,18 +1149,45 @@
  },
  {
   "ref": "L1",
-  "lcsc": "C7413169",
-  "no_easyeda_data": true
+  "lcsc": "C92959",
+  "easyeda": "IND-SMD_L4.0-W4.0_NRS4018T",
+  "pads_compared": 2,
+  "R": 180,
+  "max_pad_err_mm": 0.047,
+  "cpl_rot": 0.0,
+  "jlc_rot": 180.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
  },
  {
   "ref": "L2",
-  "lcsc": "C7413169",
-  "no_easyeda_data": true
+  "lcsc": "C92959",
+  "easyeda": "IND-SMD_L4.0-W4.0_NRS4018T",
+  "pads_compared": 2,
+  "R": 180,
+  "max_pad_err_mm": 0.047,
+  "cpl_rot": 0.0,
+  "jlc_rot": 180.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
  },
  {
   "ref": "L3",
-  "lcsc": "C7413169",
-  "no_easyeda_data": true
+  "lcsc": "C92959",
+  "easyeda": "IND-SMD_L4.0-W4.0_NRS4018T",
+  "pads_compared": 2,
+  "R": 180,
+  "max_pad_err_mm": 0.047,
+  "cpl_rot": 0.0,
+  "jlc_rot": 180.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
  },
  {
   "ref": "R1",

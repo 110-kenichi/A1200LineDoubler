@@ -2589,7 +2589,7 @@
     },
     "C47": {
       "reference": "C47",
-      "value": "10uF",
+      "value": "10uF 25V",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0805_2012Metric",
       "mpn": "CL21A106KAYNNNE",
@@ -3292,10 +3292,10 @@
       "reference": "J3",
       "value": "TYPE-C-31-M-12",
       "symbol": "USB_C_16P",
-      "footprint": "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12",
+      "footprint": "Amiga:USB_C_Receptacle_HRO_TYPE-C-31-M-12_Slot0.8",
       "mpn": "TYPE-C-31-M-12",
       "lcsc": "C165948",
-      "notes": "HRO drawing 2020-12-08 reviewed. Shell slots require assembly-process review.",
+      "notes": "HRO drawing 2020-12-08 reviewed. Shell slots widened 0.6 -> 0.8 mm (pads 1.2 mm) as in the JLC/EasyEDA footprint of C165948 (JLC DFM flagged 0.6 mm slots).",
       "pins": {
         "A1": {
           "name": "GND",
@@ -3453,7 +3453,7 @@
     },
     "C54": {
       "reference": "C54",
-      "value": "10uF",
+      "value": "10uF 25V",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0805_2012Metric",
       "mpn": "CL21A106KAYNNNE",
@@ -3535,9 +3535,9 @@
       "value": "2.2uH",
       "symbol": "L",
       "footprint": "Amiga:L_TDK_VLS4012CX",
-      "mpn": "VLS4012CX-2R2M-1",
-      "lcsc": "C7413169",
-      "notes": "",
+      "mpn": "NRS4018T2R2MDGJ",
+      "lcsc": "C92959",
+      "notes": "Taiyo Yuden NRS4018T2R2MDGJ (C92959): 2.2 uH, Isat 3 A, Irated 2.2 A, DCR 42 mOhm, 4.0x4.0x1.8 mm. Replaces TDK VLS4012CX-2R2M-1 (C7413169, no EasyEDA footprint -> not placeable at JLC). Same land.",
       "pins": {
         "1": {
           "name": "~",
@@ -3598,7 +3598,7 @@
     },
     "C55": {
       "reference": "C55",
-      "value": "10uF 10V",
+      "value": "10uF 25V",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0805_2012Metric",
       "mpn": "CL21A106KAYNNNE",
@@ -3702,9 +3702,9 @@
       "value": "2.2uH",
       "symbol": "L",
       "footprint": "Amiga:L_TDK_VLS4012CX",
-      "mpn": "VLS4012CX-2R2M-1",
-      "lcsc": "C7413169",
-      "notes": "",
+      "mpn": "NRS4018T2R2MDGJ",
+      "lcsc": "C92959",
+      "notes": "Taiyo Yuden NRS4018T2R2MDGJ (C92959): 2.2 uH, Isat 3 A, Irated 2.2 A, DCR 42 mOhm, 4.0x4.0x1.8 mm. Replaces TDK VLS4012CX-2R2M-1 (C7413169, no EasyEDA footprint -> not placeable at JLC). Same land.",
       "pins": {
         "1": {
           "name": "~",
@@ -3765,7 +3765,7 @@
     },
     "C57": {
       "reference": "C57",
-      "value": "10uF 10V",
+      "value": "10uF 25V",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0805_2012Metric",
       "mpn": "CL21A106KAYNNNE",
@@ -3869,9 +3869,9 @@
       "value": "2.2uH",
       "symbol": "L",
       "footprint": "Amiga:L_TDK_VLS4012CX",
-      "mpn": "VLS4012CX-2R2M-1",
-      "lcsc": "C7413169",
-      "notes": "",
+      "mpn": "NRS4018T2R2MDGJ",
+      "lcsc": "C92959",
+      "notes": "Taiyo Yuden NRS4018T2R2MDGJ (C92959): 2.2 uH, Isat 3 A, Irated 2.2 A, DCR 42 mOhm, 4.0x4.0x1.8 mm. Replaces TDK VLS4012CX-2R2M-1 (C7413169, no EasyEDA footprint -> not placeable at JLC). Same land.",
       "pins": {
         "1": {
           "name": "~",
@@ -3932,7 +3932,7 @@
     },
     "C59": {
       "reference": "C59",
-      "value": "10uF 10V",
+      "value": "10uF 25V",
       "symbol": "C",
       "footprint": "Capacitor_SMD:C_0805_2012Metric",
       "mpn": "CL21A106KAYNNNE",
