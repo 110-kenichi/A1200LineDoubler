@@ -361,7 +361,7 @@ U2 を180°回転したため、**左辺（x=45.05）が U1(ADC) 側**、右辺�
     - ビットストリーム 1816/2048 を apycula で生成した（実機未検証）。
     - **残り**：
       - ~~LCSC 部品の選定~~ → 完了（全139点、2026-09-29）。
-      - CPL の回転を JLC のプレビューで確認する。
+      - CPL の回転：EasyEDA のフットプリントと照合して補正済み（2026-09-30、`tools/jlc_rotcheck.py`、`fab/v030wip/cpl_rotation_check.md`）。発注画面のプレビューでの最終確認は利用者側。
       - ~~ERC~~ → 完了（2026-09-29）。KiCad 9 CLI（`tools/erc_k9.sh`）で実行。PWR_FLAG を9ネットに追加し、U3.27/31/33 は `hardware/erc_exclusions.json` で除外。`tools/erc_check.py` で残り0件。
       - 発注時のビアの指定（下記）。
     - JLC 向け：EP 内の via-in-pad は充填（plugged）または蓋（tented）を指定する（J2.7/J2.8 のパッド上ビアは J1/J2 の置き換えでなくなった）。

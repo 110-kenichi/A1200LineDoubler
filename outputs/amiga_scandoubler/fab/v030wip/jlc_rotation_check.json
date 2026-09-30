@@ -1,0 +1,1921 @@
+[
+ {
+  "ref": "C1",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C2",
+  "lcsc": "C576818",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C3",
+  "lcsc": "C106246",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C4",
+  "lcsc": "C85973",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C5",
+  "lcsc": "C85973",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C6",
+  "lcsc": "C85973",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C7",
+  "lcsc": "C85973",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C8",
+  "lcsc": "C85973",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C9",
+  "lcsc": "C106246",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C10",
+  "lcsc": "C85973",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C11",
+  "lcsc": "C106246",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C12",
+  "lcsc": "C85973",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C13",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C14",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C15",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C16",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C17",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C18",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C19",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 180.0,
+  "jlc_rot": 180.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C20",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": -90.0,
+  "jlc_rot": 270.0,
+  "placement_error_mm": [
+   0.0,
+   -0.0
+  ]
+ },
+ {
+  "ref": "C21",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": -90.0,
+  "jlc_rot": 270.0,
+  "placement_error_mm": [
+   0.0,
+   -0.0
+  ]
+ },
+ {
+  "ref": "C22",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C23",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C24",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C25",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C26",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 180.0,
+  "jlc_rot": 180.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C27",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C28",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C29",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 180.0,
+  "jlc_rot": 180.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C30",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": -90.0,
+  "jlc_rot": 270.0,
+  "placement_error_mm": [
+   0.0,
+   -0.0
+  ]
+ },
+ {
+  "ref": "C31",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C32",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": -90.0,
+  "jlc_rot": 270.0,
+  "placement_error_mm": [
+   0.0,
+   -0.0
+  ]
+ },
+ {
+  "ref": "C33",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C34",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": -90.0,
+  "jlc_rot": 270.0,
+  "placement_error_mm": [
+   0.0,
+   -0.0
+  ]
+ },
+ {
+  "ref": "C35",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 180.0,
+  "jlc_rot": 180.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C36",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 180.0,
+  "jlc_rot": 180.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C37",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C38",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": -90.0,
+  "jlc_rot": 270.0,
+  "placement_error_mm": [
+   0.0,
+   -0.0
+  ]
+ },
+ {
+  "ref": "C39",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C40",
+  "lcsc": "C1779",
+  "easyeda": "C0805",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.05,
+  "cpl_rot": 180.0,
+  "jlc_rot": 180.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C41",
+  "lcsc": "C1779",
+  "easyeda": "C0805",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.05,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C42",
+  "lcsc": "C1525",
+  "easyeda": "C0402",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.06,
+  "cpl_rot": -90.0,
+  "jlc_rot": 270.0,
+  "placement_error_mm": [
+   0.0,
+   -0.0
+  ]
+ },
+ {
+  "ref": "C43",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C44",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 180.0,
+  "jlc_rot": 180.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C45",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C46",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C47",
+  "lcsc": "C15850",
+  "easyeda": "C0805",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.05,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C48",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C49",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C50",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C51",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C52",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 180.0,
+  "jlc_rot": 180.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C53",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C54",
+  "lcsc": "C15850",
+  "easyeda": "C0805",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.05,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C55",
+  "lcsc": "C15850",
+  "easyeda": "C0805",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.05,
+  "cpl_rot": 180.0,
+  "jlc_rot": 180.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C56",
+  "lcsc": "C45783",
+  "easyeda": "C0805",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.05,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C57",
+  "lcsc": "C15850",
+  "easyeda": "C0805",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.05,
+  "cpl_rot": 180.0,
+  "jlc_rot": 180.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C58",
+  "lcsc": "C45783",
+  "easyeda": "C0805",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.05,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C59",
+  "lcsc": "C15850",
+  "easyeda": "C0805",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.05,
+  "cpl_rot": 180.0,
+  "jlc_rot": 180.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C60",
+  "lcsc": "C45783",
+  "easyeda": "C0805",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.05,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C61",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C62",
+  "lcsc": "C1779",
+  "easyeda": "C0805",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.05,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C63",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C64",
+  "lcsc": "C1779",
+  "easyeda": "C0805",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.05,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C65",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C66",
+  "lcsc": "C1779",
+  "easyeda": "C0805",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.05,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C67",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C68",
+  "lcsc": "C1779",
+  "easyeda": "C0805",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.05,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C69",
+  "lcsc": "C14663",
+  "easyeda": "C0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.075,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C70",
+  "lcsc": "C1525",
+  "easyeda": "C0402",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.06,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C71",
+  "lcsc": "C1525",
+  "easyeda": "C0402",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.06,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C72",
+  "lcsc": "C1525",
+  "easyeda": "C0402",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.06,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "C73",
+  "lcsc": "C1525",
+  "easyeda": "C0402",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.06,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "F1",
+  "lcsc": "C269119",
+  "easyeda": "F1206",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.045,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "FB1",
+  "lcsc": "C304314",
+  "easyeda": "L0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.088,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "FB2",
+  "lcsc": "C304314",
+  "easyeda": "L0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.088,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "FB3",
+  "lcsc": "C304314",
+  "easyeda": "L0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.088,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "FB4",
+  "lcsc": "C304314",
+  "easyeda": "L0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.088,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "J1",
+  "lcsc": "C711364",
+  "easyeda": "DSUB-TH_HYC06-HDR15B-060",
+  "pads_compared": 16,
+  "R": 0,
+  "max_pad_err_mm": 11.968,
+  "cpl_rot": -90.0,
+  "jlc_rot": 270.0,
+  "placement_error_mm": [
+   -0.0,
+   -0.532
+  ]
+ },
+ {
+  "ref": "J2",
+  "lcsc": "C711364",
+  "easyeda": "DSUB-TH_HYC06-HDR15B-060",
+  "pads_compared": 16,
+  "R": 0,
+  "max_pad_err_mm": 11.968,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   0.0,
+   0.532
+  ]
+ },
+ {
+  "ref": "J3",
+  "lcsc": "C165948",
+  "easyeda": "USB-C_SMD-TYPE-C-31-M-12_1",
+  "pads_compared": 8,
+  "R": 0,
+  "max_pad_err_mm": 0.0,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   1.571
+  ]
+ },
+ {
+  "ref": "J4",
+  "lcsc": "C32713285",
+  "easyeda": "HDR-SMD_10P-P2.54-V-M-R2-C5-LS7.5",
+  "pads_compared": 10,
+  "R": 270,
+  "max_pad_err_mm": 0.165,
+  "cpl_rot": 90.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "L1",
+  "lcsc": "C7413169",
+  "no_easyeda_data": true
+ },
+ {
+  "ref": "L2",
+  "lcsc": "C7413169",
+  "no_easyeda_data": true
+ },
+ {
+  "ref": "L3",
+  "lcsc": "C7413169",
+  "no_easyeda_data": true
+ },
+ {
+  "ref": "R1",
+  "lcsc": "C22843",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 180.0,
+  "jlc_rot": 180.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R2",
+  "lcsc": "C23162",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": -90.0,
+  "jlc_rot": 270.0,
+  "placement_error_mm": [
+   0.0,
+   -0.0
+  ]
+ },
+ {
+  "ref": "R3",
+  "lcsc": "C23162",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": -90.0,
+  "jlc_rot": 270.0,
+  "placement_error_mm": [
+   0.0,
+   -0.0
+  ]
+ },
+ {
+  "ref": "R4",
+  "lcsc": "C23162",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R5",
+  "lcsc": "C23162",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R6",
+  "lcsc": "C23162",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R7",
+  "lcsc": "C23162",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R8",
+  "lcsc": "C23162",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R9",
+  "lcsc": "C23162",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R10",
+  "lcsc": "C861466",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R11",
+  "lcsc": "C319466",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R12",
+  "lcsc": "C319466",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R13",
+  "lcsc": "C319466",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R14",
+  "lcsc": "C25804",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R15",
+  "lcsc": "C319466",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R16",
+  "lcsc": "C319466",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R17",
+  "lcsc": "C319466",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R18",
+  "lcsc": "C23140",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R19",
+  "lcsc": "C25803",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R20",
+  "lcsc": "C23140",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R21",
+  "lcsc": "C25803",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R22",
+  "lcsc": "C23140",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R23",
+  "lcsc": "C23140",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R24",
+  "lcsc": "C23345",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R25",
+  "lcsc": "C23186",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 180.0,
+  "jlc_rot": 180.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R26",
+  "lcsc": "C23186",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R27",
+  "lcsc": "C861315",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 180.0,
+  "jlc_rot": 180.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R28",
+  "lcsc": "C122538",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 180.0,
+  "jlc_rot": 180.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R29",
+  "lcsc": "C861114",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 180.0,
+  "jlc_rot": 180.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R30",
+  "lcsc": "C122538",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 180.0,
+  "jlc_rot": 180.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R31",
+  "lcsc": "C705780",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 180.0,
+  "jlc_rot": 180.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R32",
+  "lcsc": "C122538",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 180.0,
+  "jlc_rot": 180.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R33",
+  "lcsc": "C25804",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R34",
+  "lcsc": "C25804",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R35",
+  "lcsc": "C25803",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R36",
+  "lcsc": "C23345",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R37",
+  "lcsc": "C25879",
+  "easyeda": "R0402",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.077,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R38",
+  "lcsc": "C25879",
+  "easyeda": "R0402",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.077,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R39",
+  "lcsc": "C25744",
+  "easyeda": "R0402",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.077,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R40",
+  "lcsc": "C25744",
+  "easyeda": "R0402",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.077,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R41",
+  "lcsc": "C25804",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 180.0,
+  "jlc_rot": 180.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R42",
+  "lcsc": "C25804",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": -90.0,
+  "jlc_rot": 270.0,
+  "placement_error_mm": [
+   0.0,
+   -0.0
+  ]
+ },
+ {
+  "ref": "R43",
+  "lcsc": "C25804",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 90.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "R44",
+  "lcsc": "C23162",
+  "easyeda": "R0603",
+  "pads_compared": 2,
+  "R": 0,
+  "max_pad_err_mm": 0.072,
+  "cpl_rot": 180.0,
+  "jlc_rot": 180.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "U1",
+  "lcsc": "C3824085",
+  "easyeda": "HTQFP-100_L14.0-W14.0-P0.50-LS16.0-BL-EP6.2",
+  "pads_compared": 101,
+  "R": 270,
+  "max_pad_err_mm": 0.05,
+  "cpl_rot": 0.0,
+  "jlc_rot": 270.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "U2",
+  "lcsc": "C31900351",
+  "easyeda": "QFN-88_L10.0-W10.0-P0.40-BL-EP6.75",
+  "pads_compared": 89,
+  "R": 270,
+  "max_pad_err_mm": 0.05,
+  "cpl_rot": 180.0,
+  "jlc_rot": 90.0,
+  "placement_error_mm": [
+   0.0,
+   -0.0
+  ]
+ },
+ {
+  "ref": "U3",
+  "lcsc": "C9668",
+  "easyeda": "LQFP-48_L7.0-W7.0-P0.50-LS9.0-BL",
+  "pads_compared": 48,
+  "R": 270,
+  "max_pad_err_mm": 0.087,
+  "cpl_rot": 0.0,
+  "jlc_rot": 270.0,
+  "placement_error_mm": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "U4",
+  "lcsc": "C19829674",
+  "easyeda": "SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL",
+  "pads_compared": 6,
+  "R": 270,
+  "max_pad_err_mm": 0.012,
+  "cpl_rot": 0.0,
+  "jlc_rot": 270.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "U5",
+  "lcsc": "C19829674",
+  "easyeda": "SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL",
+  "pads_compared": 6,
+  "R": 270,
+  "max_pad_err_mm": 0.012,
+  "cpl_rot": 0.0,
+  "jlc_rot": 270.0,
+  "placement_error_mm": [
+   -0.0,
+   0.0
+  ]
+ },
+ {
+  "ref": "U6",
+  "lcsc": "C7836",
+  "easyeda": "SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR",
+  "pads_compared": 5,
+  "R": 180,
+  "max_pad_err_mm": 0.195,
+  "cpl_rot": 0.0,
+  "jlc_rot": 180.0,
+  "placement_error_mm": [
+   -0.033,
+   0.0
+  ]
+ },
+ {
+  "ref": "U7",
+  "lcsc": "C324077",
+  "easyeda": "WSON-8_L2.0-W2.0-P0.50-TL-EP",
+  "pads_compared": 9,
+  "R": 0,
+  "max_pad_err_mm": 0.0,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   0.0,
+   -0.0
+  ]
+ },
+ {
+  "ref": "U8",
+  "lcsc": "C324077",
+  "easyeda": "WSON-8_L2.0-W2.0-P0.50-TL-EP",
+  "pads_compared": 9,
+  "R": 0,
+  "max_pad_err_mm": 0.0,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   0.0,
+   -0.0
+  ]
+ },
+ {
+  "ref": "U9",
+  "lcsc": "C324077",
+  "easyeda": "WSON-8_L2.0-W2.0-P0.50-TL-EP",
+  "pads_compared": 9,
+  "R": 0,
+  "max_pad_err_mm": 0.0,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   0.0,
+   -0.0
+  ]
+ },
+ {
+  "ref": "Y1",
+  "lcsc": "C5203549",
+  "easyeda": "OSC-SMD_4P-L3.2-W2.5-BL",
+  "pads_compared": 4,
+  "R": 0,
+  "max_pad_err_mm": 0.09,
+  "cpl_rot": 0.0,
+  "jlc_rot": 0.0,
+  "placement_error_mm": [
+   -0.0,
+   -0.0
+  ]
+ }
+]

@@ -78,3 +78,10 @@
 - PLL の実際の位相とジッター、hold と recovery/removal、DAC 端子での setup/hold、PSAVE が Low のときのアナログ出力。
 - PAL/NTSC の実入力のプロファイル、長いラインと短いラインが続く場合。H_SAMPLES 1816/2048 は暫定値。
 - ADC_1V9PLL のデカップリング経路の品質。V_IN_3V3 が U4 本体の下を通る点の目視確認。
+
+## 追記（2026-09-30）CPL の回転の補正
+
+- EasyEDA（JLC のライブラリ）のフットプリントと KiCad のフットプリントを、パッド番号ごとに照合した（`tools/jlc_rotcheck.py`、結果 `fab/v030wip/jlc_rotation_check.json`）。JLC で実装する137点のうち、L1〜L3 以外はすべて照合できた。
+- 補正（`scripts/r10_fab.py` が CPL の出力時に適用）：U1/U3/U4/U5 +270°、U2 180→90°、U6 +180°（x −0.033mm）、J4 90→0°、J3 は位置を 1.571mm 基板の内側へ。2端子部品で 90° ずれるものは0件。
+- J1/J2 の EasyEDA フットプリントは、信号ピンの並びがこの基板と同じだった（ピンの左右の向きの裏付け）。
+- 基板・回路図は変更していない。プレビューでの確認は `fab/v030wip/cpl_rotation_check.md` の表で行う。

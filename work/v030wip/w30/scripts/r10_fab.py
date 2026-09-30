@@ -14,9 +14,24 @@ for ref in sorted(M,key=lambda s:(re.sub(r'\d','',s),int(re.sub(r'\D','',s) or 0
 with open(os.path.join(F,'jlc_bom.csv'),'w',newline='') as f:
     w=csv.writer(f);w.writerow(['Comment','Designator','Footprint','LCSC Part #','MPN'])
     for (val,fp,lcsc),rs in g.items():w.writerow([val,','.join(rs),fp,lcsc,M[rs[0]].get('mpn','')])
-with open(os.path.join(F,'jlc_cpl.csv'),'w',newline='') as f:
-    w=csv.writer(f);w.writerow(['Designator','Mid X','Mid Y','Layer','Rotation'])
-    for r in raw:w.writerow([r['Ref'],r['PosX']+'mm',r['PosY']+'mm','Top' if r['Side']=='top' else 'Bottom',r['Rot']])
+# JLC placement corrections (tools/jlc_rotcheck.py vs the EasyEDA footprints JLC places with):
+#   rotation += R; position -= placement_error (board frame, y down; the CPL y axis is up).
+CORR={c['ref']:c for c in json.load(open(os.path.join(F,'jlc_rotation_check.json'))) if c.get('max_pad_err_mm',99)<0.3} if os.path.exists(os.path.join(F,'jlc_rotation_check.json')) else {}
+#   (J1/J2: EasyEDA numbers the two board locks 16/17, so the automatic match is invalid (11.97 mm) -> no correction; they are DNP anyway)
+DNP={'J1','J2'}   # hand-soldered by the user (jlc_*_dnp_J1J2.csv)
+rows=[]
+for r in raw:
+    c=CORR.get(r['Ref'],{});R=c.get('R',0);ex,ey=c.get('placement_error_mm',[0,0])
+    x=float(r['PosX'])-ex;y=float(r['PosY'])+ey;rot=(float(r['Rot'])+R)%360
+    rows.append([r['Ref'],'%.6fmm'%x,'%.6fmm'%y,'Top' if r['Side']=='top' else 'Bottom','%.6f'%rot])
+for fn,skip in (('jlc_cpl.csv',set()),('jlc_cpl_dnp_J1J2.csv',DNP)):
+    with open(os.path.join(F,fn),'w',newline='') as f:
+        w=csv.writer(f);w.writerow(['Designator','Mid X','Mid Y','Layer','Rotation']);[w.writerow(r) for r in rows if r[0] not in skip]
+with open(os.path.join(F,'jlc_bom_dnp_J1J2.csv'),'w',newline='') as f:
+    w=csv.writer(f);w.writerow(['Comment','Designator','Footprint','LCSC Part #','MPN'])
+    for (val,fp,lcsc),rs in g.items():
+        d=[x for x in rs if x not in DNP]
+        if d:w.writerow([val,','.join(d),fp,lcsc,M[rs[0]].get('mpn','')])
 todo=[(','.join(rs),val,fp) for (val,fp,lcsc),rs in g.items() if not lcsc]
 with open(os.path.join(F,'parts_to_select.csv'),'w',newline='') as f:
     w=csv.writer(f);w.writerow(['Designators','Value','Footprint','Qty']);[w.writerow([d,v,fp,len(d.split(','))]) for d,v,fp in todo]
