@@ -1175,7 +1175,7 @@
   ],
   "decoupling_pair_count": 30,
   "historical_v022_maximum_IC_to_cap_trace_mm": 5.384188309203678,
-  "track_segments": 2035,
+  "track_segments": 1984,
   "through_vias": 285,
   "unconnected_items": 0,
   "drc_categories": {
@@ -1186,5 +1186,5 @@
     "silk_edge_clearance": 2,
     "unconnected_items": 146
   },
-  "board_sha256": "a5c05058f445c1aa0d5ec2a7d3cedadf3ecde86fccbea140b7a708bc52d527db"
+  "board_sha256": "b6f8baf5b12bd9acbe684cda6316d9ca55b13c0a1320b3489d2b1638db12e2e4"
 }
