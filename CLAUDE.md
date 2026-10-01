@@ -361,13 +361,13 @@ U2 を180°回転したため、**左辺（x=45.05）が U1(ADC) 側**、右辺�
     - ビットストリーム 1816/2048 を apycula で生成した（実機未検証）。
     - **残り**：
       - ~~LCSC 部品の選定~~ → 完了（全139点、2026-09-29）。
-      - CPL の回転：EasyEDA のフットプリントと照合して補正済み（2026-09-30、`tools/jlc_rotcheck.py`、`fab/v030wip/cpl_rotation_check.md`）。発注画面のプレビューでの最終確認は利用者側。
+      - CPL の回転：EasyEDA のフットプリントと照合して補正済み（2026-09-30、`tools/jlc_rotcheck.py`、`fab/v030wip/cpl_rotation_check.md`）。発注画面のプレビューでの最終確認は利用者側（特に J3 の位置 1.571mm 補正、U1/U2 の1番ピン。README の「発注前に必要なこと」2）。
       - ~~ERC~~ → 完了（2026-09-29）。KiCad 9 CLI（`tools/erc_k9.sh`）で実行。PWR_FLAG を9ネットに追加し、U3.27/31/33 は `hardware/erc_exclusions.json` で除外。`tools/erc_check.py` で残り0件。
       - 発注時のビアの指定（下記）。
-    - JLC 向け：EP 内の via-in-pad は充填（plugged）または蓋（tented）を指定する（J2.7/J2.8 のパッド上ビアは J1/J2 の置き換えでなくなった）。
+    - JLC 向け：U1/U2 の EP 内のビア（9個ずつ、計18個、GND 0.5/0.3。2026-10-01 に 0.6 から変更、`scripts/ep_via05.py`）は **「Epoxy Filled & Capped」（POFV）** を注文画面の Via Covering で指定する（4層では標準でないため明示が必要）。JLC の「Plugged」はレジストでビアを埋める別の処理で、EP には使えない（2026-10-01 訂正）。J2.7/J2.8 のパッド上ビアは J1/J2 の置き換えでなくなった。
     - **IC のピンの隙間を通る配線を撤去（2026-09-30、`scripts/dfm_u1pll.py`・`dfm_gapfix.py`）**：U1 の11組・U3 の3組・U5.5。今は0本。以後、同じネットの隣のピンを隙間でつながないこと。
     - **重なった配線・行き止まりの配線を整理（2026-09-30、`scripts/dfm_dedup.py`・`dfm_spur.py`・`dfm_tidy.py`）**：同じネットで重なる配線 44組→0、行き止まり（ADC_1V9PLL の In2 約 3mm など）を削除、U1.93/94・C27・C28 周りを木の形に整えた。削除はパッドのつながり方が変わらない場合だけ。2026-10-01 に C27–U1 間の GND（U1.90/91）、C21 の 3V3 ビア、U4.5–C51 も整理（`dfm_tidy2.py`）。
-    - **ルーターの段差（短い斜め線と水平・垂直線の繰り返し）をならした（2026-10-01、`scripts/dfm_planeloop.py`・`dfm_smooth.py`・`dfm_tidy3.py`、`tools/trackchains.py`・`jogscan.py`）**：短い段差 198→14か所（残りは角の面取りなど）。今後ルーターで引いた配線は、`dfm_smooth.py` と `jogscan.py` をかけてから確定すること。
+    - **ルーターの段差（短い斜め線と水平・垂直線の繰り返し）をならした（2026-10-01、`scripts/dfm_planeloop.py`・`dfm_smooth.py`・`dfm_tidy3.py`、`tools/trackchains.py`・`jogscan.py`）**：短い段差 198→14か所（残りは角の面取りなど）。今後ルーターで引いた配線は、`dfm_smooth.py` と `jogscan.py` をかけてから確定すること。2026-10-01 に角のはみ出し（5V 幹線と C55/C57/C59 の縦線の幅違い、C59 側の 0.5mm の延び過ぎ、U3.31・U1.15 の GND の端）も直した（`scripts/dfm_corner.py`、検査 `tools/cornerscan.py`）。
     - **JLC DFM 対応（2026-09-30）**：ビア30個を移動（41883af の C59 の配線切れは修正済み。検査 `tools/padconn_cmp.py`）（`scripts/dfm_vias.py`、`dfm_fix2.py`）、受動部品のパッド中のビアを解消（C56/C58/C59/C60/C71）、J3 の長穴を 0.8mm に（`Amiga:USB_C_Receptacle_HRO_TYPE-C-31-M-12_Slot0.8`）、シルク50個を置き直し（`dfm_silk.py`）。L1〜L3 を NRS4018T2R2MDGJ（C92959）に変更、C15850 の5個を値「10uF 25V」で1行に。U1 は在庫4なので実装数は2枚。詳細は revision_0.30.md の追記。
     - J1/J2 は HYC06-HDR15B-060（スルーホール）に置き換え、利用者が手はんだで付ける（JLC では実装しない）。発注には `fab/v030wip/jlc_bom_dnp_J1J2.csv` / `jlc_cpl_dnp_J1J2.csv` を使う。U1/U2 は JLC で実装する。スクリプトは `scripts/jc_*.py`、詳細は revision_0.30wip.md。
 11. 検証が残っている項目：
