@@ -22,12 +22,12 @@
   "modified_decoupling_paths_require_requalification": true,
   "PLL_signal_vias": 0,
   "analog_total_copper_length_mm": {
-    "PLL_F": 13.955817747427393,
+    "PLL_F": 13.838660459902009,
     "PLL_FILT1": 2.956370849898476,
-    "PLL_RC": 4.751449761587338,
+    "PLL_RC": 4.740990257669733,
     "PLL_FILT2": 4.158306070737524,
-    "DAC_COMP": 10.858006652763322,
-    "DAC_VREF": 4.177601460252034,
+    "DAC_COMP": 10.85800665276332,
+    "DAC_VREF": 4.177601460252035,
     "DAC_RSET": 3.8128048327204933,
     "SOGIN_1": 2.8513455967290593,
     "RIN_3": 5.956244584051393,
@@ -35,19 +35,19 @@
     "BIN_3": 18.1214688421169,
     "BIN_2": 11.092640687119284,
     "GIN_4": 14.342640687119287,
-    "SOGIN_3": 8.201955262170046,
+    "SOGIN_3": 8.143376618407357,
     "GIN_3": 6.681370849898477,
     "SOGIN_2": 7.264461178225899,
-    "GIN_2": 8.492280997922336,
+    "GIN_2": 8.49944263558534,
     "RIN_1": 12.113098833543773,
     "GIN_1": 20.09490840047646,
     "BIN_1": 9.954773014368646,
     "R_IN": 14.446483844496427,
     "G_IN": 7.676829536238467,
     "B_IN": 15.71841248972113,
-    "R_OUT": 16.90856650308689,
-    "G_OUT": 16.719681945104828,
-    "B_OUT": 19.243673566454895
+    "R_OUT": 16.86446353388683,
+    "G_OUT": 16.719681945104824,
+    "B_OUT": 18.041592038437763
   },
   "analog_net_complete": {
     "PLL_F": true,
@@ -1175,7 +1175,7 @@
   ],
   "decoupling_pair_count": 30,
   "historical_v022_maximum_IC_to_cap_trace_mm": 5.384188309203678,
-  "track_segments": 1897,
+  "track_segments": 1619,
   "through_vias": 285,
   "unconnected_items": 0,
   "drc_categories": {
@@ -1186,5 +1186,5 @@
     "silk_edge_clearance": 2,
     "unconnected_items": 146
   },
-  "board_sha256": "70cb905b6aa61d109fac4e467926ef15289f4219c8440f00e6d98aea77b51217"
+  "board_sha256": "7d4f4d5832a225045b0c93892f9dff3fae51d41cbb19e7a2ba8efef594eb310a"
 }
