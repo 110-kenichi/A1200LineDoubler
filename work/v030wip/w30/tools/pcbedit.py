@@ -3,7 +3,8 @@ class Board:
     def __init__(s,path):
         s.path=path;s.lines=open(path,encoding='utf-8').read().split('\n')
         s.nets={m.group(2):int(m.group(1)) for l in s.lines for m in [re.match(r'\s*\(net (\d+) "(.*)"\)$',l)] if m}
-    def remove_segment(s,net,a,b,layer=None,tol=1e-3):
+    def remove_segment(s,net,a,b,layer=None,tol=1e-3,dup_ok=False):
+        # dup_ok: identical copies may exist; remove one (call once per copy)
         n=s.nets[net];hit=[]
         for i,l in enumerate(s.lines):
             m=re.match(r'\s*\(segment \(start ([-\d.]+) ([-\d.]+)\) \(end ([-\d.]+) ([-\d.]+)\) \(width [\d.]+\) \(layer "([^"]+)"\) \(net (\d+)\)',l)
@@ -11,7 +12,7 @@ class Board:
             p=[float(m.group(k)) for k in range(1,5)]
             for A,B in ((a,b),(b,a)):
                 if abs(p[0]-A[0])<tol and abs(p[1]-A[1])<tol and abs(p[2]-B[0])<tol and abs(p[3]-B[1])<tol:hit.append(i)
-        assert len(hit)==1,(net,a,b,hit)
+        assert len(hit)==1 or (dup_ok and hit),(net,a,b,hit)
         del s.lines[hit[0]]
     def _insert(s,text):
         # insert before final closing paren
