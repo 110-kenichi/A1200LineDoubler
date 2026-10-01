@@ -364,7 +364,7 @@ U2 を180°回転したため、**左辺（x=45.05）が U1(ADC) 側**、右辺�
       - CPL の回転：EasyEDA のフットプリントと照合して補正済み（2026-09-30、`tools/jlc_rotcheck.py`、`fab/v030wip/cpl_rotation_check.md`）。発注画面のプレビューでの最終確認は利用者側（特に J3 の位置 1.571mm 補正、U1/U2 の1番ピン。README の「発注前に必要なこと」2）。
       - ~~ERC~~ → 完了（2026-09-29）。KiCad 9 CLI（`tools/erc_k9.sh`）で実行。PWR_FLAG を9ネットに追加し、U3.27/31/33 は `hardware/erc_exclusions.json` で除外。`tools/erc_check.py` で残り0件。
       - 発注時のビアの指定（下記）。
-    - JLC 向け：U1/U2 の EP 内のビア（9個ずつ、計18個、GND 0.6/0.3）は **「Epoxy Filled & Capped」（POFV）** を注文画面の Via Covering で指定する（4層では標準でないため明示が必要）。JLC の「Plugged」はレジストでビアを埋める別の処理で、EP には使えない（2026-10-01 訂正）。J2.7/J2.8 のパッド上ビアは J1/J2 の置き換えでなくなった。
+    - JLC 向け：U1/U2 の EP 内のビア（9個ずつ、計18個、GND 0.5/0.3。2026-10-01 に 0.6 から変更、`scripts/ep_via05.py`）は **「Epoxy Filled & Capped」（POFV）** を注文画面の Via Covering で指定する（4層では標準でないため明示が必要）。JLC の「Plugged」はレジストでビアを埋める別の処理で、EP には使えない（2026-10-01 訂正）。J2.7/J2.8 のパッド上ビアは J1/J2 の置き換えでなくなった。
     - **IC のピンの隙間を通る配線を撤去（2026-09-30、`scripts/dfm_u1pll.py`・`dfm_gapfix.py`）**：U1 の11組・U3 の3組・U5.5。今は0本。以後、同じネットの隣のピンを隙間でつながないこと。
     - **重なった配線・行き止まりの配線を整理（2026-09-30、`scripts/dfm_dedup.py`・`dfm_spur.py`・`dfm_tidy.py`）**：同じネットで重なる配線 44組→0、行き止まり（ADC_1V9PLL の In2 約 3mm など）を削除、U1.93/94・C27・C28 周りを木の形に整えた。削除はパッドのつながり方が変わらない場合だけ。2026-10-01 に C27–U1 間の GND（U1.90/91）、C21 の 3V3 ビア、U4.5–C51 も整理（`dfm_tidy2.py`）。
     - **ルーターの段差（短い斜め線と水平・垂直線の繰り返し）をならした（2026-10-01、`scripts/dfm_planeloop.py`・`dfm_smooth.py`・`dfm_tidy3.py`、`tools/trackchains.py`・`jogscan.py`）**：短い段差 198→14か所（残りは角の面取りなど）。今後ルーターで引いた配線は、`dfm_smooth.py` と `jogscan.py` をかけてから確定すること。
