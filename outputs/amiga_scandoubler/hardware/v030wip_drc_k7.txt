@@ -1,5 +1,5 @@
-** Drc report for /tmp/claude-0/-home-user-A1200LineDoubler/d0f14dc9-1427-5a10-9449-2ee42efc957d/scratchpad/dfm/h2_rm.kicad_pcb **
-** Created on 2026-09-30 16:43:57 **
+** Drc report for /tmp/claude-0/-home-user-A1200LineDoubler/d0f14dc9-1427-5a10-9449-2ee42efc957d/scratchpad/dfm/k1_rm.kicad_pcb **
+** Created on 2026-10-01 11:55:03 **
 
 ** Found 141 DRC violations **
 [lib_footprint_issues]: The current configuration does not include the library 'Amiga'.
